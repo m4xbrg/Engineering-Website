@@ -1,0 +1,42 @@
+[
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "description": "Calculus, differential equations, linear algebra, and numerical reasoning."
+  },
+  {
+    "id": "mechanics",
+    "name": "Mechanics",
+    "description": "Statics, dynamics, materials, and equilibrium."
+  },
+  {
+    "id": "circuits",
+    "name": "Circuits",
+    "description": "Network laws, passive elements, and electrical analysis."
+  },
+  {
+    "id": "signals",
+    "name": "Signals",
+    "description": "Transforms, time/frequency analysis, and system responses."
+  },
+  {
+    "id": "control",
+    "name": "Control",
+    "description": "Feedback, transfer functions, stability, and dynamic systems."
+  },
+  {
+    "id": "fluids",
+    "name": "Fluids",
+    "description": "Fluid motion, pressure, energy, and transport."
+  },
+  {
+    "id": "logic",
+    "name": "Logic",
+    "description": "Boolean reasoning, logic gates, and digital systems."
+  },
+  {
+    "id": "materials",
+    "name": "Materials",
+    "description": "Material classes, structure, and behavior under load."
+  }
+]

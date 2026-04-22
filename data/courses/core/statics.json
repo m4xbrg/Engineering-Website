@@ -1,0 +1,19 @@
+{
+  "id": "statics",
+  "title": "Statics",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "engineering-core",
+  "year": "2",
+  "shortDesc": "Force systems, equilibrium, moments, and free body reasoning.",
+  "whyItMatters": "Statics becomes a shared language for structures, machines, and physical systems.",
+  "prereqs": ["calculus-i"],
+  "leadsInto": ["structural-analysis-i", "fluid-mechanics-me"],
+  "skills": ["free body diagrams", "moment balance", "equilibrium equations"],
+  "topicClusters": ["mechanics"],
+  "concepts": ["stress-strain", "free-body-diagram"],
+  "relatedTools": ["fbd-builder"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "live"
+}

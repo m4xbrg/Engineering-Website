@@ -1,0 +1,35 @@
+{
+  "id": "core",
+  "name": "Core Engineering",
+  "shortName": "CORE",
+  "description": "The shared engineering base that anchors every specialization in the platform.",
+  "mainSubfields": [
+    "Mathematics",
+    "Physics",
+    "Mechanics",
+    "Thermodynamics",
+    "Design"
+  ],
+  "coreFoundationIds": ["calculus-i", "statics"],
+  "conceptClusters": ["mathematics", "mechanics"],
+  "summaryChain": "Math and science fundamentals lead into shared engineering analysis and design habits.",
+  "depthV1": "full",
+  "colorToken": "--major-core",
+  "stages": [
+    {
+      "id": "foundation",
+      "label": "Year 1 — Foundations",
+      "courseIds": ["calculus-i"]
+    },
+    {
+      "id": "core-sciences",
+      "label": "Year 1-2 — Core Sciences",
+      "courseIds": []
+    },
+    {
+      "id": "engineering-core",
+      "label": "Year 2 — Engineering Core",
+      "courseIds": ["statics"]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "computer-engineering",
+  "name": "Computer Engineering",
+  "shortName": "CpE",
+  "description": "Digital hardware, embedded systems, architecture, and computation at the system boundary.",
+  "mainSubfields": [
+    "Digital Logic",
+    "Architecture",
+    "Embedded Systems",
+    "Networks"
+  ],
+  "coreFoundationIds": ["calculus-i"],
+  "conceptClusters": ["logic", "circuits"],
+  "summaryChain": "Foundational programming and electronics grow into digital system design and computer architecture.",
+  "depthV1": "map",
+  "colorToken": "--major-computer",
+  "stages": [
+    {
+      "id": "major-core",
+      "label": "Year 2-3 — Intermediate CpE",
+      "courseIds": ["digital-logic-design"]
+    }
+  ]
+}

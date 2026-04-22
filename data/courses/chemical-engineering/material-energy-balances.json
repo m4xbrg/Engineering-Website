@@ -1,0 +1,19 @@
+{
+  "id": "material-energy-balances",
+  "title": "Material and Energy Balances",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "year": "2",
+  "shortDesc": "Conservation principles for process streams, reactors, and system accounting.",
+  "whyItMatters": "It becomes the bookkeeping engine for nearly every later chemical engineering topic.",
+  "prereqs": ["calculus-i"],
+  "leadsInto": [],
+  "skills": ["mass balances", "energy balances", "system boundary setup"],
+  "topicClusters": ["fluids"],
+  "concepts": [],
+  "relatedTools": ["unit-converter"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "stub"
+}

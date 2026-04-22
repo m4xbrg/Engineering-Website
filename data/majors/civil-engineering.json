@@ -1,0 +1,24 @@
+{
+  "id": "civil-engineering",
+  "name": "Civil Engineering",
+  "shortName": "CE",
+  "description": "Infrastructure, structures, water systems, and the built environment.",
+  "mainSubfields": [
+    "Structures",
+    "Geotechnics",
+    "Transportation",
+    "Water Resources"
+  ],
+  "coreFoundationIds": ["calculus-i", "statics"],
+  "conceptClusters": ["mechanics", "materials"],
+  "summaryChain": "Mechanics and materials foundations support structural and infrastructure analysis.",
+  "depthV1": "map",
+  "colorToken": "--major-civil",
+  "stages": [
+    {
+      "id": "major-core",
+      "label": "Year 2-3 — Structural Track",
+      "courseIds": ["structural-analysis-i"]
+    }
+  ]
+}

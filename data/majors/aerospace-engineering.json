@@ -1,0 +1,24 @@
+{
+  "id": "aerospace-engineering",
+  "name": "Aerospace Engineering",
+  "shortName": "AE",
+  "description": "Aircraft and spacecraft systems through aerodynamics, structures, propulsion, and control.",
+  "mainSubfields": [
+    "Aerodynamics",
+    "Structures",
+    "Propulsion",
+    "Flight Mechanics"
+  ],
+  "coreFoundationIds": ["calculus-i", "statics"],
+  "conceptClusters": ["mechanics", "control", "fluids"],
+  "summaryChain": "Mechanics and fluid concepts scale into flight, propulsion, and aerospace structures.",
+  "depthV1": "map",
+  "colorToken": "--major-aerospace",
+  "stages": [
+    {
+      "id": "major-entry",
+      "label": "Year 2 — AE Core Entry",
+      "courseIds": ["introduction-to-aerospace-engineering"]
+    }
+  ]
+}

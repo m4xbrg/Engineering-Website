@@ -1,0 +1,19 @@
+{
+  "id": "operations-research-i",
+  "title": "Operations Research I",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "year": "2-3",
+  "shortDesc": "Optimization and decision models for resource allocation and systems planning.",
+  "whyItMatters": "Operations research brings engineering rigor to complex organizational systems.",
+  "prereqs": ["calculus-i"],
+  "leadsInto": [],
+  "skills": ["objective functions", "constraints", "model interpretation"],
+  "topicClusters": ["control"],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "stub"
+}

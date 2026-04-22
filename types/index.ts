@@ -1,0 +1,17 @@
+export type {
+  ClusterRelationship,
+  Concept,
+  Course,
+  GlossaryEntry,
+  Major,
+  MajorIndexItem,
+  MajorSlug,
+  PrereqEdge,
+  StageId,
+  StagePreview,
+  StageRegistryRecord,
+  ToolDefinition,
+  ToolLink,
+  ToolSlug,
+  TopicCluster,
+} from "@/lib/schemas";

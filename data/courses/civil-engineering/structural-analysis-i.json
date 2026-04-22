@@ -1,0 +1,23 @@
+{
+  "id": "structural-analysis-i",
+  "title": "Structural Analysis I",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "year": "2-3",
+  "shortDesc": "Internal forces, reactions, and structural behavior for determinate systems.",
+  "whyItMatters": "This course translates shared mechanics into real infrastructure analysis.",
+  "prereqs": ["statics"],
+  "leadsInto": [],
+  "skills": [
+    "reaction solving",
+    "shear and moment intuition",
+    "structural idealization"
+  ],
+  "topicClusters": ["mechanics", "materials"],
+  "concepts": ["stress-strain"],
+  "relatedTools": ["fbd-builder"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "stub"
+}

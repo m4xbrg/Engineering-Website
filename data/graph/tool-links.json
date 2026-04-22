@@ -1,0 +1,17 @@
+[
+  {
+    "toolId": "ohms-law",
+    "courseIds": ["circuit-analysis-i", "bioinstrumentation"],
+    "conceptIds": ["ohms-law", "kirchhoffs-laws"]
+  },
+  {
+    "toolId": "bode-plot",
+    "courseIds": ["signals-and-systems", "control-systems-ee"],
+    "conceptIds": ["bode-plot", "transfer-function"]
+  },
+  {
+    "toolId": "fbd-builder",
+    "courseIds": ["statics", "structural-analysis-i"],
+    "conceptIds": ["free-body-diagram", "stress-strain"]
+  }
+]

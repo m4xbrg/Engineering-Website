@@ -1,0 +1,29 @@
+{
+  "id": "electrical-engineering",
+  "name": "Electrical Engineering",
+  "shortName": "EE",
+  "description": "The first deeply built specialization in V1, focused on circuits, signals, electronics, and control.",
+  "mainSubfields": ["Circuits", "Electronics", "Signals", "Control", "Power"],
+  "coreFoundationIds": ["calculus-i", "statics"],
+  "conceptClusters": ["circuits", "signals", "control"],
+  "summaryChain": "Foundation math and physics feed circuit analysis, then expand into signals, control, and systems thinking.",
+  "depthV1": "full",
+  "colorToken": "--major-electrical",
+  "stages": [
+    {
+      "id": "major-entry",
+      "label": "Year 2 — EE Core Entry",
+      "courseIds": ["circuit-analysis-i"]
+    },
+    {
+      "id": "major-core",
+      "label": "Year 2-3 — Core EE",
+      "courseIds": ["signals-and-systems"]
+    },
+    {
+      "id": "advanced",
+      "label": "Year 3-4 — Advanced EE",
+      "courseIds": ["control-systems-ee"]
+    }
+  ]
+}

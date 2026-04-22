@@ -1,0 +1,19 @@
+{
+  "id": "industrial-engineering",
+  "name": "Industrial Engineering",
+  "shortName": "IE",
+  "description": "Optimization, systems simulation, quality, and decision-making for engineered operations.",
+  "mainSubfields": ["Optimization", "Quality", "Manufacturing", "Supply Chain"],
+  "coreFoundationIds": ["calculus-i"],
+  "conceptClusters": ["control"],
+  "summaryChain": "Quantitative foundations progress into optimization, operations research, and systems thinking.",
+  "depthV1": "map",
+  "colorToken": "--major-industrial",
+  "stages": [
+    {
+      "id": "major-core",
+      "label": "Year 2-3 — Operations Research Core",
+      "courseIds": ["operations-research-i"]
+    }
+  ]
+}

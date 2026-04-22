@@ -1,0 +1,72 @@
+[
+  {
+    "id": "core",
+    "name": "Core Engineering",
+    "shortName": "CORE",
+    "description": "Shared foundations in math, physics, mechanics, thermodynamics, and design.",
+    "depthV1": "full"
+  },
+  {
+    "id": "electrical-engineering",
+    "name": "Electrical Engineering",
+    "shortName": "EE",
+    "description": "Circuits, electronics, signals, electromagnetics, and control.",
+    "depthV1": "full"
+  },
+  {
+    "id": "mechanical-engineering",
+    "name": "Mechanical Engineering",
+    "shortName": "ME",
+    "description": "Mechanics, thermal systems, manufacturing, and mechatronics.",
+    "depthV1": "map"
+  },
+  {
+    "id": "civil-engineering",
+    "name": "Civil Engineering",
+    "shortName": "CE",
+    "description": "Structures, geotechnics, transportation, water, and infrastructure.",
+    "depthV1": "map"
+  },
+  {
+    "id": "chemical-engineering",
+    "name": "Chemical Engineering",
+    "shortName": "ChE",
+    "description": "Transport, thermodynamics, reaction engineering, and process systems.",
+    "depthV1": "map"
+  },
+  {
+    "id": "computer-engineering",
+    "name": "Computer Engineering",
+    "shortName": "CpE",
+    "description": "Digital systems, embedded hardware, architecture, and software systems.",
+    "depthV1": "map"
+  },
+  {
+    "id": "aerospace-engineering",
+    "name": "Aerospace Engineering",
+    "shortName": "AE",
+    "description": "Aerodynamics, structures, propulsion, and flight systems.",
+    "depthV1": "map"
+  },
+  {
+    "id": "biomedical-engineering",
+    "name": "Biomedical Engineering",
+    "shortName": "BME",
+    "description": "Biological systems, instrumentation, imaging, and medical devices.",
+    "depthV1": "map"
+  },
+  {
+    "id": "industrial-engineering",
+    "name": "Industrial Engineering",
+    "shortName": "IE",
+    "description": "Optimization, operations research, systems design, and quality.",
+    "depthV1": "map"
+  },
+  {
+    "id": "materials-engineering",
+    "name": "Materials Engineering",
+    "shortName": "MatE",
+    "description": "Structure-property relationships, characterization, and materials design.",
+    "depthV1": "map"
+  }
+]

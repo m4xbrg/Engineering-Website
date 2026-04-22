@@ -1,0 +1,24 @@
+{
+  "id": "materials-engineering",
+  "name": "Materials Engineering",
+  "shortName": "MatE",
+  "description": "Materials structure, processing, characterization, and performance.",
+  "mainSubfields": [
+    "Characterization",
+    "Metals",
+    "Polymers",
+    "Electronic Materials"
+  ],
+  "coreFoundationIds": ["calculus-i", "statics"],
+  "conceptClusters": ["materials", "mechanics"],
+  "summaryChain": "Chemistry and mechanics foundations inform how materials behave and how they are designed.",
+  "depthV1": "map",
+  "colorToken": "--major-materials",
+  "stages": [
+    {
+      "id": "major-entry",
+      "label": "Year 2 — MatE Core Entry",
+      "courseIds": ["introduction-to-materials-science"]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 # Engineering Atlas — MVP Tool System Plan
+
 > Status: Pre-development · Planning only
 > Scope: Version 1 Interactive Labs
 
@@ -7,24 +8,25 @@
 ## 1. Final MVP Tool List
 
 ### Selection Rationale
+
 - 10 tools total: 3 low-complexity, 6 medium, 1 medium-high
 - 3 shared (all-major value), 7 EE-focused
 - Every tool serves at least one EE core course
 - Each tool validates a distinct UI/code pattern usable by future tools
 - No tool requires a backend — all computation runs client-side
 
-| # | id | Title | Category | Majors | Complexity | Pattern |
-|---|---|---|---|---|---|---|
-| 1 | `unit-converter` | Engineering Unit Converter | Calculator | All | Low | form-grid |
-| 2 | `ohms-law` | Ohm's Law & Power Calculator | Calculator | EE, CpE | Low | four-quadrant-calc |
-| 3 | `resistor-color-code` | Resistor Color Code Decoder | Reference | EE, CpE, BME | Low | visual-encoder |
-| 4 | `logic-gate-sim` | Logic Gate Simulator | Simulator | EE, CpE | Medium | canvas-graph |
-| 5 | `rlc-response` | RLC Circuit Response Visualizer | Visualizer | EE, CpE | Medium | time-freq-chart |
-| 6 | `fourier-series` | Fourier Series Visualizer | Visualizer | EE, ME, AE, BME | Medium | harmonic-chart |
-| 7 | `bode-plot` | Bode Plot Generator | Visualizer | EE, ME, AE, ChE | Medium | dual-chart |
-| 8 | `phasor-calc` | Phasor & AC Circuit Calculator | Calculator | EE | Medium | vector-diagram |
-| 9 | `opamp-config` | Op-Amp Circuit Configurator | Calculator | EE, BME | Medium | schematic-calc |
-| 10 | `fbd-builder` | Free Body Diagram Builder | Simulator | ME, CE, AE, CORE | Medium-High | canvas-physics |
+| #   | id                    | Title                           | Category   | Majors           | Complexity  | Pattern            |
+| --- | --------------------- | ------------------------------- | ---------- | ---------------- | ----------- | ------------------ |
+| 1   | `unit-converter`      | Engineering Unit Converter      | Calculator | All              | Low         | form-grid          |
+| 2   | `ohms-law`            | Ohm's Law & Power Calculator    | Calculator | EE, CpE          | Low         | four-quadrant-calc |
+| 3   | `resistor-color-code` | Resistor Color Code Decoder     | Reference  | EE, CpE, BME     | Low         | visual-encoder     |
+| 4   | `logic-gate-sim`      | Logic Gate Simulator            | Simulator  | EE, CpE          | Medium      | canvas-graph       |
+| 5   | `rlc-response`        | RLC Circuit Response Visualizer | Visualizer | EE, CpE          | Medium      | time-freq-chart    |
+| 6   | `fourier-series`      | Fourier Series Visualizer       | Visualizer | EE, ME, AE, BME  | Medium      | harmonic-chart     |
+| 7   | `bode-plot`           | Bode Plot Generator             | Visualizer | EE, ME, AE, ChE  | Medium      | dual-chart         |
+| 8   | `phasor-calc`         | Phasor & AC Circuit Calculator  | Calculator | EE               | Medium      | vector-diagram     |
+| 9   | `opamp-config`        | Op-Amp Circuit Configurator     | Calculator | EE, BME          | Medium      | schematic-calc     |
+| 10  | `fbd-builder`         | Free Body Diagram Builder       | Simulator  | ME, CE, AE, CORE | Medium-High | canvas-physics     |
 
 ---
 
@@ -34,38 +36,43 @@
 
 ### T01 — Engineering Unit Converter
 
-| Field | Value |
-|---|---|
-| **Title** | Engineering Unit Converter |
-| **Category** | Calculator |
-| **Purpose** | Convert between all engineering unit systems, organized by physical quantity |
-| **Majors** | All (universal entry tool) |
-| **Related Courses** | Introduction to Engineering, any Year 1 course |
-| **Related Concepts** | Unit analysis, dimensional homogeneity, SI vs Imperial |
+| Field                | Value                                                                        |
+| -------------------- | ---------------------------------------------------------------------------- |
+| **Title**            | Engineering Unit Converter                                                   |
+| **Category**         | Calculator                                                                   |
+| **Purpose**          | Convert between all engineering unit systems, organized by physical quantity |
+| **Majors**           | All (universal entry tool)                                                   |
+| **Related Courses**  | Introduction to Engineering, any Year 1 course                               |
+| **Related Concepts** | Unit analysis, dimensional homogeneity, SI vs Imperial                       |
 
 **Key Inputs**
+
 - Physical quantity selector (length, mass, force, pressure, energy, power, temperature, frequency, voltage, current, resistance)
 - Input value (number field)
 - From unit (dropdown, filtered by quantity)
 - To unit (dropdown, filtered by quantity)
 
 **Key Outputs**
+
 - Converted value with full precision
 - Conversion factor displayed explicitly (e.g. "× 0.3048")
 - Quick multi-unit table: input → all units in that quantity group simultaneously
 
 **Visualization Type**
+
 - No chart. Clean two-column input/output layout. Multi-unit table below.
 
 **Difficulty:** Low
 
 **MVP Scope**
+
 - Quantities: length, mass, force, pressure, energy, power, temperature, angle, frequency
 - Engineering-specific units included: psi, BTU, HP, lb-ft, kip, slug, RPM
 - Conversion factor shown explicitly
 - Multi-unit output table (show all units at once)
 
 **Leave for Later**
+
 - Currency or non-engineering units
 - Custom unit definition
 - Copy-to-clipboard chain (nice to have)
@@ -75,37 +82,42 @@
 
 ### T02 — Ohm's Law & Power Calculator
 
-| Field | Value |
-|---|---|
-| **Title** | Ohm's Law & Power Calculator |
-| **Category** | Calculator |
-| **Purpose** | Solve any combination of V, I, R, P given two known values |
-| **Majors** | EE, CpE, BME |
-| **Related Courses** | Circuit Analysis I |
-| **Related Concepts** | Ohm's law, DC power, resistance, Kirchhoff's laws |
+| Field                | Value                                                      |
+| -------------------- | ---------------------------------------------------------- |
+| **Title**            | Ohm's Law & Power Calculator                               |
+| **Category**         | Calculator                                                 |
+| **Purpose**          | Solve any combination of V, I, R, P given two known values |
+| **Majors**           | EE, CpE, BME                                               |
+| **Related Courses**  | Circuit Analysis I                                         |
+| **Related Concepts** | Ohm's law, DC power, resistance, Kirchhoff's laws          |
 
 **Key Inputs**
+
 - Four input slots: V (Voltage), I (Current), R (Resistance), P (Power)
 - User fills any 2; remaining 2 compute automatically
 - Unit prefix selector per field (mV/V/kV, mA/A, Ω/kΩ/MΩ, mW/W/kW)
 
 **Key Outputs**
+
 - All 4 values (V, I, R, P) with units
 - Active formula shown: e.g. "V = I × R = 5A × 10Ω = 50V"
 - Power triangle diagram (visual showing real relationships)
 
 **Visualization Type**
+
 - Formula display + static Power Triangle SVG (highlights relevant segments based on which values were input)
 
 **Difficulty:** Low
 
 **MVP Scope**
+
 - All 6 combinations of 2-of-4 inputs handled
 - Active formula shown textually
 - Power triangle visual (static SVG with active highlight)
 - Unit prefix selectors
 
 **Leave for Later**
+
 - AC power (reactive, apparent, power factor) → separate Phasor tool (T08)
 - Series/parallel resistance calculator extension
 - Dark/light theme toggle per tool
@@ -114,37 +126,42 @@
 
 ### T03 — Resistor Color Code Decoder
 
-| Field | Value |
-|---|---|
-| **Title** | Resistor Color Code Decoder |
-| **Category** | Reference |
-| **Purpose** | Decode resistor band colors to resistance value, or encode a resistance value to bands |
-| **Majors** | EE, CpE, BME |
-| **Related Courses** | Circuit Analysis I |
-| **Related Concepts** | Resistance, tolerance, color code standard |
+| Field                | Value                                                                                  |
+| -------------------- | -------------------------------------------------------------------------------------- |
+| **Title**            | Resistor Color Code Decoder                                                            |
+| **Category**         | Reference                                                                              |
+| **Purpose**          | Decode resistor band colors to resistance value, or encode a resistance value to bands |
+| **Majors**           | EE, CpE, BME                                                                           |
+| **Related Courses**  | Circuit Analysis I                                                                     |
+| **Related Concepts** | Resistance, tolerance, color code standard                                             |
 
 **Key Inputs**
+
 - Mode toggle: Decode (bands → value) or Encode (value → bands)
 - Decode mode: 4 or 5 color band dropdowns with color swatches
 - Encode mode: resistance value + tolerance input
 
 **Key Outputs**
+
 - Resistance value with tolerance range (e.g. "10 kΩ ± 5%" → 9.5 kΩ – 10.5 kΩ)
 - Visual resistor rendering (SVG with correctly colored bands)
 - Multiplier and tolerance band labels
 
 **Visualization Type**
+
 - SVG resistor illustration (interactive, color-coded bands update live)
 
 **Difficulty:** Low
 
 **MVP Scope**
+
 - 4-band and 5-band resistors
 - All standard EIA colors
 - Encode and decode modes
 - Visual resistor SVG with live update
 
 **Leave for Later**
+
 - 6-band (temperature coefficient)
 - SMD resistor code (numeric codes)
 - Capacitor color code
@@ -153,31 +170,35 @@
 
 ### T04 — Logic Gate Simulator
 
-| Field | Value |
-|---|---|
-| **Title** | Logic Gate Simulator |
-| **Category** | Simulator |
-| **Purpose** | Build, connect, and simulate combinational logic circuits with live truth table output |
-| **Majors** | EE, CpE |
-| **Related Courses** | Digital Logic Design |
-| **Related Concepts** | Boolean algebra, logic gates, truth table, combinational logic, De Morgan's laws |
+| Field                | Value                                                                                  |
+| -------------------- | -------------------------------------------------------------------------------------- |
+| **Title**            | Logic Gate Simulator                                                                   |
+| **Category**         | Simulator                                                                              |
+| **Purpose**          | Build, connect, and simulate combinational logic circuits with live truth table output |
+| **Majors**           | EE, CpE                                                                                |
+| **Related Courses**  | Digital Logic Design                                                                   |
+| **Related Concepts** | Boolean algebra, logic gates, truth table, combinational logic, De Morgan's laws       |
 
 **Key Inputs**
+
 - Drag-and-drop gate palette: AND, OR, NOT, NAND, NOR, XOR, XNOR
 - Toggle input nodes (A, B, C...) between 0 and 1
 - Wire connections drawn between gate pins
 
 **Key Outputs**
+
 - Live output value at each gate and wire (0 or 1, color-coded)
 - Auto-generated truth table for all inputs → final output
 - Boolean expression derived from circuit (V2)
 
 **Visualization Type**
+
 - Canvas-based circuit diagram. Gates are styled SVG nodes. Wires route between ports. Truth table shown in side panel.
 
 **Difficulty:** Medium
 
 **MVP Scope**
+
 - 7 gate types + input/output nodes
 - Up to 3 inputs, unlimited depth
 - Live propagation on input toggle
@@ -185,6 +206,7 @@
 - Basic wire routing (straight or elbow)
 
 **Leave for Later**
+
 - Sequential logic (flip-flops, latches)
 - Boolean expression extraction from circuit
 - Circuit saving / URL sharing
@@ -195,22 +217,24 @@
 
 ### T05 — RLC Circuit Response Visualizer
 
-| Field | Value |
-|---|---|
-| **Title** | RLC Circuit Response Visualizer |
-| **Category** | Visualizer |
-| **Purpose** | Visualize time-domain (step) and frequency-domain (Bode) response of RC, RL, and RLC circuits |
-| **Majors** | EE, CpE |
-| **Related Courses** | Circuit Analysis II, Signals & Systems |
+| Field                | Value                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Title**            | RLC Circuit Response Visualizer                                                                              |
+| **Category**         | Visualizer                                                                                                   |
+| **Purpose**          | Visualize time-domain (step) and frequency-domain (Bode) response of RC, RL, and RLC circuits                |
+| **Majors**           | EE, CpE                                                                                                      |
+| **Related Courses**  | Circuit Analysis II, Signals & Systems                                                                       |
 | **Related Concepts** | Transfer function, step response, frequency response, resonance, impedance, natural frequency, damping ratio |
 
 **Key Inputs**
+
 - Circuit type toggle: RC / RL / RLC
 - R (Ω), L (H), C (F) sliders with live value display
 - Analysis type toggle: Step Response / Frequency Response
 - Source type: Voltage divider / Series (for frequency response)
 
 **Key Outputs**
+
 - Step response: time-domain plot (V_out vs time)
   - Annotated: time constant τ, settling time, overshoot %
 - Frequency response: magnitude (dB) + phase (°) vs frequency (Hz)
@@ -218,6 +242,7 @@
 - Key derived values displayed: ω₀, ζ, τ, Q factor
 
 **Visualization Type**
+
 - Dual-panel chart: top = time domain OR magnitude, bottom = phase
 - Log-scale frequency axis for Bode view
 - Recharts or D3-based, fully reactive to slider input
@@ -225,12 +250,14 @@
 **Difficulty:** Medium
 
 **MVP Scope**
+
 - RC lowpass, RL lowpass, RLC series (voltage divider output)
 - Both step response and frequency response views
 - Annotated key points on chart
 - Live update on slider change
 
 **Leave for Later**
+
 - RLC parallel, bandpass, bandstop configs
 - Input waveform selection (sine, square, impulse)
 - Export plot as image
@@ -240,33 +267,37 @@
 
 ### T06 — Fourier Series Visualizer
 
-| Field | Value |
-|---|---|
-| **Title** | Fourier Series Visualizer |
-| **Category** | Visualizer |
-| **Purpose** | Animate how Fourier series harmonics sum to approximate periodic waveforms |
-| **Majors** | EE, ME, AE, BME |
-| **Related Courses** | Signals & Systems, Digital Signal Processing, Mechanical Vibrations, Biosignals & Medical Imaging |
-| **Related Concepts** | Fourier series, harmonics, frequency spectrum, periodic signals, superposition |
+| Field                | Value                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------- |
+| **Title**            | Fourier Series Visualizer                                                                         |
+| **Category**         | Visualizer                                                                                        |
+| **Purpose**          | Animate how Fourier series harmonics sum to approximate periodic waveforms                        |
+| **Majors**           | EE, ME, AE, BME                                                                                   |
+| **Related Courses**  | Signals & Systems, Digital Signal Processing, Mechanical Vibrations, Biosignals & Medical Imaging |
+| **Related Concepts** | Fourier series, harmonics, frequency spectrum, periodic signals, superposition                    |
 
 **Key Inputs**
+
 - Waveform selector: Square, Sawtooth, Triangle, Half-wave rectified sine
 - N harmonics slider (1 to ~50)
 - Animation toggle: animate harmonic addition
 - View toggle: Time domain / Spectrum (frequency)
 
 **Key Outputs**
+
 - Time domain: individual harmonic components (faint) + running sum (bold) vs original waveform
 - Spectrum view: bar chart of Fourier coefficients (aₙ, bₙ) vs harmonic number
 - Gibbs phenomenon visible when N is moderate
 - Convergence error metric: RMS error between approximation and target
 
 **Visualization Type**
+
 - Animated line chart (D3 or Recharts). Spectrum as bar chart. Side-by-side or tabbed.
 
 **Difficulty:** Medium
 
 **MVP Scope**
+
 - 4 preset waveforms
 - N slider up to 50
 - Both time and spectrum views
@@ -274,6 +305,7 @@
 - Gibbs phenomenon naturally visible
 
 **Leave for Later**
+
 - Custom waveform drawing (user-defined)
 - Fourier Transform (aperiodic) vs Fourier Series distinction
 - Complex exponential form display
@@ -283,16 +315,17 @@
 
 ### T07 — Bode Plot Generator
 
-| Field | Value |
-|---|---|
-| **Title** | Bode Plot Generator |
-| **Category** | Visualizer |
-| **Purpose** | Generate accurate Bode magnitude and phase plots from a transfer function defined by poles and zeros |
-| **Majors** | EE, ME, AE, ChE |
-| **Related Courses** | Signals & Systems, Control Systems, Circuit Analysis II, Control Systems (ME), Process Control (ChE), Flight Mechanics II (AE) |
-| **Related Concepts** | Bode plot, transfer function, poles, zeros, gain margin, phase margin, frequency response, stability |
+| Field                | Value                                                                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Title**            | Bode Plot Generator                                                                                                            |
+| **Category**         | Visualizer                                                                                                                     |
+| **Purpose**          | Generate accurate Bode magnitude and phase plots from a transfer function defined by poles and zeros                           |
+| **Majors**           | EE, ME, AE, ChE                                                                                                                |
+| **Related Courses**  | Signals & Systems, Control Systems, Circuit Analysis II, Control Systems (ME), Process Control (ChE), Flight Mechanics II (AE) |
+| **Related Concepts** | Bode plot, transfer function, poles, zeros, gain margin, phase margin, frequency response, stability                           |
 
 **Key Inputs**
+
 - Input method toggle: Poles/Zeros/Gain OR Numerator/Denominator coefficients
 - Poles: list of real or complex-conjugate pair entries
 - Zeros: list of real or complex-conjugate pair entries
@@ -300,6 +333,7 @@
 - Frequency range: start and end decade (e.g. 10⁻² to 10⁶ rad/s)
 
 **Key Outputs**
+
 - Bode magnitude plot: |H(jω)| in dB vs log ω
 - Bode phase plot: ∠H(jω) in degrees vs log ω
 - Annotated: gain crossover frequency, phase crossover frequency, gain margin (dB), phase margin (°)
@@ -307,11 +341,13 @@
 - Asymptotic approximation overlay toggle (straight-line Bode approximation)
 
 **Visualization Type**
+
 - Dual-panel log-scale charts (magnitude on top, phase on bottom). Shared x-axis. Annotation markers on crossover points.
 
 **Difficulty:** Medium
 
 **MVP Scope**
+
 - Poles/zeros input (real and complex conjugate pairs)
 - Gain and phase plots with log frequency axis
 - Gain margin, phase margin computed and labeled
@@ -319,6 +355,7 @@
 - Up to ~5 poles + 5 zeros
 
 **Leave for Later**
+
 - Transfer function entry as a rational polynomial (requires polynomial root finding)
 - Root locus generator (related but separate tool)
 - Time delay (e^{-τs}) handling
@@ -329,21 +366,23 @@
 
 ### T08 — Phasor & AC Circuit Calculator
 
-| Field | Value |
-|---|---|
-| **Title** | Phasor & AC Circuit Calculator |
-| **Category** | Calculator |
-| **Purpose** | Compute impedance, current, voltage, and power for series and parallel RLC AC circuits; display phasor diagram |
-| **Majors** | EE |
-| **Related Courses** | Circuit Analysis II |
-| **Related Concepts** | Phasors, impedance, admittance, AC power, power factor, resonance, reactive power |
+| Field                | Value                                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Title**            | Phasor & AC Circuit Calculator                                                                                 |
+| **Category**         | Calculator                                                                                                     |
+| **Purpose**          | Compute impedance, current, voltage, and power for series and parallel RLC AC circuits; display phasor diagram |
+| **Majors**           | EE                                                                                                             |
+| **Related Courses**  | Circuit Analysis II                                                                                            |
+| **Related Concepts** | Phasors, impedance, admittance, AC power, power factor, resonance, reactive power                              |
 
 **Key Inputs**
+
 - Circuit topology: Series RLC / Parallel RLC
 - Component values: R (Ω), L (H or mH), C (F or μF)
 - Source: V_s (peak or RMS), frequency f (Hz)
 
 **Key Outputs**
+
 - Total impedance Z (rectangular + polar form)
 - Current I (magnitude, phase)
 - Voltage across each component (V_R, V_L, V_C)
@@ -352,18 +391,21 @@
 - Phasor diagram: V and I vectors to scale with phase angle visible
 
 **Visualization Type**
+
 - SVG phasor diagram (voltage and current vectors, rotating or static)
 - Rectangular results panel alongside
 
 **Difficulty:** Medium
 
 **MVP Scope**
+
 - Series and parallel RLC
 - Complete power triangle display
 - Phasor diagram (static, to scale)
 - All derived quantities computed
 
 **Leave for Later**
+
 - Arbitrary circuit topology (mesh/node analysis) → needs a circuit engine
 - Animated rotating phasors
 - Power factor correction calculator
@@ -373,39 +415,44 @@
 
 ### T09 — Op-Amp Circuit Configurator
 
-| Field | Value |
-|---|---|
-| **Title** | Op-Amp Circuit Configurator |
-| **Category** | Calculator |
-| **Purpose** | Select an op-amp configuration, set resistor values, and compute gain, bandwidth, and output formula |
-| **Majors** | EE, BME |
-| **Related Courses** | Electronics II, Bioinstrumentation |
+| Field                | Value                                                                                                                     |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Title**            | Op-Amp Circuit Configurator                                                                                               |
+| **Category**         | Calculator                                                                                                                |
+| **Purpose**          | Select an op-amp configuration, set resistor values, and compute gain, bandwidth, and output formula                      |
+| **Majors**           | EE, BME                                                                                                                   |
+| **Related Courses**  | Electronics II, Bioinstrumentation                                                                                        |
 | **Related Concepts** | Op-amp, negative feedback, gain, inverting amplifier, non-inverting amplifier, integrator, differentiator, virtual ground |
 
 **Key Inputs**
+
 - Configuration selector: Inverting / Non-Inverting / Voltage Follower / Summing / Integrator / Differentiator / Comparator
 - Component values: R1, R2, Rf, C (shown/hidden based on configuration)
 - Op-amp parameters: GBW (gain-bandwidth product), V_supply ±
 
 **Key Outputs**
+
 - Gain (Av) with formula shown
 - Output formula (e.g. "V_out = −(Rf/R1) × V_in")
-- Bandwidth estimate (f_-3dB = GBW / |Av|)
+- Bandwidth estimate (f\_-3dB = GBW / |Av|)
 - Output voltage range (±V_supply × 0.85 approx for ideal)
 - Circuit schematic diagram auto-drawn per configuration
 
 **Visualization Type**
+
 - SVG schematic (auto-redrawn per config). Resistor values labeled on diagram. Results in side panel.
 
 **Difficulty:** Medium
 
 **MVP Scope**
+
 - 7 configurations
 - Auto-rendered SVG schematic per config
 - Gain, bandwidth, output formula
 - Component labels update live on schematic
 
 **Leave for Later**
+
 - Frequency response plot (integrates with Bode tool)
 - Slew rate and settling time
 - Non-ideal op-amp model (offset voltage, bias current)
@@ -415,33 +462,37 @@
 
 ### T10 — Free Body Diagram Builder
 
-| Field | Value |
-|---|---|
-| **Title** | Free Body Diagram Builder |
-| **Category** | Simulator |
-| **Purpose** | Draw forces and moments on a 2D rigid body; compute net force, net moment, and check equilibrium |
-| **Majors** | ME, CE, AE, Core (Statics) |
-| **Related Courses** | Statics, Physics I, Dynamics |
-| **Related Concepts** | Free body diagram, equilibrium, force vectors, moments, resultant force, Newton's first law |
+| Field                | Value                                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------------------ |
+| **Title**            | Free Body Diagram Builder                                                                        |
+| **Category**         | Simulator                                                                                        |
+| **Purpose**          | Draw forces and moments on a 2D rigid body; compute net force, net moment, and check equilibrium |
+| **Majors**           | ME, CE, AE, Core (Statics)                                                                       |
+| **Related Courses**  | Statics, Physics I, Dynamics                                                                     |
+| **Related Concepts** | Free body diagram, equilibrium, force vectors, moments, resultant force, Newton's first law      |
 
 **Key Inputs**
+
 - Body selector: Point / Beam / Rectangle / Circle (simple shapes)
 - Add force: magnitude, direction (angle), point of application
 - Add moment: magnitude, CW/CCW
 - Support conditions (optional): pin, roller, fixed
 
 **Key Outputs**
+
 - Net force vector: ΣFx, ΣFy (numerical + visual resultant arrow)
 - Net moment: ΣM about origin (numerical)
 - Equilibrium check: "System is in equilibrium / Not in equilibrium"
 - Reaction forces (if supports defined): computed and displayed
 
 **Visualization Type**
+
 - Canvas-based drawing. Body rendered as shape. Forces as arrows with labels. Resultant shown in distinct color. Numerical summary panel alongside.
 
 **Difficulty:** Medium-High
 
 **MVP Scope**
+
 - Simple 2D only
 - 3 body shapes
 - Force vectors and moments
@@ -450,6 +501,7 @@
 - Optional simple supports (pin, roller)
 
 **Leave for Later**
+
 - 3D free body diagrams
 - Distributed loads (UDL, trapezoidal)
 - Truss member force solver
@@ -523,6 +575,7 @@ Every tool page uses this structure. Sections are always in this order.
 ### Section Specifications
 
 #### Header Block
+
 ```
 categoryBadge:     string — "Calculator" | "Visualizer" | "Simulator" | "Reference"
 majorTags:         MajorRef[] — colored badges for each major
@@ -532,6 +585,7 @@ relatedCourseChips: CourseRef[] — inline chip links, max 4 shown (expand for m
 ```
 
 #### Controls Panel
+
 ```
 layout:           vertical stack of input groups
 inputGroup:       { label, hint?, input: Slider | NumberField | Dropdown | Toggle | ButtonGroup }
@@ -541,6 +595,7 @@ modeSwitch:       top of panel when tool has multiple modes (e.g. RC/RL/RLC)
 ```
 
 #### Output Panel
+
 ```
 type:             "chart" | "canvas" | "svg" | "schematic" | "table" | "multi"
 responsive:       always fills available width
@@ -550,6 +605,7 @@ annotations:      key values labeled directly on chart (not just in legend)
 ```
 
 #### Results Strip
+
 ```
 when:             shown for calculator-type tools that produce discrete key values
 items:            { label, value, unit, formula? }
@@ -558,6 +614,7 @@ formula:          shown in tooltip or below value (e.g. "f₀ = 1/(2π√LC)")
 ```
 
 #### What to Notice
+
 ```
 items:            3–5 authored insight bullets
 format:           bold keyword + explanation
@@ -566,6 +623,7 @@ purpose:          this is the pedagogical payoff — makes tool curriculum-conne
 ```
 
 #### Related Content
+
 ```
 courses:          CourseRef[] — card with title, year, major
 concepts:         ConceptRef[] — chip with definition tooltip on hover
@@ -573,6 +631,7 @@ majors:           MajorRef[] — colored badge with link to major overview
 ```
 
 #### Other Tools
+
 ```
 source:           tools in same clusterIds OR same majorIds as current tool
 display:          horizontal scroll row of compact tool cards
@@ -583,30 +642,31 @@ maxShown:         5 (show all in V2 with filtering)
 
 ### Component Map
 
-| Section | Component Name | Reused By |
-|---|---|---|
-| Header | `<ToolHeader>` | All 10 tools |
-| Controls | `<ControlPanel>` | All 10 tools |
-| Slider input | `<ParameterSlider>` | T05, T06, T07, T10 |
-| Number + unit | `<UnitInput>` | T02, T08, T09, T10 |
-| Toggle/mode | `<ModeSwitch>` | T03, T05, T06, T07 |
-| Dual-axis chart | `<BodePlot>` | T05, T07 |
-| Single-axis chart | `<LineChart>` | T05, T06 |
-| Bar chart | `<SpectrumChart>` | T06 |
-| SVG schematic | `<CircuitSchematic>` | T09 |
-| SVG resistor | `<ResistorSVG>` | T03 |
-| Phasor diagram | `<PhasorDiagram>` | T08 |
-| Canvas board | `<InteractiveCanvas>` | T04, T10 |
-| Results strip | `<ResultsStrip>` | T02, T05, T08, T09 |
-| What to notice | `<InsightPanel>` | All 10 tools |
-| Related content | `<RelatedContent>` | All 10 tools |
-| Other tools | `<ToolRecommendations>` | All 10 tools |
+| Section           | Component Name          | Reused By          |
+| ----------------- | ----------------------- | ------------------ |
+| Header            | `<ToolHeader>`          | All 10 tools       |
+| Controls          | `<ControlPanel>`        | All 10 tools       |
+| Slider input      | `<ParameterSlider>`     | T05, T06, T07, T10 |
+| Number + unit     | `<UnitInput>`           | T02, T08, T09, T10 |
+| Toggle/mode       | `<ModeSwitch>`          | T03, T05, T06, T07 |
+| Dual-axis chart   | `<BodePlot>`            | T05, T07           |
+| Single-axis chart | `<LineChart>`           | T05, T06           |
+| Bar chart         | `<SpectrumChart>`       | T06                |
+| SVG schematic     | `<CircuitSchematic>`    | T09                |
+| SVG resistor      | `<ResistorSVG>`         | T03                |
+| Phasor diagram    | `<PhasorDiagram>`       | T08                |
+| Canvas board      | `<InteractiveCanvas>`   | T04, T10           |
+| Results strip     | `<ResultsStrip>`        | T02, T05, T08, T09 |
+| What to notice    | `<InsightPanel>`        | All 10 tools       |
+| Related content   | `<RelatedContent>`      | All 10 tools       |
+| Other tools       | `<ToolRecommendations>` | All 10 tools       |
 
 ---
 
 ## 4. Best First Build Order
 
 ### Guiding Logic
+
 - Build tool page template with T01 (simplest, no math)
 - Each subsequent tool validates one new UI/computation pattern
 - Chart infrastructure (T05) unlocks T06 and T07 at low incremental cost
@@ -691,18 +751,18 @@ maxShown:         5 (show all in V2 with filtering)
 
 ### Build Order Summary Table
 
-| Order | Tool | New Pattern Introduced | Depends On |
-|---|---|---|---|
-| 1 | T01 Unit Converter | Page shell, form layout | — |
-| 2 | T02 Ohm's Law | ResultsStrip, formula display, simple SVG | T01 shell |
-| 3 | T03 Resistor Color Code | ModeSwitch, visual SVG | T01 shell |
-| 4 | T05 RLC Response | LineChart, BodePlot, sliders, log axis | T01 shell |
-| 5 | T06 Fourier Series | SpectrumChart, animation | T05 chart |
-| 6 | T07 Bode Plot | Pole/zero input, crossover markers | T05 chart |
-| 7 | T08 Phasor Calc | PhasorDiagram, complex numbers | T02 results |
-| 8 | T09 Op-Amp Config | CircuitSchematic SVG (7 configs) | T02 results |
-| 9 | T04 Logic Gate Sim | Canvas, drag-drop, graph propagation | T01 shell |
-| 10 | T10 FBD Builder | Canvas physics, force vectors, reactions | T04 canvas |
+| Order | Tool                    | New Pattern Introduced                    | Depends On  |
+| ----- | ----------------------- | ----------------------------------------- | ----------- |
+| 1     | T01 Unit Converter      | Page shell, form layout                   | —           |
+| 2     | T02 Ohm's Law           | ResultsStrip, formula display, simple SVG | T01 shell   |
+| 3     | T03 Resistor Color Code | ModeSwitch, visual SVG                    | T01 shell   |
+| 4     | T05 RLC Response        | LineChart, BodePlot, sliders, log axis    | T01 shell   |
+| 5     | T06 Fourier Series      | SpectrumChart, animation                  | T05 chart   |
+| 6     | T07 Bode Plot           | Pole/zero input, crossover markers        | T05 chart   |
+| 7     | T08 Phasor Calc         | PhasorDiagram, complex numbers            | T02 results |
+| 8     | T09 Op-Amp Config       | CircuitSchematic SVG (7 configs)          | T02 results |
+| 9     | T04 Logic Gate Sim      | Canvas, drag-drop, graph propagation      | T01 shell   |
+| 10    | T10 FBD Builder         | Canvas physics, force vectors, reactions  | T04 canvas  |
 
 ---
 
@@ -710,57 +770,60 @@ maxShown:         5 (show all in V2 with filtering)
 
 ### Shared Math Utilities (`/lib/math/`)
 
-| Module | Used By | Contents |
-|---|---|---|
-| `complex.ts` | T05, T07, T08 | Complex number class: add, multiply, divide, magnitude, phase, polar/rect conversion |
-| `polynomials.ts` | T07 | Polynomial evaluation at complex frequency s = jω |
-| `transfer-fn.ts` | T05, T07 | Evaluate H(jω) from poles/zeros/gain; returns magnitude (dB) and phase (°) arrays |
-| `fourier.ts` | T06 | Fourier coefficient computation for standard waveforms (square, saw, triangle) |
-| `rlc.ts` | T05, T08 | RLC natural frequency ω₀, damping ratio ζ, step response via analytical solution |
-| `ac-power.ts` | T02, T08 | Real/reactive/apparent power, power factor from V and I phasors |
-| `color-code.ts` | T03 | EIA color band encode/decode lookup tables |
-| `units.ts` | T01 | Conversion factor tables per physical quantity |
-| `fbd.ts` | T10 | 2D vector math: force summation, moment calculation, reaction solver |
-| `logic-sim.ts` | T04 | Boolean gate evaluation, circuit traversal (topological sort), truth table generation |
+| Module           | Used By       | Contents                                                                              |
+| ---------------- | ------------- | ------------------------------------------------------------------------------------- |
+| `complex.ts`     | T05, T07, T08 | Complex number class: add, multiply, divide, magnitude, phase, polar/rect conversion  |
+| `polynomials.ts` | T07           | Polynomial evaluation at complex frequency s = jω                                     |
+| `transfer-fn.ts` | T05, T07      | Evaluate H(jω) from poles/zeros/gain; returns magnitude (dB) and phase (°) arrays     |
+| `fourier.ts`     | T06           | Fourier coefficient computation for standard waveforms (square, saw, triangle)        |
+| `rlc.ts`         | T05, T08      | RLC natural frequency ω₀, damping ratio ζ, step response via analytical solution      |
+| `ac-power.ts`    | T02, T08      | Real/reactive/apparent power, power factor from V and I phasors                       |
+| `color-code.ts`  | T03           | EIA color band encode/decode lookup tables                                            |
+| `units.ts`       | T01           | Conversion factor tables per physical quantity                                        |
+| `fbd.ts`         | T10           | 2D vector math: force summation, moment calculation, reaction solver                  |
+| `logic-sim.ts`   | T04           | Boolean gate evaluation, circuit traversal (topological sort), truth table generation |
 
 ---
 
 ### Shared UI Components (`/components/tools/`)
 
-| Component | Used By | Key Props |
-|---|---|---|
-| `ToolHeader` | All | title, purpose, category, majors, courseRefs |
-| `ControlPanel` | All | children (input groups), onReset |
-| `ParameterSlider` | T05, T06, T07, T10 | label, min, max, step, value, unit, onChange |
-| `UnitInput` | T02, T08, T09, T10 | label, value, unitOptions, onChange |
-| `ModeSwitch` | T03, T05, T06, T07 | options[], value, onChange |
-| `ResultsStrip` | T02, T05, T08, T09 | results: {label, value, unit, formula}[] |
-| `InsightPanel` | All | insights: {keyword, text}[] |
-| `RelatedContent` | All | courses[], concepts[], majors[] |
-| `ToolRecommendations` | All | tools[] (filtered by cluster/major) |
-| `LineChart` | T05, T06 | series[], xLabel, yLabel, annotations[] |
-| `DualAxisChart` | T05, T07 | upperSeries[], lowerSeries[], xLabel, yLabels |
-| `SpectrumChart` | T06 | coefficients[], xLabel |
-| `PhasorDiagram` | T08 | vectors: {label, mag, angle, color}[] |
-| `ResistorSVG` | T03 | bands: Color[] |
-| `CircuitSchematic` | T09 | config: OpAmpConfig, values: ComponentValues |
-| `InteractiveCanvas` | T04, T10 | mode, onUpdate, initialState |
-| `FormulaDisplay` | T02, T07, T08, T09 | formula: string (LaTeX or plain), substituted: string |
+| Component             | Used By            | Key Props                                             |
+| --------------------- | ------------------ | ----------------------------------------------------- |
+| `ToolHeader`          | All                | title, purpose, category, majors, courseRefs          |
+| `ControlPanel`        | All                | children (input groups), onReset                      |
+| `ParameterSlider`     | T05, T06, T07, T10 | label, min, max, step, value, unit, onChange          |
+| `UnitInput`           | T02, T08, T09, T10 | label, value, unitOptions, onChange                   |
+| `ModeSwitch`          | T03, T05, T06, T07 | options[], value, onChange                            |
+| `ResultsStrip`        | T02, T05, T08, T09 | results: {label, value, unit, formula}[]              |
+| `InsightPanel`        | All                | insights: {keyword, text}[]                           |
+| `RelatedContent`      | All                | courses[], concepts[], majors[]                       |
+| `ToolRecommendations` | All                | tools[] (filtered by cluster/major)                   |
+| `LineChart`           | T05, T06           | series[], xLabel, yLabel, annotations[]               |
+| `DualAxisChart`       | T05, T07           | upperSeries[], lowerSeries[], xLabel, yLabels         |
+| `SpectrumChart`       | T06                | coefficients[], xLabel                                |
+| `PhasorDiagram`       | T08                | vectors: {label, mag, angle, color}[]                 |
+| `ResistorSVG`         | T03                | bands: Color[]                                        |
+| `CircuitSchematic`    | T09                | config: OpAmpConfig, values: ComponentValues          |
+| `InteractiveCanvas`   | T04, T10           | mode, onUpdate, initialState                          |
+| `FormulaDisplay`      | T02, T07, T08, T09 | formula: string (LaTeX or plain), substituted: string |
 
 ---
 
 ### Chart Library Decision
 
 Use **Recharts** for all standard plots (LineChart, DualAxisChart, SpectrumChart):
+
 - Declarative React API — no imperative D3 manipulation
 - Responsive by default
 - Sufficient for Bode/RLC/Fourier use cases
 
 Use **custom SVG** for PhasorDiagram, ResistorSVG, CircuitSchematic:
+
 - Static or near-static; no need for chart library overhead
 - Precise control over layout and styling
 
 Use **custom Canvas / React Flow** for InteractiveCanvas:
+
 - T04 (Logic Gate): React Flow is the best fit (handles nodes, edges, ports)
 - T10 (FBD): Custom Canvas2D with mouse event handlers (simpler, no graph structure)
 
@@ -769,12 +832,13 @@ Use **custom Canvas / React Flow** for InteractiveCanvas:
 ### Shared State Pattern
 
 All tools follow the same state shape:
+
 ```typescript
 type ToolState<TInputs, TOutputs> = {
-  inputs:   TInputs          // controlled by ControlPanel
-  outputs:  TOutputs         // derived via useMemo from inputs
-  mode?:    string           // for multi-mode tools
-}
+  inputs: TInputs; // controlled by ControlPanel
+  outputs: TOutputs; // derived via useMemo from inputs
+  mode?: string; // for multi-mode tools
+};
 ```
 
 Computation is **always pure**: `outputs = compute(inputs)`. No side effects. No API calls. All math runs synchronously in the browser.

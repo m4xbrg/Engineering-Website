@@ -1,0 +1,24 @@
+{
+  "id": "chemical-engineering",
+  "name": "Chemical Engineering",
+  "shortName": "ChE",
+  "description": "Transport, reaction systems, process control, and plant-scale engineering.",
+  "mainSubfields": [
+    "Thermodynamics",
+    "Reaction Engineering",
+    "Transport",
+    "Process Systems"
+  ],
+  "coreFoundationIds": ["calculus-i"],
+  "conceptClusters": ["fluids", "control"],
+  "summaryChain": "Mass and energy accounting form the basis for transport, reactions, and process systems.",
+  "depthV1": "map",
+  "colorToken": "--major-chemical",
+  "stages": [
+    {
+      "id": "major-entry",
+      "label": "Year 2 — ChE Core Entry",
+      "courseIds": ["material-energy-balances"]
+    }
+  ]
+}

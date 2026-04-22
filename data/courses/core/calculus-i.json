@@ -1,0 +1,19 @@
+{
+  "id": "calculus-i",
+  "title": "Calculus I",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "foundation",
+  "year": "1",
+  "shortDesc": "Differential and integral calculus for engineering analysis.",
+  "whyItMatters": "This is one of the mathematical anchors for nearly every engineering pathway.",
+  "prereqs": [],
+  "leadsInto": ["statics", "circuit-analysis-i"],
+  "skills": ["limits and continuity", "derivatives", "basic integrals"],
+  "topicClusters": ["mathematics"],
+  "concepts": ["eulers-method"],
+  "relatedTools": ["unit-converter"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "live"
+}

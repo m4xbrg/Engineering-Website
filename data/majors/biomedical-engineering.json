@@ -1,0 +1,19 @@
+{
+  "id": "biomedical-engineering",
+  "name": "Biomedical Engineering",
+  "shortName": "BME",
+  "description": "Biology, instrumentation, imaging, and design for healthcare systems and devices.",
+  "mainSubfields": ["Instrumentation", "Imaging", "Biomechanics", "Devices"],
+  "coreFoundationIds": ["calculus-i"],
+  "conceptClusters": ["circuits", "materials"],
+  "summaryChain": "Engineering analysis is applied to biological systems, instrumentation, and medical device design.",
+  "depthV1": "map",
+  "colorToken": "--major-biomedical",
+  "stages": [
+    {
+      "id": "intermediate",
+      "label": "Year 2-3 — Intermediate BME",
+      "courseIds": ["bioinstrumentation"]
+    }
+  ]
+}

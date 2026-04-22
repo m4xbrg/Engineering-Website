@@ -1,0 +1,19 @@
+{
+  "id": "signals-and-systems",
+  "title": "Signals and Systems",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "year": "2-3",
+  "shortDesc": "Continuous and discrete signal analysis with transform-based system modeling.",
+  "whyItMatters": "Signals and systems connects circuits to controls, communications, DSP, and modeling.",
+  "prereqs": ["circuit-analysis-i"],
+  "leadsInto": ["control-systems-ee"],
+  "skills": ["system modeling", "time-domain intuition", "frequency response"],
+  "topicClusters": ["signals", "control"],
+  "concepts": ["laplace-transform", "transfer-function", "bode-plot"],
+  "relatedTools": ["rlc-response", "fourier-series", "bode-plot"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "live"
+}

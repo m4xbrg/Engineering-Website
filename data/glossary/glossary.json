@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bandwidth",
+    "term": "Bandwidth",
+    "shortDef": "The frequency span a system effectively passes or responds within.",
+    "extendedDef": "Bandwidth is often used to summarize how much frequency content a system or signal can carry. In circuits and controls, it usually marks where response begins to fall off meaningfully.",
+    "relatedConcepts": ["bode-plot", "transfer-function"]
+  },
+  {
+    "id": "equilibrium",
+    "term": "Equilibrium",
+    "shortDef": "A condition where net force and net moment are zero.",
+    "extendedDef": "Equilibrium is a core mechanics condition used in statics, structural analysis, and free body reasoning. It provides the equations that make load solving possible.",
+    "relatedConcepts": ["free-body-diagram", "stress-strain"]
+  },
+  {
+    "id": "impedance",
+    "term": "Impedance",
+    "shortDef": "The generalized opposition a circuit presents to alternating current.",
+    "extendedDef": "Impedance extends resistance into AC systems by incorporating magnitude and phase effects. It is central to phasor analysis, resonance, and frequency response.",
+    "relatedConcepts": ["ohms-law", "bode-plot"]
+  },
+  {
+    "id": "resonance",
+    "term": "Resonance",
+    "shortDef": "A strong system response near a natural or characteristic frequency.",
+    "extendedDef": "Resonance appears when stored energy shifts efficiently between domains, producing amplified behavior near a specific frequency. It shows up across circuits, mechanical vibration, and wave systems.",
+    "relatedConcepts": ["bode-plot", "transfer-function"]
+  },
+  {
+    "id": "superposition",
+    "term": "Superposition",
+    "shortDef": "A linear-system principle where total response is the sum of individual responses.",
+    "extendedDef": "Superposition makes complex systems analyzable by combining simpler effects. It supports circuit reasoning, Fourier analysis, and many linear models used across engineering.",
+    "relatedConcepts": [
+      "boolean-algebra",
+      "laplace-transform",
+      "transfer-function"
+    ]
+  }
+]

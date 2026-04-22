@@ -1,0 +1,23 @@
+{
+  "id": "bioinstrumentation",
+  "title": "Bioinstrumentation",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "year": "2-3",
+  "shortDesc": "Measurement, sensing, and signal conditioning for biological systems.",
+  "whyItMatters": "It connects electrical foundations to medical devices and physiological measurement.",
+  "prereqs": ["circuit-analysis-i"],
+  "leadsInto": [],
+  "skills": [
+    "sensor fundamentals",
+    "signal acquisition",
+    "measurement interpretation"
+  ],
+  "topicClusters": ["circuits", "signals"],
+  "concepts": ["ohms-law"],
+  "relatedTools": ["ohms-law", "opamp-config"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "stub"
+}

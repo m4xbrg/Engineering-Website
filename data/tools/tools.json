@@ -1,0 +1,180 @@
+[
+  {
+    "id": "unit-converter",
+    "name": "Engineering Unit Converter",
+    "category": "calculator",
+    "description": "Convert units across engineering domains with grouped physical quantities.",
+    "purpose": "A shared utility for fast, discipline-agnostic unit conversion.",
+    "majorIds": [
+      "core",
+      "electrical-engineering",
+      "mechanical-engineering",
+      "civil-engineering",
+      "chemical-engineering",
+      "computer-engineering",
+      "aerospace-engineering",
+      "biomedical-engineering",
+      "industrial-engineering",
+      "materials-engineering"
+    ],
+    "courseIds": [
+      "calculus-i",
+      "material-energy-balances",
+      "fluid-mechanics-me"
+    ],
+    "conceptIds": ["eulers-method", "bernoulli-equation"],
+    "clusterIds": ["mathematics", "fluids"],
+    "complexityEstimate": "low",
+    "status": "stub",
+    "routePath": "/labs/unit-converter"
+  },
+  {
+    "id": "ohms-law",
+    "name": "Ohm's Law & Power Calculator",
+    "category": "calculator",
+    "description": "Compute voltage, current, resistance, and power from any valid input pair.",
+    "purpose": "A foundational EE calculator that doubles as a concept explainer.",
+    "majorIds": [
+      "electrical-engineering",
+      "computer-engineering",
+      "biomedical-engineering"
+    ],
+    "courseIds": ["circuit-analysis-i", "bioinstrumentation"],
+    "conceptIds": ["ohms-law", "kirchhoffs-laws"],
+    "clusterIds": ["circuits"],
+    "complexityEstimate": "low",
+    "status": "stub",
+    "routePath": "/labs/ohms-law"
+  },
+  {
+    "id": "resistor-color-code",
+    "name": "Resistor Color Code Decoder",
+    "category": "reference",
+    "description": "Decode resistor bands and reverse-map resistance values to common band sets.",
+    "purpose": "A fast reference tool for introductory electronics work.",
+    "majorIds": [
+      "electrical-engineering",
+      "computer-engineering",
+      "biomedical-engineering"
+    ],
+    "courseIds": ["circuit-analysis-i"],
+    "conceptIds": ["ohms-law"],
+    "clusterIds": ["circuits"],
+    "complexityEstimate": "low",
+    "status": "stub",
+    "routePath": "/labs/resistor-color-code"
+  },
+  {
+    "id": "logic-gate-sim",
+    "name": "Logic Gate Simulator",
+    "category": "simulator",
+    "description": "Build and test combinational logic circuits with live outputs and truth tables.",
+    "purpose": "A reusable simulator shell for graph-style engineering tools.",
+    "majorIds": ["electrical-engineering", "computer-engineering"],
+    "courseIds": ["digital-logic-design"],
+    "conceptIds": ["boolean-algebra"],
+    "clusterIds": ["logic"],
+    "complexityEstimate": "medium",
+    "status": "stub",
+    "routePath": "/labs/logic-gate-sim"
+  },
+  {
+    "id": "rlc-response",
+    "name": "RLC Circuit Response Visualizer",
+    "category": "visualizer",
+    "description": "Explore time-domain and frequency-domain behavior for RC, RL, and RLC systems.",
+    "purpose": "A chart-heavy tool shell for transient and frequency response learning.",
+    "majorIds": ["electrical-engineering", "computer-engineering"],
+    "courseIds": ["signals-and-systems", "control-systems-ee"],
+    "conceptIds": ["laplace-transform", "transfer-function", "bode-plot"],
+    "clusterIds": ["signals", "control"],
+    "complexityEstimate": "medium",
+    "status": "stub",
+    "routePath": "/labs/rlc-response"
+  },
+  {
+    "id": "fourier-series",
+    "name": "Fourier Series Visualizer",
+    "category": "visualizer",
+    "description": "Show how harmonics stack to approximate periodic waveforms.",
+    "purpose": "A visual learning surface for signals and wave decomposition concepts.",
+    "majorIds": [
+      "electrical-engineering",
+      "mechanical-engineering",
+      "aerospace-engineering",
+      "biomedical-engineering"
+    ],
+    "courseIds": ["signals-and-systems"],
+    "conceptIds": ["laplace-transform"],
+    "clusterIds": ["signals"],
+    "complexityEstimate": "medium",
+    "status": "stub",
+    "routePath": "/labs/fourier-series"
+  },
+  {
+    "id": "bode-plot",
+    "name": "Bode Plot Generator",
+    "category": "visualizer",
+    "description": "Generate magnitude and phase plots from transfer-function inputs.",
+    "purpose": "A dual-chart tool shell for controls and signal-response workflows.",
+    "majorIds": [
+      "electrical-engineering",
+      "mechanical-engineering",
+      "aerospace-engineering",
+      "chemical-engineering"
+    ],
+    "courseIds": ["signals-and-systems", "control-systems-ee"],
+    "conceptIds": ["bode-plot", "transfer-function", "laplace-transform"],
+    "clusterIds": ["signals", "control"],
+    "complexityEstimate": "medium",
+    "status": "stub",
+    "routePath": "/labs/bode-plot"
+  },
+  {
+    "id": "phasor-calc",
+    "name": "Phasor & AC Circuit Calculator",
+    "category": "calculator",
+    "description": "Compute impedance, phase angle, and AC relationships for simple RLC cases.",
+    "purpose": "A vector-aware calculator shell for AC circuit learning.",
+    "majorIds": ["electrical-engineering"],
+    "courseIds": ["circuit-analysis-i"],
+    "conceptIds": ["ohms-law", "bode-plot"],
+    "clusterIds": ["circuits", "signals"],
+    "complexityEstimate": "medium",
+    "status": "stub",
+    "routePath": "/labs/phasor-calc"
+  },
+  {
+    "id": "opamp-config",
+    "name": "Op-Amp Circuit Configurator",
+    "category": "calculator",
+    "description": "Select a common op-amp topology and inspect gain relationships.",
+    "purpose": "A schematic-plus-results shell for electronics tool patterns.",
+    "majorIds": ["electrical-engineering", "biomedical-engineering"],
+    "courseIds": ["bioinstrumentation"],
+    "conceptIds": ["ohms-law"],
+    "clusterIds": ["circuits"],
+    "complexityEstimate": "medium",
+    "status": "stub",
+    "routePath": "/labs/opamp-config"
+  },
+  {
+    "id": "fbd-builder",
+    "name": "Free Body Diagram Builder",
+    "category": "simulator",
+    "description": "Place forces and moments on a 2D body and inspect equilibrium results.",
+    "purpose": "A canvas-first shell for future physics and mechanics simulators.",
+    "majorIds": [
+      "core",
+      "mechanical-engineering",
+      "civil-engineering",
+      "aerospace-engineering"
+    ],
+    "courseIds": ["statics", "structural-analysis-i"],
+    "conceptIds": ["free-body-diagram", "stress-strain"],
+    "clusterIds": ["mechanics"],
+    "complexityEstimate": "medium",
+    "status": "stub",
+    "routePath": "/labs/fbd-builder"
+  }
+]

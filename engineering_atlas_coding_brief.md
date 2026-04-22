@@ -1,4 +1,5 @@
 # Engineering Atlas — Claude Code Implementation Brief
+
 > Status: Ready for development
 > Source: engineering_atlas.md (curriculum source of truth)
 > Audience: Claude Code / developer handoff
@@ -10,6 +11,7 @@
 **Engineering Atlas** is a structured, curriculum-driven engineering reference platform. It maps undergraduate engineering education across 10 disciplines into an explorable web application combining a curriculum map, course concept explorer, and interactive engineering tools (calculators, visualizers, simulators).
 
 **Key product facts for implementation:**
+
 - Static-first, no user accounts, no auth, no backend in V1
 - Curriculum data is authored in JSON, not a CMS or database
 - Electrical Engineering is the only fully built specialization in V1; 9 others are curriculum map stubs
@@ -24,6 +26,7 @@
 ### Included in V1
 
 **Pages**
+
 - [ ] Homepage
 - [ ] `/curriculum` — all-majors overview grid
 - [ ] `/curriculum/core` — Core Engineering overview
@@ -41,6 +44,7 @@
 - [ ] `404` page
 
 **Data**
+
 - [ ] All 10 majors as structured JSON
 - [ ] All courses across all majors (208 records: 140 core + 68 elective stubs)
 - [ ] Full concept list (~80–120 concepts extracted from curriculum)
@@ -49,6 +53,7 @@
 - [ ] Topic cluster taxonomy (50 clusters)
 
 **Tools (all client-side)**
+
 - [ ] T01 Unit Converter
 - [ ] T02 Ohm's Law & Power Calculator
 - [ ] T03 Resistor Color Code Decoder
@@ -61,6 +66,7 @@
 - [ ] T10 Free Body Diagram Builder
 
 **Features**
+
 - [ ] Prerequisite chain display on course pages (list form, not graph)
 - [ ] Concept chips cross-linking courses and tools
 - [ ] Major filtering on curriculum overview
@@ -70,6 +76,7 @@
 - [ ] Elective slots displayed as styled stub cards
 
 ### Explicitly Excluded from V1
+
 - User accounts, auth, progress tracking
 - Dependency graph visualization (D3 force graph) — list only
 - Video or embedded lecture content
@@ -85,44 +92,44 @@
 
 ### Core Framework
 
-| Layer | Choice | Reason |
-|---|---|---|
-| Framework | **Next.js 14+ (App Router)** | Static generation for curriculum pages; file-based routing matches page structure; RSC for data-heavy pages |
-| Language | **TypeScript (strict)** | Required — data model has many cross-references; type safety prevents ID mismatch bugs |
-| Styling | **Tailwind CSS v3** | Utility-first; design tokens via CSS variables + Tailwind config; no runtime CSS |
-| UI Primitives | **shadcn/ui (selective)** | Use only: Dialog, Tabs, Badge, Tooltip, Separator, ScrollArea. Do not use full component library lock-in. |
+| Layer         | Choice                       | Reason                                                                                                      |
+| ------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Framework     | **Next.js 14+ (App Router)** | Static generation for curriculum pages; file-based routing matches page structure; RSC for data-heavy pages |
+| Language      | **TypeScript (strict)**      | Required — data model has many cross-references; type safety prevents ID mismatch bugs                      |
+| Styling       | **Tailwind CSS v3**          | Utility-first; design tokens via CSS variables + Tailwind config; no runtime CSS                            |
+| UI Primitives | **shadcn/ui (selective)**    | Use only: Dialog, Tabs, Badge, Tooltip, Separator, ScrollArea. Do not use full component library lock-in.   |
 
 ### Data & Content
 
-| Layer | Choice | Reason |
-|---|---|---|
-| Curriculum data | **Local JSON files** | No CMS needed; data is authored not user-generated; version-controlled with code |
-| Data validation | **Zod** | Validate JSON at build time; generate TypeScript types from schemas |
-| Data loading | **Next.js `generateStaticParams` + local import** | All curriculum pages statically generated at build; zero runtime data fetching |
+| Layer           | Choice                                            | Reason                                                                           |
+| --------------- | ------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Curriculum data | **Local JSON files**                              | No CMS needed; data is authored not user-generated; version-controlled with code |
+| Data validation | **Zod**                                           | Validate JSON at build time; generate TypeScript types from schemas              |
+| Data loading    | **Next.js `generateStaticParams` + local import** | All curriculum pages statically generated at build; zero runtime data fetching   |
 
 ### Tools / Visualization
 
-| Layer | Choice | Reason |
-|---|---|---|
-| Charts | **Recharts** | Declarative React API; sufficient for Bode/RLC/Fourier; responsive built-in |
-| Logic gate canvas | **React Flow** | Handles nodes, edges, ports, drag-and-drop for Logic Gate Simulator (T04) |
-| FBD canvas | **Konva.js / react-konva** | Canvas2D for Free Body Diagram Builder (T10); simpler than React Flow for physics canvas |
-| Math rendering | **KaTeX** (via `react-katex`) | Render LaTeX equations on course/concept pages; lightweight vs MathJax |
-| Complex math | **mathjs** | Complex number arithmetic for Bode/RLC/Phasor tools; proven numerics library |
-| Animations | **Framer Motion** | Page transitions + tool animations (Fourier series stacking); CSS-first where possible |
+| Layer             | Choice                        | Reason                                                                                   |
+| ----------------- | ----------------------------- | ---------------------------------------------------------------------------------------- |
+| Charts            | **Recharts**                  | Declarative React API; sufficient for Bode/RLC/Fourier; responsive built-in              |
+| Logic gate canvas | **React Flow**                | Handles nodes, edges, ports, drag-and-drop for Logic Gate Simulator (T04)                |
+| FBD canvas        | **Konva.js / react-konva**    | Canvas2D for Free Body Diagram Builder (T10); simpler than React Flow for physics canvas |
+| Math rendering    | **KaTeX** (via `react-katex`) | Render LaTeX equations on course/concept pages; lightweight vs MathJax                   |
+| Complex math      | **mathjs**                    | Complex number arithmetic for Bode/RLC/Phasor tools; proven numerics library             |
+| Animations        | **Framer Motion**             | Page transitions + tool animations (Fourier series stacking); CSS-first where possible   |
 
 ### Search
 
-| Layer | Choice | Reason |
-|---|---|---|
+| Layer         | Choice      | Reason                                                                                        |
+| ------------- | ----------- | --------------------------------------------------------------------------------------------- |
 | Client search | **Fuse.js** | Fuzzy search over concepts and glossary; entirely client-side; no Algolia needed at MVP scale |
 
 ### Deployment
 
-| Layer | Choice | Reason |
-|---|---|---|
-| Hosting | **Vercel** | Native Next.js; zero-config static export; edge CDN; preview deployments per PR |
-| Analytics | **Vercel Analytics** (built-in) | Zero-config; privacy-respecting; no cookies |
+| Layer     | Choice                          | Reason                                                                          |
+| --------- | ------------------------------- | ------------------------------------------------------------------------------- |
+| Hosting   | **Vercel**                      | Native Next.js; zero-config static export; edge CDN; preview deployments per PR |
+| Analytics | **Vercel Analytics** (built-in) | Zero-config; privacy-respecting; no cookies                                     |
 
 ### Dev Tooling
 
@@ -352,6 +359,7 @@ engineering-atlas/
 **Purpose:** Platform orientation and entry point
 
 **Sections:**
+
 1. Hero — platform name, one-line purpose, CTA buttons ("Explore Curriculum", "Open Labs")
 2. What Is Engineering Atlas — 3 cards: Curriculum Map, Interactive Labs, Concept Explorer
 3. Featured Major — EE spotlight with 3 sample course cards
@@ -370,6 +378,7 @@ engineering-atlas/
 **Purpose:** Entry to all 10 majors; discovery and comparison
 
 **Sections:**
+
 1. Page header + description
 2. Filter bar — by discipline cluster (EE/ME/CE/etc.), by depth (full/map)
 3. Major cards grid (10 cards) — each shows: icon, name, short description, main subfields, foundation depth badge
@@ -386,6 +395,7 @@ engineering-atlas/
 **Purpose:** Year-by-year curriculum map for one major
 
 **Sections:**
+
 1. Major header — name, shortName badge, description, main subfields tags
 2. Foundation Zone — Core Engineering courses this major depends on (visual callout, links to core course pages)
 3. Curriculum stages — one `<StageBlock>` per year/stage, each containing:
@@ -397,6 +407,7 @@ engineering-atlas/
 6. Summary — dependency chain text, concept cluster list
 
 **Variants:**
+
 - **`depth: "full"` (Core + EE):** Full course cards with descriptions, prerequisite info, tool links
 - **`depth: "map"` (other 9 majors):** Compact course cards — title, year, clusters only. No tool links.
 
@@ -411,6 +422,7 @@ engineering-atlas/
 **Purpose:** Deep dive into one course
 
 **Sections:**
+
 1. Breadcrumb — Major → Stage → Course
 2. Course header — title, major badge, year/stage badge, topic cluster tags
 3. Description + Why It Matters
@@ -422,6 +434,7 @@ engineering-atlas/
 9. Shared By — if `isCore`, show "Used by X majors" with major badge links
 
 **Variants:**
+
 - **EE / Core courses:** Full detail — all sections populated
 - **Non-EE stubs:** Sections 1–6 + a "Full content coming soon" callout. Concepts and tools omitted.
 
@@ -436,6 +449,7 @@ engineering-atlas/
 **Purpose:** Tool discovery and entry
 
 **Sections:**
+
 1. Page header + description
 2. Filter bar — category (Calculator / Visualizer / Simulator / Reference), major, cluster
 3. Tool grid — `<ToolCard>` for each tool
@@ -453,6 +467,7 @@ engineering-atlas/
 **Purpose:** Run an interactive engineering tool
 
 **Sections (fixed layout):**
+
 1. `<ToolHeader>` — title, category badge, major tags, purpose sentence, related course chips
 2. Main panel (2-col desktop, stacked mobile):
    - Left: `<ControlPanel>` with tool-specific inputs
@@ -463,15 +478,19 @@ engineering-atlas/
 6. `<ToolRecommendations>` — horizontally scrolling related tool cards
 
 **Tool component loading:**
+
 ```tsx
 // app/labs/[toolSlug]/page.tsx
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 const toolComponents: Record<string, React.ComponentType> = {
-  'unit-converter': dynamic(() => import('@/tools/unit-converter/UnitConverterTool')),
-  'ohms-law': dynamic(() => import('@/tools/ohms-law/OhmsLawTool')),
+  "unit-converter": dynamic(
+    () => import("@/tools/unit-converter/UnitConverterTool"),
+  ),
+  "ohms-law": dynamic(() => import("@/tools/ohms-law/OhmsLawTool")),
   // ...
-}
+};
 ```
+
 Tool components are dynamically imported (client-side only — no SSR). The page shell (header, insight panel, related content) is server-rendered static.
 
 **Data needed:** Single `tools.json` entry by slug (for metadata); tool component handles its own state
@@ -485,6 +504,7 @@ Tool components are dynamically imported (client-side only — no SSR). The page
 **Purpose:** Definition + cross-links for one engineering concept
 
 **Sections:**
+
 1. Concept name + topic cluster tags + major tags
 2. Short definition (1 sentence) + extended definition (2–5 sentences)
 3. Core equation — rendered in KaTeX if present
@@ -504,6 +524,7 @@ Tool components are dynamically imported (client-side only — no SSR). The page
 **Purpose:** Browse and search all concepts
 
 **Sections:**
+
 1. Search input (client-side Fuse.js)
 2. Filter bar — by topic cluster, by major
 3. Results grid — `<ConceptCard>` per concept (name, short def, cluster tags, major tags)
@@ -515,10 +536,12 @@ Tool components are dynamically imported (client-side only — no SSR). The page
 ### P9 — Glossary Index + Term (`app/glossary/`)
 
 **Glossary Index:**
+
 - A–Z jump links
 - Full sorted list of all terms with one-line definitions
 
 **Term Page:**
+
 - Term, domain tags, definition
 - Link to full Concept page if `conceptId` is set
 - Related terms
@@ -530,6 +553,7 @@ Tool components are dynamically imported (client-side only — no SSR). The page
 ## 6. Reusable Components
 
 ### Layout
+
 ```
 SiteHeader          - Logo, nav links, theme (no toggle in V1), search icon
 SiteFooter          - Links, attribution
@@ -540,6 +564,7 @@ PageHeader          - Standard h1 + description block (used on all section pages
 ```
 
 ### Curriculum
+
 ```
 MajorCard           - Icon, name, description, depth badge, subfield tags
 MajorGrid           - Responsive grid of MajorCards
@@ -554,6 +579,7 @@ DepthBadge          - "Full" or "Curriculum Map" badge per major/course
 ```
 
 ### Tools
+
 ```
 ToolCard            - Tool name, category, description, major tags, open button
 ToolGrid            - Filterable grid of ToolCards
@@ -570,6 +596,7 @@ FormulaDisplay      - Shows formula string; highlighted substituted values
 ```
 
 ### Charts (all Recharts-based)
+
 ```
 LineChart           - Single y-axis line chart (step response, time domain)
 DualAxisChart       - Two stacked charts with shared x-axis (Bode: mag + phase)
@@ -578,6 +605,7 @@ ChartAnnotation     - Reference line + label for annotated chart points
 ```
 
 ### Diagrams (all SVG)
+
 ```
 ResistorSVG         - 4/5 band resistor visual with colored bands
 PhasorDiagram       - Vector arrows for V and I phasors
@@ -586,6 +614,7 @@ CircuitSchematic    - Op-amp schematic per configuration (7 static SVGs)
 ```
 
 ### Concepts / Glossary
+
 ```
 ConceptCard         - Name, short def, cluster chips, major tags
 ConceptSearch       - Fuse.js search input over concepts
@@ -594,6 +623,7 @@ AlphaIndex          - A–Z jump links for glossary
 ```
 
 ### UI Primitives
+
 ```
 Badge               - Colored label (category, year, stage)
 Tag                 - Topic cluster tag (outlined)
@@ -613,6 +643,7 @@ Divider             - Styled HR for section separation
 All curriculum data lives in `/data/` as JSON files. No database, no CMS, no API calls at runtime.
 
 **Data flow:**
+
 ```
 JSON files → Zod validation at build → TypeScript types → lib/data/ functions → page components → static HTML
 ```
@@ -625,7 +656,7 @@ Define all schemas in `lib/schemas/`. Every JSON file is validated at import tim
 
 ```typescript
 // lib/schemas/course.schema.ts
-import { z } from 'zod'
+import { z } from "zod";
 
 export const CourseSchema = z.object({
   id: z.string(),
@@ -644,10 +675,10 @@ export const CourseSchema = z.object({
   relatedTools: z.array(z.string()),
   isElective: z.boolean(),
   electiveTheme: z.string().nullable(),
-  status: z.enum(['live', 'stub', 'planned']),
-})
+  status: z.enum(["live", "stub", "planned"]),
+});
 
-export type Course = z.infer<typeof CourseSchema>
+export type Course = z.infer<typeof CourseSchema>;
 ```
 
 Run validation in a `next.config.ts` plugin or as a build step. Fail the build on invalid data.
@@ -677,20 +708,20 @@ export function getCoursesByMajor(majorSlug: string): Course[] {
 
 **Key loaders to implement:**
 
-| Function | Returns | Used by |
-|---|---|---|
-| `getMajor(slug)` | `Major` | Major overview page |
-| `getAllMajors()` | `Major[]` | Curriculum overview, nav |
-| `getCourse(major, slug)` | `Course` | Course detail page |
-| `getCoursesByMajor(slug)` | `Course[]` | Major overview |
-| `getConcept(slug)` | `Concept` | Concept detail page |
-| `getAllConcepts()` | `Concept[]` | Concept index |
-| `getToolDef(slug)` | `ToolDef` | Tool page shell |
-| `getAllTools()` | `ToolDef[]` | Labs hub |
-| `getPrereqChain(courseId)` | `Course[]` | Course detail prereq display |
-| `getRelatedTools(courseId)` | `ToolDef[]` | Course detail, concept page |
-| `getConceptsForCourse(courseId)` | `Concept[]` | Course detail concept list |
-| `getCoursesByCluster(clusterId)` | `Course[]` | Topic cluster pages |
+| Function                         | Returns     | Used by                      |
+| -------------------------------- | ----------- | ---------------------------- |
+| `getMajor(slug)`                 | `Major`     | Major overview page          |
+| `getAllMajors()`                 | `Major[]`   | Curriculum overview, nav     |
+| `getCourse(major, slug)`         | `Course`    | Course detail page           |
+| `getCoursesByMajor(slug)`        | `Course[]`  | Major overview               |
+| `getConcept(slug)`               | `Concept`   | Concept detail page          |
+| `getAllConcepts()`               | `Concept[]` | Concept index                |
+| `getToolDef(slug)`               | `ToolDef`   | Tool page shell              |
+| `getAllTools()`                  | `ToolDef[]` | Labs hub                     |
+| `getPrereqChain(courseId)`       | `Course[]`  | Course detail prereq display |
+| `getRelatedTools(courseId)`      | `ToolDef[]` | Course detail, concept page  |
+| `getConceptsForCourse(courseId)` | `Concept[]` | Course detail concept list   |
+| `getCoursesByCluster(clusterId)` | `Course[]`  | Topic cluster pages          |
 
 ---
 
@@ -701,11 +732,11 @@ Every curriculum page uses `generateStaticParams`:
 ```typescript
 // app/majors/[majorSlug]/[courseSlug]/page.tsx
 export async function generateStaticParams() {
-  const allCourses = getAllCourses()
-  return allCourses.map(c => ({
+  const allCourses = getAllCourses();
+  return allCourses.map((c) => ({
     majorSlug: c.majorId,
     courseSlug: c.id,
-  }))
+  }));
 }
 ```
 
@@ -736,13 +767,13 @@ Build Fuse.js index client-side from the concepts/glossary JSON:
 
 ```typescript
 // lib/utils/searchIndex.ts
-import Fuse from 'fuse.js'
-import concepts from '@/data/concepts.json'
+import Fuse from "fuse.js";
+import concepts from "@/data/concepts.json";
 
 export const conceptSearchIndex = new Fuse(concepts, {
-  keys: ['name', 'aliases', 'shortDef'],
+  keys: ["name", "aliases", "shortDef"],
   threshold: 0.35,
-})
+});
 ```
 
 Index creation is fast (<5ms for ~200 concepts). No server needed.
@@ -755,8 +786,8 @@ Each major's courses are exported from a barrel:
 
 ```typescript
 // data/courses/electrical-engineering/index.ts
-export { default as circuitAnalysisI } from './circuit-analysis-i.json'
-export { default as circuitAnalysisII } from './circuit-analysis-ii.json'
+export { default as circuitAnalysisI } from "./circuit-analysis-i.json";
+export { default as circuitAnalysisII } from "./circuit-analysis-ii.json";
 // ... all 24 EE courses
 ```
 
@@ -875,23 +906,28 @@ TypeScript resolves JSON imports via `tsconfig.json` `resolveJsonModule: true`.
 ### High Risk — Simplify for MVP
 
 **R1 — Prerequisite graph display**
+
 - Full D3 force-directed graph is tempting but high scope risk
 - **MVP simplification:** Render prerequisites as a styled ordered list of course chips. No graph visualization. Add "leads into" as a secondary list. This is V2 work.
 
 **R2 — Cross-major concept deduplication**
+
 - ~200 concepts extracted from 208 courses. Many appear in multiple majors under different names.
 - Manual deduplication is time-consuming.
 - **MVP simplification:** Start with concepts from Core + EE courses only (~60–80 concepts). Add non-EE concepts post-launch. Mark concepts with `status: "stub"` for placeholder entries.
 
 **R3 — T04 Logic Gate Simulator (React Flow)**
+
 - React Flow has a learning curve. Custom gate styling, port definitions, wire routing, and boolean propagation add up.
 - **MVP simplification:** Ship with 5 core gates (AND, OR, NOT, NAND, XOR). Max 2 inputs. Fixed layout palette. Truth table only (no expression extraction).
 
 **R4 — T10 Free Body Diagram Builder**
+
 - Most complex tool. Canvas interaction, force arrow rendering, reaction computation, and multiple body types are each non-trivial.
 - **MVP simplification:** Single body type (rectangle). Up to 4 forces. Moment computation only (no support reactions in V1). Ship after all other tools are stable. Can cut from V1 if schedule slips.
 
 **R5 — Op-Amp Schematic SVG (T09)**
+
 - Requires 7 accurate hand-authored SVG circuit diagrams.
 - **MVP simplification:** Start with 3 configurations (Inverting, Non-Inverting, Voltage Follower). Placeholder cards for remaining 4. Expand post-launch.
 
@@ -900,22 +936,27 @@ TypeScript resolves JSON imports via `tsconfig.json` `resolveJsonModule: true`.
 ### Medium Risk — Plan Carefully
 
 **R6 — JSON data volume**
+
 - 208 course JSON files + concepts + tools = significant authoring effort before any UI can be tested.
 - **Mitigation:** Write a seed script that generates minimal valid stub JSON for all courses from the markdown source. Polish content iteratively. Stubs are fine at launch for non-EE courses.
 
 **R7 — Tailwind token consistency across 10 major colors**
+
 - 10 unique major color palettes need accessible contrast on both light backgrounds.
 - **Mitigation:** Define all major colors as CSS custom properties in `globals.css` first. Use semantic tokens (`--color-ee-bg`, `--color-ee-text`, `--color-ee-border`) not raw hex in components. Test contrast ratios before locking tokens.
 
 **R8 — Dynamic import for tools + SSR**
+
 - Tool components use browser APIs. SSR will throw.
 - **Mitigation:** All tool components use `dynamic(() => import(...), { ssr: false })`. Page shell renders server-side. Tool slot renders client-side. `ToolSkeleton` handles loading state. Do not mix SSR and client tool code.
 
 **R9 — DualAxisChart shared x-axis alignment**
+
 - Recharts does not natively support two charts sharing a pixel-perfect x-axis.
 - **Mitigation:** Use a single `ComposedChart` with dual `YAxis`. Render magnitude and phase as two `Line` components with separate Y axes. Avoid building two separate charts with CSS alignment.
 
 **R10 — generateStaticParams at scale**
+
 - 250+ static pages. Build time could be slow.
 - **Mitigation:** Data loaders are synchronous JSON imports — no I/O per page. Build time should be ~30–60 seconds. If slow, split `generateStaticParams` by major and use `dynamicParams = false`.
 
@@ -934,6 +975,7 @@ TypeScript resolves JSON imports via `tsconfig.json` `resolveJsonModule: true`.
 ## Appendix — Key Constants
 
 ### Major Slugs (canonical)
+
 ```
 core | electrical-engineering | mechanical-engineering | civil-engineering |
 chemical-engineering | computer-engineering | aerospace-engineering |
@@ -941,12 +983,14 @@ biomedical-engineering | industrial-engineering | materials-engineering
 ```
 
 ### Stage IDs (canonical)
+
 ```
 foundation | core-sciences | engineering-core | major-entry |
 major-core | intermediate | advanced | capstone
 ```
 
 ### Tool Slugs (canonical)
+
 ```
 unit-converter | ohms-law | resistor-color-code | logic-gate-sim |
 rlc-response | fourier-series | bode-plot | phasor-calc |
@@ -954,21 +998,25 @@ opamp-config | fbd-builder
 ```
 
 ### Course Status Values
+
 ```
 live | stub | planned
 ```
 
 ### Tool Categories
+
 ```
 calculator | visualizer | simulator | reference
 ```
 
 ### Topic Cluster Count
+
 ```
 50 clusters defined (see topic-clusters.json)
 ```
 
 ### Page Count Estimate (V1)
+
 ```
 Static pages:     ~260
 Tool pages:       10 (hybrid: shell static, component client)

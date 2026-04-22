@@ -1,0 +1,19 @@
+{
+  "id": "digital-logic-design",
+  "title": "Digital Logic Design",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "year": "2-3",
+  "shortDesc": "Combinational logic, gates, truth tables, and digital system foundations.",
+  "whyItMatters": "This is the bridge from abstract logic to real hardware behavior.",
+  "prereqs": ["calculus-i"],
+  "leadsInto": [],
+  "skills": ["truth tables", "gate composition", "Boolean simplification"],
+  "topicClusters": ["logic"],
+  "concepts": ["boolean-algebra"],
+  "relatedTools": ["logic-gate-sim"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "stub"
+}

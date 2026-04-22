@@ -1,0 +1,23 @@
+{
+  "id": "circuit-analysis-i",
+  "title": "Circuit Analysis I",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "year": "2",
+  "shortDesc": "DC circuit analysis using fundamental laws and equivalent network models.",
+  "whyItMatters": "This course opens the door to electronics, signals, power, and many early lab experiences.",
+  "prereqs": ["calculus-i"],
+  "leadsInto": ["signals-and-systems", "control-systems-ee"],
+  "skills": [
+    "Ohm's law applications",
+    "Kirchhoff analysis",
+    "equivalent circuits"
+  ],
+  "topicClusters": ["circuits"],
+  "concepts": ["ohms-law", "kirchhoffs-laws"],
+  "relatedTools": ["ohms-law", "resistor-color-code", "phasor-calc"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "live"
+}

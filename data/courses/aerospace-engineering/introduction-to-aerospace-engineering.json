@@ -1,0 +1,19 @@
+{
+  "id": "introduction-to-aerospace-engineering",
+  "title": "Introduction to Aerospace Engineering",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "year": "2",
+  "shortDesc": "A survey of aircraft and spacecraft systems, performance, and design contexts.",
+  "whyItMatters": "It establishes the systems view that later aerospace courses deepen.",
+  "prereqs": ["calculus-i"],
+  "leadsInto": [],
+  "skills": ["discipline mapping", "system tradeoffs", "design context"],
+  "topicClusters": ["fluids", "control"],
+  "concepts": [],
+  "relatedTools": ["unit-converter"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "stub"
+}

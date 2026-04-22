@@ -1,0 +1,19 @@
+{
+  "id": "fluid-mechanics-me",
+  "title": "Fluid Mechanics",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "year": "2-3",
+  "shortDesc": "Momentum, pressure, continuity, and energy concepts for flowing systems.",
+  "whyItMatters": "Fluid mechanics supports thermal systems, aerodynamics, hydraulics, and transport thinking.",
+  "prereqs": ["statics"],
+  "leadsInto": [],
+  "skills": ["control volumes", "pressure analysis", "flow modeling"],
+  "topicClusters": ["fluids"],
+  "concepts": ["bernoulli-equation"],
+  "relatedTools": ["unit-converter"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "stub"
+}

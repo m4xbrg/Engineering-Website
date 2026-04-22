@@ -1,0 +1,19 @@
+{
+  "id": "control-systems-ee",
+  "title": "Control Systems",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "year": "3",
+  "shortDesc": "Feedback modeling, transfer functions, stability, and system behavior.",
+  "whyItMatters": "Control shows how engineering systems sense, respond, and remain stable under change.",
+  "prereqs": ["signals-and-systems"],
+  "leadsInto": [],
+  "skills": ["block diagrams", "stability reasoning", "frequency response"],
+  "topicClusters": ["control", "signals"],
+  "concepts": ["transfer-function", "bode-plot"],
+  "relatedTools": ["bode-plot", "rlc-response"],
+  "isElective": false,
+  "electiveTheme": null,
+  "status": "live"
+}

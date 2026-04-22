@@ -1,0 +1,19 @@
+{
+  "id": "mechanical-engineering",
+  "name": "Mechanical Engineering",
+  "shortName": "ME",
+  "description": "Mechanical systems, energy transfer, design, and applied analysis.",
+  "mainSubfields": ["Fluids", "Thermal Systems", "Design", "Manufacturing"],
+  "coreFoundationIds": ["calculus-i", "statics"],
+  "conceptClusters": ["mechanics", "fluids"],
+  "summaryChain": "Shared mechanics fundamentals lead into fluids, thermal systems, and machine design.",
+  "depthV1": "map",
+  "colorToken": "--major-mechanical",
+  "stages": [
+    {
+      "id": "major-core",
+      "label": "Year 2-3 — ME Core",
+      "courseIds": ["fluid-mechanics-me"]
+    }
+  ]
+}

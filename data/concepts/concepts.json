@@ -1,0 +1,179 @@
+[
+  {
+    "id": "ohms-law",
+    "name": "Ohm's Law",
+    "aliases": ["V = IR"],
+    "shortDef": "Voltage across a resistor equals current times resistance.",
+    "extendedDef": "Ohm's Law is a foundational circuit relation that ties voltage, current, and resistance together. It appears throughout introductory circuits, instrumentation, and practical troubleshooting.",
+    "equation": "V = IR",
+    "topicClusters": ["circuits"],
+    "majorTags": [
+      "electrical-engineering",
+      "computer-engineering",
+      "biomedical-engineering"
+    ],
+    "taughtIn": ["circuit-analysis-i", "bioinstrumentation"],
+    "toolLinks": ["ohms-law"],
+    "relatedConcepts": ["kirchhoffs-laws"],
+    "isFoundational": false
+  },
+  {
+    "id": "kirchhoffs-laws",
+    "name": "Kirchhoff's Laws",
+    "aliases": ["KCL", "KVL"],
+    "shortDef": "Current and voltage conservation laws for circuit networks.",
+    "extendedDef": "Kirchhoff's laws formalize conservation of charge and energy in lumped electrical networks. They are the backbone of node and loop analysis in early EE study.",
+    "equation": null,
+    "topicClusters": ["circuits"],
+    "majorTags": ["electrical-engineering", "computer-engineering"],
+    "taughtIn": ["circuit-analysis-i"],
+    "toolLinks": ["ohms-law"],
+    "relatedConcepts": ["ohms-law"],
+    "isFoundational": false
+  },
+  {
+    "id": "laplace-transform",
+    "name": "Laplace Transform",
+    "aliases": [],
+    "shortDef": "A transform that converts time-domain differential models into algebraic expressions.",
+    "extendedDef": "The Laplace transform is widely used to solve differential equations and analyze linear systems. In Engineering Atlas, it will become one of the main cross-major connector concepts.",
+    "equation": "\\mathcal{L}\\{f(t)\\} = \\int_0^\\infty f(t)e^{-st}dt",
+    "topicClusters": ["signals", "control"],
+    "majorTags": [
+      "electrical-engineering",
+      "mechanical-engineering",
+      "chemical-engineering",
+      "aerospace-engineering"
+    ],
+    "taughtIn": ["signals-and-systems"],
+    "toolLinks": ["rlc-response", "bode-plot"],
+    "relatedConcepts": ["transfer-function", "bode-plot"],
+    "isFoundational": false
+  },
+  {
+    "id": "transfer-function",
+    "name": "Transfer Function",
+    "aliases": [],
+    "shortDef": "A frequency-domain model relating input to output for a linear system.",
+    "extendedDef": "Transfer functions compress linear dynamic behavior into a form that supports analysis, design, and frequency response reasoning. They are central to controls, circuits, and signal models.",
+    "equation": "H(s) = \\frac{Y(s)}{X(s)}",
+    "topicClusters": ["signals", "control"],
+    "majorTags": [
+      "electrical-engineering",
+      "mechanical-engineering",
+      "aerospace-engineering",
+      "chemical-engineering"
+    ],
+    "taughtIn": ["signals-and-systems", "control-systems-ee"],
+    "toolLinks": ["bode-plot", "rlc-response"],
+    "relatedConcepts": ["laplace-transform", "bode-plot"],
+    "isFoundational": false
+  },
+  {
+    "id": "bode-plot",
+    "name": "Bode Plot",
+    "aliases": [],
+    "shortDef": "A log-frequency plot of system magnitude and phase response.",
+    "extendedDef": "Bode plots visualize how a system responds across frequency. They are especially useful for stability, bandwidth, resonance, and filter reasoning.",
+    "equation": null,
+    "topicClusters": ["signals", "control"],
+    "majorTags": [
+      "electrical-engineering",
+      "mechanical-engineering",
+      "aerospace-engineering"
+    ],
+    "taughtIn": ["signals-and-systems", "control-systems-ee"],
+    "toolLinks": ["bode-plot", "rlc-response"],
+    "relatedConcepts": ["transfer-function", "laplace-transform"],
+    "isFoundational": false
+  },
+  {
+    "id": "stress-strain",
+    "name": "Stress and Strain",
+    "aliases": [],
+    "shortDef": "Measures of internal loading and deformation in materials.",
+    "extendedDef": "Stress and strain describe how forces act within a material and how the material responds. They are foundational in statics, structures, materials, and biomechanics.",
+    "equation": "\\sigma = \\frac{F}{A}",
+    "topicClusters": ["mechanics", "materials"],
+    "majorTags": [
+      "core",
+      "civil-engineering",
+      "mechanical-engineering",
+      "materials-engineering"
+    ],
+    "taughtIn": [
+      "statics",
+      "structural-analysis-i",
+      "introduction-to-materials-science"
+    ],
+    "toolLinks": ["fbd-builder"],
+    "relatedConcepts": ["free-body-diagram"],
+    "isFoundational": true
+  },
+  {
+    "id": "eulers-method",
+    "name": "Euler's Method",
+    "aliases": [],
+    "shortDef": "A stepwise numerical method for approximating differential equation solutions.",
+    "extendedDef": "Euler's Method is a simple numerical approximation technique that supports intuition for simulation and discretization. It appears across many engineering contexts, especially before more advanced numerical methods.",
+    "equation": "y_{n+1} = y_n + h f(t_n, y_n)",
+    "topicClusters": ["mathematics"],
+    "majorTags": ["core"],
+    "taughtIn": ["calculus-i"],
+    "toolLinks": [],
+    "relatedConcepts": [],
+    "isFoundational": true
+  },
+  {
+    "id": "bernoulli-equation",
+    "name": "Bernoulli Equation",
+    "aliases": [],
+    "shortDef": "An energy balance relation for ideal steady fluid flow.",
+    "extendedDef": "Bernoulli's equation links pressure, velocity, and elevation in ideal fluid flow. It becomes an important reasoning tool in mechanical, civil, aerospace, and chemical contexts.",
+    "equation": "p + \\frac{1}{2}\\rho v^2 + \\rho g h = \\text{constant}",
+    "topicClusters": ["fluids"],
+    "majorTags": [
+      "mechanical-engineering",
+      "civil-engineering",
+      "aerospace-engineering",
+      "chemical-engineering"
+    ],
+    "taughtIn": ["fluid-mechanics-me"],
+    "toolLinks": ["unit-converter"],
+    "relatedConcepts": [],
+    "isFoundational": false
+  },
+  {
+    "id": "boolean-algebra",
+    "name": "Boolean Algebra",
+    "aliases": [],
+    "shortDef": "Algebraic reasoning with binary variables and logic operations.",
+    "extendedDef": "Boolean algebra formalizes how binary states combine through logical operations. It is the foundation for digital logic design, simplification, and combinational circuit behavior.",
+    "equation": null,
+    "topicClusters": ["logic"],
+    "majorTags": ["computer-engineering", "electrical-engineering"],
+    "taughtIn": ["digital-logic-design"],
+    "toolLinks": ["logic-gate-sim"],
+    "relatedConcepts": [],
+    "isFoundational": false
+  },
+  {
+    "id": "free-body-diagram",
+    "name": "Free Body Diagram",
+    "aliases": ["FBD"],
+    "shortDef": "A simplified force and moment representation of an isolated body.",
+    "extendedDef": "A free body diagram strips a physical system down to the body and the loads acting on it. It is one of the most reusable reasoning tools across mechanics-heavy disciplines.",
+    "equation": null,
+    "topicClusters": ["mechanics"],
+    "majorTags": [
+      "core",
+      "mechanical-engineering",
+      "civil-engineering",
+      "aerospace-engineering"
+    ],
+    "taughtIn": ["statics"],
+    "toolLinks": ["fbd-builder"],
+    "relatedConcepts": ["stress-strain"],
+    "isFoundational": true
+  }
+]

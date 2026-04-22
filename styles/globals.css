@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 44 42% 98%;
+  --foreground: 211 48% 12%;
+  --surface: 0 0% 100%;
+  --border: 208 31% 86%;
+  --muted: 204 33% 95%;
+  --muted-foreground: 210 19% 37%;
+  --accent: 195 78% 41%;
+  --accent-foreground: 0 0% 100%;
+  --major-core: 215 30% 30%;
+  --major-electrical: 18 86% 45%;
+  --major-mechanical: 196 64% 41%;
+  --major-civil: 43 82% 42%;
+  --major-chemical: 150 45% 34%;
+  --major-computer: 269 48% 38%;
+  --major-aerospace: 216 62% 42%;
+  --major-biomedical: 338 58% 46%;
+  --major-industrial: 32 67% 46%;
+  --major-materials: 282 36% 46%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(72, 163, 191, 0.12),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(211, 111, 32, 0.12),
+      transparent 34%
+    ),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body), Georgia, serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100vh - 16rem);
+}
+
+::selection {
+  background: rgba(36, 146, 190, 0.22);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display), system-ui, sans-serif;
+    letter-spacing: -0.03em;
+  }
+}
+
+@layer utilities {
+  .surface-panel {
+    @apply rounded-2xl border border-border bg-surface shadow-panel;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
