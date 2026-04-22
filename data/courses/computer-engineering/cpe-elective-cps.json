@@ -1,0 +1,27 @@
+{
+  "id": "cpe-elective-cps",
+  "title": "[THEME: Cyber-Physical Systems]",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Safety-critical design, model-based design",
+  "whyItMatters": "Advanced theme area within Computer Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "control",
+    "embedded"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Cyber-Physical Systems",
+  "electiveTag": "[THEME: Cyber-Physical Systems]",
+  "status": "planned",
+  "referenceNote": null
+}

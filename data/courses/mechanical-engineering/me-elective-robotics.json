@@ -1,0 +1,27 @@
+{
+  "id": "me-elective-robotics",
+  "title": "[THEME: Robotics]",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Kinematics, dynamics, path planning",
+  "whyItMatters": "Advanced theme area within Mechanical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "control",
+    "mechanics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Robotics",
+  "electiveTag": "[THEME: Robotics]",
+  "status": "planned",
+  "referenceNote": null
+}

@@ -1,0 +1,42 @@
+{
+  "id": "mechanics-of-materials",
+  "title": "Mechanics of Materials",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "engineering-core",
+  "stageLabel": "Year 2 — Engineering Core",
+  "year": "2",
+  "shortDesc": "Stress, strain, deformation in solid bodies under load",
+  "whyItMatters": "Core to structural, mechanical, aerospace, and civil design",
+  "prereqs": [
+    "statics"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "machine-design"
+  ],
+  "externalLeadsInto": [
+    "Structural Analysis",
+    "FEA"
+  ],
+  "skills": [
+    "Stress analysis",
+    "beam deflection",
+    "failure prediction"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "normal-and-shear-stress-strain",
+    "hooke-s-law-material-properties",
+    "axial-torsion-bending-and-transverse-shear",
+    "beam-deflection-integration-moment-area",
+    "stress-transformations-mohr-s-circle",
+    "failure-theories-von-mises-tresca"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

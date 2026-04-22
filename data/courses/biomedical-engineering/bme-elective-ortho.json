@@ -1,0 +1,26 @@
+{
+  "id": "bme-elective-ortho",
+  "title": "[THEME: Orthopaedic Biomechanics]",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Implant design, total joint replacement",
+  "whyItMatters": "Advanced theme area within Biomedical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "biomechanics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Orthopaedic Biomechanics",
+  "electiveTag": "[THEME: Orthopaedic Biomechanics]",
+  "status": "planned",
+  "referenceNote": null
+}

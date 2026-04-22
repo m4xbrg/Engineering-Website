@@ -1,0 +1,27 @@
+{
+  "id": "ae-elective-hypersonics",
+  "title": "[THEME: Hypersonics]",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "High-temperature gas dynamics, thermal protection",
+  "whyItMatters": "Advanced theme area within Aerospace Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "aerodynamics",
+    "thermodynamics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Hypersonics",
+  "electiveTag": "[THEME: Hypersonics]",
+  "status": "planned",
+  "referenceNote": null
+}

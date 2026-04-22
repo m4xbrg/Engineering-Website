@@ -4,16 +4,37 @@
   "majorId": "core",
   "isCore": true,
   "stageId": "foundation",
+  "stageLabel": "Year 1 — Foundations",
   "year": "1",
-  "shortDesc": "Differential and integral calculus for engineering analysis.",
-  "whyItMatters": "This is one of the mathematical anchors for nearly every engineering pathway.",
+  "shortDesc": "Limits, derivatives, and integrals of single-variable functions",
+  "whyItMatters": "Language of all quantitative engineering analysis",
   "prereqs": [],
-  "leadsInto": ["statics", "circuit-analysis-i"],
-  "skills": ["limits and continuity", "derivatives", "basic integrals"],
-  "topicClusters": ["mathematics"],
-  "concepts": ["eulers-method"],
-  "relatedTools": ["unit-converter"],
+  "externalPrereqs": [
+    "Pre-calculus / high school math"
+  ],
+  "leadsInto": [
+    "calculus-ii",
+    "physics-i",
+    "statics"
+  ],
+  "externalLeadsInto": [],
+  "skills": [
+    "Differentiation",
+    "integration",
+    "limit analysis"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "limits-and-continuity",
+    "derivative-rules-chain-product-quotient",
+    "riemann-sums-and-definite-integrals",
+    "fundamental-theorem-of-calculus",
+    "applications-optimization-rates-of-change"
+  ],
+  "relatedTools": [],
   "isElective": false,
   "electiveTheme": null,
-  "status": "live"
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
 }

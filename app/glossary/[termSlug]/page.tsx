@@ -1,5 +1,8 @@
+import Link from "next/link";
+
 import { ConceptChip } from "@/components/concepts/ConceptChip";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
+import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   getAllConcepts,
@@ -41,6 +44,13 @@ export default async function GlossaryTermPage({
         eyebrow="Glossary term"
         title={term.term}
         description={term.extendedDef}
+        meta={
+          <>
+            {term.domain.map((domain) => (
+              <Badge key={domain}>{domain}</Badge>
+            ))}
+          </>
+        }
       />
       <section className="surface-panel space-y-5 p-6">
         <h2 className="text-2xl font-semibold">Related concepts</h2>
@@ -53,6 +63,18 @@ export default async function GlossaryTermPage({
             />
           ))}
         </div>
+        {term.relatedTerms.length ? (
+          <>
+            <h2 className="text-2xl font-semibold">Related terms</h2>
+            <div className="flex flex-wrap gap-2">
+              {term.relatedTerms.map((relatedTermId) => (
+                <Link key={relatedTermId} href={`/glossary/${relatedTermId}`}>
+                  <Badge>{relatedTermId}</Badge>
+                </Link>
+              ))}
+            </div>
+          </>
+        ) : null}
       </section>
     </div>
   );

@@ -2,23 +2,117 @@
   "id": "aerospace-engineering",
   "name": "Aerospace Engineering",
   "shortName": "AE",
-  "description": "Aircraft and spacecraft systems through aerodynamics, structures, propulsion, and control.",
+  "description": "Design and analysis of aircraft, spacecraft, propulsion systems, and related technologies. Integrates aerodynamics, structures, propulsion, and flight mechanics.",
   "mainSubfields": [
     "Aerodynamics",
-    "Structures",
-    "Propulsion",
-    "Flight Mechanics"
+    "aerostructures",
+    "propulsion",
+    "flight mechanics and control",
+    "orbital mechanics",
+    "spacecraft systems",
+    "avionics"
   ],
-  "coreFoundationIds": ["calculus-i", "statics"],
-  "conceptClusters": ["mechanics", "control", "fluids"],
-  "summaryChain": "Mechanics and fluid concepts scale into flight, propulsion, and aerospace structures.",
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "calculus-iii",
+    "differential-equations",
+    "physics-i",
+    "physics-ii",
+    "linear-algebra",
+    "engineering-statistics",
+    "statics",
+    "dynamics",
+    "mechanics-of-materials",
+    "thermodynamics-i"
+  ],
+  "conceptClusters": [
+    "aerodynamics",
+    "design",
+    "materials",
+    "fluids",
+    "thermodynamics",
+    "structures",
+    "solid-mechanics",
+    "computation",
+    "propulsion",
+    "flight-mechanics",
+    "control",
+    "orbital-mechanics",
+    "mechanics",
+    "embedded"
+  ],
+  "summaryChain": "Calculus → Physics I → Statics / Dynamics → Fluid Mechanics → Incompressible Aerodynamics → Compressible Aerodynamics → Propulsion I / Flight Mechanics I / Aerostructures I → Propulsion II / Flight Mechanics II / Aerostructures II → Orbital Mechanics → Capstone Design",
+  "recommendedTools": [
+    "unit-converter",
+    "fourier-series",
+    "bode-plot",
+    "fbd-builder"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-aerospace",
+  "colorToken": "--color-ae",
+  "icon": "rocket",
   "stages": [
+    {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation (shared with Core Engineering)",
+      "description": "See Core Engineering: Full Year 1–2 curriculum + Mechanics of Materials, Statics, Dynamics, Thermodynamics I",
+      "courseIds": []
+    },
     {
       "id": "major-entry",
       "label": "Year 2 — AE Core Entry",
-      "courseIds": ["introduction-to-aerospace-engineering"]
+      "description": "",
+      "courseIds": [
+        "intro-aerospace",
+        "aerospace-materials"
+      ]
+    },
+    {
+      "id": "major-core",
+      "label": "Year 2–3 — Aerodynamics and Gas Dynamics",
+      "description": "",
+      "courseIds": [
+        "incompressible-aero",
+        "compressible-aero"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Structures and Propulsion",
+      "description": "",
+      "courseIds": [
+        "aerostructures-i",
+        "aerostructures-ii",
+        "propulsion-i",
+        "propulsion-ii"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Flight Mechanics",
+      "description": "",
+      "courseIds": [
+        "flight-mechanics-i",
+        "flight-mechanics-ii",
+        "orbital-mechanics"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "ae-capstone",
+        "ae-elective-cfd",
+        "ae-elective-rotorcraft",
+        "ae-elective-hypersonics",
+        "ae-elective-spacecraft",
+        "ae-elective-uav",
+        "ae-elective-structural-opt",
+        "ae-elective-advanced-prop",
+        "ae-elective-mission-design"
+      ]
     }
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "id": "cpe-capstone",
+  "title": "Senior Capstone — CpE System Design",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Team hardware-software co-design project from specification to working prototype",
+  "whyItMatters": "Integrates CE hardware and software competencies",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Completion of CE core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice"
+  ],
+  "skills": [
+    "System architecture",
+    "FPGA implementation",
+    "embedded software",
+    "testing"
+  ],
+  "topicClusters": [
+    "design",
+    "embedded"
+  ],
+  "concepts": [
+    "requirements-and-architecture-documentation",
+    "fpga-or-custom-pcb-design",
+    "embedded-firmware-and-driver-development",
+    "hardware-software-integration",
+    "verification-and-validation",
+    "technical-documentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "characterization-i",
+  "title": "Materials Characterization I",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Core Materials Science",
+  "year": "2-3",
+  "shortDesc": "Optical microscopy, SEM/TEM, X-ray diffraction, and spectroscopic techniques",
+  "whyItMatters": "You cannot engineer what you cannot measure; characterization validates structure-property links",
+  "prereqs": [
+    "intro-materials-science",
+    "physics-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Characterization II",
+    "Failure Analysis",
+    "Nanomaterials"
+  ],
+  "skills": [
+    "Sample preparation",
+    "microscopy operation",
+    "XRD pattern interpretation",
+    "data reporting"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "sample-preparation-grinding-polishing-etching",
+    "optical-microscopy-and-image-analysis",
+    "scanning-electron-microscopy-sem-and-eds",
+    "transmission-electron-microscopy-tem-basics",
+    "x-ray-diffraction-bragg-s-law-peak-indexing",
+    "raman-and-ftir-spectroscopy-intro",
+    "data-reporting-and-uncertainty"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

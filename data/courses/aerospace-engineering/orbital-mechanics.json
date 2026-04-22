@@ -1,0 +1,46 @@
+{
+  "id": "orbital-mechanics",
+  "title": "Orbital Mechanics",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Flight Mechanics",
+  "year": "3",
+  "shortDesc": "Two-body problem, orbital maneuvers, spacecraft trajectories, and mission design",
+  "whyItMatters": "Foundation for satellite, planetary, and manned space mission design",
+  "prereqs": [
+    "dynamics",
+    "calculus-iii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Spacecraft Systems",
+    "Mission Design",
+    "Space Operations"
+  ],
+  "skills": [
+    "Orbital element calculation",
+    "Hohmann transfer",
+    "re-entry analysis"
+  ],
+  "topicClusters": [
+    "orbital-mechanics",
+    "mechanics"
+  ],
+  "concepts": [
+    "two-body-gravitational-problem",
+    "keplerian-orbital-elements",
+    "orbit-types-leo-geo-meo-heo",
+    "orbital-maneuvers-hohmann-bi-elliptic",
+    "launch-windows-and-planetary-missions",
+    "relative-orbital-motion-clohessy-wiltshire",
+    "reentry-trajectories"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

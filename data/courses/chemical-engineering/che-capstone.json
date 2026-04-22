@@ -1,0 +1,45 @@
+{
+  "id": "che-capstone",
+  "title": "Senior Capstone — Chemical Plant Design",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Team-based design of a complete chemical process from concept to preliminary design package",
+  "whyItMatters": "Integrates all ChE competencies in an industry-relevant project",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Process Design I",
+    "all core ChE"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice"
+  ],
+  "skills": [
+    "Full flowsheet design",
+    "safety review",
+    "economic analysis",
+    "team engineering"
+  ],
+  "topicClusters": [
+    "design",
+    "process-design"
+  ],
+  "concepts": [
+    "basis-of-design-document",
+    "pfd-and-p-and-id-development",
+    "complete-material-and-energy-balances",
+    "equipment-design-and-specifications",
+    "safety-and-environmental-assessment",
+    "capital-and-operating-cost-estimates",
+    "executive-summary-presentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

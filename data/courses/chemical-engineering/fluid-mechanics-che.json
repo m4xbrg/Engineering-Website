@@ -1,0 +1,45 @@
+{
+  "id": "fluid-mechanics-che",
+  "title": "Fluid Mechanics (ChE Focus)",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Transport Phenomena",
+  "year": "2-3",
+  "shortDesc": "Fluid statics, viscous flow, pipe systems, and non-Newtonian fluids",
+  "whyItMatters": "Fluid flow governs chemical reactor performance and pipeline design",
+  "prereqs": [
+    "material-energy-balances",
+    "calculus-iii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "heat-transfer-che"
+  ],
+  "externalLeadsInto": [
+    "Mass Transfer",
+    "Reactor Design"
+  ],
+  "skills": [
+    "Pump sizing",
+    "pressure drop calculations",
+    "flow regime identification"
+  ],
+  "topicClusters": [
+    "fluids"
+  ],
+  "concepts": [
+    "navier-stokes-equations-simplified-cases",
+    "laminar-and-turbulent-pipe-flow",
+    "friction-factor-and-moody-chart",
+    "pump-curves-and-system-curves",
+    "non-newtonian-flow-behavior",
+    "packed-beds-and-fluidized-beds"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

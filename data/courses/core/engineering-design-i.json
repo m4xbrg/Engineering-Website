@@ -1,0 +1,41 @@
+{
+  "id": "engineering-design-i",
+  "title": "Engineering Design I",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "engineering-core",
+  "stageLabel": "Year 2 — Engineering Core",
+  "year": "2",
+  "shortDesc": "Structured design process, requirements engineering, concept generation",
+  "whyItMatters": "Develops the core professional practice of engineering",
+  "prereqs": [
+    "intro-engineering"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Capstone",
+    "senior design projects"
+  ],
+  "skills": [
+    "Problem scoping",
+    "ideation methods",
+    "prototyping",
+    "design documentation"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "customer-needs-and-functional-requirements",
+    "quality-function-deployment-qfd-basics",
+    "morphological-charts-scamper-brainstorming",
+    "concept-selection-pugh-matrix",
+    "prototyping-strategies",
+    "design-reviews-and-iteration"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

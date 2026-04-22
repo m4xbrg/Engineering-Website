@@ -1,0 +1,44 @@
+{
+  "id": "structural-analysis-ii",
+  "title": "Structural Analysis II",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Structural Track",
+  "year": "2-3",
+  "shortDesc": "Force method, slope-deflection, moment distribution, and matrix stiffness",
+  "whyItMatters": "Most real structures are statically indeterminate",
+  "prereqs": [
+    "structural-analysis-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "reinforced-concrete-design",
+    "steel-structure-design"
+  ],
+  "externalLeadsInto": [
+    "Advanced Structural Analysis"
+  ],
+  "skills": [
+    "Frame analysis",
+    "matrix methods",
+    "computer model validation"
+  ],
+  "topicClusters": [
+    "structures"
+  ],
+  "concepts": [
+    "force-compatibility-method",
+    "slope-deflection-equations",
+    "moment-distribution-method",
+    "matrix-stiffness-method",
+    "intro-to-finite-element-structural-analysis",
+    "lateral-load-analysis-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -3,7 +3,8 @@
     "id": "unit-converter",
     "name": "Engineering Unit Converter",
     "category": "calculator",
-    "description": "Convert units across engineering domains with grouped physical quantities.",
+    "description": "Convert values across common engineering unit systems and physical quantities.",
+    "whyMvp": "Most majors touch units immediately, so this is the most broadly reusable shared utility.",
     "purpose": "A shared utility for fast, discipline-agnostic unit conversion.",
     "majorIds": [
       "core",
@@ -18,85 +19,159 @@
       "materials-engineering"
     ],
     "courseIds": [
-      "calculus-i",
-      "material-energy-balances",
-      "fluid-mechanics-me"
+      "intro-engineering",
+      "programming-for-engineers"
     ],
-    "conceptIds": ["eulers-method", "bernoulli-equation"],
-    "clusterIds": ["mathematics", "fluids"],
+    "clusterIds": [
+      "design",
+      "mathematics"
+    ],
     "complexityEstimate": "low",
-    "status": "stub",
-    "routePath": "/labs/unit-converter"
+    "status": "planned",
+    "routePath": "/labs/unit-converter",
+    "thumbnailDescription": "A compact engineering calculator layout with quantity and unit selectors.",
+    "conceptIds": [
+      "file-i-o",
+      "engineering-disciplines-overview",
+      "design-process-define-ideate-prototype-test",
+      "engineering-ethics-and-professional-responsibility",
+      "unit-analysis-and-estimation",
+      "technical-communication-basics"
+    ]
   },
   {
     "id": "ohms-law",
     "name": "Ohm's Law & Power Calculator",
     "category": "calculator",
-    "description": "Compute voltage, current, resistance, and power from any valid input pair.",
+    "description": "Solve the fundamental voltage, current, resistance, and power relationships for introductory circuits.",
+    "whyMvp": "It anchors the first EE concepts and gives the Labs section an immediately useful starter tool.",
     "purpose": "A foundational EE calculator that doubles as a concept explainer.",
     "majorIds": [
       "electrical-engineering",
       "computer-engineering",
       "biomedical-engineering"
     ],
-    "courseIds": ["circuit-analysis-i", "bioinstrumentation"],
-    "conceptIds": ["ohms-law", "kirchhoffs-laws"],
-    "clusterIds": ["circuits"],
+    "courseIds": [
+      "circuit-analysis-i",
+      "circuit-analysis-cpe-i",
+      "bioinstrumentation"
+    ],
+    "clusterIds": [
+      "circuits"
+    ],
     "complexityEstimate": "low",
-    "status": "stub",
-    "routePath": "/labs/ohms-law"
+    "status": "planned",
+    "routePath": "/labs/ohms-law",
+    "thumbnailDescription": "A four-field electrical calculator with formula callouts.",
+    "conceptIds": [
+      "ohm-s-law-kvl-kcl",
+      "resistive-network-analysis-node-voltage-mesh-current",
+      "superposition-thevenin-s-norton-s-theorems",
+      "dc-power-and-energy",
+      "intro-to-capacitors-and-inductors",
+      "biological-signal-characteristics-ecg-eeg-emg-eeg"
+    ]
   },
   {
     "id": "resistor-color-code",
     "name": "Resistor Color Code Decoder",
     "category": "reference",
-    "description": "Decode resistor bands and reverse-map resistance values to common band sets.",
+    "description": "Decode resistor bands into resistance values and tolerances for early electronics work.",
+    "whyMvp": "It is low-effort, highly recognizable, and pairs naturally with Circuit Analysis I.",
     "purpose": "A fast reference tool for introductory electronics work.",
     "majorIds": [
       "electrical-engineering",
       "computer-engineering",
       "biomedical-engineering"
     ],
-    "courseIds": ["circuit-analysis-i"],
-    "conceptIds": ["ohms-law"],
-    "clusterIds": ["circuits"],
+    "courseIds": [
+      "circuit-analysis-i",
+      "circuit-analysis-cpe-i"
+    ],
+    "clusterIds": [
+      "circuits"
+    ],
     "complexityEstimate": "low",
-    "status": "stub",
-    "routePath": "/labs/resistor-color-code"
+    "status": "planned",
+    "routePath": "/labs/resistor-color-code",
+    "thumbnailDescription": "A resistor diagram with interactive color bands and decoded values.",
+    "conceptIds": [
+      "ohm-s-law-kvl-kcl",
+      "resistive-network-analysis-node-voltage-mesh-current",
+      "superposition-thevenin-s-norton-s-theorems",
+      "dc-power-and-energy",
+      "intro-to-capacitors-and-inductors"
+    ]
   },
   {
     "id": "logic-gate-sim",
     "name": "Logic Gate Simulator",
     "category": "simulator",
     "description": "Build and test combinational logic circuits with live outputs and truth tables.",
+    "whyMvp": "It gives Electrical and Computer Engineering a visual, interactive anchor for digital logic.",
     "purpose": "A reusable simulator shell for graph-style engineering tools.",
-    "majorIds": ["electrical-engineering", "computer-engineering"],
-    "courseIds": ["digital-logic-design"],
-    "conceptIds": ["boolean-algebra"],
-    "clusterIds": ["logic"],
+    "majorIds": [
+      "electrical-engineering",
+      "computer-engineering"
+    ],
+    "courseIds": [
+      "digital-logic-design",
+      "digital-logic-cpe"
+    ],
+    "clusterIds": [
+      "digital-logic"
+    ],
     "complexityEstimate": "medium",
-    "status": "stub",
-    "routePath": "/labs/logic-gate-sim"
+    "status": "planned",
+    "routePath": "/labs/logic-gate-sim",
+    "thumbnailDescription": "A gate-canvas interface with toggled inputs and a truth table.",
+    "conceptIds": [
+      "boolean-algebra-de-morgan-s-laws",
+      "combinational-logic-mux-decoder-adder-comparator",
+      "karnaugh-maps-and-minimization",
+      "sequential-logic-latches-flip-flops",
+      "finite-state-machines-mealy-and-moore",
+      "timing-analysis-and-hazards"
+    ]
   },
   {
     "id": "rlc-response",
     "name": "RLC Circuit Response Visualizer",
     "category": "visualizer",
-    "description": "Explore time-domain and frequency-domain behavior for RC, RL, and RLC systems.",
+    "description": "Explore transient and frequency response behavior for RC, RL, and RLC systems.",
+    "whyMvp": "It connects Circuit Analysis II directly to Signals and Systems with one reusable visual pattern.",
     "purpose": "A chart-heavy tool shell for transient and frequency response learning.",
-    "majorIds": ["electrical-engineering", "computer-engineering"],
-    "courseIds": ["signals-and-systems", "control-systems-ee"],
-    "conceptIds": ["laplace-transform", "transfer-function", "bode-plot"],
-    "clusterIds": ["signals", "control"],
+    "majorIds": [
+      "electrical-engineering",
+      "computer-engineering"
+    ],
+    "courseIds": [
+      "circuit-analysis-ii",
+      "signals-and-systems"
+    ],
+    "clusterIds": [
+      "circuits",
+      "signals"
+    ],
     "complexityEstimate": "medium",
-    "status": "stub",
-    "routePath": "/labs/rlc-response"
+    "status": "planned",
+    "routePath": "/labs/rlc-response",
+    "thumbnailDescription": "Dual charts showing step response and Bode behavior for simple circuits.",
+    "conceptIds": [
+      "phasors-and-sinusoidal-steady-state",
+      "impedance-and-admittance",
+      "resonance-series-and-parallel",
+      "ac-power-real-reactive-apparent",
+      "transfer-functions-and-bode-plots-intro",
+      "two-port-networks"
+    ]
   },
   {
     "id": "fourier-series",
     "name": "Fourier Series Visualizer",
     "category": "visualizer",
-    "description": "Show how harmonics stack to approximate periodic waveforms.",
+    "description": "Show how harmonics accumulate to reconstruct periodic waveforms.",
+    "whyMvp": "It demonstrates a high-value signals concept that crosses EE, ME, AE, and BME.",
     "purpose": "A visual learning surface for signals and wave decomposition concepts.",
     "majorIds": [
       "electrical-engineering",
@@ -104,18 +179,35 @@
       "aerospace-engineering",
       "biomedical-engineering"
     ],
-    "courseIds": ["signals-and-systems"],
-    "conceptIds": ["laplace-transform"],
-    "clusterIds": ["signals"],
+    "courseIds": [
+      "signals-and-systems",
+      "digital-signal-processing",
+      "mechanical-vibrations",
+      "biosignals-imaging"
+    ],
+    "clusterIds": [
+      "signals",
+      "dsp"
+    ],
     "complexityEstimate": "medium",
-    "status": "stub",
-    "routePath": "/labs/fourier-series"
+    "status": "planned",
+    "routePath": "/labs/fourier-series",
+    "thumbnailDescription": "A harmonic stacking visualization with waveform and spectrum views.",
+    "conceptIds": [
+      "discrete-time-fourier-transform-dtft",
+      "dft-and-fft-algorithm",
+      "fir-and-iir-filter-design",
+      "z-transform-analysis",
+      "windowing-techniques",
+      "quantization-and-finite-word-length-effects"
+    ]
   },
   {
     "id": "bode-plot",
     "name": "Bode Plot Generator",
     "category": "visualizer",
-    "description": "Generate magnitude and phase plots from transfer-function inputs.",
+    "description": "Generate magnitude and phase plots from transfer-function style inputs.",
+    "whyMvp": "It connects Signals, Control, and Circuit Analysis with one durable visualization primitive.",
     "purpose": "A dual-chart tool shell for controls and signal-response workflows.",
     "majorIds": [
       "electrical-engineering",
@@ -123,46 +215,99 @@
       "aerospace-engineering",
       "chemical-engineering"
     ],
-    "courseIds": ["signals-and-systems", "control-systems-ee"],
-    "conceptIds": ["bode-plot", "transfer-function", "laplace-transform"],
-    "clusterIds": ["signals", "control"],
+    "courseIds": [
+      "signals-and-systems",
+      "control-systems-ee",
+      "control-systems-me",
+      "process-control",
+      "flight-mechanics-ii"
+    ],
+    "clusterIds": [
+      "signals",
+      "control"
+    ],
     "complexityEstimate": "medium",
-    "status": "stub",
-    "routePath": "/labs/bode-plot"
+    "status": "planned",
+    "routePath": "/labs/bode-plot",
+    "thumbnailDescription": "Two stacked logarithmic plots for system magnitude and phase.",
+    "conceptIds": [
+      "transfer-functions-and-block-diagrams",
+      "laplace-transform-methods",
+      "signal-classification-periodic-energy-power",
+      "lti-systems-impulse-response-convolution",
+      "fourier-series-and-fourier-transform",
+      "laplace-transform-and-transfer-functions"
+    ]
   },
   {
     "id": "phasor-calc",
     "name": "Phasor & AC Circuit Calculator",
     "category": "calculator",
-    "description": "Compute impedance, phase angle, and AC relationships for simple RLC cases.",
+    "description": "Compute impedance, phase angle, and AC power relationships for simple RLC cases.",
+    "whyMvp": "Phasors are a common stumbling block in AC circuits, so this gives EE a high-leverage support tool.",
     "purpose": "A vector-aware calculator shell for AC circuit learning.",
-    "majorIds": ["electrical-engineering"],
-    "courseIds": ["circuit-analysis-i"],
-    "conceptIds": ["ohms-law", "bode-plot"],
-    "clusterIds": ["circuits", "signals"],
+    "majorIds": [
+      "electrical-engineering"
+    ],
+    "courseIds": [
+      "circuit-analysis-ii",
+      "power-systems-i"
+    ],
+    "clusterIds": [
+      "circuits",
+      "power"
+    ],
     "complexityEstimate": "medium",
-    "status": "stub",
-    "routePath": "/labs/phasor-calc"
+    "status": "planned",
+    "routePath": "/labs/phasor-calc",
+    "thumbnailDescription": "An AC calculator with impedance results and a phasor diagram.",
+    "conceptIds": [
+      "phasors-and-sinusoidal-steady-state",
+      "impedance-and-admittance",
+      "resonance-series-and-parallel",
+      "ac-power-real-reactive-apparent",
+      "transfer-functions-and-bode-plots-intro",
+      "two-port-networks"
+    ]
   },
   {
     "id": "opamp-config",
     "name": "Op-Amp Circuit Configurator",
     "category": "calculator",
-    "description": "Select a common op-amp topology and inspect gain relationships.",
+    "description": "Compare common op-amp circuit topologies and inspect their gain relationships.",
+    "whyMvp": "It gives Electronics II an obvious practical bridge into circuit configuration thinking.",
     "purpose": "A schematic-plus-results shell for electronics tool patterns.",
-    "majorIds": ["electrical-engineering", "biomedical-engineering"],
-    "courseIds": ["bioinstrumentation"],
-    "conceptIds": ["ohms-law"],
-    "clusterIds": ["circuits"],
+    "majorIds": [
+      "electrical-engineering",
+      "biomedical-engineering"
+    ],
+    "courseIds": [
+      "electronics-ii",
+      "bioinstrumentation"
+    ],
+    "clusterIds": [
+      "electronics",
+      "bioinstrumentation"
+    ],
     "complexityEstimate": "medium",
-    "status": "stub",
-    "routePath": "/labs/opamp-config"
+    "status": "planned",
+    "routePath": "/labs/opamp-config",
+    "thumbnailDescription": "A configurable op-amp schematic with gain and behavior readouts.",
+    "conceptIds": [
+      "mosfet-structure-i-v-characteristics-biasing",
+      "cmos-inverter-basics",
+      "ideal-and-real-op-amp-models",
+      "inverting-non-inverting-amplifiers-integrators-differentiators",
+      "feedback-theory-negative-and-positive",
+      "comparators-and-oscillators"
+    ]
   },
   {
     "id": "fbd-builder",
     "name": "Free Body Diagram Builder",
     "category": "simulator",
-    "description": "Place forces and moments on a 2D body and inspect equilibrium results.",
+    "description": "Place forces and moments on a 2D body and inspect equilibrium conditions.",
+    "whyMvp": "It serves the mechanics-heavy majors while validating the future canvas interaction pattern.",
     "purpose": "A canvas-first shell for future physics and mechanics simulators.",
     "majorIds": [
       "core",
@@ -170,11 +315,27 @@
       "civil-engineering",
       "aerospace-engineering"
     ],
-    "courseIds": ["statics", "structural-analysis-i"],
-    "conceptIds": ["free-body-diagram", "stress-strain"],
-    "clusterIds": ["mechanics"],
+    "courseIds": [
+      "physics-i",
+      "statics",
+      "structural-analysis-i",
+      "flight-mechanics-i"
+    ],
+    "clusterIds": [
+      "mechanics",
+      "structures"
+    ],
     "complexityEstimate": "medium",
-    "status": "stub",
-    "routePath": "/labs/fbd-builder"
+    "status": "planned",
+    "routePath": "/labs/fbd-builder",
+    "thumbnailDescription": "A force-diagram canvas for loads, vectors, and equilibrium results.",
+    "conceptIds": [
+      "kinematics-in-1d-and-2d",
+      "newton-s-laws",
+      "work-energy-power",
+      "linear-and-angular-momentum",
+      "rotational-dynamics",
+      "force-vectors-and-resultants"
+    ]
   }
 ]

@@ -1,0 +1,46 @@
+{
+  "id": "computer-networks",
+  "title": "Computer Networks",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced CE",
+  "year": "3",
+  "shortDesc": "Network protocols, Internet architecture, transport layer, and network security basics",
+  "whyItMatters": "All modern computing systems communicate over networks",
+  "prereqs": [
+    "operating-systems"
+  ],
+  "externalPrereqs": [
+    "Computer Architecture I"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Distributed Systems",
+    "Network Security",
+    "IoT"
+  ],
+  "skills": [
+    "Protocol analysis",
+    "socket programming",
+    "network troubleshooting"
+  ],
+  "topicClusters": [
+    "computing",
+    "communications"
+  ],
+  "concepts": [
+    "osi-and-tcp-ip-models",
+    "physical-and-data-link-layers-ethernet-wifi",
+    "ip-addressing-routing-and-forwarding",
+    "tcp-and-udp-transport-protocols",
+    "application-protocols-http-dns-smtp",
+    "network-security-basics-tls-firewalls"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

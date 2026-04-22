@@ -1,0 +1,43 @@
+{
+  "id": "biology-for-engineers",
+  "title": "Biology for Engineers I",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "foundation",
+  "stageLabel": "Year 1–2 — Foundation",
+  "year": "1-2",
+  "shortDesc": "Cell structure, DNA/RNA, protein synthesis, cell signaling, and cellular energetics",
+  "whyItMatters": "BME requires equal fluency in engineering and biology",
+  "prereqs": [],
+  "externalPrereqs": [
+    "High school biology"
+  ],
+  "leadsInto": [
+    "bioinstrumentation"
+  ],
+  "externalLeadsInto": [
+    "Physiology",
+    "Tissue Engineering"
+  ],
+  "skills": [
+    "Cell biology reasoning",
+    "scientific literature reading"
+  ],
+  "topicClusters": [
+    "physiology"
+  ],
+  "concepts": [
+    "cell-organelles-and-function",
+    "central-dogma-dna-rna-protein",
+    "cell-signaling-pathways",
+    "cell-cycle-and-division",
+    "stem-cells-and-differentiation",
+    "extracellular-matrix-and-cell-adhesion"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -2,13 +2,14 @@ import { ConceptChip } from "@/components/concepts/ConceptChip";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
-import { EmptyState } from "@/components/ui/EmptyState";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
-  getAllConcepts,
+  getAllMajors,
+  getConceptsForCourse,
   getCoursesForMajor,
   getCourse,
-  getPrereqsForCourse,
+  getResolvedLeadsIntoForCourse,
+  getResolvedPrereqsForCourse,
   getRelatedTools,
 } from "@/lib/data";
 
@@ -27,11 +28,13 @@ export async function generateStaticParams() {
 export default async function CoreCoursePage({ params }: CoreCoursePageProps) {
   const { courseSlug } = await params;
   const course = getCourse("core", courseSlug);
-  const conceptMap = getAllConcepts().filter((concept) =>
-    course.concepts.includes(concept.id),
-  );
+  const conceptMap = getConceptsForCourse(course.id);
   const relatedTools = getRelatedTools({ courseId: course.id });
-  const prereqs = getPrereqsForCourse(course.id);
+  const prereqs = getResolvedPrereqsForCourse(course.id);
+  const leadsInto = getResolvedLeadsIntoForCourse(course.id);
+  const usedByMajors = getAllMajors().filter((major) =>
+    major.coreFoundationIds.includes(course.id),
+  );
 
   return (
     <>
@@ -56,14 +59,14 @@ export default async function CoreCoursePage({ params }: CoreCoursePageProps) {
       />
       <section className="grid gap-6 xl:grid-cols-[1.1fr,0.9fr]">
         <div className="surface-panel space-y-5 p-6">
-          <h2 className="text-2xl font-semibold">Course skeleton</h2>
+          <h2 className="text-2xl font-semibold">Course overview</h2>
           <p className="text-sm leading-7 text-muted-foreground">
             {course.shortDesc}
           </p>
           <div className="grid gap-3">
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Skills placeholder
+                Skills
               </h3>
               <ul className="mt-3 space-y-2 text-sm leading-7 text-muted-foreground">
                 {course.skills.map((skill) => (
@@ -71,6 +74,16 @@ export default async function CoreCoursePage({ params }: CoreCoursePageProps) {
                 ))}
               </ul>
             </div>
+            {course.referenceNote ? (
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  Shared note
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                  {course.referenceNote}
+                </p>
+              </div>
+            ) : null}
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Concepts
@@ -98,21 +111,49 @@ export default async function CoreCoursePage({ params }: CoreCoursePageProps) {
             <h2 className="text-xl font-semibold">Prerequisite chain</h2>
             {prereqs.length ? (
               <ul className="mt-4 space-y-2 text-sm leading-7 text-muted-foreground">
-                {prereqs.map((edge) => (
-                  <li key={`${edge.from}-${edge.to}`}>{edge.from}</li>
+                {prereqs.map((prereq) => (
+                  <li key={prereq.id}>{prereq.title}</li>
                 ))}
               </ul>
             ) : (
               <p className="mt-4 text-sm text-muted-foreground">
-                No prerequisite edges authored for this placeholder record yet.
+                No internal prerequisite courses are modeled for this course.
               </p>
             )}
+            {course.externalPrereqs.length ? (
+              <p className="mt-4 text-sm text-muted-foreground">
+                External prerequisites: {course.externalPrereqs.join(", ")}
+              </p>
+            ) : null}
           </section>
-          {!relatedTools.length ? (
-            <EmptyState
-              title="Tool links reserved"
-              description="Related tool cards will appear here as the curriculum graph fills in."
-            />
+          <section className="surface-panel p-6">
+            <h2 className="text-xl font-semibold">Leads into</h2>
+            {leadsInto.length ? (
+              <ul className="mt-4 space-y-2 text-sm leading-7 text-muted-foreground">
+                {leadsInto.map((nextCourse) => (
+                  <li key={nextCourse.id}>{nextCourse.title}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-4 text-sm text-muted-foreground">
+                No internal downstream courses are currently linked.
+              </p>
+            )}
+            {course.externalLeadsInto.length ? (
+              <p className="mt-4 text-sm text-muted-foreground">
+                Additional paths: {course.externalLeadsInto.join(", ")}
+              </p>
+            ) : null}
+          </section>
+          {usedByMajors.length ? (
+            <section className="surface-panel p-6">
+              <h2 className="text-xl font-semibold">Used by majors</h2>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {usedByMajors.map((major) => (
+                  <Badge key={major.id}>{major.shortName}</Badge>
+                ))}
+              </div>
+            </section>
           ) : null}
         </div>
       </section>

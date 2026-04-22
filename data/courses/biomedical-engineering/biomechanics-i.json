@@ -1,0 +1,46 @@
+{
+  "id": "biomechanics-i",
+  "title": "Biomechanics I — Solid Mechanics in Biology",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — BME Core Entry",
+  "year": "2",
+  "shortDesc": "Application of mechanics of materials to biological tissues and structures",
+  "whyItMatters": "Implants, prosthetics, and orthopaedic devices require tissue mechanics knowledge",
+  "prereqs": [
+    "mechanics-of-materials",
+    "statics"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "biomechanics-ii"
+  ],
+  "externalLeadsInto": [
+    "Implant Design",
+    "Tissue Engineering"
+  ],
+  "skills": [
+    "Tissue testing data interpretation",
+    "implant stress analysis",
+    "joint force calculation"
+  ],
+  "topicClusters": [
+    "biomechanics",
+    "solid-mechanics"
+  ],
+  "concepts": [
+    "mechanical-properties-of-bone-cortical-cancellous",
+    "cartilage-and-ligament-mechanics",
+    "viscoelasticity-of-soft-tissues",
+    "joint-biomechanics-hip-knee-spine",
+    "fracture-mechanics-in-bone",
+    "implant-bone-interface-mechanics"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

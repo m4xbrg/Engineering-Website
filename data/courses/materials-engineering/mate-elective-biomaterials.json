@@ -1,0 +1,26 @@
+{
+  "id": "mate-elective-biomaterials",
+  "title": "[THEME: Biomaterials Engineering]",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Implants, scaffolds, degradable materials",
+  "whyItMatters": "Advanced theme area within Materials Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "biomaterials"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Biomaterials Engineering",
+  "electiveTag": "[THEME: Biomaterials Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

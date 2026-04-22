@@ -1,0 +1,45 @@
+{
+  "id": "communications-systems",
+  "title": "Communications Systems",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced EE",
+  "year": "3-4",
+  "shortDesc": "Modulation, demodulation, channel capacity, and digital communications",
+  "whyItMatters": "Foundation for wireless, optical, and satellite communication",
+  "prereqs": [
+    "signals-and-systems",
+    "probability-random-processes"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Wireless Communications",
+    "Information Theory",
+    "RF Engineering"
+  ],
+  "skills": [
+    "Modulation scheme design",
+    "SNR analysis",
+    "bandwidth estimation"
+  ],
+  "topicClusters": [
+    "communications",
+    "signals"
+  ],
+  "concepts": [
+    "am-fm-pm-modulation-analog",
+    "ask-fsk-psk-qam-digital",
+    "noise-performance-and-ber",
+    "shannon-capacity-theorem",
+    "matched-filters-and-detection",
+    "multiplexing-tdm-fdm-cdma-basics"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "me-elective-aerospace",
+  "title": "[THEME: Aerospace Systems]",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Aerodynamics, propulsion, aerostructures",
+  "whyItMatters": "Advanced theme area within Mechanical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "aerodynamics",
+    "propulsion"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Aerospace Systems",
+  "electiveTag": "[THEME: Aerospace Systems]",
+  "status": "planned",
+  "referenceNote": null
+}

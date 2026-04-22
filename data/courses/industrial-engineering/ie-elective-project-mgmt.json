@@ -1,0 +1,27 @@
+{
+  "id": "ie-elective-project-mgmt",
+  "title": "[THEME: Project Management]",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "CPM, PERT, risk, earned value, PMP preparation",
+  "whyItMatters": "Advanced theme area within Industrial Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "economics",
+    "systems"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Project Management",
+  "electiveTag": "[THEME: Project Management]",
+  "status": "planned",
+  "referenceNote": null
+}

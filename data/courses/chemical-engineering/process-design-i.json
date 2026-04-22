@@ -1,0 +1,44 @@
+{
+  "id": "process-design-i",
+  "title": "Process Design and Economics I",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Core ChE",
+  "year": "3",
+  "shortDesc": "Conceptual and detailed process design, cost estimation, economic analysis",
+  "whyItMatters": "Bridges engineering and business: is this process worth building?",
+  "prereqs": [],
+  "externalPrereqs": [
+    "All core ChE courses"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Senior Design Capstone",
+    "Plant Design II"
+  ],
+  "skills": [
+    "Aspen Plus simulation",
+    "cost estimation (APEA)",
+    "profitability analysis"
+  ],
+  "topicClusters": [
+    "process-design",
+    "economics"
+  ],
+  "concepts": [
+    "process-flowsheet-development",
+    "equipment-selection-and-sizing",
+    "capital-cost-estimation-lang-factor-apea",
+    "operating-cost-estimation",
+    "profitability-analysis-npv-irr-roi",
+    "process-simulation-software-aspen-plus-hysys",
+    "safety-and-regulatory-considerations"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

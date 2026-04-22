@@ -1,0 +1,45 @@
+{
+  "id": "hardware-security",
+  "title": "Hardware Security",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced CE",
+  "year": "3",
+  "shortDesc": "Hardware-based attacks, secure design principles, and trusted computing",
+  "whyItMatters": "Hardware vulnerabilities (Spectre, Meltdown) bypass software protections",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Computer Architecture I",
+    "Digital Logic"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Security Engineering",
+    "Embedded Security",
+    "Cryptographic Hardware"
+  ],
+  "skills": [
+    "Side-channel analysis",
+    "secure boot design",
+    "hardware trojan identification"
+  ],
+  "topicClusters": [
+    "computing",
+    "safety"
+  ],
+  "concepts": [
+    "side-channel-attacks-power-timing-em",
+    "hardware-trojans",
+    "secure-boot-and-chain-of-trust",
+    "trusted-platform-module-tpm",
+    "physical-unclonable-functions-pufs",
+    "speculative-execution-attacks"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

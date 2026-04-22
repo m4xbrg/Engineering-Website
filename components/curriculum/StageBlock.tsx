@@ -5,17 +5,17 @@ import type { Course } from "@/types";
 type StageBlockProps = {
   title: string;
   courses: Course[];
+  description?: string;
 };
 
-export function StageBlock({ title, courses }: StageBlockProps) {
+export function StageBlock({ title, courses, description }: StageBlockProps) {
   return (
     <section className="space-y-4">
       <div className="space-y-1">
         <h2 className="text-2xl font-semibold">{title}</h2>
-        <p className="text-sm text-muted-foreground">
-          Placeholder course records are here so the route skeleton can generate
-          real detail pages.
-        </p>
+        {description ? (
+          <p className="text-sm text-muted-foreground">{description}</p>
+        ) : null}
       </div>
       {courses.length ? (
         <div className="grid gap-4 md:grid-cols-2">
@@ -25,8 +25,8 @@ export function StageBlock({ title, courses }: StageBlockProps) {
         </div>
       ) : (
         <EmptyState
-          title="Stage reserved"
-          description="This stage exists in the architecture, but its full course inventory has not been authored yet."
+          title="Shared foundation stage"
+          description="This stage is modeled directly on the major record, but its linked courses are shared from Core Engineering rather than duplicated here."
         />
       )}
     </section>

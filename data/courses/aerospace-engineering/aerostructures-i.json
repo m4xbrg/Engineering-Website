@@ -1,0 +1,46 @@
+{
+  "id": "aerostructures-i",
+  "title": "Aerostructures I — Aerospace Structural Analysis",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Flight Mechanics",
+  "year": "3",
+  "shortDesc": "Thin-walled structures, torsion, shear flow, and structural idealization",
+  "whyItMatters": "Aircraft structures are thin-walled, lightweight, and highly loaded",
+  "prereqs": [
+    "mechanics-of-materials",
+    "aerospace-materials"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "aerostructures-ii",
+    "fea-i"
+  ],
+  "externalLeadsInto": [
+    "Design"
+  ],
+  "skills": [
+    "Shear flow analysis",
+    "beam-column buckling",
+    "skin-stringer analysis"
+  ],
+  "topicClusters": [
+    "structures",
+    "solid-mechanics"
+  ],
+  "concepts": [
+    "open-and-closed-thin-walled-cross-sections",
+    "shear-flow-in-multi-cell-sections",
+    "torsion-of-thin-walled-beams",
+    "structural-idealization-skin-stringer",
+    "buckling-of-plates-and-columns",
+    "fatigue-crack-growth-in-aircraft-structure"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,43 @@
+{
+  "id": "computer-arch-ii",
+  "title": "Computer Architecture II",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Intermediate CE",
+  "year": "2-3",
+  "shortDesc": "Advanced pipelining, memory systems, parallelism, and GPU architecture",
+  "whyItMatters": "Modern computing performance depends on architectural innovation",
+  "prereqs": [
+    "computer-org-arch-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "VLSI",
+    "Parallel Computing",
+    "Hardware Accelerators"
+  ],
+  "skills": [
+    "Cache optimization",
+    "ILP analysis",
+    "NUMA-aware programming"
+  ],
+  "topicClusters": [
+    "computing"
+  ],
+  "concepts": [
+    "superscalar-and-out-of-order-execution",
+    "branch-prediction",
+    "cache-coherence-protocols",
+    "virtual-memory-systems",
+    "gpu-architecture-and-simd",
+    "multi-core-architecture"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

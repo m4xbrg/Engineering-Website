@@ -1,0 +1,46 @@
+{
+  "id": "physiology-for-engineers",
+  "title": "Physiology for Engineers",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — BME Core Entry",
+  "year": "2",
+  "shortDesc": "Systems physiology: cardiovascular, respiratory, neural, musculoskeletal",
+  "whyItMatters": "Engineers must understand what they're designing for",
+  "prereqs": [
+    "physics-i"
+  ],
+  "externalPrereqs": [
+    "Biology I"
+  ],
+  "leadsInto": [
+    "bioinstrumentation",
+    "neural-engineering"
+  ],
+  "externalLeadsInto": [
+    "Biomechanics",
+    "Medical Imaging"
+  ],
+  "skills": [
+    "Physiological measurement interpretation",
+    "organ system modeling"
+  ],
+  "topicClusters": [
+    "physiology"
+  ],
+  "concepts": [
+    "cardiovascular-system-cardiac-cycle-blood-pressure-frank-starling",
+    "respiratory-mechanics-and-gas-exchange",
+    "renal-physiology-basics",
+    "musculoskeletal-system-and-neuromuscular-junction",
+    "nervous-system-action-potential-synaptic-transmission",
+    "endocrine-system-overview"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

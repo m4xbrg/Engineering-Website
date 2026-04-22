@@ -1,0 +1,49 @@
+{
+  "id": "operating-systems",
+  "title": "Operating Systems",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced CE",
+  "year": "3",
+  "shortDesc": "OS design: processes, memory management, file systems, and scheduling",
+  "whyItMatters": "Every software system runs on top of an OS; embedded engineers build custom ones",
+  "prereqs": [
+    "programming-i"
+  ],
+  "externalPrereqs": [
+    "Computer Architecture I",
+    "Data Structures"
+  ],
+  "leadsInto": [
+    "compilers"
+  ],
+  "externalLeadsInto": [
+    "Distributed Systems",
+    "Embedded OS",
+    "Systems Security"
+  ],
+  "skills": [
+    "Process management",
+    "system call implementation",
+    "synchronization",
+    "scheduling"
+  ],
+  "topicClusters": [
+    "computing"
+  ],
+  "concepts": [
+    "process-and-thread-management",
+    "cpu-scheduling-algorithms",
+    "process-synchronization-mutex-semaphore-deadlock",
+    "memory-management-paging-segmentation-virtual-memory",
+    "file-systems-fat-ext4-structure",
+    "i-o-subsystems-and-device-drivers-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

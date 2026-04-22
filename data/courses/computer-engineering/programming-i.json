@@ -1,0 +1,43 @@
+{
+  "id": "programming-i",
+  "title": "Programming I (C / C++)",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "foundation",
+  "stageLabel": "Year 1–2 — Foundation",
+  "year": "1-2",
+  "shortDesc": "Systems programming fundamentals: types, control flow, pointers, memory management",
+  "whyItMatters": "C/C++ is the standard for hardware-adjacent software",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "embedded-systems",
+    "compilers"
+  ],
+  "externalLeadsInto": [
+    "Data Structures",
+    "OS"
+  ],
+  "skills": [
+    "Memory management",
+    "pointer arithmetic",
+    "structured programming"
+  ],
+  "topicClusters": [
+    "computing"
+  ],
+  "concepts": [
+    "data-types-arrays-structs",
+    "pointers-and-references",
+    "dynamic-memory-malloc-free-new-delete",
+    "file-i-o",
+    "functions-and-recursion",
+    "intro-to-object-oriented-concepts-c"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

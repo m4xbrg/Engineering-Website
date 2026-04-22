@@ -1,0 +1,38 @@
+{
+  "id": "calculus-ii",
+  "title": "Calculus II",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "foundation",
+  "stageLabel": "Year 1 — Foundations",
+  "year": "1",
+  "shortDesc": "Integration techniques, series, and introductory multivariable concepts",
+  "whyItMatters": "Required for differential equations, electromagnetism, fluid mechanics",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "calculus-iii",
+    "differential-equations"
+  ],
+  "externalLeadsInto": [],
+  "skills": [
+    "Advanced integration",
+    "series convergence analysis"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "integration-by-parts-trig-substitution-partial-fractions",
+    "sequences-and-series",
+    "taylor-and-maclaurin-series",
+    "polar-coordinates",
+    "parametric-equations"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

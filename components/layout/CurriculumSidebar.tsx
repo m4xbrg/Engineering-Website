@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/Badge";
-import { getAllMajors } from "@/lib/data";
+import { getMajorIndexItems } from "@/lib/data";
 import { getMajorRoute } from "@/lib/utils/routes";
 
 export function CurriculumSidebar() {
-  const majors = getAllMajors();
+  const majors = getMajorIndexItems();
 
   return (
     <div className="surface-panel sticky top-6 space-y-5 p-5">

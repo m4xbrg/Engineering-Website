@@ -1,0 +1,48 @@
+{
+  "id": "digital-signal-processing",
+  "title": "Digital Signal Processing",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate EE",
+  "year": "3",
+  "shortDesc": "Discrete-time signals, DFT/FFT, FIR/IIR filter design",
+  "whyItMatters": "Underpins audio, imaging, communications, and biomedical signal analysis",
+  "prereqs": [
+    "signals-and-systems",
+    "linear-algebra"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Communications",
+    "Image Processing",
+    "Audio Engineering",
+    "Machine Learning"
+  ],
+  "skills": [
+    "Filter design",
+    "FFT implementation",
+    "spectrum analysis"
+  ],
+  "topicClusters": [
+    "dsp",
+    "signals"
+  ],
+  "concepts": [
+    "discrete-time-fourier-transform-dtft",
+    "dft-and-fft-algorithm",
+    "fir-and-iir-filter-design",
+    "z-transform-analysis",
+    "windowing-techniques",
+    "quantization-and-finite-word-length-effects"
+  ],
+  "relatedTools": [
+    "fourier-series"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

@@ -1,0 +1,49 @@
+{
+  "id": "failure-analysis",
+  "title": "Failure Analysis and Design",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced MatE",
+  "year": "3-4",
+  "shortDesc": "Systematic analysis of material failures: methodology, case studies, and prevention",
+  "whyItMatters": "Learning from failures prevents future catastrophes and drives material improvement",
+  "prereqs": [
+    "characterization-i"
+  ],
+  "externalPrereqs": [
+    "Mechanical Behavior",
+    "Metals (or Ceramics",
+    "or Polymers)"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice",
+    "Expert witness roles",
+    "Design review"
+  ],
+  "skills": [
+    "Fracture surface interpretation",
+    "failure root cause identification",
+    "corrective action documentation"
+  ],
+  "topicClusters": [
+    "materials",
+    "solid-mechanics"
+  ],
+  "concepts": [
+    "failure-analysis-methodology-document-observe-test-analyze",
+    "fracture-surface-features-beach-marks-striations-intergranular",
+    "overload-fatigue-creep-and-corrosion-failures",
+    "failure-mode-documentation-astm-e2332",
+    "case-studies-famous-engineering-failures",
+    "materials-selection-for-failure-prevention",
+    "reporting-and-expert-communication"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

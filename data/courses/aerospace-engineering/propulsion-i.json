@@ -1,0 +1,47 @@
+{
+  "id": "propulsion-i",
+  "title": "Propulsion I — Airbreathing Engines",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Flight Mechanics",
+  "year": "3",
+  "shortDesc": "Thermodynamic cycle analysis of gas turbine engines",
+  "whyItMatters": "Propulsion determines aircraft range, fuel burn, and emissions",
+  "prereqs": [
+    "compressible-aero",
+    "thermodynamics-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "propulsion-ii"
+  ],
+  "externalLeadsInto": [
+    "Advanced Gas Turbines",
+    "Aircraft Design"
+  ],
+  "skills": [
+    "Engine cycle analysis",
+    "component performance estimation",
+    "SFC calculation"
+  ],
+  "topicClusters": [
+    "propulsion",
+    "thermodynamics"
+  ],
+  "concepts": [
+    "ideal-brayton-cycle",
+    "component-efficiencies-compressor-turbine",
+    "turbojet-turbofan-turboprop-and-ramjet-cycles",
+    "specific-thrust-and-specific-fuel-consumption",
+    "inlet-design-and-pressure-recovery",
+    "combustor-fundamentals",
+    "nozzle-types-and-exit-conditions"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

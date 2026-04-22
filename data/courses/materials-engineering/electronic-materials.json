@@ -1,0 +1,46 @@
+{
+  "id": "electronic-materials",
+  "title": "Electronic Materials",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced MatE",
+  "year": "3-4",
+  "shortDesc": "Semiconductor physics, dielectrics, magnetic materials, and optical materials",
+  "whyItMatters": "Electronic materials underpin all modern technology — from chips to solar cells",
+  "prereqs": [
+    "physics-ii",
+    "intro-materials-science"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Thin Film Technology",
+    "Semiconductor Processing",
+    "Photovoltaics"
+  ],
+  "skills": [
+    "Band diagram interpretation",
+    "semiconductor device material selection",
+    "dielectric analysis"
+  ],
+  "topicClusters": [
+    "materials",
+    "electronics"
+  ],
+  "concepts": [
+    "band-theory-conductors-semiconductors-insulators",
+    "intrinsic-and-extrinsic-semiconductors",
+    "p-n-junction-materials-science",
+    "dielectric-properties-and-polarization-mechanisms",
+    "ferroelectric-and-piezoelectric-materials",
+    "magnetic-materials-ferro-ferri-anti-ferromagnetic",
+    "optical-properties-absorption-emission-photovoltaic-effect"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

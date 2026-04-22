@@ -1,0 +1,46 @@
+{
+  "id": "hdl-fpga",
+  "title": "HDL and FPGA Design",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced CE",
+  "year": "3",
+  "shortDesc": "VHDL/Verilog for digital hardware design and FPGA implementation",
+  "whyItMatters": "FPGAs and ASICs require hardware description, not software programming",
+  "prereqs": [
+    "digital-logic-design"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "vlsi-cpe"
+  ],
+  "externalLeadsInto": [
+    "Reconfigurable Computing",
+    "ASIC Design"
+  ],
+  "skills": [
+    "RTL design",
+    "synthesis",
+    "timing closure",
+    "simulation"
+  ],
+  "topicClusters": [
+    "digital-logic",
+    "vlsi"
+  ],
+  "concepts": [
+    "vhdl-and-verilog-syntax",
+    "combinational-and-sequential-rtl-design",
+    "synthesis-and-place-and-route",
+    "simulation-and-testbench-writing",
+    "timing-analysis-and-constraints",
+    "fpga-architecture-luts-dsps-brams"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

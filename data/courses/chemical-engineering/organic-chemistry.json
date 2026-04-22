@@ -1,0 +1,42 @@
+{
+  "id": "organic-chemistry",
+  "title": "Organic Chemistry I (Survey)",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "foundation",
+  "stageLabel": "Year 1–2 — Foundation",
+  "year": "1-2",
+  "shortDesc": "Carbon chemistry, functional groups, reactions, and mechanisms",
+  "whyItMatters": "Essential for pharmaceuticals, polymers, petrochemicals, and biomolecules",
+  "prereqs": [],
+  "externalPrereqs": [
+    "General Chemistry II"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Biochemistry",
+    "Polymer Science",
+    "Pharmaceutical Engineering"
+  ],
+  "skills": [
+    "Reaction mechanism prediction",
+    "functional group identification"
+  ],
+  "topicClusters": [
+    "chemistry"
+  ],
+  "concepts": [
+    "alkanes-alkenes-alkynes-aromatic-compounds",
+    "stereochemistry",
+    "substitution-elimination-addition-reactions",
+    "carbonyl-chemistry-aldehydes-ketones-carboxylic-acids",
+    "amines-and-heterocycles-intro",
+    "introduction-to-polymers"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

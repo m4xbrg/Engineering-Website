@@ -1,0 +1,26 @@
+{
+  "id": "ee-elective-photonics",
+  "title": "[THEME: Photonics & Optics]",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Lasers, waveguides, optical communications",
+  "whyItMatters": "Advanced theme area within Electrical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "electromagnetics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Photonics & Optics",
+  "electiveTag": "[THEME: Photonics & Optics]",
+  "status": "planned",
+  "referenceNote": null
+}

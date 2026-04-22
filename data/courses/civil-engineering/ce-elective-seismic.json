@@ -1,0 +1,26 @@
+{
+  "id": "ce-elective-seismic",
+  "title": "[THEME: Seismic Design]",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Earthquake engineering, ductile detailing",
+  "whyItMatters": "Advanced theme area within Civil Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "structures"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Seismic Design",
+  "electiveTag": "[THEME: Seismic Design]",
+  "status": "planned",
+  "referenceNote": null
+}

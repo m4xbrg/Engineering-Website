@@ -2,10 +2,16 @@ import { notFound } from "next/navigation";
 
 import { StageBlock } from "@/components/curriculum/StageBlock";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
+import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
-import { EmptyState } from "@/components/ui/EmptyState";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { getCourse, getAllMajors, getMajorOrThrow } from "@/lib/data";
+import {
+  getAllMajors,
+  getAllToolDefs,
+  getCourseBySlug,
+  getCoursesForMajor,
+  getMajorOrThrow,
+} from "@/lib/data";
 
 type MajorOverviewPageProps = {
   params: Promise<{
@@ -58,23 +64,49 @@ export default async function MajorOverviewPage({
           </>
         }
       />
-      {major.depthV1 === "map" ? (
-        <EmptyState
-          title="Map-level specialization content"
-          description="This major already has a real route shell, overview layout, and course-detail pattern. Full editorial depth is intentionally deferred beyond this scaffold pass."
-        />
+      <section className="surface-panel space-y-4 p-6">
+        <h2 className="text-2xl font-semibold">How this major builds</h2>
+        <p className="text-sm leading-7 text-muted-foreground">
+          {major.summaryChain}
+        </p>
+      </section>
+      {major.coreFoundationIds.length ? (
+        <section className="surface-panel space-y-4 p-6">
+          <h2 className="text-2xl font-semibold">Shared Core Foundation</h2>
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {major.coreFoundationIds.map((courseId) => {
+              const course = getCourseBySlug(courseId);
+              return (
+                <div key={course.id} className="rounded-2xl border border-border p-4">
+                  <p className="text-sm font-semibold">{course.title}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {course.shortDesc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </section>
       ) : null}
       <div className="space-y-8">
         {major.stages.map((stage) => (
           <StageBlock
             key={stage.id}
             title={stage.label}
-            courses={stage.courseIds.map((courseId) =>
-              getCourse(major.id, courseId),
+            description={stage.description}
+            courses={getCoursesForMajor(major.id).filter((course) =>
+              stage.courseIds.includes(course.id),
             )}
           />
         ))}
       </div>
+      {major.recommendedTools.length ? (
+        <ToolGrid
+          tools={getAllToolDefs().filter((tool) =>
+            major.recommendedTools.includes(tool.id),
+          )}
+        />
+      ) : null}
     </>
   );
 }

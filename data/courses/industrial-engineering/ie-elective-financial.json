@@ -1,0 +1,27 @@
+{
+  "id": "ie-elective-financial",
+  "title": "[THEME: Financial Engineering]",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Portfolio optimization, risk modeling, quantitative finance",
+  "whyItMatters": "Advanced theme area within Industrial Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "economics",
+    "operations-research"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Financial Engineering",
+  "electiveTag": "[THEME: Financial Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

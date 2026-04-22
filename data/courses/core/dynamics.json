@@ -1,0 +1,41 @@
+{
+  "id": "dynamics",
+  "title": "Dynamics",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "engineering-core",
+  "stageLabel": "Year 2 — Engineering Core",
+  "year": "2",
+  "shortDesc": "Motion of particles and rigid bodies under forces",
+  "whyItMatters": "Foundation for mechanical system design, robotics, vibrations",
+  "prereqs": [
+    "statics",
+    "calculus-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "machine-design"
+  ],
+  "externalLeadsInto": [
+    "Vibrations",
+    "Robotics"
+  ],
+  "skills": [
+    "Kinematic and kinetic analysis",
+    "energy methods"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "kinematics-of-particles-rectilinear-curvilinear",
+    "newton-euler-equations-for-rigid-bodies",
+    "work-energy-and-impulse-momentum-methods",
+    "relative-motion-and-rotating-frames",
+    "intro-to-vibrations"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

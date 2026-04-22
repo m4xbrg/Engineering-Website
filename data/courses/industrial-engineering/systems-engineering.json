@@ -1,0 +1,44 @@
+{
+  "id": "systems-engineering",
+  "title": "Systems Engineering",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced IE",
+  "year": "3-4",
+  "shortDesc": "Systems lifecycle, requirements engineering, architecture, and systems integration",
+  "whyItMatters": "Complex sociotechnical systems require a systems engineering approach",
+  "prereqs": [],
+  "externalPrereqs": [
+    "All IE core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Defense/Aerospace systems careers",
+    "product development"
+  ],
+  "skills": [
+    "MBSE",
+    "requirements development",
+    "trade study",
+    "V-model process"
+  ],
+  "topicClusters": [
+    "systems"
+  ],
+  "concepts": [
+    "systems-lifecycle-ieee-15288",
+    "requirements-engineering-and-decomposition",
+    "functional-analysis-and-allocation",
+    "system-architecture-and-design-alternatives",
+    "interface-management",
+    "verification-and-validation-planning",
+    "model-based-systems-engineering-sysml-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

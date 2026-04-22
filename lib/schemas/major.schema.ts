@@ -15,8 +15,10 @@ export const majorSchema = z.object({
   coreFoundationIds: z.array(z.string()),
   conceptClusters: z.array(z.string()),
   summaryChain: z.string(),
+  recommendedTools: z.array(z.string()),
   depthV1: majorDepthSchema,
   colorToken: z.string(),
+  icon: z.string(),
   stages: z.array(stagePreviewSchema),
 });
 

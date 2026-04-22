@@ -1,0 +1,42 @@
+{
+  "id": "physics-i",
+  "title": "Physics I — Mechanics",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "foundation",
+  "stageLabel": "Year 1 — Foundations",
+  "year": "1",
+  "shortDesc": "Classical Newtonian mechanics: kinematics, dynamics, energy, momentum",
+  "whyItMatters": "Physical basis for statics, dynamics, structural analysis",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "physics-ii",
+    "statics",
+    "dynamics"
+  ],
+  "externalLeadsInto": [],
+  "skills": [
+    "Free body diagrams",
+    "energy conservation",
+    "problem modeling"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "kinematics-in-1d-and-2d",
+    "newton-s-laws",
+    "work-energy-power",
+    "linear-and-angular-momentum",
+    "rotational-dynamics"
+  ],
+  "relatedTools": [
+    "fbd-builder"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

@@ -2,28 +2,126 @@
   "id": "electrical-engineering",
   "name": "Electrical Engineering",
   "shortName": "EE",
-  "description": "The first deeply built specialization in V1, focused on circuits, signals, electronics, and control.",
-  "mainSubfields": ["Circuits", "Electronics", "Signals", "Control", "Power"],
-  "coreFoundationIds": ["calculus-i", "statics"],
-  "conceptClusters": ["circuits", "signals", "control"],
-  "summaryChain": "Foundation math and physics feed circuit analysis, then expand into signals, control, and systems thinking.",
+  "description": "Study of electricity, electronics, electromagnetism, and signal systems. Spans from quantum-scale devices to grid-scale power systems.",
+  "mainSubfields": [
+    "Circuit theory",
+    "electronics",
+    "signal processing",
+    "control systems",
+    "power systems",
+    "electromagnetics",
+    "communications",
+    "VLSI",
+    "embedded systems"
+  ],
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "calculus-iii",
+    "differential-equations",
+    "physics-i",
+    "physics-ii",
+    "linear-algebra",
+    "engineering-statistics"
+  ],
+  "conceptClusters": [
+    "circuits",
+    "signals",
+    "computation",
+    "electronics",
+    "digital-logic",
+    "electromagnetics",
+    "control",
+    "dsp",
+    "vlsi",
+    "mathematics",
+    "power",
+    "communications",
+    "embedded",
+    "computing",
+    "design",
+    "bioinstrumentation"
+  ],
+  "summaryChain": "Calculus → Physics II → Circuit Analysis I → Circuit Analysis II → Electronics I → Electronics II / Digital Logic / Signals & Systems → Control Systems / DSP / VLSI / Communications → Capstone",
+  "recommendedTools": [
+    "unit-converter",
+    "ohms-law",
+    "resistor-color-code",
+    "logic-gate-sim",
+    "rlc-response",
+    "fourier-series",
+    "bode-plot",
+    "phasor-calc",
+    "opamp-config"
+  ],
   "depthV1": "full",
-  "colorToken": "--major-electrical",
+  "colorToken": "--color-ee",
+  "icon": "zap",
   "stages": [
+    {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation (shared with Core Engineering)",
+      "description": "See Core Engineering: Calculus I–III, Differential Equations, Physics I–II, Linear Algebra, Statistics, Statics",
+      "courseIds": []
+    },
     {
       "id": "major-entry",
       "label": "Year 2 — EE Core Entry",
-      "courseIds": ["circuit-analysis-i"]
+      "description": "",
+      "courseIds": [
+        "circuit-analysis-i",
+        "circuit-analysis-ii",
+        "programming-for-engineers"
+      ]
     },
     {
       "id": "major-core",
-      "label": "Year 2-3 — Core EE",
-      "courseIds": ["signals-and-systems"]
+      "label": "Year 2–3 — Core EE",
+      "description": "",
+      "courseIds": [
+        "electronics-i",
+        "electronics-ii",
+        "digital-logic-design",
+        "signals-and-systems",
+        "electromagnetics"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Intermediate EE",
+      "description": "",
+      "courseIds": [
+        "control-systems-ee",
+        "digital-signal-processing",
+        "vlsi-i",
+        "probability-random-processes"
+      ]
     },
     {
       "id": "advanced",
-      "label": "Year 3-4 — Advanced EE",
-      "courseIds": ["control-systems-ee"]
+      "label": "Year 3–4 — Advanced EE",
+      "description": "",
+      "courseIds": [
+        "power-systems-i",
+        "communications-systems",
+        "embedded-systems"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "ee-capstone",
+        "ee-elective-power-electronics",
+        "ee-elective-rf-microwave",
+        "ee-elective-photonics",
+        "ee-elective-vlsi-ii",
+        "ee-elective-wireless-5g",
+        "ee-elective-ml",
+        "ee-elective-bioelectronics",
+        "ee-elective-robotics"
+      ]
     }
   ]
 }

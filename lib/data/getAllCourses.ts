@@ -1,6 +1,5 @@
-import { courseSchema } from "@/lib/schemas";
-import { courseSources } from "@/lib/data/sources";
+import { getCatalog } from "@/lib/data/catalog";
 
 export function getAllCourses() {
-  return courseSchema.array().parse(courseSources);
+  return getCatalog().courses;
 }

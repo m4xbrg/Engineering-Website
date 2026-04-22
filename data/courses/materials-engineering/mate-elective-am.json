@@ -1,0 +1,27 @@
+{
+  "id": "mate-elective-am",
+  "title": "[THEME: Additive Manufacturing of Materials]",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Metal AM, ceramics AM, microstructure control",
+  "whyItMatters": "Advanced theme area within Materials Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "manufacturing",
+    "materials"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Additive Manufacturing of Materials",
+  "electiveTag": "[THEME: Additive Manufacturing of Materials]",
+  "status": "planned",
+  "referenceNote": null
+}

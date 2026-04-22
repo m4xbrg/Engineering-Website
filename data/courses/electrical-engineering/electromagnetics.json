@@ -1,0 +1,44 @@
+{
+  "id": "electromagnetics",
+  "title": "Electromagnetics",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Core EE",
+  "year": "2-3",
+  "shortDesc": "Maxwell's equations in full, wave propagation, transmission lines",
+  "whyItMatters": "Essential for antenna design, RF, optical fiber, and PCB signal integrity",
+  "prereqs": [
+    "calculus-iii",
+    "physics-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "RF/Microwave Engineering",
+    "Antenna Design",
+    "Photonics"
+  ],
+  "skills": [
+    "Field computation",
+    "wave analysis",
+    "transmission line design"
+  ],
+  "topicClusters": [
+    "electromagnetics"
+  ],
+  "concepts": [
+    "review-of-maxwell-s-equations-differential-form",
+    "boundary-conditions",
+    "plane-wave-propagation",
+    "reflection-and-transmission-at-interfaces",
+    "transmission-line-theory-telegrapher-equations-reflection-vswr",
+    "waveguides-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

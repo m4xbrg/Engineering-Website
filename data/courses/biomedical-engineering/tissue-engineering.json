@@ -1,0 +1,46 @@
+{
+  "id": "tissue-engineering",
+  "title": "Tissue Engineering and Regenerative Medicine",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced BME",
+  "year": "3",
+  "shortDesc": "Scaffolds, cell culture, bioreactors, and strategies to engineer living tissues",
+  "whyItMatters": "Growing tissues and organs in vitro is a major frontier in medicine",
+  "prereqs": [
+    "biomaterials"
+  ],
+  "externalPrereqs": [
+    "Biology I"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Advanced Tissue Engineering",
+    "Clinical Trials",
+    "Regenerative Medicine"
+  ],
+  "skills": [
+    "Scaffold design",
+    "cell viability assays",
+    "tissue culture protocols"
+  ],
+  "topicClusters": [
+    "biomaterials",
+    "physiology"
+  ],
+  "concepts": [
+    "scaffold-requirements-porosity-mechanical-degradation",
+    "scaffold-fabrication-electrospinning-3d-bioprinting",
+    "cell-seeding-and-co-culture-strategies",
+    "bioreactor-design-for-tissue-maturation",
+    "vascularization-strategies",
+    "clinical-translation-challenges"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

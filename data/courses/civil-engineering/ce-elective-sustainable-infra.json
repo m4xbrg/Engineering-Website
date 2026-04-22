@@ -1,0 +1,27 @@
+{
+  "id": "ce-elective-sustainable-infra",
+  "title": "[THEME: Sustainable Infrastructure]",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "LEED, green stormwater, resilience",
+  "whyItMatters": "Advanced theme area within Civil Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "water",
+    "structures"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Sustainable Infrastructure",
+  "electiveTag": "[THEME: Sustainable Infrastructure]",
+  "status": "planned",
+  "referenceNote": null
+}

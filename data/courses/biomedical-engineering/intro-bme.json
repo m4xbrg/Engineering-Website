@@ -1,0 +1,44 @@
+{
+  "id": "intro-bme",
+  "title": "Introduction to Biomedical Engineering",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — BME Core Entry",
+  "year": "2",
+  "shortDesc": "Overview of BME fields, medical device industry, regulatory pathways, ethics",
+  "whyItMatters": "Frames engineering in the medical context and regulatory environment",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [
+    "Biology I"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "All Year 2–3 BME courses"
+  ],
+  "skills": [
+    "Medical device landscape",
+    "FDA pathway awareness",
+    "ethical reasoning in medicine"
+  ],
+  "topicClusters": [
+    "design",
+    "safety"
+  ],
+  "concepts": [
+    "history-of-bme-and-notable-innovations",
+    "medical-device-classification-fda-class-i-ii-iii",
+    "fda-regulatory-pathways-510-k-pma",
+    "iso-standards-and-design-controls",
+    "bme-ethical-issues-informed-consent-clinical-trials",
+    "engineering-design-in-clinical-contexts"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

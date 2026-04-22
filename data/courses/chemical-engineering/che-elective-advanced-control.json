@@ -1,0 +1,27 @@
+{
+  "id": "che-elective-advanced-control",
+  "title": "[THEME: Advanced Process Control]",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "MPC, optimization, real-time control",
+  "whyItMatters": "Advanced theme area within Chemical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "control",
+    "process-design"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Advanced Process Control",
+  "electiveTag": "[THEME: Advanced Process Control]",
+  "status": "planned",
+  "referenceNote": null
+}

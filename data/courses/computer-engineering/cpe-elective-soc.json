@@ -1,0 +1,27 @@
+{
+  "id": "cpe-elective-soc",
+  "title": "[THEME: SoC Design]",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "ARM SoC, bus protocols (AXI), peripheral IP",
+  "whyItMatters": "Advanced theme area within Computer Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "vlsi",
+    "embedded"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "SoC Design",
+  "electiveTag": "[THEME: SoC Design]",
+  "status": "planned",
+  "referenceNote": null
+}

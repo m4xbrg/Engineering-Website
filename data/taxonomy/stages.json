@@ -2,41 +2,55 @@
   {
     "id": "foundation",
     "label": "Foundations",
-    "typicalYear": "1"
+    "typicalYear": "1",
+    "description": "Foundations courses typically appear in year 1."
   },
   {
     "id": "core-sciences",
     "label": "Core Sciences",
-    "typicalYear": "1-2"
+    "typicalYear": "1-2",
+    "description": "Core Sciences courses typically appear in year 1-2."
   },
   {
     "id": "engineering-core",
     "label": "Engineering Core",
-    "typicalYear": "2"
+    "typicalYear": "2",
+    "description": "Engineering Core courses typically appear in year 2."
   },
   {
     "id": "major-entry",
     "label": "Major Entry",
-    "typicalYear": "2"
+    "typicalYear": "2",
+    "description": "Major Entry courses typically appear in year 2."
   },
   {
     "id": "major-core",
     "label": "Major Core",
-    "typicalYear": "2-3"
+    "typicalYear": "2-3",
+    "description": "Major Core courses typically appear in year 2-3."
   },
   {
     "id": "intermediate",
     "label": "Intermediate",
-    "typicalYear": "3"
+    "typicalYear": "3",
+    "description": "Intermediate courses typically appear in year 3."
   },
   {
     "id": "advanced",
     "label": "Advanced",
-    "typicalYear": "3-4"
+    "typicalYear": "3-4",
+    "description": "Advanced courses typically appear in year 3-4."
   },
   {
     "id": "capstone",
     "label": "Capstone + Electives",
-    "typicalYear": "4"
+    "typicalYear": "4",
+    "description": "Capstone + Electives courses typically appear in year 4."
+  },
+  {
+    "id": "applied-core",
+    "label": "Applied Core",
+    "typicalYear": "3",
+    "description": "Applied core courses typically appear in year 3."
   }
 ]

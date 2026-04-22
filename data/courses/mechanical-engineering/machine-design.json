@@ -1,0 +1,50 @@
+{
+  "id": "machine-design",
+  "title": "Machine Design",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate ME",
+  "year": "3",
+  "shortDesc": "Design of mechanical components: shafts, gears, bearings, fasteners, springs",
+  "whyItMatters": "The core professional course for designing real mechanical systems",
+  "prereqs": [
+    "mechanics-of-materials",
+    "dynamics",
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [
+    "Materials Science"
+  ],
+  "leadsInto": [
+    "mechatronics"
+  ],
+  "externalLeadsInto": [
+    "Senior Design",
+    "Robotics"
+  ],
+  "skills": [
+    "Fatigue analysis",
+    "gear train design",
+    "bearing selection"
+  ],
+  "topicClusters": [
+    "machine-design",
+    "solid-mechanics"
+  ],
+  "concepts": [
+    "static-failure-theories-distortion-energy-coulomb-mohr",
+    "fatigue-failure-s-n-curve-miner-s-rule-stress-concentration",
+    "shaft-design-under-combined-loading",
+    "spur-helical-bevel-and-worm-gear-design",
+    "rolling-element-bearing-selection-and-life",
+    "fastener-and-power-screw-analysis",
+    "spring-design-compression-torsion-extension"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

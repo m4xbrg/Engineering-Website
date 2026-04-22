@@ -1,0 +1,27 @@
+{
+  "id": "me-elective-automotive",
+  "title": "[THEME: Automotive Engineering]",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Powertrains, vehicle dynamics, NVH",
+  "whyItMatters": "Advanced theme area within Mechanical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "machine-design",
+    "thermodynamics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Automotive Engineering",
+  "electiveTag": "[THEME: Automotive Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

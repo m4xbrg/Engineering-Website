@@ -1,0 +1,26 @@
+{
+  "id": "me-elective-advanced-mfg",
+  "title": "[THEME: Advanced Manufacturing]",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "CNC, metrology, smart manufacturing",
+  "whyItMatters": "Advanced theme area within Mechanical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "manufacturing"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Advanced Manufacturing",
+  "electiveTag": "[THEME: Advanced Manufacturing]",
+  "status": "planned",
+  "referenceNote": null
+}

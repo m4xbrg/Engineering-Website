@@ -1,0 +1,26 @@
+{
+  "id": "ae-elective-rotorcraft",
+  "title": "[THEME: Rotorcraft]",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Helicopter aerodynamics, blade element theory",
+  "whyItMatters": "Advanced theme area within Aerospace Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "aerodynamics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Rotorcraft",
+  "electiveTag": "[THEME: Rotorcraft]",
+  "status": "planned",
+  "referenceNote": null
+}

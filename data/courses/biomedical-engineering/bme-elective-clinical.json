@@ -1,0 +1,27 @@
+{
+  "id": "bme-elective-clinical",
+  "title": "[THEME: Clinical Engineering]",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Hospital systems, equipment management, safety",
+  "whyItMatters": "Advanced theme area within Biomedical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "safety",
+    "design"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Clinical Engineering",
+  "electiveTag": "[THEME: Clinical Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

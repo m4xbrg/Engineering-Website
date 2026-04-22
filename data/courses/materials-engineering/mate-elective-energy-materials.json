@@ -1,0 +1,27 @@
+{
+  "id": "mate-elective-energy-materials",
+  "title": "[THEME: Energy Materials]",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Battery electrodes, electrolytes, photovoltaics, fuel cells",
+  "whyItMatters": "Advanced theme area within Materials Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "materials",
+    "power"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Energy Materials",
+  "electiveTag": "[THEME: Energy Materials]",
+  "status": "planned",
+  "referenceNote": null
+}

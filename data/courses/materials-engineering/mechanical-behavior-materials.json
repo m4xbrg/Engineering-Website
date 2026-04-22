@@ -1,0 +1,47 @@
+{
+  "id": "mechanical-behavior-materials",
+  "title": "Mechanical Behavior of Materials",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Core Materials Science",
+  "year": "2-3",
+  "shortDesc": "Deformation mechanisms, fracture, fatigue, and creep of engineering materials",
+  "whyItMatters": "Materials fail — understanding why and how prevents catastrophic outcomes",
+  "prereqs": [
+    "mechanics-of-materials",
+    "intro-materials-science"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "machine-design"
+  ],
+  "externalLeadsInto": [
+    "Failure Analysis",
+    "Design with Materials"
+  ],
+  "skills": [
+    "Tensile test interpretation",
+    "fracture analysis",
+    "fatigue life estimation"
+  ],
+  "topicClusters": [
+    "solid-mechanics",
+    "materials"
+  ],
+  "concepts": [
+    "elastic-and-plastic-deformation-mechanisms",
+    "strengthening-mechanisms-solid-solution-precipitation-work-hardening-grain-size",
+    "fracture-mechanics-ki-fracture-toughness-lefm",
+    "fatigue-s-n-curves-stress-life-strain-life",
+    "creep-mechanisms-and-larson-miller-parameter",
+    "impact-toughness-charpy-dbtt",
+    "failure-analysis-methodology"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

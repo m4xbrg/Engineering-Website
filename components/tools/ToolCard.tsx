@@ -15,7 +15,7 @@ export function ToolCard({ tool }: ToolCardProps) {
     >
       <div className="flex flex-wrap gap-2">
         <Badge tone="accent">{tool.category}</Badge>
-        <Badge tone={tool.status === "stub" ? "warning" : "muted"}>
+        <Badge tone={tool.status === "planned" ? "warning" : "muted"}>
           {tool.status}
         </Badge>
       </div>

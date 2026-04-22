@@ -1,0 +1,50 @@
+{
+  "id": "process-control",
+  "title": "Process Control",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Core ChE",
+  "year": "3",
+  "shortDesc": "Dynamic modeling, feedback and feedforward control, PLC programming",
+  "whyItMatters": "Safe and efficient plant operation requires robust control systems",
+  "prereqs": [
+    "differential-equations",
+    "linear-algebra",
+    "material-energy-balances"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "process-safety"
+  ],
+  "externalLeadsInto": [
+    "Advanced Process Control",
+    "Plant Design"
+  ],
+  "skills": [
+    "Control loop tuning",
+    "process modeling",
+    "P&ID reading"
+  ],
+  "topicClusters": [
+    "control",
+    "process-design"
+  ],
+  "concepts": [
+    "process-dynamics-and-transfer-functions",
+    "laplace-transform-methods",
+    "pid-control-and-tuning-methods-ziegler-nichols",
+    "feedback-and-feedforward-control",
+    "cascade-and-ratio-control",
+    "process-instrumentation-and-control-diagrams-p-and-id",
+    "intro-to-model-predictive-control-mpc"
+  ],
+  "relatedTools": [
+    "bode-plot"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

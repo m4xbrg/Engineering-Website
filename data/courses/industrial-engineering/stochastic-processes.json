@@ -1,0 +1,45 @@
+{
+  "id": "stochastic-processes",
+  "title": "Stochastic Processes and Queuing Theory",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Operations Research Core",
+  "year": "2-3",
+  "shortDesc": "Markov chains, Poisson processes, and queuing models for service systems",
+  "whyItMatters": "Models waiting lines in hospitals, call centers, manufacturing, and logistics",
+  "prereqs": [
+    "stats-for-ie"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Simulation",
+    "Service Systems Design",
+    "Healthcare IE"
+  ],
+  "skills": [
+    "Queuing model selection",
+    "performance metric calculation",
+    "system design"
+  ],
+  "topicClusters": [
+    "simulation",
+    "mathematics"
+  ],
+  "concepts": [
+    "poisson-process",
+    "markov-chains-discrete-and-continuous-time",
+    "m-m-1-m-m-c-m-g-1-queuing-models",
+    "little-s-law",
+    "queuing-networks-jackson-networks",
+    "performance-metrics-throughput-cycle-time-utilization",
+    "applications-er-design-call-centers-manufacturing-cells"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

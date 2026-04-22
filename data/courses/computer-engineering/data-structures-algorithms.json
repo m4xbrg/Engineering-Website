@@ -1,0 +1,46 @@
+{
+  "id": "data-structures-algorithms",
+  "title": "Data Structures and Algorithms",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — CE Core",
+  "year": "2",
+  "shortDesc": "Core data structures and algorithm design/analysis",
+  "whyItMatters": "Underpins all software engineering; required for OS, compilers, embedded systems",
+  "prereqs": [
+    "programming-i",
+    "discrete-mathematics"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "operating-systems",
+    "compilers"
+  ],
+  "externalLeadsInto": [
+    "Computer Architecture",
+    "Algorithms II"
+  ],
+  "skills": [
+    "Algorithm design",
+    "complexity analysis",
+    "data structure implementation"
+  ],
+  "topicClusters": [
+    "computing"
+  ],
+  "concepts": [
+    "arrays-linked-lists-stacks-queues",
+    "trees-bst-avl-heaps",
+    "hash-tables",
+    "graphs-bfs-dfs-shortest-path-minimum-spanning-tree",
+    "sorting-algorithms-and-complexity",
+    "dynamic-programming-and-greedy-algorithms"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

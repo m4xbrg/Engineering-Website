@@ -1,0 +1,27 @@
+{
+  "id": "ee-elective-robotics",
+  "title": "[THEME: Robotics & Mechatronics]",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Actuators, sensors, embedded control",
+  "whyItMatters": "Advanced theme area within Electrical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "control",
+    "embedded"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Robotics & Mechatronics",
+  "electiveTag": "[THEME: Robotics & Mechatronics]",
+  "status": "planned",
+  "referenceNote": null
+}

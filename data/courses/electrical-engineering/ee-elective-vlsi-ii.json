@@ -1,0 +1,26 @@
+{
+  "id": "ee-elective-vlsi-ii",
+  "title": "[THEME: VLSI II / IC Design]",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Analog IC, mixed-signal, layout verification",
+  "whyItMatters": "Advanced theme area within Electrical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "vlsi"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "VLSI II / IC Design",
+  "electiveTag": "[THEME: VLSI II / IC Design]",
+  "status": "planned",
+  "referenceNote": null
+}

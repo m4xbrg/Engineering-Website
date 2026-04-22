@@ -2,23 +2,113 @@
   "id": "chemical-engineering",
   "name": "Chemical Engineering",
   "shortName": "ChE",
-  "description": "Transport, reaction systems, process control, and plant-scale engineering.",
+  "description": "Application of chemistry, physics, and biology to convert raw materials into useful products at industrial scale. Spans pharmaceuticals, energy, food, materials, and environmental applications.",
   "mainSubfields": [
-    "Thermodynamics",
-    "Reaction Engineering",
-    "Transport",
-    "Process Systems"
+    "Transport phenomena",
+    "reaction engineering",
+    "thermodynamics",
+    "process design",
+    "process control",
+    "polymer science",
+    "biochemical engineering",
+    "process safety"
   ],
-  "coreFoundationIds": ["calculus-i"],
-  "conceptClusters": ["fluids", "control"],
-  "summaryChain": "Mass and energy accounting form the basis for transport, reactions, and process systems.",
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "calculus-iii",
+    "differential-equations",
+    "physics-i",
+    "linear-algebra",
+    "engineering-statistics"
+  ],
+  "conceptClusters": [
+    "chemistry",
+    "thermodynamics",
+    "fluids",
+    "heat-transfer",
+    "separations",
+    "reaction-engineering",
+    "control",
+    "process-design",
+    "economics",
+    "safety",
+    "design",
+    "materials",
+    "power",
+    "water"
+  ],
+  "summaryChain": "Chemistry → Material & Energy Balances → ChE Thermodynamics → Fluid Mechanics → Heat Transfer → Mass Transfer → Reaction Engineering / Separation Processes → Process Control / Process Design → Capstone",
+  "recommendedTools": [
+    "unit-converter",
+    "bode-plot"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-chemical",
+  "colorToken": "--color-che",
+  "icon": "flask-conical",
   "stages": [
+    {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation",
+      "description": "See Core Engineering: Calculus I–III, Differential Equations, Physics I, Linear Algebra, Statistics",
+      "courseIds": [
+        "general-chemistry",
+        "organic-chemistry"
+      ]
+    },
     {
       "id": "major-entry",
       "label": "Year 2 — ChE Core Entry",
-      "courseIds": ["material-energy-balances"]
+      "description": "",
+      "courseIds": [
+        "material-energy-balances",
+        "che-thermodynamics-i"
+      ]
+    },
+    {
+      "id": "major-core",
+      "label": "Year 2–3 — Transport Phenomena",
+      "description": "",
+      "courseIds": [
+        "fluid-mechanics-che",
+        "heat-transfer-che",
+        "mass-transfer-i"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Core ChE",
+      "description": "",
+      "courseIds": [
+        "chemical-reaction-engineering",
+        "separation-processes",
+        "process-control",
+        "process-design-i"
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Year 3–4 — Advanced ChE",
+      "description": "",
+      "courseIds": [
+        "process-safety",
+        "biochemical-engineering"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "che-capstone",
+        "che-elective-polymer",
+        "che-elective-electrochemical",
+        "che-elective-environmental",
+        "che-elective-petroleum",
+        "che-elective-pharma",
+        "che-elective-nano",
+        "che-elective-advanced-control"
+      ]
     }
   ]
 }

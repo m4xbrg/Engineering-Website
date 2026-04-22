@@ -1,0 +1,47 @@
+{
+  "id": "engineering-economy",
+  "title": "Engineering Economy",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — IE Core Entry",
+  "year": "2",
+  "shortDesc": "Time value of money, cash flow analysis, project evaluation, and economic decision-making",
+  "whyItMatters": "Every engineering decision has an economic dimension",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "systems-engineering"
+  ],
+  "externalLeadsInto": [
+    "Project Management",
+    "Manufacturing Economics"
+  ],
+  "skills": [
+    "NPV",
+    "IRR",
+    "payback period",
+    "sensitivity analysis",
+    "make-vs-buy decisions"
+  ],
+  "topicClusters": [
+    "economics"
+  ],
+  "concepts": [
+    "time-value-of-money-pv-fv-annuities",
+    "discount-rates-and-marr",
+    "depreciation-methods-straight-line-macrs",
+    "net-present-value-and-irr-analysis",
+    "benefit-cost-analysis",
+    "sensitivity-and-break-even-analysis",
+    "after-tax-cash-flow-analysis"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

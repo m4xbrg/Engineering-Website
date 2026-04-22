@@ -1,0 +1,27 @@
+{
+  "id": "ce-elective-smart-cities",
+  "title": "[THEME: Smart Cities]",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Sensors, IoT, urban data systems",
+  "whyItMatters": "Advanced theme area within Civil Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "embedded",
+    "transportation"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Smart Cities",
+  "electiveTag": "[THEME: Smart Cities]",
+  "status": "planned",
+  "referenceNote": null
+}

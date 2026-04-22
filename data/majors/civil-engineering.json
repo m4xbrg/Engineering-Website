@@ -2,23 +2,101 @@
   "id": "civil-engineering",
   "name": "Civil Engineering",
   "shortName": "CE",
-  "description": "Infrastructure, structures, water systems, and the built environment.",
+  "description": "Design, construction, and maintenance of the built environment — infrastructure, structures, water systems, transportation, and geotechnics.",
   "mainSubfields": [
-    "Structures",
-    "Geotechnics",
-    "Transportation",
-    "Water Resources"
+    "Structural engineering",
+    "geotechnical engineering",
+    "transportation",
+    "hydraulics/hydrology",
+    "environmental engineering",
+    "construction management",
+    "surveying"
   ],
-  "coreFoundationIds": ["calculus-i", "statics"],
-  "conceptClusters": ["mechanics", "materials"],
-  "summaryChain": "Mechanics and materials foundations support structural and infrastructure analysis.",
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "calculus-iii",
+    "differential-equations",
+    "physics-i",
+    "engineering-statistics",
+    "statics",
+    "dynamics",
+    "mechanics-of-materials"
+  ],
+  "conceptClusters": [
+    "materials",
+    "structures",
+    "transportation",
+    "fluids",
+    "water",
+    "geotechnics",
+    "chemistry",
+    "design",
+    "economics",
+    "embedded"
+  ],
+  "summaryChain": "Calculus → Physics I → Statics → Mechanics of Materials → Structural Analysis I → Structural Analysis II → RC Design / Steel Design → Capstone; Fluid Mechanics → Hydrology / Environmental Engineering; Soil Mechanics → Foundation Engineering",
+  "recommendedTools": [
+    "unit-converter",
+    "fbd-builder"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-civil",
+  "colorToken": "--color-ce",
+  "icon": "building-2",
   "stages": [
     {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation (shared with Core Engineering)",
+      "description": "See Core Engineering: Calculus I–III, Differential Equations, Physics I, Statistics, Statics, Dynamics, Mechanics of Materials",
+      "courseIds": []
+    },
+    {
+      "id": "major-entry",
+      "label": "Year 2–3 — CE Core Entry",
+      "description": "",
+      "courseIds": [
+        "civil-materials",
+        "surveying",
+        "fluid-mechanics-ce"
+      ]
+    },
+    {
       "id": "major-core",
-      "label": "Year 2-3 — Structural Track",
-      "courseIds": ["structural-analysis-i"]
+      "label": "Year 2–3 — Structural Track",
+      "description": "",
+      "courseIds": [
+        "structural-analysis-i",
+        "structural-analysis-ii",
+        "reinforced-concrete-design",
+        "steel-structure-design"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Geotechnical, Transportation & Environment",
+      "description": "",
+      "courseIds": [
+        "soil-mechanics",
+        "foundation-engineering",
+        "transportation-engineering",
+        "hydrology",
+        "environmental-engineering-i"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "ce-capstone",
+        "ce-elective-bridge",
+        "ce-elective-seismic",
+        "ce-elective-construction-mgmt",
+        "ce-elective-gis",
+        "ce-elective-sustainable-infra",
+        "ce-elective-coastal",
+        "ce-elective-smart-cities"
+      ]
     }
   ]
 }

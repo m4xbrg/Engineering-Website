@@ -1,0 +1,46 @@
+{
+  "id": "physical-chemistry-mate",
+  "title": "Physical Chemistry for Materials Engineers",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — MatE Core Entry",
+  "year": "2",
+  "shortDesc": "Thermodynamics, kinetics, and electrochemistry applied to materials",
+  "whyItMatters": "Phase transformations and corrosion are governed by thermodynamics and kinetics",
+  "prereqs": [
+    "calculus-ii"
+  ],
+  "externalPrereqs": [
+    "General Chemistry II"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Phase Diagrams",
+    "Kinetics of Transformations",
+    "Corrosion"
+  ],
+  "skills": [
+    "Gibbs energy calculations",
+    "reaction kinetics",
+    "electrochemical cell analysis"
+  ],
+  "topicClusters": [
+    "chemistry",
+    "thermodynamics"
+  ],
+  "concepts": [
+    "gibbs-free-energy-and-equilibrium",
+    "chemical-potential",
+    "reaction-kinetics-arrhenius-equation",
+    "electrochemistry-cell-potential-nernst-equation",
+    "surface-and-interface-thermodynamics",
+    "thermodynamics-of-solutions"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

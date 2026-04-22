@@ -16,8 +16,8 @@ export default function GlossaryPage() {
       />
       <PageHeader
         eyebrow="Glossary"
-        title="A reusable terminology layer for engineering language across the product."
-        description="Glossary entries have their own route structure and can already link outward into concept detail pages."
+        title="A reusable terminology layer for Engineering Atlas."
+        description="Glossary entries are generated from the same concept graph as the curriculum pages, so terms can route into concept detail and related topics."
       />
       <div className="grid gap-4 md:grid-cols-2">
         {terms.map((term) => (

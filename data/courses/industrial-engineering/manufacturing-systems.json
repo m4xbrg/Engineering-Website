@@ -1,0 +1,48 @@
+{
+  "id": "manufacturing-systems",
+  "title": "Manufacturing Systems Engineering",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Manufacturing and Quality",
+  "year": "3",
+  "shortDesc": "Production planning, scheduling, lean manufacturing, and facility design",
+  "whyItMatters": "Manufacturing is the largest source of IE jobs and a driver of economic output",
+  "prereqs": [
+    "engineering-economy",
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [
+    "OR I"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Production Planning",
+    "Supply Chain",
+    "Advanced Manufacturing"
+  ],
+  "skills": [
+    "Facility layout design",
+    "production scheduling",
+    "lean implementation"
+  ],
+  "topicClusters": [
+    "manufacturing",
+    "systems"
+  ],
+  "concepts": [
+    "process-types-job-shop-flow-shop-batch",
+    "facility-layout-product-process-cellular",
+    "aggregate-production-planning",
+    "material-requirements-planning-mrp",
+    "lean-principles-5s-kaizen-kanban",
+    "just-in-time-and-pull-systems",
+    "theory-of-constraints-toc"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

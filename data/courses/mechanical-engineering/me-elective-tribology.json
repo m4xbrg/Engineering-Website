@@ -1,0 +1,27 @@
+{
+  "id": "me-elective-tribology",
+  "title": "[THEME: Tribology]",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Friction, wear, lubrication, surface engineering",
+  "whyItMatters": "Advanced theme area within Mechanical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "materials",
+    "machine-design"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Tribology",
+  "electiveTag": "[THEME: Tribology]",
+  "status": "planned",
+  "referenceNote": null
+}

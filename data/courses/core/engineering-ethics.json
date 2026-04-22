@@ -1,0 +1,40 @@
+{
+  "id": "engineering-ethics",
+  "title": "Engineering Ethics and Professionalism",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "applied-core",
+  "stageLabel": "Year 3 — Applied Core",
+  "year": "3",
+  "shortDesc": "Ethical frameworks, codes of conduct, professional responsibility",
+  "whyItMatters": "Engineers make decisions affecting public safety and welfare",
+  "prereqs": [
+    "intro-engineering"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Capstone",
+    "professional practice"
+  ],
+  "skills": [
+    "Ethical reasoning",
+    "case analysis",
+    "stakeholder consideration"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "nspe-and-disciplinary-codes-of-ethics",
+    "whistleblowing-and-professional-duty",
+    "risk-assessment-and-public-safety",
+    "sustainability-and-environmental-responsibility",
+    "intellectual-property",
+    "case-studies-challenger-tacoma-narrows-etc"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

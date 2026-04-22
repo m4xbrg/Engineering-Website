@@ -2,18 +2,114 @@
   "id": "biomedical-engineering",
   "name": "Biomedical Engineering",
   "shortName": "BME",
-  "description": "Biology, instrumentation, imaging, and design for healthcare systems and devices.",
-  "mainSubfields": ["Instrumentation", "Imaging", "Biomechanics", "Devices"],
-  "coreFoundationIds": ["calculus-i"],
-  "conceptClusters": ["circuits", "materials"],
-  "summaryChain": "Engineering analysis is applied to biological systems, instrumentation, and medical device design.",
+  "description": "Application of engineering principles to medicine and biology. Bridges life sciences with engineering to develop diagnostics, therapeutics, medical devices, and biomaterials.",
+  "mainSubfields": [
+    "Biomechanics",
+    "biomaterials",
+    "bioinstrumentation",
+    "biosignals and imaging",
+    "tissue engineering",
+    "neural engineering",
+    "clinical engineering",
+    "regulatory science"
+  ],
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "calculus-iii",
+    "differential-equations",
+    "physics-i",
+    "physics-ii",
+    "linear-algebra",
+    "engineering-statistics",
+    "statics",
+    "mechanics-of-materials"
+  ],
+  "conceptClusters": [
+    "physiology",
+    "chemistry",
+    "design",
+    "safety",
+    "biomechanics",
+    "solid-mechanics",
+    "bioinstrumentation",
+    "circuits",
+    "medical-imaging",
+    "signals",
+    "biomaterials",
+    "materials",
+    "fluids",
+    "embedded",
+    "computation",
+    "control"
+  ],
+  "summaryChain": "Biology I + Chemistry → Physiology for Engineers → Bioinstrumentation / Biomechanics I / Biomaterials → Biosignals / Biomechanics II / Tissue Engineering / Neural Engineering → BME Design → Capstone",
+  "recommendedTools": [
+    "unit-converter",
+    "ohms-law",
+    "resistor-color-code",
+    "fourier-series",
+    "opamp-config"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-biomedical",
+  "colorToken": "--color-bme",
+  "icon": "heart-pulse",
   "stages": [
     {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation",
+      "description": "See Core Engineering: Calculus I–III, Differential Equations, Physics I–II, Linear Algebra, Statistics, Statics",
+      "courseIds": [
+        "biology-for-engineers",
+        "general-chemistry-bme"
+      ]
+    },
+    {
+      "id": "major-entry",
+      "label": "Year 2 — BME Core Entry",
+      "description": "",
+      "courseIds": [
+        "intro-bme",
+        "physiology-for-engineers",
+        "biomechanics-i"
+      ]
+    },
+    {
+      "id": "major-core",
+      "label": "Year 2–3 — Intermediate BME",
+      "description": "",
+      "courseIds": [
+        "bioinstrumentation",
+        "biosignals-imaging",
+        "biomaterials",
+        "biomechanics-ii"
+      ]
+    },
+    {
       "id": "intermediate",
-      "label": "Year 2-3 — Intermediate BME",
-      "courseIds": ["bioinstrumentation"]
+      "label": "Year 3 — Advanced BME",
+      "description": "",
+      "courseIds": [
+        "tissue-engineering",
+        "neural-engineering",
+        "bme-design-regulatory"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "bme-capstone",
+        "bme-elective-drug-delivery",
+        "bme-elective-ortho",
+        "bme-elective-cardiovascular",
+        "bme-elective-imaging",
+        "bme-elective-wearable",
+        "bme-elective-bioinformatics",
+        "bme-elective-rehab",
+        "bme-elective-clinical"
+      ]
     }
   ]
 }

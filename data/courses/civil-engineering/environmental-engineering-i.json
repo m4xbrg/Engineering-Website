@@ -1,0 +1,47 @@
+{
+  "id": "environmental-engineering-i",
+  "title": "Environmental Engineering I",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Geotechnical, Transportation & Environment",
+  "year": "3",
+  "shortDesc": "Water and wastewater treatment processes, environmental regulations, contaminant transport",
+  "whyItMatters": "Clean water and sanitation are fundamental civil engineering responsibilities",
+  "prereqs": [
+    "fluid-mechanics-ce",
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [
+    "Chemistry"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Environmental Systems",
+    "Remediation",
+    "Air Quality"
+  ],
+  "skills": [
+    "Treatment process design",
+    "pollutant mass balances",
+    "regulatory compliance"
+  ],
+  "topicClusters": [
+    "water",
+    "chemistry"
+  ],
+  "concepts": [
+    "water-quality-parameters-bod-cod-do-turbidity",
+    "drinking-water-treatment-coagulation-filtration-disinfection",
+    "wastewater-treatment-primary-secondary-tertiary",
+    "biological-treatment-activated-sludge",
+    "reactor-theory-cstr-pfr",
+    "contaminant-transport-in-water-and-soil"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

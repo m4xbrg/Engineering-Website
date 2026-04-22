@@ -1,0 +1,45 @@
+{
+  "id": "ceramics-glasses",
+  "title": "Ceramics and Glasses",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Material Classes",
+  "year": "3",
+  "shortDesc": "Crystal and amorphous structures, sintering, mechanical and thermal properties of ceramics",
+  "whyItMatters": "Ceramics serve extreme environments (thermal barriers, cutting tools, biomedical)",
+  "prereqs": [
+    "thermo-phase-diagrams",
+    "intro-materials-science"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Electronic Ceramics",
+    "Refractory Engineering",
+    "Advanced Ceramics"
+  ],
+  "skills": [
+    "Sintering parameter selection",
+    "ceramic property estimation",
+    "failure mode analysis"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "ceramic-crystal-structures-nacl-perovskite-spinel",
+    "glass-structure-and-glass-ceramic-processing",
+    "powder-processing-and-sintering",
+    "mechanical-behavior-brittle-fracture-weibull-statistics",
+    "thermal-properties-conductivity-expansion-shock-resistance",
+    "electrical-ceramics-ferroelectrics-piezoelectrics",
+    "oxide-ceramics-al2o3-zro2-sic-si3n4"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Badge } from "@/components/ui/Badge";
 import type { Concept } from "@/types";
 
@@ -7,7 +9,10 @@ type ConceptCardProps = {
 
 export function ConceptCard({ concept }: ConceptCardProps) {
   return (
-    <div className="surface-panel flex h-full flex-col gap-4 p-5">
+    <Link
+      href={`/concepts/${concept.id}`}
+      className="surface-panel flex h-full flex-col gap-4 p-5 transition-transform hover:-translate-y-1"
+    >
       <div className="space-y-2">
         <h3 className="text-xl font-semibold">{concept.name}</h3>
         <p className="text-sm leading-7 text-muted-foreground">
@@ -19,6 +24,6 @@ export function ConceptCard({ concept }: ConceptCardProps) {
           <Badge key={cluster}>{cluster}</Badge>
         ))}
       </div>
-    </div>
+    </Link>
   );
 }

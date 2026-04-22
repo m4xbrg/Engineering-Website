@@ -1,0 +1,26 @@
+{
+  "id": "ce-elective-gis",
+  "title": "[THEME: GIS & Remote Sensing]",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Spatial analysis, LiDAR, site mapping",
+  "whyItMatters": "Advanced theme area within Civil Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "transportation"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "GIS & Remote Sensing",
+  "electiveTag": "[THEME: GIS & Remote Sensing]",
+  "status": "planned",
+  "referenceNote": null
+}

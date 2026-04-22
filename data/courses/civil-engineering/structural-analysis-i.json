@@ -4,20 +4,43 @@
   "majorId": "civil-engineering",
   "isCore": false,
   "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Structural Track",
   "year": "2-3",
-  "shortDesc": "Internal forces, reactions, and structural behavior for determinate systems.",
-  "whyItMatters": "This course translates shared mechanics into real infrastructure analysis.",
-  "prereqs": ["statics"],
-  "leadsInto": [],
-  "skills": [
-    "reaction solving",
-    "shear and moment intuition",
-    "structural idealization"
+  "shortDesc": "Analysis of statically determinate structures: beams, trusses, frames",
+  "whyItMatters": "Foundation for structural engineering and building design",
+  "prereqs": [
+    "statics",
+    "mechanics-of-materials"
   ],
-  "topicClusters": ["mechanics", "materials"],
-  "concepts": ["stress-strain"],
-  "relatedTools": ["fbd-builder"],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "structural-analysis-ii",
+    "reinforced-concrete-design",
+    "steel-structure-design"
+  ],
+  "externalLeadsInto": [],
+  "skills": [
+    "Influence lines",
+    "truss methods",
+    "deflection calculations"
+  ],
+  "topicClusters": [
+    "structures"
+  ],
+  "concepts": [
+    "statical-determinacy-and-stability",
+    "method-of-sections-and-joints-trusses",
+    "shear-and-moment-diagrams",
+    "influence-lines-for-beams-and-trusses",
+    "deflections-conjugate-beam-moment-area",
+    "intro-to-cables-and-arches"
+  ],
+  "relatedTools": [
+    "fbd-builder"
+  ],
   "isElective": false,
   "electiveTheme": null,
-  "status": "stub"
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
 }

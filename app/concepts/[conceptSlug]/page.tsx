@@ -3,13 +3,13 @@ import Link from "next/link";
 import { ConceptChip } from "@/components/concepts/ConceptChip";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { ToolGrid } from "@/components/tools/ToolGrid";
-import { EmptyState } from "@/components/ui/EmptyState";
+import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   getAllConcepts,
   getAllCourses,
-  getAllToolDefs,
   getConcept,
+  getRelatedTools,
 } from "@/lib/data";
 import { getCourseRoute } from "@/lib/utils/routes";
 
@@ -31,9 +31,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
   const relatedCourses = getAllCourses().filter((course) =>
     concept.taughtIn.includes(course.id),
   );
-  const relatedTools = getAllToolDefs().filter((tool) =>
-    concept.toolLinks.includes(tool.id),
-  );
+  const relatedTools = getRelatedTools({ conceptId: concept.id });
   const conceptMap = new Map(
     getAllConcepts().map((relatedConcept) => [
       relatedConcept.id,
@@ -54,8 +52,26 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         eyebrow="Concept detail"
         title={concept.name}
         description={concept.extendedDef}
+        meta={
+          <>
+            {concept.topicClusters.map((cluster) => (
+              <Badge key={cluster}>{cluster}</Badge>
+            ))}
+          </>
+        }
       />
       <section className="grid gap-6 xl:grid-cols-[1.1fr,0.9fr]">
+        <div className="surface-panel space-y-5 p-6">
+          <h2 className="text-2xl font-semibold">Where it appears</h2>
+          <p className="text-sm leading-7 text-muted-foreground">
+            {concept.shortDef}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {concept.majorTags.map((majorId) => (
+              <Badge key={majorId}>{majorId}</Badge>
+            ))}
+          </div>
+        </div>
         <div className="surface-panel space-y-5 p-6">
           <h2 className="text-2xl font-semibold">Connected courses</h2>
           <div className="flex flex-wrap gap-2">
@@ -70,7 +86,8 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
             ))}
           </div>
         </div>
-        <div className="surface-panel space-y-5 p-6">
+      </section>
+      <section className="surface-panel space-y-5 p-6">
           <h2 className="text-2xl font-semibold">Related concepts</h2>
           <div className="flex flex-wrap gap-2">
             {concept.relatedConcepts.map((related) => (
@@ -81,16 +98,8 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
               />
             ))}
           </div>
-        </div>
       </section>
-      {relatedTools.length ? (
-        <ToolGrid tools={relatedTools} />
-      ) : (
-        <EmptyState
-          title="Tool links coming next"
-          description="This concept route is live, but its interactive lab links have not been fully authored yet."
-        />
-      )}
+      {relatedTools.length ? <ToolGrid tools={relatedTools} /> : null}
     </div>
   );
 }

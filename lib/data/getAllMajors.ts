@@ -1,6 +1,9 @@
-import { majorIndexItemSchema } from "@/lib/schemas";
-import { majorsIndexSource } from "@/lib/data/sources";
+import { getCatalog } from "@/lib/data/catalog";
 
 export function getAllMajors() {
-  return majorIndexItemSchema.array().parse(majorsIndexSource);
+  return getCatalog().majors;
+}
+
+export function getMajorIndexItems() {
+  return getCatalog().majorsIndex;
 }

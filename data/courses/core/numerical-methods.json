@@ -1,0 +1,45 @@
+{
+  "id": "numerical-methods",
+  "title": "Numerical Methods for Engineers",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "applied-core",
+  "stageLabel": "Year 3 — Applied Core",
+  "year": "3",
+  "shortDesc": "Computational techniques for solving engineering problems",
+  "whyItMatters": "Real-world engineering systems rarely have closed-form solutions",
+  "prereqs": [
+    "differential-equations",
+    "linear-algebra"
+  ],
+  "externalPrereqs": [
+    "programming familiarity"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Simulation",
+    "FEA",
+    "CFD",
+    "optimization"
+  ],
+  "skills": [
+    "Algorithm implementation",
+    "error analysis",
+    "matrix solvers"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "root-finding-bisection-newton-raphson",
+    "numerical-integration-trapezoidal-gaussian",
+    "numerical-odes-euler-runge-kutta",
+    "linear-system-solvers-lu-decomposition-iterative",
+    "curve-fitting-and-interpolation",
+    "finite-difference-basics"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

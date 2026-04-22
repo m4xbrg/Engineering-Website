@@ -15,6 +15,7 @@ export const CANONICAL_STAGE_IDS = [
   "foundation",
   "core-sciences",
   "engineering-core",
+  "applied-core",
   "major-entry",
   "major-core",
   "intermediate",

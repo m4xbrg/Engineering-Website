@@ -1,0 +1,45 @@
+{
+  "id": "separation-processes",
+  "title": "Separation Processes",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Core ChE",
+  "year": "3",
+  "shortDesc": "Distillation, absorption, extraction, adsorption, and membrane separations",
+  "whyItMatters": "Separations are the core unit operations of chemical processing",
+  "prereqs": [
+    "mass-transfer-i"
+  ],
+  "externalPrereqs": [
+    "ChE Thermodynamics I"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Process Design",
+    "Pharmaceutical Engineering",
+    "Environmental Engineering"
+  ],
+  "skills": [
+    "Column design",
+    "McCabe-Thiele analysis",
+    "solvent selection"
+  ],
+  "topicClusters": [
+    "separations"
+  ],
+  "concepts": [
+    "multicomponent-distillation-shortcut-methods",
+    "azeotropes-and-special-distillation",
+    "absorption-and-stripping-column-design",
+    "liquid-liquid-extraction",
+    "adsorption-and-chromatography",
+    "membrane-separations-ro-uf-mf"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

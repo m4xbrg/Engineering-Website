@@ -1,0 +1,27 @@
+{
+  "id": "ce-elective-coastal",
+  "title": "[THEME: Coastal & Offshore Engineering]",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Wave mechanics, beach nourishment",
+  "whyItMatters": "Advanced theme area within Civil Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "fluids",
+    "structures"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Coastal & Offshore Engineering",
+  "electiveTag": "[THEME: Coastal & Offshore Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

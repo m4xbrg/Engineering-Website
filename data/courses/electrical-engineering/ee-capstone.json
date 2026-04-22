@@ -1,0 +1,42 @@
+{
+  "id": "ee-capstone",
+  "title": "Senior Capstone — EE Design Project",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Yearlong team project from specification through implementation and testing",
+  "whyItMatters": "Integrates all EE competencies in a realistic engineering context",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Completion of EE core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice"
+  ],
+  "skills": [
+    "Project management",
+    "systems integration",
+    "documentation",
+    "presentation"
+  ],
+  "topicClusters": [
+    "design"
+  ],
+  "concepts": [
+    "requirements-and-specification-documents",
+    "system-architecture-design",
+    "pcb-design-and-fabrication",
+    "hardware-software-integration",
+    "testing-and-verification",
+    "technical-reporting-and-presentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

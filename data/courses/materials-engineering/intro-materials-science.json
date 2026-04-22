@@ -1,0 +1,44 @@
+{
+  "id": "intro-materials-science",
+  "title": "Introduction to Materials Science",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — MatE Core Entry",
+  "year": "2",
+  "shortDesc": "Bonding, crystal structure, defects, and introductory properties of all material classes",
+  "whyItMatters": "Structure determines property — this is the materials engineering axiom",
+  "prereqs": [
+    "physics-i"
+  ],
+  "externalPrereqs": [
+    "General Chemistry I"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "All Year 2–3 MatE courses"
+  ],
+  "skills": [
+    "Crystal structure determination",
+    "property estimation from structure",
+    "defect analysis"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "atomic-bonding-ionic-covalent-metallic-van-der-waals",
+    "crystal-structures-fcc-bcc-hcp-diamond-cubic",
+    "miller-indices-and-crystallography",
+    "point-defects-vacancies-interstitials-substitutionals",
+    "dislocations-edge-screw",
+    "grain-boundaries-and-microstructure",
+    "diffusion-fick-s-laws"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "general-chemistry-mate",
+  "title": "General Chemistry I & II",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "foundation",
+  "stageLabel": "Year 1–2 — Foundation",
+  "year": "1-2",
+  "shortDesc": "Atomic structure, bonding, stoichiometry, equilibria, electrochemistry, kinetics",
+  "whyItMatters": "Chemical engineering is built on chemical principles",
+  "prereqs": [],
+  "externalPrereqs": [
+    "High school chemistry"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Organic Chemistry",
+    "Physical Chemistry",
+    "Material Balances"
+  ],
+  "skills": [
+    "Stoichiometry",
+    "solution chemistry",
+    "kinetics calculations"
+  ],
+  "topicClusters": [
+    "chemistry"
+  ],
+  "concepts": [
+    "atomic-structure-periodic-trends",
+    "chemical-bonding-and-molecular-geometry",
+    "stoichiometry-and-solution-chemistry",
+    "thermochemistry",
+    "chemical-equilibrium-and-le-chatelier-s-principle",
+    "acid-base-equilibria-buffers",
+    "electrochemistry"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": "Same as listed under Chemical Engineering (full sequence)"
+}

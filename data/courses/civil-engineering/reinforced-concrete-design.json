@@ -1,0 +1,47 @@
+{
+  "id": "reinforced-concrete-design",
+  "title": "Reinforced Concrete Design",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Structural Track",
+  "year": "2-3",
+  "shortDesc": "ACI code-based design of beams, slabs, columns, and footings",
+  "whyItMatters": "Reinforced concrete is the world's most widely used structural material",
+  "prereqs": [
+    "structural-analysis-i",
+    "civil-materials"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "foundation-engineering"
+  ],
+  "externalLeadsInto": [
+    "Advanced Concrete",
+    "Building Codes"
+  ],
+  "skills": [
+    "Beam/slab design",
+    "load combinations",
+    "code application"
+  ],
+  "topicClusters": [
+    "structures",
+    "materials"
+  ],
+  "concepts": [
+    "concrete-and-rebar-material-properties",
+    "strength-design-philosophy-lrfd",
+    "rectangular-beam-flexural-design",
+    "shear-design-stirrups",
+    "one-way-and-two-way-slabs",
+    "column-design-and-interaction-diagrams",
+    "footing-design"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,47 @@
+{
+  "id": "stats-for-ie",
+  "title": "Probability and Statistics for IE",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — IE Core Entry",
+  "year": "2",
+  "shortDesc": "Deeper statistical methods: regression, design of experiments, and reliability",
+  "whyItMatters": "IE uses statistics as its primary quantitative tool",
+  "prereqs": [
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "quality-engineering"
+  ],
+  "externalLeadsInto": [
+    "Simulation",
+    "Six Sigma",
+    "Reliability Engineering"
+  ],
+  "skills": [
+    "Regression modeling",
+    "DOE analysis",
+    "reliability calculations"
+  ],
+  "topicClusters": [
+    "statistics-quality",
+    "mathematics"
+  ],
+  "concepts": [
+    "multiple-regression-and-model-validation",
+    "analysis-of-variance-anova",
+    "design-of-experiments-factorial-fractional-factorial",
+    "response-surface-methodology",
+    "statistical-process-control-control-charts",
+    "reliability-distributions-exponential-weibull",
+    "non-parametric-statistics"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

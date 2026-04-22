@@ -3,17 +3,48 @@
   "title": "Control Systems",
   "majorId": "electrical-engineering",
   "isCore": false,
-  "stageId": "advanced",
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate EE",
   "year": "3",
-  "shortDesc": "Feedback modeling, transfer functions, stability, and system behavior.",
-  "whyItMatters": "Control shows how engineering systems sense, respond, and remain stable under change.",
-  "prereqs": ["signals-and-systems"],
+  "shortDesc": "Feedback control theory, stability, and design for dynamic systems",
+  "whyItMatters": "Powers automation, robotics, aerospace, power regulation",
+  "prereqs": [
+    "differential-equations",
+    "signals-and-systems"
+  ],
+  "externalPrereqs": [
+    "Laplace transforms"
+  ],
   "leadsInto": [],
-  "skills": ["block diagrams", "stability reasoning", "frequency response"],
-  "topicClusters": ["control", "signals"],
-  "concepts": ["transfer-function", "bode-plot"],
-  "relatedTools": ["bode-plot", "rlc-response"],
+  "externalLeadsInto": [
+    "Advanced Control",
+    "Robotics",
+    "Power Electronics"
+  ],
+  "skills": [
+    "Root locus",
+    "Bode plots",
+    "PID design",
+    "stability analysis"
+  ],
+  "topicClusters": [
+    "control",
+    "signals"
+  ],
+  "concepts": [
+    "open-loop-vs-closed-loop-systems",
+    "transfer-functions-and-block-diagrams",
+    "routh-hurwitz-stability-criterion",
+    "root-locus-method",
+    "frequency-response-bode-nyquist",
+    "pid-controller-design-and-tuning"
+  ],
+  "relatedTools": [
+    "bode-plot"
+  ],
   "isElective": false,
   "electiveTheme": null,
-  "status": "live"
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
 }

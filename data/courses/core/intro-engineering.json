@@ -1,0 +1,38 @@
+{
+  "id": "intro-engineering",
+  "title": "Introduction to Engineering",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "foundation",
+  "stageLabel": "Year 1 — Foundations",
+  "year": "1",
+  "shortDesc": "Survey of engineering disciplines, design process, and professional ethics",
+  "whyItMatters": "Orients students to engineering identity and practice",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "All Year 1–2 courses"
+  ],
+  "skills": [
+    "Engineering design process",
+    "team communication",
+    "basic CAD"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "engineering-disciplines-overview",
+    "design-process-define-ideate-prototype-test",
+    "engineering-ethics-and-professional-responsibility",
+    "unit-analysis-and-estimation",
+    "technical-communication-basics"
+  ],
+  "relatedTools": [
+    "unit-converter"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "fluid-mechanics-ce",
+  "title": "Fluid Mechanics (Civil Focus)",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2–3 — CE Core Entry",
+  "year": "2-3",
+  "shortDesc": "Fluid statics, pipe flow, open channel flow, and hydraulic structures",
+  "whyItMatters": "Foundation for water supply, stormwater, irrigation, and drainage design",
+  "prereqs": [
+    "calculus-iii",
+    "physics-i",
+    "differential-equations"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Hydrology",
+    "Water Resources",
+    "Environmental Engineering"
+  ],
+  "skills": [
+    "Pipe network analysis",
+    "open channel flow",
+    "hydraulic structure design"
+  ],
+  "topicClusters": [
+    "fluids",
+    "water"
+  ],
+  "concepts": [
+    "fluid-properties-and-statics",
+    "bernoulli-equation-and-energy-grade-line",
+    "pipe-flow-darcy-weisbach-moody-chart-minor-losses",
+    "pipe-networks-hardy-cross-method",
+    "open-channel-flow-manning-s-equation-specific-energy",
+    "weirs-culverts-and-spillways"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,40 @@
+{
+  "id": "intro-ie",
+  "title": "Introduction to Industrial Engineering",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — IE Core Entry",
+  "year": "2",
+  "shortDesc": "Overview of IE disciplines, tools, and the systems perspective",
+  "whyItMatters": "Establishes the IE mindset: systems thinking, efficiency, and human integration",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "All Year 2–3 IE courses"
+  ],
+  "skills": [
+    "Process flow mapping",
+    "basic efficiency analysis",
+    "IE tool awareness"
+  ],
+  "topicClusters": [
+    "systems",
+    "manufacturing"
+  ],
+  "concepts": [
+    "history-and-scope-of-industrial-engineering",
+    "the-systems-perspective",
+    "process-mapping-flowcharts-value-stream-maps",
+    "work-measurement-basics",
+    "introduction-to-lean-thinking",
+    "ie-career-paths-manufacturing-healthcare-logistics-consulting"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

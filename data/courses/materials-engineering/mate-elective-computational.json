@@ -1,0 +1,27 @@
+{
+  "id": "mate-elective-computational",
+  "title": "[THEME: Computational Materials Science]",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "DFT, molecular dynamics, CALPHAD",
+  "whyItMatters": "Advanced theme area within Materials Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "computation",
+    "materials"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Computational Materials Science",
+  "electiveTag": "[THEME: Computational Materials Science]",
+  "status": "planned",
+  "referenceNote": null
+}

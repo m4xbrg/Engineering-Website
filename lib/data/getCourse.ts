@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 
-import { courseSchema } from "@/lib/schemas";
-import { getAllCourses } from "@/lib/data/getAllCourses";
+import { getCatalog } from "@/lib/data/catalog";
 
 export function getCourse(majorSlug: string, courseSlug: string) {
-  const course = getAllCourses().find(
+  const course = getCatalog().courses.find(
     (item) => item.majorId === majorSlug && item.id === courseSlug,
   );
 
@@ -12,9 +11,19 @@ export function getCourse(majorSlug: string, courseSlug: string) {
     notFound();
   }
 
-  return courseSchema.parse(course);
+  return course;
+}
+
+export function getCourseBySlug(courseSlug: string) {
+  const course = getCatalog().courses.find((item) => item.id === courseSlug);
+
+  if (!course) {
+    notFound();
+  }
+
+  return course;
 }
 
 export function getCoursesForMajor(majorSlug: string) {
-  return getAllCourses().filter((course) => course.majorId === majorSlug);
+  return getCatalog().courses.filter((course) => course.majorId === majorSlug);
 }

@@ -1,0 +1,47 @@
+{
+  "id": "mechanical-vibrations",
+  "title": "Mechanical Vibrations",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate ME",
+  "year": "3",
+  "shortDesc": "Free and forced vibration of mechanical systems, resonance, damping",
+  "whyItMatters": "Vibration causes fatigue failures; isolation and control are engineering challenges",
+  "prereqs": [
+    "dynamics",
+    "differential-equations"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Structural Dynamics",
+    "Noise & Vibration Control",
+    "Rotating Machinery"
+  ],
+  "skills": [
+    "Natural frequency calculation",
+    "frequency response analysis",
+    "modal analysis"
+  ],
+  "topicClusters": [
+    "mechanics",
+    "signals"
+  ],
+  "concepts": [
+    "single-dof-free-vibration-undamped-damped",
+    "logarithmic-decrement",
+    "harmonic-excitation-and-frequency-response",
+    "rotating-imbalance-and-transmissibility",
+    "two-dof-systems-and-beat-phenomenon",
+    "intro-to-multi-dof-and-modal-superposition"
+  ],
+  "relatedTools": [
+    "fourier-series"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

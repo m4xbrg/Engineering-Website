@@ -1,0 +1,26 @@
+{
+  "id": "ie-elective-humanitarian",
+  "title": "[THEME: Humanitarian Logistics]",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Disaster response supply chains, NGO operations",
+  "whyItMatters": "Advanced theme area within Industrial Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "supply-chain"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Humanitarian Logistics",
+  "electiveTag": "[THEME: Humanitarian Logistics]",
+  "status": "planned",
+  "referenceNote": null
+}

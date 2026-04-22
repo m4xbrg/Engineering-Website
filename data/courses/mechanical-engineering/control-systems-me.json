@@ -1,0 +1,48 @@
+{
+  "id": "control-systems-me",
+  "title": "Control Systems for Mechanical Engineers",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate ME",
+  "year": "3",
+  "shortDesc": "Feedback control applied to mechanical and thermal systems",
+  "whyItMatters": "Modern mechanical systems are controlled systems (robots, vehicles, HVAC)",
+  "prereqs": [
+    "differential-equations",
+    "dynamics",
+    "signals-and-systems"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "mechatronics"
+  ],
+  "externalLeadsInto": [
+    "Robotics",
+    "Autonomous Vehicles"
+  ],
+  "skills": [
+    "PID tuning",
+    "root locus",
+    "block diagram reduction"
+  ],
+  "topicClusters": [
+    "control"
+  ],
+  "concepts": [
+    "mathematical-modeling-of-mechanical-and-thermal-systems",
+    "transfer-functions-and-block-diagrams",
+    "stability-criteria",
+    "pid-control-design",
+    "root-locus-and-frequency-response",
+    "state-space-representation-intro"
+  ],
+  "relatedTools": [
+    "bode-plot"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "biomaterials",
+  "title": "Biomaterials",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Intermediate BME",
+  "year": "2-3",
+  "shortDesc": "Biological and synthetic materials for implantable devices; biocompatibility",
+  "whyItMatters": "Every implant interacts with the body — material choice is safety-critical",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Materials Science (or ChE equiv)",
+    "Biology I"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Tissue Engineering",
+    "Drug Delivery",
+    "Implant Design"
+  ],
+  "skills": [
+    "Material selection for implants",
+    "biocompatibility testing",
+    "surface modification"
+  ],
+  "topicClusters": [
+    "biomaterials",
+    "materials"
+  ],
+  "concepts": [
+    "host-response-to-implants-protein-adsorption-inflammation-encapsulation",
+    "metallic-biomaterials-316l-ss-ti-6al-4v-cocr",
+    "ceramic-biomaterials-hydroxyapatite-alumina",
+    "polymeric-biomaterials-uhmwpe-peek-plga",
+    "surface-modification-techniques",
+    "iso-10993-biocompatibility-testing-framework",
+    "degradable-vs-permanent-implants"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -4,20 +4,41 @@
   "majorId": "electrical-engineering",
   "isCore": false,
   "stageId": "major-entry",
+  "stageLabel": "Year 2 — EE Core Entry",
   "year": "2",
-  "shortDesc": "DC circuit analysis using fundamental laws and equivalent network models.",
-  "whyItMatters": "This course opens the door to electronics, signals, power, and many early lab experiences.",
-  "prereqs": ["calculus-i"],
-  "leadsInto": ["signals-and-systems", "control-systems-ee"],
-  "skills": [
-    "Ohm's law applications",
-    "Kirchhoff analysis",
-    "equivalent circuits"
+  "shortDesc": "DC circuit analysis using fundamental laws and network theorems",
+  "whyItMatters": "Starting point for all EE specializations",
+  "prereqs": [
+    "physics-ii"
   ],
-  "topicClusters": ["circuits"],
-  "concepts": ["ohms-law", "kirchhoffs-laws"],
-  "relatedTools": ["ohms-law", "resistor-color-code", "phasor-calc"],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "circuit-analysis-ii",
+    "electronics-i"
+  ],
+  "externalLeadsInto": [],
+  "skills": [
+    "Node/mesh analysis",
+    "Thevenin/Norton equivalents",
+    "power calculations"
+  ],
+  "topicClusters": [
+    "circuits"
+  ],
+  "concepts": [
+    "ohm-s-law-kvl-kcl",
+    "resistive-network-analysis-node-voltage-mesh-current",
+    "superposition-thevenin-s-norton-s-theorems",
+    "dc-power-and-energy",
+    "intro-to-capacitors-and-inductors"
+  ],
+  "relatedTools": [
+    "ohms-law",
+    "resistor-color-code"
+  ],
   "isElective": false,
   "electiveTheme": null,
-  "status": "live"
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
 }

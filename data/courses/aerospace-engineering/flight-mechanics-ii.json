@@ -1,0 +1,48 @@
+{
+  "id": "flight-mechanics-ii",
+  "title": "Flight Mechanics II — Flight Dynamics and Control",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Flight Mechanics",
+  "year": "3",
+  "shortDesc": "Dynamic stability, equations of motion, linearization, and autopilot design",
+  "whyItMatters": "Enables understanding of how aircraft respond and how to control them",
+  "prereqs": [
+    "flight-mechanics-i",
+    "control-systems-ee",
+    "differential-equations"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Avionics",
+    "UAV Control",
+    "Senior Design"
+  ],
+  "skills": [
+    "Mode identification",
+    "root locus for aircraft",
+    "autopilot design"
+  ],
+  "topicClusters": [
+    "flight-mechanics",
+    "control"
+  ],
+  "concepts": [
+    "six-dof-equations-of-motion",
+    "linearization-and-stability-derivatives",
+    "longitudinal-modes-phugoid-short-period",
+    "lateral-directional-modes-roll-spiral-dutch-roll",
+    "aircraft-transfer-functions",
+    "pid-and-lqr-autopilot-design"
+  ],
+  "relatedTools": [
+    "bode-plot"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

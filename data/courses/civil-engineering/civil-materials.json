@@ -1,0 +1,46 @@
+{
+  "id": "civil-materials",
+  "title": "Civil Engineering Materials",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2–3 — CE Core Entry",
+  "year": "2-3",
+  "shortDesc": "Properties and testing of concrete, steel, asphalt, wood, and composites in civil applications",
+  "whyItMatters": "Material choice drives cost, durability, and structural performance",
+  "prereqs": [
+    "mechanics-of-materials"
+  ],
+  "externalPrereqs": [
+    "Chemistry"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Structural Analysis",
+    "Pavement Design",
+    "Construction Management"
+  ],
+  "skills": [
+    "Materials testing",
+    "mix design",
+    "specification writing"
+  ],
+  "topicClusters": [
+    "materials",
+    "structures"
+  ],
+  "concepts": [
+    "concrete-mix-design-and-curing",
+    "steel-grades-and-properties",
+    "asphalt-and-pavement-materials",
+    "wood-and-engineered-timber",
+    "non-destructive-testing-methods",
+    "durability-and-deterioration-mechanisms"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,45 @@
+{
+  "id": "electronics-i",
+  "title": "Electronics I — Diodes and BJTs",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Core EE",
+  "year": "2-3",
+  "shortDesc": "Semiconductor devices: diodes, bipolar junction transistors, biasing, amplifiers",
+  "whyItMatters": "Basis for analog circuit design and device understanding",
+  "prereqs": [
+    "circuit-analysis-i",
+    "physics-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "electronics-ii"
+  ],
+  "externalLeadsInto": [
+    "VLSI",
+    "RF Circuits"
+  ],
+  "skills": [
+    "Load line analysis",
+    "small-signal modeling",
+    "amplifier design"
+  ],
+  "topicClusters": [
+    "electronics"
+  ],
+  "concepts": [
+    "pn-junction-diode-i-v-models",
+    "diode-circuits-rectifiers-clippers-voltage-regulators",
+    "bjt-operation-active-saturation-cutoff",
+    "bjt-biasing-q-point",
+    "small-signal-model-and-amplifier-analysis",
+    "common-emitter-common-base-common-collector-configs"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

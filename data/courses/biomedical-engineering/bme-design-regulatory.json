@@ -1,0 +1,43 @@
+{
+  "id": "bme-design-regulatory",
+  "title": "BME Design and Regulatory Affairs",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced BME",
+  "year": "3",
+  "shortDesc": "Medical device design process with regulatory, quality, and clinical integration",
+  "whyItMatters": "Medical devices must navigate strict regulatory pathways to reach patients",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Introduction to BME",
+    "all BME core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Senior Design Capstone"
+  ],
+  "skills": [
+    "Design controls",
+    "risk management",
+    "technical file preparation"
+  ],
+  "topicClusters": [
+    "design",
+    "safety"
+  ],
+  "concepts": [
+    "design-control-process-21-cfr-part-820",
+    "risk-management-iso-14971-fmea",
+    "verification-and-validation",
+    "predicate-device-strategy-510k",
+    "clinical-trial-design-for-devices",
+    "quality-management-systems-iso-13485"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

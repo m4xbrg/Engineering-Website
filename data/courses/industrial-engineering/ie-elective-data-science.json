@@ -1,0 +1,27 @@
+{
+  "id": "ie-elective-data-science",
+  "title": "[THEME: Data Science for IE]",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Machine learning, predictive analytics, dashboards",
+  "whyItMatters": "Advanced theme area within Industrial Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "computation",
+    "statistics-quality"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Data Science for IE",
+  "electiveTag": "[THEME: Data Science for IE]",
+  "status": "planned",
+  "referenceNote": null
+}

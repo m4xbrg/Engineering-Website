@@ -1,0 +1,45 @@
+{
+  "id": "kinetics-phase-transform",
+  "title": "Kinetics of Phase Transformations",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Core Materials Science",
+  "year": "2-3",
+  "shortDesc": "Nucleation and growth theory, TTT/CCT diagrams, solidification, diffusion-controlled transformations",
+  "whyItMatters": "Processing routes (annealing, quenching, aging) exploit transformation kinetics",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Phase Diagrams",
+    "Diffusion theory"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Heat Treatment",
+    "Solidification Processing",
+    "Advanced Alloys"
+  ],
+  "skills": [
+    "TTT/CCT diagram use",
+    "microstructure prediction",
+    "heat treatment specification"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "homogeneous-and-heterogeneous-nucleation",
+    "growth-kinetics-interface-and-diffusion-controlled",
+    "ttt-and-cct-diagrams",
+    "martensitic-transformations",
+    "solidification-planar-cellular-dendritic",
+    "precipitation-hardening-sequence-gp-zones-phases",
+    "recrystallization-and-grain-growth"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

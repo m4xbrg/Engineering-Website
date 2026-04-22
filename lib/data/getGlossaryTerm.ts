@@ -1,14 +1,13 @@
 import { notFound } from "next/navigation";
 
-import { glossaryEntrySchema } from "@/lib/schemas";
-import { glossarySource } from "@/lib/data/sources";
+import { getCatalog } from "@/lib/data/catalog";
 
 export function getAllGlossaryTerms() {
-  return glossaryEntrySchema.array().parse(glossarySource);
+  return getCatalog().glossary;
 }
 
 export function getGlossaryTerm(termSlug: string) {
-  const term = getAllGlossaryTerms().find((item) => item.id === termSlug);
+  const term = getCatalog().glossary.find((item) => item.id === termSlug);
 
   if (!term) {
     notFound();

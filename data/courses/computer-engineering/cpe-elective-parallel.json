@@ -1,0 +1,26 @@
+{
+  "id": "cpe-elective-parallel",
+  "title": "[THEME: Parallel & Distributed Computing]",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "MPI, CUDA, MapReduce",
+  "whyItMatters": "Advanced theme area within Computer Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "computing"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Parallel & Distributed Computing",
+  "electiveTag": "[THEME: Parallel & Distributed Computing]",
+  "status": "planned",
+  "referenceNote": null
+}

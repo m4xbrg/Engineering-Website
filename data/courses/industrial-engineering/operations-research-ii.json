@@ -1,0 +1,44 @@
+{
+  "id": "operations-research-ii",
+  "title": "Operations Research II — Integer Programming",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Operations Research Core",
+  "year": "2-3",
+  "shortDesc": "Integer and mixed-integer programming, combinatorial optimization, and metaheuristics",
+  "whyItMatters": "Many real scheduling and routing problems require integer solutions",
+  "prereqs": [
+    "operations-research-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Supply Chain Optimization",
+    "Scheduling",
+    "Advanced Analytics"
+  ],
+  "skills": [
+    "MIP model formulation",
+    "branch and bound",
+    "heuristic algorithm design"
+  ],
+  "topicClusters": [
+    "operations-research"
+  ],
+  "concepts": [
+    "integer-and-binary-variable-modeling",
+    "branch-and-bound-algorithm",
+    "cutting-planes",
+    "greedy-algorithms-and-local-search",
+    "simulated-annealing-and-genetic-algorithms",
+    "vehicle-routing-problem-vrp-formulations",
+    "scheduling-problem-types-makespan-tardiness"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

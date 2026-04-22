@@ -1,0 +1,46 @@
+{
+  "id": "hydrology",
+  "title": "Hydrology and Water Resources",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Geotechnical, Transportation & Environment",
+  "year": "3",
+  "shortDesc": "Precipitation, runoff, watersheds, groundwater, and stormwater management",
+  "whyItMatters": "Water infrastructure protects lives, enables agriculture, and manages flooding",
+  "prereqs": [
+    "fluid-mechanics-ce",
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Stormwater Design",
+    "Water Supply",
+    "Environmental Engineering"
+  ],
+  "skills": [
+    "Hydrograph analysis",
+    "flood frequency analysis",
+    "stormwater modeling"
+  ],
+  "topicClusters": [
+    "water",
+    "fluids"
+  ],
+  "concepts": [
+    "hydrologic-cycle-and-water-balance",
+    "rainfall-runoff-relationships-curve-number-rational-method",
+    "unit-hydrograph",
+    "flood-frequency-analysis-return-periods",
+    "stream-routing-muskingum-method",
+    "groundwater-flow-darcy-s-law-aquifer-equations",
+    "stormwater-bmp-design"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

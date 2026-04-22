@@ -1,0 +1,42 @@
+{
+  "id": "differential-equations",
+  "title": "Differential Equations",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "core-sciences",
+  "stageLabel": "Year 1–2 — Core Sciences",
+  "year": "1-2",
+  "shortDesc": "Ordinary differential equations (ODEs) and introduction to PDEs",
+  "whyItMatters": "Models virtually every dynamic engineering system",
+  "prereqs": [
+    "calculus-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "control-systems-ee"
+  ],
+  "externalLeadsInto": [
+    "Heat Transfer",
+    "Circuits",
+    "Structural Analysis"
+  ],
+  "skills": [
+    "Solving ODEs",
+    "Laplace transforms",
+    "system modeling"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "first-order-odes-separable-linear-exact",
+    "second-order-linear-odes",
+    "laplace-transform-methods",
+    "systems-of-odes",
+    "intro-to-pdes-wave-heat-laplace-equations"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

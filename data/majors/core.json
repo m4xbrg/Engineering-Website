@@ -2,34 +2,69 @@
   "id": "core",
   "name": "Core Engineering",
   "shortName": "CORE",
-  "description": "The shared engineering base that anchors every specialization in the platform.",
+  "description": "Foundational engineering principles shared across all disciplines. Serves as the common base layer for all specialized majors.",
   "mainSubfields": [
-    "Mathematics",
-    "Physics",
-    "Mechanics",
-    "Thermodynamics",
-    "Design"
+    "Engineering mathematics",
+    "physics",
+    "mechanics",
+    "thermodynamics",
+    "engineering design",
+    "ethics"
   ],
-  "coreFoundationIds": ["calculus-i", "statics"],
-  "conceptClusters": ["mathematics", "mechanics"],
-  "summaryChain": "Math and science fundamentals lead into shared engineering analysis and design habits.",
+  "coreFoundationIds": [],
+  "conceptClusters": [],
+  "summaryChain": "Calculus I → Calculus II → Calc III / Diff Eq → Physics I → Physics II → Statics → Dynamics / Mechanics of Materials → Thermodynamics → Numerical Methods → Specialized Courses",
+  "recommendedTools": [
+    "unit-converter",
+    "fbd-builder"
+  ],
   "depthV1": "full",
-  "colorToken": "--major-core",
+  "colorToken": "--color-core",
+  "icon": "layers",
   "stages": [
     {
       "id": "foundation",
       "label": "Year 1 — Foundations",
-      "courseIds": ["calculus-i"]
+      "description": "",
+      "courseIds": [
+        "calculus-i",
+        "calculus-ii",
+        "physics-i",
+        "intro-engineering"
+      ]
     },
     {
       "id": "core-sciences",
-      "label": "Year 1-2 — Core Sciences",
-      "courseIds": []
+      "label": "Year 1–2 — Core Sciences",
+      "description": "",
+      "courseIds": [
+        "calculus-iii",
+        "differential-equations",
+        "physics-ii",
+        "linear-algebra",
+        "engineering-statistics"
+      ]
     },
     {
       "id": "engineering-core",
       "label": "Year 2 — Engineering Core",
-      "courseIds": ["statics"]
+      "description": "",
+      "courseIds": [
+        "statics",
+        "dynamics",
+        "mechanics-of-materials",
+        "thermodynamics-i",
+        "engineering-design-i"
+      ]
+    },
+    {
+      "id": "applied-core",
+      "label": "Year 3 — Applied Core",
+      "description": "",
+      "courseIds": [
+        "numerical-methods",
+        "engineering-ethics"
+      ]
     }
   ]
 }

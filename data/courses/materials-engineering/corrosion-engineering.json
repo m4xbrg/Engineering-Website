@@ -1,0 +1,47 @@
+{
+  "id": "corrosion-engineering",
+  "title": "Corrosion Engineering",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced MatE",
+  "year": "3-4",
+  "shortDesc": "Electrochemical corrosion mechanisms, protection strategies, and materials selection for corrosion",
+  "whyItMatters": "Corrosion costs economies trillions annually; prevention is a core MatE skill",
+  "prereqs": [
+    "metals-and-alloys"
+  ],
+  "externalPrereqs": [
+    "Physical Chemistry"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Coatings Engineering",
+    "Failure Analysis",
+    "Infrastructure Materials"
+  ],
+  "skills": [
+    "Pourbaix diagram interpretation",
+    "galvanic corrosion prediction",
+    "CP system design"
+  ],
+  "topicClusters": [
+    "materials",
+    "chemistry"
+  ],
+  "concepts": [
+    "electrochemical-theory-of-corrosion-anodes-cathodes",
+    "mixed-potential-theory-evans-diagrams",
+    "pourbaix-e-ph-diagrams",
+    "galvanic-corrosion-and-galvanic-series",
+    "passivity-and-breakdown",
+    "pitting-crevice-stress-corrosion-cracking",
+    "cathodic-protection-and-coatings"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

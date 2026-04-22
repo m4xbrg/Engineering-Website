@@ -1,0 +1,27 @@
+{
+  "id": "cpe-elective-iot",
+  "title": "[THEME: IoT Systems]",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Wireless protocols, edge computing, sensor fusion",
+  "whyItMatters": "Advanced theme area within Computer Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "embedded",
+    "communications"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "IoT Systems",
+  "electiveTag": "[THEME: IoT Systems]",
+  "status": "planned",
+  "referenceNote": null
+}

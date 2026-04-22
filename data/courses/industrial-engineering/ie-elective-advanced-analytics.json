@@ -1,0 +1,27 @@
+{
+  "id": "ie-elective-advanced-analytics",
+  "title": "[THEME: Advanced Analytics]",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Prescriptive analytics, Bayesian methods, OR software",
+  "whyItMatters": "Advanced theme area within Industrial Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "operations-research",
+    "statistics-quality"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Advanced Analytics",
+  "electiveTag": "[THEME: Advanced Analytics]",
+  "status": "planned",
+  "referenceNote": null
+}

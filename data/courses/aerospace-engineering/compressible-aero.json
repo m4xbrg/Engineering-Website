@@ -1,0 +1,45 @@
+{
+  "id": "compressible-aero",
+  "title": "Compressible Aerodynamics (Gas Dynamics)",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Aerodynamics and Gas Dynamics",
+  "year": "2-3",
+  "shortDesc": "High-speed flow: isentropic relations, shocks, expansion waves, nozzles",
+  "whyItMatters": "Required for transonic/supersonic aircraft and rocket nozzle design",
+  "prereqs": [
+    "incompressible-aero",
+    "thermodynamics-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Propulsion",
+    "Hypersonics",
+    "Advanced CFD"
+  ],
+  "skills": [
+    "Shock analysis",
+    "nozzle design",
+    "Mach number calculations"
+  ],
+  "topicClusters": [
+    "aerodynamics",
+    "thermodynamics"
+  ],
+  "concepts": [
+    "isentropic-flow-relations",
+    "normal-and-oblique-shock-waves",
+    "prandtl-meyer-expansion",
+    "fanno-flow-and-rayleigh-flow",
+    "converging-diverging-nozzle-design",
+    "transonic-flow-and-area-rule"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

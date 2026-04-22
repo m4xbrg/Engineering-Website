@@ -1,0 +1,46 @@
+{
+  "id": "materials-science-me",
+  "title": "Materials Science for Engineers",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — ME Core",
+  "year": "2-3",
+  "shortDesc": "Atomic structure, crystal defects, phase diagrams, material properties",
+  "whyItMatters": "Material selection is central to every mechanical design decision",
+  "prereqs": [
+    "physics-i"
+  ],
+  "externalPrereqs": [
+    "Chemistry"
+  ],
+  "leadsInto": [
+    "manufacturing-processes",
+    "machine-design"
+  ],
+  "externalLeadsInto": [
+    "Materials Engineering electives"
+  ],
+  "skills": [
+    "Phase diagram reading",
+    "material selection",
+    "failure analysis"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "atomic-bonding-and-crystal-structures",
+    "dislocations-and-plastic-deformation",
+    "strengthening-mechanisms",
+    "phase-diagrams-and-heat-treatment",
+    "mechanical-properties-tensile-fatigue-fracture",
+    "intro-to-polymers-ceramics-composites"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

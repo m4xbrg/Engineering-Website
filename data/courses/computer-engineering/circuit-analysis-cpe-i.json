@@ -1,0 +1,44 @@
+{
+  "id": "circuit-analysis-cpe-i",
+  "title": "Circuit Analysis I",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — CE Core",
+  "year": "2",
+  "shortDesc": "DC circuit analysis using fundamental laws and network theorems",
+  "whyItMatters": "Starting point for all EE specializations",
+  "prereqs": [
+    "physics-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "circuit-analysis-cpe-ii",
+    "electronics-i"
+  ],
+  "externalLeadsInto": [],
+  "skills": [
+    "Node/mesh analysis",
+    "Thevenin/Norton equivalents",
+    "power calculations"
+  ],
+  "topicClusters": [
+    "circuits"
+  ],
+  "concepts": [
+    "ohm-s-law-kvl-kcl",
+    "resistive-network-analysis-node-voltage-mesh-current",
+    "superposition-thevenin-s-norton-s-theorems",
+    "dc-power-and-energy",
+    "intro-to-capacitors-and-inductors"
+  ],
+  "relatedTools": [
+    "ohms-law",
+    "resistor-color-code"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

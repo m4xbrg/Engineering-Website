@@ -1,0 +1,27 @@
+{
+  "id": "cpe-elective-ml-hw",
+  "title": "[THEME: Machine Learning Hardware]",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Neural network accelerators, quantization",
+  "whyItMatters": "Advanced theme area within Computer Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "vlsi",
+    "computation"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Machine Learning Hardware",
+  "electiveTag": "[THEME: Machine Learning Hardware]",
+  "status": "planned",
+  "referenceNote": null
+}

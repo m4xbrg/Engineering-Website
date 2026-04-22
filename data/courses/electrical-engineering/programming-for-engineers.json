@@ -1,0 +1,46 @@
+{
+  "id": "programming-for-engineers",
+  "title": "Programming for Engineers",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — EE Core Entry",
+  "year": "2",
+  "shortDesc": "Scripting, data manipulation, simulation, and visualization",
+  "whyItMatters": "Modern EE work requires computational fluency",
+  "prereqs": [],
+  "externalPrereqs": [
+    "None (or Calculus I co-req)"
+  ],
+  "leadsInto": [
+    "digital-signal-processing",
+    "embedded-systems",
+    "control-systems-ee"
+  ],
+  "externalLeadsInto": [],
+  "skills": [
+    "Scripting",
+    "array operations",
+    "plotting",
+    "basic algorithms"
+  ],
+  "topicClusters": [
+    "computation"
+  ],
+  "concepts": [
+    "data-types-control-flow-functions",
+    "numpy-array-operations",
+    "plotting-and-visualization",
+    "file-i-o",
+    "basic-simulation-loops",
+    "intro-to-object-oriented-concepts"
+  ],
+  "relatedTools": [
+    "unit-converter"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

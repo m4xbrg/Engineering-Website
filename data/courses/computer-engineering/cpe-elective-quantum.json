@@ -1,0 +1,27 @@
+{
+  "id": "cpe-elective-quantum",
+  "title": "[THEME: Quantum Computing Intro]",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Qubits, gates, quantum circuits",
+  "whyItMatters": "Advanced theme area within Computer Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "computing",
+    "physics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Quantum Computing Intro",
+  "electiveTag": "[THEME: Quantum Computing Intro]",
+  "status": "planned",
+  "referenceNote": null
+}

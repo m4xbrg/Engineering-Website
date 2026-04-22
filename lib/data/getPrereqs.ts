@@ -1,10 +1,21 @@
-import { prereqEdgeSchema } from "@/lib/schemas";
-import { prerequisiteSource } from "@/lib/data/sources";
+import { getCatalog } from "@/lib/data/catalog";
+import { getAllCourses } from "@/lib/data/getAllCourses";
+import { getCourseBySlug } from "@/lib/data/getCourse";
 
-export function getAllPrereqs() {
-  return prereqEdgeSchema.array().parse(prerequisiteSource);
+export function getAllDependencies() {
+  return getCatalog().dependencies;
 }
 
 export function getPrereqsForCourse(courseId: string) {
-  return getAllPrereqs().filter((edge) => edge.to === courseId);
+  return getCatalog().dependencies.filter((edge) => edge.to === courseId);
+}
+
+export function getResolvedPrereqsForCourse(courseId: string) {
+  const prereqIds = getCourseBySlug(courseId).prereqs;
+  return getAllCourses().filter((course) => prereqIds.includes(course.id));
+}
+
+export function getResolvedLeadsIntoForCourse(courseId: string) {
+  const leadIds = getCourseBySlug(courseId).leadsInto;
+  return getAllCourses().filter((course) => leadIds.includes(course.id));
 }

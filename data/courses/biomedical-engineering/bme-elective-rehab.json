@@ -1,0 +1,27 @@
+{
+  "id": "bme-elective-rehab",
+  "title": "[THEME: Rehabilitation Engineering]",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Prosthetics, orthotics, exoskeletons",
+  "whyItMatters": "Advanced theme area within Biomedical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "biomechanics",
+    "control"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Rehabilitation Engineering",
+  "electiveTag": "[THEME: Rehabilitation Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

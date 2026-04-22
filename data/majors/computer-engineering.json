@@ -2,23 +2,113 @@
   "id": "computer-engineering",
   "name": "Computer Engineering",
   "shortName": "CpE",
-  "description": "Digital hardware, embedded systems, architecture, and computation at the system boundary.",
+  "description": "Bridges electrical engineering and computer science. Designs computing hardware, embedded systems, computer architecture, and hardware-software interfaces.",
   "mainSubfields": [
-    "Digital Logic",
-    "Architecture",
-    "Embedded Systems",
-    "Networks"
+    "Computer architecture",
+    "digital systems",
+    "embedded systems",
+    "VLSI",
+    "operating systems",
+    "computer networks",
+    "hardware security",
+    "reconfigurable computing"
   ],
-  "coreFoundationIds": ["calculus-i"],
-  "conceptClusters": ["logic", "circuits"],
-  "summaryChain": "Foundational programming and electronics grow into digital system design and computer architecture.",
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "differential-equations",
+    "physics-i",
+    "physics-ii",
+    "linear-algebra",
+    "engineering-statistics"
+  ],
+  "conceptClusters": [
+    "mathematics",
+    "computing",
+    "digital-logic",
+    "circuits",
+    "embedded",
+    "dsp",
+    "signals",
+    "vlsi",
+    "communications",
+    "safety",
+    "design",
+    "computation",
+    "physics",
+    "control"
+  ],
+  "summaryChain": "Discrete Math + Programming I → Digital Logic → Circuit Analysis → Computer Organization → Computer Architecture → Operating Systems / HDL / VLSI → Networks / Security / Compilers → Capstone",
+  "recommendedTools": [
+    "unit-converter",
+    "ohms-law",
+    "resistor-color-code",
+    "logic-gate-sim",
+    "rlc-response"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-computer",
+  "colorToken": "--color-cpe",
+  "icon": "cpu",
   "stages": [
     {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation",
+      "description": "See Core Engineering: Calculus I–II, Differential Equations, Physics I–II, Linear Algebra, Statistics",
+      "courseIds": [
+        "discrete-mathematics",
+        "programming-i"
+      ]
+    },
+    {
+      "id": "major-entry",
+      "label": "Year 2 — CE Core",
+      "description": "",
+      "courseIds": [
+        "digital-logic-cpe",
+        "circuit-analysis-cpe-i",
+        "circuit-analysis-cpe-ii",
+        "data-structures-algorithms",
+        "computer-org-arch-i"
+      ]
+    },
+    {
       "id": "major-core",
-      "label": "Year 2-3 — Intermediate CpE",
-      "courseIds": ["digital-logic-design"]
+      "label": "Year 2–3 — Intermediate CE",
+      "description": "",
+      "courseIds": [
+        "computer-arch-ii",
+        "embedded-systems-cpe",
+        "operating-systems",
+        "digital-signal-processing-cpe",
+        "hdl-fpga"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Advanced CE",
+      "description": "",
+      "courseIds": [
+        "vlsi-cpe",
+        "computer-networks",
+        "hardware-security",
+        "compilers"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "cpe-capstone",
+        "cpe-elective-parallel",
+        "cpe-elective-reconfigurable",
+        "cpe-elective-soc",
+        "cpe-elective-ml-hw",
+        "cpe-elective-iot",
+        "cpe-elective-rtos",
+        "cpe-elective-quantum",
+        "cpe-elective-cps"
+      ]
     }
   ]
 }

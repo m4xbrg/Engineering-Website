@@ -1,17 +1,18 @@
 import { notFound } from "next/navigation";
 
-import { majorSchema } from "@/lib/schemas";
-import { majorSources } from "@/lib/data/sources";
+import { getCatalog } from "@/lib/data/catalog";
 import type { MajorSlug } from "@/types";
 
 export function getMajor(slug: MajorSlug) {
-  return majorSchema.parse(majorSources[slug]);
+  return getMajorOrThrow(slug);
 }
 
 export function getMajorOrThrow(slug: string) {
-  if (!(slug in majorSources)) {
+  const major = getCatalog().majors.find((item) => item.id === slug);
+
+  if (!major) {
     notFound();
   }
 
-  return majorSchema.parse(majorSources[slug as MajorSlug]);
+  return major;
 }

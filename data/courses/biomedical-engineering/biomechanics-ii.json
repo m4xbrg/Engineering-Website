@@ -1,0 +1,47 @@
+{
+  "id": "biomechanics-ii",
+  "title": "Biomechanics II — Fluid and Dynamic Biomechanics",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Intermediate BME",
+  "year": "2-3",
+  "shortDesc": "Cardiovascular fluid mechanics, gait analysis, and dynamic musculoskeletal modeling",
+  "whyItMatters": "Blood flow and gait are critical to cardiovascular device and prosthetic design",
+  "prereqs": [
+    "biomechanics-i",
+    "dynamics"
+  ],
+  "externalPrereqs": [
+    "Fluid Mechanics (or Physiology)"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Cardiovascular Devices",
+    "Orthotics/Prosthetics",
+    "Sports Engineering"
+  ],
+  "skills": [
+    "Hemodynamic analysis",
+    "gait parameter extraction",
+    "musculoskeletal simulation"
+  ],
+  "topicClusters": [
+    "biomechanics",
+    "fluids"
+  ],
+  "concepts": [
+    "blood-rheology-non-newtonian-behavior",
+    "cardiovascular-fluid-mechanics-poiseuille-flow-womersley-number",
+    "hemodynamic-forces-on-vessels-and-heart-valves",
+    "gait-analysis-kinematics-kinetics-emg",
+    "inverse-dynamics-for-joint-force-estimation",
+    "musculoskeletal-modeling-opensim-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

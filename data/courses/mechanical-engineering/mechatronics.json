@@ -1,0 +1,48 @@
+{
+  "id": "mechatronics",
+  "title": "Mechatronics",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced ME",
+  "year": "3-4",
+  "shortDesc": "Integration of mechanical, electrical, and computing systems",
+  "whyItMatters": "Modern products are mechatronic; bridges hardware and software design",
+  "prereqs": [
+    "machine-design",
+    "control-systems-ee"
+  ],
+  "externalPrereqs": [
+    "Circuits (basics)"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Robotics",
+    "Automotive Engineering",
+    "Medical Devices"
+  ],
+  "skills": [
+    "Sensor/actuator selection",
+    "embedded control",
+    "system integration"
+  ],
+  "topicClusters": [
+    "control",
+    "embedded",
+    "machine-design"
+  ],
+  "concepts": [
+    "sensors-encoders-accelerometers-force-pressure-sensors",
+    "actuators-dc-motors-stepper-motors-pneumatics-hydraulics",
+    "motor-drive-circuits-h-bridge",
+    "microcontroller-interfacing",
+    "pid-implementation-in-hardware",
+    "system-integration-and-testing"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

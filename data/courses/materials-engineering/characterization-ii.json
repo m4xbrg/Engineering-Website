@@ -1,0 +1,43 @@
+{
+  "id": "characterization-ii",
+  "title": "Materials Characterization II — Advanced",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced MatE",
+  "year": "3-4",
+  "shortDesc": "Advanced electron microscopy, synchrotron methods, and in-situ characterization",
+  "whyItMatters": "Research and failure investigation require advanced characterization",
+  "prereqs": [
+    "characterization-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Research",
+    "Graduate School",
+    "Failure Analysis"
+  ],
+  "skills": [
+    "Diffraction contrast imaging",
+    "EBSD analysis",
+    "atom probe data interpretation"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "advanced-sem-ebsd-wds-fib-sem",
+    "advanced-tem-hrtem-saed-stem-haadf-eds-mapping",
+    "synchrotron-xrd-and-tomography",
+    "atom-probe-tomography-apt",
+    "in-situ-testing-sem-tem-straining-heating",
+    "nanoindentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

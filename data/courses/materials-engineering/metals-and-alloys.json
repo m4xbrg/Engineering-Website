@@ -1,0 +1,45 @@
+{
+  "id": "metals-and-alloys",
+  "title": "Metals and Alloys",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Material Classes",
+  "year": "3",
+  "shortDesc": "Physical metallurgy of ferrous and nonferrous alloys; processing and properties",
+  "whyItMatters": "Metals are the backbone of structural engineering; alloy design drives performance",
+  "prereqs": [
+    "thermo-phase-diagrams",
+    "kinetics-phase-transform"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Advanced Alloys",
+    "Corrosion",
+    "Failure Analysis"
+  ],
+  "skills": [
+    "Alloy selection",
+    "heat treatment specification",
+    "property prediction"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "iron-and-steel-metallurgy-low-alloy-stainless-tool-steels",
+    "aluminum-alloys-series-temper-designations-precipitation-hardening",
+    "titanium-alloys",
+    "nickel-based-superalloys",
+    "copper-alloys-brass-bronze-becu",
+    "heat-treatment-processes-annealing-quenching-tempering-aging",
+    "weldability-and-joining-metallurgy"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

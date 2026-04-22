@@ -1,0 +1,44 @@
+{
+  "id": "ie-capstone",
+  "title": "Senior Capstone — IE Systems Design Project",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Team-based analysis and redesign of a real system (manufacturing, healthcare, service)",
+  "whyItMatters": "IE capstones typically involve real clients and measurable improvement",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Completion of IE core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice"
+  ],
+  "skills": [
+    "Process analysis",
+    "data collection",
+    "improvement recommendation",
+    "implementation planning"
+  ],
+  "topicClusters": [
+    "design",
+    "systems"
+  ],
+  "concepts": [
+    "client-engagement-and-problem-scoping",
+    "value-stream-mapping",
+    "data-collection-and-analysis",
+    "simulation-or-optimization-model",
+    "improvement-solution-design",
+    "cost-benefit-analysis",
+    "implementation-roadmap-and-presentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

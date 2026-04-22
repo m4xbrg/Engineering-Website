@@ -1,0 +1,47 @@
+{
+  "id": "embedded-systems-cpe",
+  "title": "Embedded Systems Design",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Intermediate CE",
+  "year": "2-3",
+  "shortDesc": "Microcontroller programming, interfacing, real-time systems, and hardware/software co-design",
+  "whyItMatters": "Modern devices from medical implants to cars run on embedded systems",
+  "prereqs": [
+    "digital-logic-design"
+  ],
+  "externalPrereqs": [
+    "any programming course"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "IoT",
+    "RTOS",
+    "VLSI",
+    "Robotics"
+  ],
+  "skills": [
+    "Low-level C programming",
+    "peripheral interfacing",
+    "real-time programming"
+  ],
+  "topicClusters": [
+    "embedded",
+    "computing"
+  ],
+  "concepts": [
+    "microcontroller-architecture-arm-cortex-m",
+    "gpio-uart-spi-i2c-protocols",
+    "interrupt-handling-and-timers",
+    "adc-dac-interfacing",
+    "real-time-operating-system-rtos-concepts",
+    "power-management-and-optimization"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": "See Electrical Engineering: Embedded Systems (with added hardware design emphasis)"
+}

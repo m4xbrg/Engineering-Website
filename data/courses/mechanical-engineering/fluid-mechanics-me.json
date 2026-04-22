@@ -4,16 +4,45 @@
   "majorId": "mechanical-engineering",
   "isCore": false,
   "stageId": "major-core",
+  "stageLabel": "Year 2–3 — ME Core",
   "year": "2-3",
-  "shortDesc": "Momentum, pressure, continuity, and energy concepts for flowing systems.",
-  "whyItMatters": "Fluid mechanics supports thermal systems, aerodynamics, hydraulics, and transport thinking.",
-  "prereqs": ["statics"],
-  "leadsInto": [],
-  "skills": ["control volumes", "pressure analysis", "flow modeling"],
-  "topicClusters": ["fluids"],
-  "concepts": ["bernoulli-equation"],
-  "relatedTools": ["unit-converter"],
+  "shortDesc": "Properties of fluids, fluid statics and dynamics, internal and external flows",
+  "whyItMatters": "Foundation for HVAC, turbomachinery, aerodynamics, hydraulics",
+  "prereqs": [
+    "thermodynamics-i",
+    "calculus-iii",
+    "differential-equations"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "heat-transfer-me"
+  ],
+  "externalLeadsInto": [
+    "Turbomachinery",
+    "Aerodynamics",
+    "CFD"
+  ],
+  "skills": [
+    "Flow analysis",
+    "pipe design",
+    "drag/lift estimation"
+  ],
+  "topicClusters": [
+    "fluids"
+  ],
+  "concepts": [
+    "fluid-properties-viscosity-density-compressibility",
+    "fluid-statics-and-manometry",
+    "bernoulli-equation-and-applications",
+    "conservation-of-mass-momentum-energy-control-volume",
+    "internal-pipe-flow-laminar-turbulent-moody-chart",
+    "external-flow-boundary-layers-drag-lift-intro",
+    "dimensional-analysis-and-buckingham-pi"
+  ],
+  "relatedTools": [],
   "isElective": false,
   "electiveTheme": null,
-  "status": "stub"
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
 }

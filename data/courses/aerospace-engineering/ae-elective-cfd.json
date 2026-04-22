@@ -1,0 +1,27 @@
+{
+  "id": "ae-elective-cfd",
+  "title": "[THEME: Computational Aerodynamics / CFD]",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Inviscid/viscous CFD, RANS turbulence",
+  "whyItMatters": "Advanced theme area within Aerospace Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "aerodynamics",
+    "computation"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Computational Aerodynamics / CFD",
+  "electiveTag": "[THEME: Computational Aerodynamics / CFD]",
+  "status": "planned",
+  "referenceNote": null
+}

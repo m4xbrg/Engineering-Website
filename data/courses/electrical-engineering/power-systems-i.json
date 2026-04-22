@@ -1,0 +1,45 @@
+{
+  "id": "power-systems-i",
+  "title": "Power Systems I",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced EE",
+  "year": "3-4",
+  "shortDesc": "Electric power generation, transmission, distribution, and basic grid analysis",
+  "whyItMatters": "Foundation for power engineering and energy transition careers",
+  "prereqs": [
+    "circuit-analysis-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Power Electronics",
+    "Smart Grid",
+    "Energy Systems"
+  ],
+  "skills": [
+    "Power flow analysis",
+    "fault calculations",
+    "transformer modeling"
+  ],
+  "topicClusters": [
+    "power"
+  ],
+  "concepts": [
+    "three-phase-power-systems",
+    "per-unit-system",
+    "transformer-models",
+    "transmission-line-models",
+    "power-flow-load-flow-analysis",
+    "symmetrical-and-unsymmetrical-faults-intro"
+  ],
+  "relatedTools": [
+    "phasor-calc"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

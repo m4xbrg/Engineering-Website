@@ -1,0 +1,48 @@
+{
+  "id": "che-thermodynamics-i",
+  "title": "Chemical Engineering Thermodynamics I",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — ChE Core Entry",
+  "year": "2",
+  "shortDesc": "Phase equilibria, equations of state, fugacity, and thermodynamic property estimation",
+  "whyItMatters": "Required for designing separations and understanding phase behavior",
+  "prereqs": [
+    "material-energy-balances",
+    "calculus-iii"
+  ],
+  "externalPrereqs": [
+    "Physical Chemistry"
+  ],
+  "leadsInto": [
+    "separation-processes"
+  ],
+  "externalLeadsInto": [
+    "Reaction Engineering",
+    "Process Design"
+  ],
+  "skills": [
+    "Flash calculations",
+    "phase diagram interpretation",
+    "VLE analysis"
+  ],
+  "topicClusters": [
+    "thermodynamics",
+    "chemistry"
+  ],
+  "concepts": [
+    "review-of-thermodynamic-laws",
+    "equations-of-state-van-der-waals-peng-robinson",
+    "fugacity-and-activity-coefficients",
+    "vapor-liquid-equilibria-raoult-s-law-modified-raoult",
+    "phase-diagrams-binary-and-ternary",
+    "chemical-reaction-equilibrium"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

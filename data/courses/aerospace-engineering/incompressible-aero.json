@@ -1,0 +1,47 @@
+{
+  "id": "incompressible-aero",
+  "title": "Incompressible Aerodynamics",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Aerodynamics and Gas Dynamics",
+  "year": "2-3",
+  "shortDesc": "Potential flow, boundary layers, airfoil theory, and finite wing theory",
+  "whyItMatters": "Foundation for aircraft design at subsonic speeds",
+  "prereqs": [
+    "calculus-iii"
+  ],
+  "externalPrereqs": [
+    "Fluid Mechanics"
+  ],
+  "leadsInto": [
+    "compressible-aero"
+  ],
+  "externalLeadsInto": [
+    "CFD",
+    "Aircraft Design"
+  ],
+  "skills": [
+    "Lift and drag estimation",
+    "panel methods",
+    "wing design"
+  ],
+  "topicClusters": [
+    "aerodynamics",
+    "fluids"
+  ],
+  "concepts": [
+    "potential-flow-sources-sinks-doublets-vortices",
+    "kutta-joukowski-theorem",
+    "thin-airfoil-theory-naca-profiles",
+    "boundary-layer-theory-blasius-transition-separation",
+    "lifting-line-theory-for-finite-wings",
+    "induced-drag-and-oswald-efficiency"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

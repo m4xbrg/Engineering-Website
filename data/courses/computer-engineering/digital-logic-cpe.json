@@ -1,0 +1,49 @@
+{
+  "id": "digital-logic-cpe",
+  "title": "Digital Logic Design",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — CE Core",
+  "year": "2",
+  "shortDesc": "Boolean algebra, combinational and sequential digital circuits",
+  "whyItMatters": "Basis for computer hardware, embedded systems, FPGA design",
+  "prereqs": [
+    "circuit-analysis-cpe-i"
+  ],
+  "externalPrereqs": [
+    "any programming course"
+  ],
+  "leadsInto": [
+    "embedded-systems"
+  ],
+  "externalLeadsInto": [
+    "Computer Architecture",
+    "VLSI",
+    "HDL"
+  ],
+  "skills": [
+    "Logic minimization",
+    "FSM design",
+    "hardware description"
+  ],
+  "topicClusters": [
+    "digital-logic"
+  ],
+  "concepts": [
+    "boolean-algebra-de-morgan-s-laws",
+    "combinational-logic-mux-decoder-adder-comparator",
+    "karnaugh-maps-and-minimization",
+    "sequential-logic-latches-flip-flops",
+    "finite-state-machines-mealy-and-moore",
+    "timing-analysis-and-hazards"
+  ],
+  "relatedTools": [
+    "logic-gate-sim"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": "See Electrical Engineering: Digital Logic Design (identical course)"
+}

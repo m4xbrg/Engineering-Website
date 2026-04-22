@@ -1,0 +1,45 @@
+{
+  "id": "probability-random-processes",
+  "title": "Probability and Random Processes",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate EE",
+  "year": "3",
+  "shortDesc": "Stochastic processes, noise modeling, and statistical communication theory",
+  "whyItMatters": "Required for communications, wireless systems, and reliability",
+  "prereqs": [
+    "engineering-statistics",
+    "signals-and-systems"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Communications",
+    "Wireless Systems",
+    "Information Theory"
+  ],
+  "skills": [
+    "Stochastic analysis",
+    "noise characterization",
+    "detection theory"
+  ],
+  "topicClusters": [
+    "signals",
+    "mathematics"
+  ],
+  "concepts": [
+    "random-variables-and-distributions-review",
+    "jointly-distributed-variables",
+    "stationary-random-processes",
+    "power-spectral-density",
+    "gaussian-noise-models",
+    "detection-and-estimation-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

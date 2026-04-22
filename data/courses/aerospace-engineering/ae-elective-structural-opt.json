@@ -1,0 +1,27 @@
+{
+  "id": "ae-elective-structural-opt",
+  "title": "[THEME: Structural Optimization]",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Topology optimization, MDO, aeroelasticity",
+  "whyItMatters": "Advanced theme area within Aerospace Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "structures",
+    "computation"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Structural Optimization",
+  "electiveTag": "[THEME: Structural Optimization]",
+  "status": "planned",
+  "referenceNote": null
+}

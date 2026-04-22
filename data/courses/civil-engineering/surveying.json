@@ -1,0 +1,47 @@
+{
+  "id": "surveying",
+  "title": "Surveying and Geomatics",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2–3 — CE Core Entry",
+  "year": "2-3",
+  "shortDesc": "Measurement, mapping, and spatial data collection for civil projects",
+  "whyItMatters": "All civil design begins with accurate site data",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [
+    "Trigonometry"
+  ],
+  "leadsInto": [
+    "transportation-engineering"
+  ],
+  "externalLeadsInto": [
+    "Site Design",
+    "GIS applications"
+  ],
+  "skills": [
+    "Total station operation",
+    "GPS use",
+    "traverse calculations",
+    "leveling"
+  ],
+  "topicClusters": [
+    "transportation"
+  ],
+  "concepts": [
+    "horizontal-and-vertical-measurements",
+    "traverse-surveys-and-adjustment",
+    "differential-and-trigonometric-leveling",
+    "gps-gnss-positioning",
+    "topographic-maps-and-contour-interpretation",
+    "intro-to-gis-and-remote-sensing"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "heat-transfer-me",
+  "title": "Heat Transfer",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — ME Core",
+  "year": "2-3",
+  "shortDesc": "Conduction, convection, and radiation heat transfer analysis",
+  "whyItMatters": "Critical for electronics cooling, energy systems, automotive, aerospace",
+  "prereqs": [
+    "thermodynamics-i",
+    "fluid-mechanics-me",
+    "differential-equations"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "HVAC Design",
+    "Thermal Systems Design",
+    "CFD"
+  ],
+  "skills": [
+    "Heat transfer calculations",
+    "fin analysis",
+    "heat exchanger sizing"
+  ],
+  "topicClusters": [
+    "heat-transfer",
+    "thermodynamics"
+  ],
+  "concepts": [
+    "fourier-s-law-thermal-resistance-networks",
+    "transient-conduction-lumped-capacitance-biot-number",
+    "convection-correlations-internal-and-external",
+    "natural-convection",
+    "radiation-blackbody-view-factors-gray-surfaces",
+    "heat-exchanger-design-lmtd-ntu-methods"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

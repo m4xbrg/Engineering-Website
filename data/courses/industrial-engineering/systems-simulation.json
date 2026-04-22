@@ -1,0 +1,49 @@
+{
+  "id": "systems-simulation",
+  "title": "Systems Simulation",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Manufacturing and Quality",
+  "year": "3",
+  "shortDesc": "Discrete-event simulation for modeling complex stochastic systems",
+  "whyItMatters": "When queuing models are too simple, simulation provides the answer",
+  "prereqs": [
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [
+    "Stochastic Processes",
+    "programming familiarity"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Advanced Simulation",
+    "Supply Chain Modeling",
+    "Healthcare Simulation"
+  ],
+  "skills": [
+    "Arena/AnyLogic model building",
+    "input analysis",
+    "output analysis",
+    "validation"
+  ],
+  "topicClusters": [
+    "simulation",
+    "operations-research"
+  ],
+  "concepts": [
+    "discrete-event-simulation-concepts",
+    "random-number-generation-and-statistical-distributions",
+    "input-data-analysis-fitting-distributions",
+    "simulation-model-building-and-verification",
+    "output-analysis-warm-up-run-length-confidence-intervals",
+    "variance-reduction-techniques",
+    "simulation-optimization"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

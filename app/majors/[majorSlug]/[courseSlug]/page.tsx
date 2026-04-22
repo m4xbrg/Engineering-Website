@@ -4,13 +4,14 @@ import { ConceptChip } from "@/components/concepts/ConceptChip";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
-import { EmptyState } from "@/components/ui/EmptyState";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
-  getAllConcepts,
   getAllCourses,
+  getConceptsForCourse,
   getCourse,
   getMajorOrThrow,
+  getResolvedLeadsIntoForCourse,
+  getResolvedPrereqsForCourse,
   getRelatedTools,
 } from "@/lib/data";
 
@@ -42,9 +43,9 @@ export default async function MajorCoursePage({
   const major = getMajorOrThrow(majorSlug);
   const course = getCourse(majorSlug, courseSlug);
   const relatedTools = getRelatedTools({ courseId: course.id });
-  const concepts = getAllConcepts().filter((concept) =>
-    course.concepts.includes(concept.id),
-  );
+  const concepts = getConceptsForCourse(course.id);
+  const prereqs = getResolvedPrereqsForCourse(course.id);
+  const leadsInto = getResolvedLeadsIntoForCourse(course.id);
 
   return (
     <>
@@ -69,21 +70,15 @@ export default async function MajorCoursePage({
           </>
         }
       />
-      {course.status !== "live" ? (
-        <EmptyState
-          title="Stub course detail"
-          description="This page exists to prove the route architecture and data model. Rich curriculum content, prerequisite graphs, and deeper concept writing are intentionally deferred."
-        />
-      ) : null}
       <section className="grid gap-6 xl:grid-cols-[1.1fr,0.9fr]">
         <div className="surface-panel space-y-5 p-6">
-          <h2 className="text-2xl font-semibold">What is already modeled</h2>
+          <h2 className="text-2xl font-semibold">Course overview</h2>
           <p className="text-sm leading-7 text-muted-foreground">
             {course.shortDesc}
           </p>
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              Skills placeholder
+              Skills
             </h3>
             <ul className="mt-3 space-y-2 text-sm leading-7 text-muted-foreground">
               {course.skills.map((skill) => (
@@ -91,6 +86,16 @@ export default async function MajorCoursePage({
               ))}
             </ul>
           </div>
+          {course.referenceNote ? (
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                Shared note
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                {course.referenceNote}
+              </p>
+            </div>
+          ) : null}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               Concepts
@@ -112,24 +117,56 @@ export default async function MajorCoursePage({
             </div>
           </div>
         </div>
-        <div className="surface-panel space-y-4 p-6">
-          <h2 className="text-xl font-semibold">V1 depth note</h2>
-          <p className="text-sm leading-7 text-muted-foreground">
-            Electrical Engineering is the first specialization targeted for
-            deeper build-out. Other majors still receive stable URLs, page
-            shells, and placeholder records so the product can expand without
-            architectural rework.
-          </p>
+        <div className="space-y-6">
+          <section className="surface-panel p-6">
+            <h2 className="text-xl font-semibold">Prerequisites</h2>
+            {prereqs.length ? (
+              <ul className="mt-4 space-y-2 text-sm leading-7 text-muted-foreground">
+                {prereqs.map((prereq) => (
+                  <li key={prereq.id}>{prereq.title}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-4 text-sm text-muted-foreground">
+                No internal prerequisite courses are currently linked.
+              </p>
+            )}
+            {course.externalPrereqs.length ? (
+              <p className="mt-4 text-sm text-muted-foreground">
+                External prerequisites: {course.externalPrereqs.join(", ")}
+              </p>
+            ) : null}
+          </section>
+          <section className="surface-panel p-6">
+            <h2 className="text-xl font-semibold">Leads into</h2>
+            {leadsInto.length ? (
+              <ul className="mt-4 space-y-2 text-sm leading-7 text-muted-foreground">
+                {leadsInto.map((nextCourse) => (
+                  <li key={nextCourse.id}>{nextCourse.title}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-4 text-sm text-muted-foreground">
+                No internal downstream courses are currently linked.
+              </p>
+            )}
+            {course.externalLeadsInto.length ? (
+              <p className="mt-4 text-sm text-muted-foreground">
+                Additional paths: {course.externalLeadsInto.join(", ")}
+              </p>
+            ) : null}
+          </section>
+          <section className="surface-panel space-y-4 p-6">
+            <h2 className="text-xl font-semibold">V1 depth note</h2>
+            <p className="text-sm leading-7 text-muted-foreground">
+              {major.depthV1 === "full"
+                ? "This specialization is part of the fully detailed V1 track, so its course relationships and tool links are populated more deeply."
+                : "This specialization is currently mapped structurally: the curriculum data is real, but the editorial and interactive depth is intentionally lighter than Core Engineering and Electrical Engineering."}
+            </p>
+          </section>
         </div>
       </section>
-      {relatedTools.length ? (
-        <ToolGrid tools={relatedTools} />
-      ) : (
-        <EmptyState
-          title="No linked tools yet"
-          description="Tool-to-course relationships for this route will grow as more curriculum content is normalized."
-        />
-      )}
+      {relatedTools.length ? <ToolGrid tools={relatedTools} /> : null}
     </>
   );
 }

@@ -1,0 +1,42 @@
+{
+  "id": "physics-ii",
+  "title": "Physics II — Electromagnetism",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "core-sciences",
+  "stageLabel": "Year 1–2 — Core Sciences",
+  "year": "1-2",
+  "shortDesc": "Electric fields, magnetic fields, circuits, waves",
+  "whyItMatters": "Basis for electrical engineering, electronics, photonics",
+  "prereqs": [
+    "calculus-ii",
+    "physics-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "electromagnetics"
+  ],
+  "externalLeadsInto": [
+    "Circuits",
+    "Optics"
+  ],
+  "skills": [
+    "Field analysis",
+    "circuit analysis fundamentals"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "coulomb-s-law-electric-field-and-potential",
+    "gauss-s-law",
+    "magnetic-force-and-fields",
+    "faraday-s-law-inductance",
+    "maxwell-s-equations-qualitative",
+    "electromagnetic-waves"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

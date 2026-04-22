@@ -1,0 +1,27 @@
+{
+  "id": "cpe-elective-reconfigurable",
+  "title": "[THEME: Reconfigurable Computing]",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "High-level synthesis, FPGA acceleration",
+  "whyItMatters": "Advanced theme area within Computer Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "vlsi",
+    "computing"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Reconfigurable Computing",
+  "electiveTag": "[THEME: Reconfigurable Computing]",
+  "status": "planned",
+  "referenceNote": null
+}

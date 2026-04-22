@@ -2,18 +2,106 @@
   "id": "industrial-engineering",
   "name": "Industrial Engineering",
   "shortName": "IE",
-  "description": "Optimization, systems simulation, quality, and decision-making for engineered operations.",
-  "mainSubfields": ["Optimization", "Quality", "Manufacturing", "Supply Chain"],
-  "coreFoundationIds": ["calculus-i"],
-  "conceptClusters": ["control"],
-  "summaryChain": "Quantitative foundations progress into optimization, operations research, and systems thinking.",
+  "description": "Design, optimization, and management of integrated systems of people, information, equipment, energy, and materials. Focused on efficiency, quality, and human factors.",
+  "mainSubfields": [
+    "Operations research",
+    "manufacturing systems",
+    "quality engineering",
+    "ergonomics and human factors",
+    "supply chain",
+    "logistics",
+    "simulation",
+    "systems engineering"
+  ],
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "differential-equations",
+    "physics-i",
+    "linear-algebra",
+    "engineering-statistics"
+  ],
+  "conceptClusters": [
+    "systems",
+    "manufacturing",
+    "economics",
+    "statistics-quality",
+    "mathematics",
+    "operations-research",
+    "simulation",
+    "human-factors",
+    "supply-chain",
+    "design",
+    "computation"
+  ],
+  "summaryChain": "Calculus → Statistics → Probability & Statistics for IE → OR I / Stochastic Processes → OR II / Simulation / Quality Engineering / Manufacturing Systems → Supply Chain / Systems Engineering → Capstone",
+  "recommendedTools": [
+    "unit-converter"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-industrial",
+  "colorToken": "--color-ie",
+  "icon": "factory",
   "stages": [
     {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation (shared with Core Engineering)",
+      "description": "See Core Engineering: Calculus I–II, Differential Equations, Physics I, Linear Algebra, Statistics Note: IE has lighter physics/thermodynamics depth; heavier emphasis on statistics and computing",
+      "courseIds": []
+    },
+    {
+      "id": "major-entry",
+      "label": "Year 2 — IE Core Entry",
+      "description": "",
+      "courseIds": [
+        "intro-ie",
+        "engineering-economy",
+        "stats-for-ie"
+      ]
+    },
+    {
       "id": "major-core",
-      "label": "Year 2-3 — Operations Research Core",
-      "courseIds": ["operations-research-i"]
+      "label": "Year 2–3 — Operations Research Core",
+      "description": "",
+      "courseIds": [
+        "operations-research-i",
+        "operations-research-ii",
+        "stochastic-processes"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Manufacturing and Quality",
+      "description": "",
+      "courseIds": [
+        "manufacturing-systems",
+        "quality-engineering",
+        "ergonomics-human-factors",
+        "systems-simulation"
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Year 3–4 — Advanced IE",
+      "description": "",
+      "courseIds": [
+        "supply-chain-engineering",
+        "systems-engineering"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "ie-capstone",
+        "ie-elective-healthcare-ie",
+        "ie-elective-data-science",
+        "ie-elective-financial",
+        "ie-elective-lean-agile",
+        "ie-elective-humanitarian",
+        "ie-elective-advanced-analytics",
+        "ie-elective-project-mgmt"
+      ]
     }
   ]
 }

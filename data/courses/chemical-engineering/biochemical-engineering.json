@@ -1,0 +1,44 @@
+{
+  "id": "biochemical-engineering",
+  "title": "Biochemical Engineering",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced ChE",
+  "year": "3-4",
+  "shortDesc": "Bioreactor design, enzyme kinetics, fermentation, bioseparations",
+  "whyItMatters": "Biotechnology and pharma are major growth sectors for ChE",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Reaction Engineering",
+    "Biology (survey)"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Biomedical Engineering electives",
+    "Pharmaceutical Manufacturing"
+  ],
+  "skills": [
+    "Bioreactor sizing",
+    "cell growth modeling",
+    "bioseparation selection"
+  ],
+  "topicClusters": [
+    "reaction-engineering",
+    "chemistry"
+  ],
+  "concepts": [
+    "microbial-and-enzyme-kinetics",
+    "bioreactor-types-batch-fed-batch-continuous",
+    "oxygen-and-mass-transfer-in-bioreactors",
+    "sterilization-methods",
+    "downstream-processing-centrifugation-chromatography",
+    "cell-culture-and-fermentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -3,21 +3,48 @@
   "title": "Bioinstrumentation",
   "majorId": "biomedical-engineering",
   "isCore": false,
-  "stageId": "intermediate",
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Intermediate BME",
   "year": "2-3",
-  "shortDesc": "Measurement, sensing, and signal conditioning for biological systems.",
-  "whyItMatters": "It connects electrical foundations to medical devices and physiological measurement.",
-  "prereqs": ["circuit-analysis-i"],
-  "leadsInto": [],
-  "skills": [
-    "sensor fundamentals",
-    "signal acquisition",
-    "measurement interpretation"
+  "shortDesc": "Physiological signal acquisition, transducers, amplification, and noise reduction",
+  "whyItMatters": "Medical devices must accurately measure biological signals",
+  "prereqs": [
+    "physiology-for-engineers"
   ],
-  "topicClusters": ["circuits", "signals"],
-  "concepts": ["ohms-law"],
-  "relatedTools": ["ohms-law", "opamp-config"],
+  "externalPrereqs": [
+    "Circuit Analysis I"
+  ],
+  "leadsInto": [
+    "neural-engineering"
+  ],
+  "externalLeadsInto": [
+    "Medical Imaging",
+    "Wearable Devices"
+  ],
+  "skills": [
+    "Signal conditioning circuit design",
+    "electrode selection",
+    "noise analysis"
+  ],
+  "topicClusters": [
+    "bioinstrumentation",
+    "circuits"
+  ],
+  "concepts": [
+    "biological-signal-characteristics-ecg-eeg-emg-eeg",
+    "biopotential-electrodes-ag-agcl-dry-electrodes",
+    "instrumentation-amplifiers",
+    "noise-sources-and-shielding",
+    "adc-and-sampling-for-biosignals",
+    "patient-safety-isolation-leakage-current"
+  ],
+  "relatedTools": [
+    "ohms-law",
+    "opamp-config"
+  ],
   "isElective": false,
   "electiveTheme": null,
-  "status": "stub"
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
 }

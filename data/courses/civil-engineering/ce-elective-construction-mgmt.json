@@ -1,0 +1,26 @@
+{
+  "id": "ce-elective-construction-mgmt",
+  "title": "[THEME: Construction Management]",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Scheduling, cost control, contracts",
+  "whyItMatters": "Advanced theme area within Civil Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "economics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Construction Management",
+  "electiveTag": "[THEME: Construction Management]",
+  "status": "planned",
+  "referenceNote": null
+}

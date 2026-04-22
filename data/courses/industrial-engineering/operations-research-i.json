@@ -1,19 +1,47 @@
 {
   "id": "operations-research-i",
-  "title": "Operations Research I",
+  "title": "Operations Research I — Linear Programming",
   "majorId": "industrial-engineering",
   "isCore": false,
   "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Operations Research Core",
   "year": "2-3",
-  "shortDesc": "Optimization and decision models for resource allocation and systems planning.",
-  "whyItMatters": "Operations research brings engineering rigor to complex organizational systems.",
-  "prereqs": ["calculus-i"],
-  "leadsInto": [],
-  "skills": ["objective functions", "constraints", "model interpretation"],
-  "topicClusters": ["control"],
-  "concepts": [],
+  "shortDesc": "Linear programming, simplex method, duality, and sensitivity analysis",
+  "whyItMatters": "LP is the foundational optimization method for resource allocation and logistics",
+  "prereqs": [
+    "linear-algebra",
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "operations-research-ii"
+  ],
+  "externalLeadsInto": [
+    "Supply Chain",
+    "Production Planning"
+  ],
+  "skills": [
+    "LP model formulation",
+    "simplex algorithm",
+    "sensitivity analysis",
+    "software solution"
+  ],
+  "topicClusters": [
+    "operations-research"
+  ],
+  "concepts": [
+    "lp-problem-formulation",
+    "graphical-solution-2d",
+    "simplex-algorithm",
+    "duality-theory",
+    "sensitivity-analysis-and-shadow-prices",
+    "transportation-and-assignment-problems",
+    "network-flow-models"
+  ],
   "relatedTools": [],
   "isElective": false,
   "electiveTheme": null,
-  "status": "stub"
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
 }

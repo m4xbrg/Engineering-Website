@@ -1,0 +1,44 @@
+{
+  "id": "intro-aerospace",
+  "title": "Introduction to Aerospace Engineering",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — AE Core Entry",
+  "year": "2",
+  "shortDesc": "Survey of aerospace vehicles, disciplines, design process, and careers",
+  "whyItMatters": "Provides context and orientation before specialization",
+  "prereqs": [
+    "physics-i",
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "All Year 2–3 AE courses"
+  ],
+  "skills": [
+    "Aircraft performance estimation",
+    "unit systems",
+    "basic orbital mechanics"
+  ],
+  "topicClusters": [
+    "aerodynamics",
+    "design"
+  ],
+  "concepts": [
+    "history-of-flight-and-space-exploration",
+    "atmosphere-model-isa",
+    "basic-aerodynamic-forces-lift-drag-thrust-weight",
+    "airfoil-nomenclature",
+    "orbital-mechanics-overview",
+    "aerospace-vehicle-types-and-missions",
+    "engineering-design-in-aerospace-context"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

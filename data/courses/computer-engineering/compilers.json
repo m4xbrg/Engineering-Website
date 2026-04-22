@@ -1,0 +1,44 @@
+{
+  "id": "compilers",
+  "title": "Compilers (Intro)",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced CE",
+  "year": "3",
+  "shortDesc": "Lexical analysis, parsing, semantic analysis, and code generation",
+  "whyItMatters": "Compiler knowledge improves low-level programming and hardware-software co-design",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Data Structures",
+    "Computer Architecture I",
+    "Theory of Computation (or equiv)"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Programming Language Design",
+    "LLVM-based tools"
+  ],
+  "skills": [
+    "Parser implementation",
+    "IR design",
+    "optimization passes"
+  ],
+  "topicClusters": [
+    "computing"
+  ],
+  "concepts": [
+    "lexical-analysis-tokenization-regex-dfas",
+    "parsing-cfgs-ll-and-lr-parsers",
+    "semantic-analysis-and-type-checking",
+    "intermediate-representations",
+    "code-generation",
+    "intro-to-compiler-optimization"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

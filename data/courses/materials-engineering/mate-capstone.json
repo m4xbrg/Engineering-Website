@@ -1,0 +1,44 @@
+{
+  "id": "mate-capstone",
+  "title": "Senior Capstone — Materials Design Project",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Materials-focused design project: material selection, processing, characterization, and property verification",
+  "whyItMatters": "Integrates structure-property-processing-performance across the curriculum",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Completion of MatE core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice or graduate study"
+  ],
+  "skills": [
+    "Materials selection methodology",
+    "processing design",
+    "characterization planning",
+    "documentation"
+  ],
+  "topicClusters": [
+    "design",
+    "materials"
+  ],
+  "concepts": [
+    "ces-edupack-materials-selection-methodology",
+    "property-requirements-mapping",
+    "processing-route-design",
+    "characterization-plan",
+    "property-verification-and-comparison",
+    "cost-and-sustainability-analysis",
+    "technical-report-and-presentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

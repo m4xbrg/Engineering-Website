@@ -1,0 +1,45 @@
+{
+  "id": "propulsion-ii",
+  "title": "Propulsion II — Rocket Propulsion",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Flight Mechanics",
+  "year": "3",
+  "shortDesc": "Chemical rocket theory, nozzles, solid and liquid propellants, specific impulse",
+  "whyItMatters": "Required for spacecraft and launch vehicle design",
+  "prereqs": [
+    "propulsion-i",
+    "compressible-aero"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Spacecraft Systems",
+    "Mission Design",
+    "Advanced Propulsion"
+  ],
+  "skills": [
+    "Rocket equation application",
+    "nozzle sizing",
+    "propellant selection"
+  ],
+  "topicClusters": [
+    "propulsion"
+  ],
+  "concepts": [
+    "rocket-equation-tsiolkovsky",
+    "thrust-and-specific-impulse",
+    "nozzle-design-area-ratio-ideal-nozzle",
+    "liquid-propellant-systems",
+    "solid-rocket-motors",
+    "electric-propulsion-ion-hall-thruster-intro",
+    "multi-stage-rocket-analysis"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

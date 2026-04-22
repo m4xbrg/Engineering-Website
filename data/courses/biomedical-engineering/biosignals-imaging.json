@@ -1,0 +1,50 @@
+{
+  "id": "biosignals-imaging",
+  "title": "Biosignals and Medical Imaging",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Intermediate BME",
+  "year": "2-3",
+  "shortDesc": "Signal processing for biosignals and principles of medical imaging modalities",
+  "whyItMatters": "Imaging is the most widely used diagnostic tool in medicine",
+  "prereqs": [
+    "signals-and-systems",
+    "bioinstrumentation"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "neural-engineering"
+  ],
+  "externalLeadsInto": [
+    "Advanced Imaging",
+    "Image Processing"
+  ],
+  "skills": [
+    "ECG/EEG analysis",
+    "image reconstruction",
+    "modality comparison"
+  ],
+  "topicClusters": [
+    "medical-imaging",
+    "signals",
+    "bioinstrumentation"
+  ],
+  "concepts": [
+    "fourier-analysis-of-biosignals",
+    "ecg-acquisition-and-interpretation",
+    "eeg-emg-eog-signal-properties",
+    "x-ray-and-ct-imaging-physics",
+    "mri-principles-larmor-frequency-k-space",
+    "ultrasound-pulse-echo-doppler",
+    "nuclear-imaging-pet-spect-overview"
+  ],
+  "relatedTools": [
+    "fourier-series"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

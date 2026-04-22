@@ -2,18 +2,113 @@
   "id": "mechanical-engineering",
   "name": "Mechanical Engineering",
   "shortName": "ME",
-  "description": "Mechanical systems, energy transfer, design, and applied analysis.",
-  "mainSubfields": ["Fluids", "Thermal Systems", "Design", "Manufacturing"],
-  "coreFoundationIds": ["calculus-i", "statics"],
-  "conceptClusters": ["mechanics", "fluids"],
-  "summaryChain": "Shared mechanics fundamentals lead into fluids, thermal systems, and machine design.",
+  "description": "Design, analysis, and manufacture of mechanical systems. Spans from microscale MEMS to large turbomachinery and aerospace structures.",
+  "mainSubfields": [
+    "Solid mechanics",
+    "dynamics",
+    "thermodynamics",
+    "fluid mechanics",
+    "heat transfer",
+    "manufacturing",
+    "mechatronics",
+    "vibrations",
+    "machine design"
+  ],
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "calculus-iii",
+    "differential-equations",
+    "physics-i",
+    "engineering-statistics",
+    "statics",
+    "dynamics",
+    "mechanics-of-materials",
+    "thermodynamics-i"
+  ],
+  "conceptClusters": [
+    "fluids",
+    "heat-transfer",
+    "thermodynamics",
+    "materials",
+    "manufacturing",
+    "machine-design",
+    "solid-mechanics",
+    "mechanics",
+    "signals",
+    "control",
+    "computation",
+    "embedded",
+    "design",
+    "aerodynamics",
+    "propulsion",
+    "power",
+    "biomechanics"
+  ],
+  "summaryChain": "Calculus → Physics I → Statics → Dynamics / Mechanics of Materials → Thermodynamics I → Fluid Mechanics / Heat Transfer / Thermo II → Machine Design / FEA / Vibrations / Control → Mechatronics / CFD → Capstone",
+  "recommendedTools": [
+    "unit-converter",
+    "fourier-series",
+    "bode-plot",
+    "fbd-builder"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-mechanical",
+  "colorToken": "--color-me",
+  "icon": "cog",
   "stages": [
     {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation (shared with Core Engineering)",
+      "description": "See Core Engineering: Full Year 1–2 curriculum + Statics, Dynamics, Mechanics of Materials, Thermodynamics I",
+      "courseIds": []
+    },
+    {
       "id": "major-core",
-      "label": "Year 2-3 — ME Core",
-      "courseIds": ["fluid-mechanics-me"]
+      "label": "Year 2–3 — ME Core",
+      "description": "",
+      "courseIds": [
+        "fluid-mechanics-me",
+        "heat-transfer-me",
+        "thermodynamics-ii",
+        "materials-science-me",
+        "manufacturing-processes"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Intermediate ME",
+      "description": "",
+      "courseIds": [
+        "machine-design",
+        "mechanical-vibrations",
+        "control-systems-me",
+        "fea-i"
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Year 3–4 — Advanced ME",
+      "description": "",
+      "courseIds": [
+        "mechatronics",
+        "cfd-intro"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "me-capstone",
+        "me-elective-robotics",
+        "me-elective-aerospace",
+        "me-elective-automotive",
+        "me-elective-hvac",
+        "me-elective-tribology",
+        "me-elective-advanced-mfg",
+        "me-elective-sustainable-energy",
+        "me-elective-biomechanics"
+      ]
     }
   ]
 }

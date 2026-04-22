@@ -1,0 +1,27 @@
+{
+  "id": "bme-elective-bioinformatics",
+  "title": "[THEME: Bioinformatics]",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Genomics, protein structure, sequencing pipelines",
+  "whyItMatters": "Advanced theme area within Biomedical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "computation",
+    "physiology"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Bioinformatics",
+  "electiveTag": "[THEME: Bioinformatics]",
+  "status": "planned",
+  "referenceNote": null
+}

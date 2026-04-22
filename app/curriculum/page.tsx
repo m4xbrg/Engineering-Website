@@ -2,10 +2,10 @@ import { MajorGrid } from "@/components/curriculum/MajorGrid";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { getAllMajors } from "@/lib/data";
+import { getMajorIndexItems } from "@/lib/data";
 
 export default function CurriculumPage() {
-  const majors = getAllMajors();
+  const majors = getMajorIndexItems();
 
   return (
     <>

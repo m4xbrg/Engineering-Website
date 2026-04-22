@@ -1,0 +1,26 @@
+{
+  "id": "me-elective-biomechanics",
+  "title": "[THEME: Biomechanics]",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Orthopaedic mechanics, gait analysis, implant design",
+  "whyItMatters": "Advanced theme area within Mechanical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "biomechanics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Biomechanics",
+  "electiveTag": "[THEME: Biomechanics]",
+  "status": "planned",
+  "referenceNote": null
+}

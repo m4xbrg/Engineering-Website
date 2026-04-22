@@ -1,0 +1,45 @@
+{
+  "id": "ce-capstone",
+  "title": "Senior Capstone — Civil Infrastructure Design",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Team-based design of a civil infrastructure system (bridge, building, water system)",
+  "whyItMatters": "Integration of all civil competencies with professional context",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Completion of CE core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice",
+    "PE exam preparation"
+  ],
+  "skills": [
+    "Integrated design",
+    "plan set production",
+    "permitting",
+    "cost estimation",
+    "presentation"
+  ],
+  "topicClusters": [
+    "design",
+    "structures"
+  ],
+  "concepts": [
+    "multi-discipline-coordination-structural-geotech-environmental",
+    "engineering-economics-and-cost-estimating",
+    "permitting-and-regulatory-compliance",
+    "autocad-civil-3d-revit-usage",
+    "professional-plan-set-preparation",
+    "construction-sequencing-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

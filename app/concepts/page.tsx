@@ -13,8 +13,8 @@ export default function ConceptsPage() {
       />
       <PageHeader
         eyebrow="Concept index"
-        title="An engineering concept layer that can connect majors, courses, and tools."
-        description="This scaffold already includes searchable-ready concept records, route support, and cross-link structure. Full editorial depth and richer filtering come next."
+        title="An engineering concept layer connecting courses, majors, and tools."
+        description="Concept records are generated from the curriculum blueprint and linked back to their teaching courses, glossary terms, and planned labs."
       />
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {concepts.map((concept) => (

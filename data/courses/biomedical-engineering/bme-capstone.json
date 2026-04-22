@@ -1,0 +1,46 @@
+{
+  "id": "bme-capstone",
+  "title": "Senior Capstone — Medical Device Design",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Team-based design project following full design control process",
+  "whyItMatters": "Simulates real medical device development from clinical need to prototype",
+  "prereqs": [
+    "bme-design-regulatory"
+  ],
+  "externalPrereqs": [
+    "all BME core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Industry or graduate school"
+  ],
+  "skills": [
+    "Clinical need identification",
+    "device design",
+    "bench/lab testing",
+    "regulatory documentation"
+  ],
+  "topicClusters": [
+    "design",
+    "biomaterials"
+  ],
+  "concepts": [
+    "clinical-need-identification-and-voice-of-customer",
+    "clinical-evidence-review",
+    "functional-prototyping-and-testing",
+    "biocompatibility-verification",
+    "risk-benefit-analysis",
+    "regulatory-submission-document-preparation",
+    "stakeholder-presentation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

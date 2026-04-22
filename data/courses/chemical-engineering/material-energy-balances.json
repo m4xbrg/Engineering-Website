@@ -4,16 +4,44 @@
   "majorId": "chemical-engineering",
   "isCore": false,
   "stageId": "major-entry",
+  "stageLabel": "Year 2 — ChE Core Entry",
   "year": "2",
-  "shortDesc": "Conservation principles for process streams, reactors, and system accounting.",
-  "whyItMatters": "It becomes the bookkeeping engine for nearly every later chemical engineering topic.",
-  "prereqs": ["calculus-i"],
-  "leadsInto": [],
-  "skills": ["mass balances", "energy balances", "system boundary setup"],
-  "topicClusters": ["fluids"],
-  "concepts": [],
-  "relatedTools": ["unit-converter"],
+  "shortDesc": "Conservation of mass and energy applied to chemical processes",
+  "whyItMatters": "The foundational quantitative tool of chemical engineering",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [
+    "General Chemistry II"
+  ],
+  "leadsInto": [
+    "thermodynamics-ii"
+  ],
+  "externalLeadsInto": [
+    "Transport Phenomena",
+    "Reactor Design"
+  ],
+  "skills": [
+    "Process flow diagram reading",
+    "stream balances",
+    "recycle calculations"
+  ],
+  "topicClusters": [
+    "thermodynamics",
+    "chemistry"
+  ],
+  "concepts": [
+    "process-variables-t-p-composition-flow-rate",
+    "steady-state-and-transient-material-balances",
+    "systems-with-reaction-conversion-yield-selectivity",
+    "recycle-bypass-and-purge-streams",
+    "energy-balances-sensible-heat-latent-heat-heat-of-reaction",
+    "degrees-of-freedom-analysis"
+  ],
+  "relatedTools": [],
   "isElective": false,
   "electiveTheme": null,
-  "status": "stub"
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
 }

@@ -6,10 +6,14 @@ import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ToolGrid } from "@/components/tools/ToolGrid";
-import { getAllMajors, getAllToolDefs, getCoursesForMajor } from "@/lib/data";
+import {
+  getAllToolDefs,
+  getCoursesForMajor,
+  getMajorIndexItems,
+} from "@/lib/data";
 
 export default function HomePage() {
-  const majors = getAllMajors();
+  const majors = getMajorIndexItems();
   const featuredTools = getAllToolDefs().slice(0, 3);
   const featuredElectricalCourses = getCoursesForMajor(
     "electrical-engineering",

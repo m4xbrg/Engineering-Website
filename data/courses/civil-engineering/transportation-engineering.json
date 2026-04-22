@@ -1,0 +1,45 @@
+{
+  "id": "transportation-engineering",
+  "title": "Transportation Engineering",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Geotechnical, Transportation & Environment",
+  "year": "3",
+  "shortDesc": "Highway design, traffic flow theory, and transportation planning",
+  "whyItMatters": "Transportation infrastructure connects economies and communities",
+  "prereqs": [
+    "engineering-statistics",
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Traffic Operations",
+    "Highway Design",
+    "Transit Planning"
+  ],
+  "skills": [
+    "Traffic flow analysis",
+    "sight distance",
+    "level of service assessment"
+  ],
+  "topicClusters": [
+    "transportation"
+  ],
+  "concepts": [
+    "traffic-flow-volume-speed-density-fundamental-diagram",
+    "level-of-service-los-analysis",
+    "signalized-intersection-design-and-timing",
+    "geometric-design-horizontal-and-vertical-alignment",
+    "sight-distance-requirements",
+    "pavement-design-aashto-method",
+    "transportation-demand-modeling-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

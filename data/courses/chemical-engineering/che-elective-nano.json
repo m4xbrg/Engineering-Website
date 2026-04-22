@@ -1,0 +1,26 @@
+{
+  "id": "che-elective-nano",
+  "title": "[THEME: Nanomaterials & Nanotechnology]",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Nanoparticle synthesis, characterization",
+  "whyItMatters": "Advanced theme area within Chemical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Nanomaterials & Nanotechnology",
+  "electiveTag": "[THEME: Nanomaterials & Nanotechnology]",
+  "status": "planned",
+  "referenceNote": null
+}

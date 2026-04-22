@@ -1,0 +1,27 @@
+{
+  "id": "ee-elective-power-electronics",
+  "title": "[THEME: Power Electronics]",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "DC-DC converters, inverters, motor drives",
+  "whyItMatters": "Advanced theme area within Electrical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "power",
+    "electronics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Power Electronics",
+  "electiveTag": "[THEME: Power Electronics]",
+  "status": "planned",
+  "referenceNote": null
+}

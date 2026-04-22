@@ -1,0 +1,46 @@
+{
+  "id": "manufacturing-processes",
+  "title": "Manufacturing Processes",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — ME Core",
+  "year": "2-3",
+  "shortDesc": "Casting, forming, machining, welding, and additive manufacturing",
+  "whyItMatters": "Designs must be manufacturable; process choice affects cost, quality, and properties",
+  "prereqs": [
+    "mechanics-of-materials"
+  ],
+  "externalPrereqs": [
+    "Materials Science"
+  ],
+  "leadsInto": [
+    "machine-design"
+  ],
+  "externalLeadsInto": [
+    "Industrial Engineering electives",
+    "Product Design"
+  ],
+  "skills": [
+    "Process selection",
+    "tolerance analysis",
+    "DFM"
+  ],
+  "topicClusters": [
+    "manufacturing"
+  ],
+  "concepts": [
+    "casting-sand-die-investment",
+    "metal-forming-rolling-forging-extrusion-drawing",
+    "machining-turning-milling-drilling-and-cutting-mechanics",
+    "welding-processes-and-joint-design",
+    "additive-manufacturing-fdm-sla-sls-dmls",
+    "tolerances-fits-and-gd-and-t-basics"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

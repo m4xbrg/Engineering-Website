@@ -1,0 +1,43 @@
+{
+  "id": "thermodynamics-ii",
+  "title": "Thermodynamics II — Power and Refrigeration Cycles",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — ME Core",
+  "year": "2-3",
+  "shortDesc": "Advanced thermodynamic cycles, mixtures, combustion, refrigeration",
+  "whyItMatters": "Underpins energy conversion, HVAC, and propulsion systems",
+  "prereqs": [
+    "thermodynamics-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Gas Turbines",
+    "Internal Combustion Engines",
+    "Refrigeration Design"
+  ],
+  "skills": [
+    "Cycle performance analysis",
+    "combustion calculations",
+    "exergy analysis"
+  ],
+  "topicClusters": [
+    "thermodynamics"
+  ],
+  "concepts": [
+    "rankine-cycle-variations-reheat-regeneration",
+    "brayton-cycle-and-gas-turbine-performance",
+    "internal-combustion-engine-cycles-otto-diesel",
+    "refrigeration-and-heat-pump-cycles",
+    "psychrometrics-and-air-water-mixtures",
+    "combustion-stoichiometry-and-adiabatic-flame-temperature"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

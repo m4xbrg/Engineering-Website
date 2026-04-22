@@ -2,23 +2,113 @@
   "id": "materials-engineering",
   "name": "Materials Engineering",
   "shortName": "MatE",
-  "description": "Materials structure, processing, characterization, and performance.",
+  "description": "Study, design, and application of the structure-property-processing-performance relationships of materials including metals, ceramics, polymers, composites, and biomaterials.",
   "mainSubfields": [
-    "Characterization",
-    "Metals",
-    "Polymers",
-    "Electronic Materials"
+    "Metallurgy",
+    "ceramics",
+    "polymers and soft matter",
+    "composites",
+    "electronic materials",
+    "biomaterials",
+    "nanomaterials",
+    "failure analysis",
+    "surface engineering"
   ],
-  "coreFoundationIds": ["calculus-i", "statics"],
-  "conceptClusters": ["materials", "mechanics"],
-  "summaryChain": "Chemistry and mechanics foundations inform how materials behave and how they are designed.",
+  "coreFoundationIds": [
+    "calculus-i",
+    "calculus-ii",
+    "calculus-iii",
+    "differential-equations",
+    "physics-i",
+    "physics-ii",
+    "engineering-statistics",
+    "mechanics-of-materials"
+  ],
+  "conceptClusters": [
+    "chemistry",
+    "materials",
+    "thermodynamics",
+    "solid-mechanics",
+    "electronics",
+    "design",
+    "manufacturing",
+    "biomaterials",
+    "computation",
+    "power",
+    "control"
+  ],
+  "summaryChain": "Chemistry + Physics → Introduction to Materials Science → Physical Chemistry / Thermodynamics & Phase Diagrams → Kinetics of Phase Transformations / Mechanical Behavior → Metals / Ceramics / Polymers / Composites / Electronic Materials / Corrosion → Failure Analysis → Capstone",
+  "recommendedTools": [
+    "unit-converter"
+  ],
   "depthV1": "map",
-  "colorToken": "--major-materials",
+  "colorToken": "--color-mate",
+  "icon": "gem",
   "stages": [
+    {
+      "id": "foundation",
+      "label": "Year 1–2 — Foundation",
+      "description": "See Core Engineering: Calculus I–III, Differential Equations, Physics I–II, Linear Algebra, Statistics, Mechanics of Materials",
+      "courseIds": [
+        "general-chemistry-mate"
+      ]
+    },
     {
       "id": "major-entry",
       "label": "Year 2 — MatE Core Entry",
-      "courseIds": ["introduction-to-materials-science"]
+      "description": "",
+      "courseIds": [
+        "intro-materials-science",
+        "physical-chemistry-mate"
+      ]
+    },
+    {
+      "id": "major-core",
+      "label": "Year 2–3 — Core Materials Science",
+      "description": "",
+      "courseIds": [
+        "thermo-phase-diagrams",
+        "kinetics-phase-transform",
+        "mechanical-behavior-materials",
+        "characterization-i"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "label": "Year 3 — Material Classes",
+      "description": "",
+      "courseIds": [
+        "metals-and-alloys",
+        "ceramics-glasses",
+        "polymers-soft-materials",
+        "composite-materials"
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Year 3–4 — Advanced MatE",
+      "description": "",
+      "courseIds": [
+        "characterization-ii",
+        "electronic-materials",
+        "corrosion-engineering",
+        "failure-analysis"
+      ]
+    },
+    {
+      "id": "capstone",
+      "label": "Year 4 — Capstone + Electives",
+      "description": "",
+      "courseIds": [
+        "mate-capstone",
+        "mate-elective-nano",
+        "mate-elective-am",
+        "mate-elective-biomaterials",
+        "mate-elective-thin-films",
+        "mate-elective-computational",
+        "mate-elective-energy-materials",
+        "mate-elective-smart-materials"
+      ]
     }
   ]
 }

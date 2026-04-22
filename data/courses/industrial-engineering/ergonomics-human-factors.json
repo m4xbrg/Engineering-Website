@@ -1,0 +1,47 @@
+{
+  "id": "ergonomics-human-factors",
+  "title": "Ergonomics and Human Factors Engineering",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Manufacturing and Quality",
+  "year": "3",
+  "shortDesc": "Design of systems for human use: cognitive, physical, and environmental factors",
+  "whyItMatters": "Human error, fatigue, and injury are major sources of system failure and loss",
+  "prereqs": [
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [
+    "Introduction to IE"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Workplace Design",
+    "Healthcare Systems",
+    "UX Engineering"
+  ],
+  "skills": [
+    "Workstation design",
+    "task analysis",
+    "cognitive workload assessment",
+    "error analysis"
+  ],
+  "topicClusters": [
+    "human-factors"
+  ],
+  "concepts": [
+    "human-anthropometry-and-biomechanics",
+    "biomechanical-limits-and-injury-prevention",
+    "cognitive-workload-and-mental-models",
+    "task-analysis-methods-goms-hta",
+    "human-error-classification-sherpa-cream",
+    "displays-and-controls-design",
+    "environmental-factors-noise-lighting-temperature"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

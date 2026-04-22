@@ -1,0 +1,46 @@
+{
+  "id": "steel-structure-design",
+  "title": "Steel Structure Design",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Structural Track",
+  "year": "2-3",
+  "shortDesc": "AISC code-based design of steel beams, columns, and connections",
+  "whyItMatters": "Steel frames dominate commercial and industrial structures",
+  "prereqs": [
+    "structural-analysis-i",
+    "civil-materials"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Advanced Steel",
+    "Seismic Design",
+    "Bridge Engineering"
+  ],
+  "skills": [
+    "Section selection",
+    "connection design",
+    "lateral system design"
+  ],
+  "topicClusters": [
+    "structures",
+    "materials"
+  ],
+  "concepts": [
+    "steel-material-properties-and-sections",
+    "tension-member-design",
+    "compression-member-design-buckling",
+    "beam-flexure-and-lateral-torsional-buckling",
+    "combined-loading-beam-column",
+    "bolted-and-welded-connection-design",
+    "intro-to-moment-frames-and-braced-frames"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

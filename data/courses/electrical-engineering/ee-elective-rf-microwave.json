@@ -1,0 +1,26 @@
+{
+  "id": "ee-elective-rf-microwave",
+  "title": "[THEME: RF & Microwave]",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "S-parameters, filters, amplifier design",
+  "whyItMatters": "Advanced theme area within Electrical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "electromagnetics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "RF & Microwave",
+  "electiveTag": "[THEME: RF & Microwave]",
+  "status": "planned",
+  "referenceNote": null
+}

@@ -1,0 +1,47 @@
+{
+  "id": "fea-i",
+  "title": "Finite Element Analysis I",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate ME",
+  "year": "3",
+  "shortDesc": "Introduction to FEM theory, meshing, and structural simulation",
+  "whyItMatters": "Industry-standard tool for design validation without physical prototyping",
+  "prereqs": [
+    "mechanics-of-materials",
+    "linear-algebra"
+  ],
+  "externalPrereqs": [
+    "Numerical Methods"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Advanced FEA",
+    "CFD",
+    "Structural Optimization"
+  ],
+  "skills": [
+    "Model building",
+    "mesh quality assessment",
+    "results interpretation"
+  ],
+  "topicClusters": [
+    "solid-mechanics",
+    "computation"
+  ],
+  "concepts": [
+    "direct-stiffness-method",
+    "1d-bar-and-beam-elements",
+    "2d-plane-stress-strain-elements",
+    "meshing-strategies-and-convergence",
+    "boundary-conditions-and-loading",
+    "results-interpretation-stress-deformation-safety-factor"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

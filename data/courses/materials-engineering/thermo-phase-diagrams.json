@@ -1,0 +1,47 @@
+{
+  "id": "thermo-phase-diagrams",
+  "title": "Thermodynamics and Phase Diagrams",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Core Materials Science",
+  "year": "2-3",
+  "shortDesc": "Binary and ternary phase diagrams, phase transformations, and equilibria",
+  "whyItMatters": "Phase diagrams are the engineer's map to material state under processing conditions",
+  "prereqs": [
+    "intro-materials-science"
+  ],
+  "externalPrereqs": [
+    "Physical Chemistry for MatE"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Heat Treatment",
+    "Solidification",
+    "Phase Transformation Kinetics"
+  ],
+  "skills": [
+    "Phase diagram reading and interpretation",
+    "Lever rule",
+    "phase identification"
+  ],
+  "topicClusters": [
+    "materials",
+    "thermodynamics"
+  ],
+  "concepts": [
+    "gibbs-phase-rule",
+    "unary-and-binary-phase-diagrams",
+    "isomorphous-systems",
+    "eutectic-eutectoid-and-peritectic-reactions",
+    "iron-carbon-phase-diagram-detailed",
+    "ternary-phase-diagram-basics",
+    "thermodynamic-modeling-calphad-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

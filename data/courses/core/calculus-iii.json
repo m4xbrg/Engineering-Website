@@ -1,0 +1,40 @@
+{
+  "id": "calculus-iii",
+  "title": "Calculus III — Multivariable Calculus",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "core-sciences",
+  "stageLabel": "Year 1–2 — Core Sciences",
+  "year": "1-2",
+  "shortDesc": "Partial derivatives, multiple integrals, vector calculus",
+  "whyItMatters": "Essential for fluid mechanics, heat transfer, electromagnetism",
+  "prereqs": [
+    "calculus-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "differential-equations"
+  ],
+  "externalLeadsInto": [
+    "Engineering Physics II"
+  ],
+  "skills": [
+    "Gradient computation",
+    "surface/volume integrals",
+    "vector fields"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "partial-derivatives-and-gradients",
+    "double-and-triple-integrals",
+    "line-and-surface-integrals",
+    "green-s-stokes-and-divergence-theorems",
+    "coordinate-systems-cylindrical-spherical"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

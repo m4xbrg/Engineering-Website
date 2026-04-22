@@ -1,0 +1,27 @@
+{
+  "id": "che-elective-polymer",
+  "title": "[THEME: Polymer Engineering]",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Polymer synthesis, rheology, processing",
+  "whyItMatters": "Advanced theme area within Chemical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "materials",
+    "chemistry"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Polymer Engineering",
+  "electiveTag": "[THEME: Polymer Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "digital-signal-processing-cpe",
+  "title": "Digital Signal Processing (Selected Topics)",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced CE",
+  "year": "3",
+  "shortDesc": "Discrete-time signals, DFT/FFT, FIR/IIR filter design",
+  "whyItMatters": "Underpins audio, imaging, communications, and biomedical signal analysis",
+  "prereqs": [
+    "signals-and-systems",
+    "linear-algebra"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Communications",
+    "Image Processing",
+    "Audio Engineering",
+    "Machine Learning"
+  ],
+  "skills": [
+    "Filter design",
+    "FFT implementation",
+    "spectrum analysis"
+  ],
+  "topicClusters": [
+    "dsp",
+    "signals"
+  ],
+  "concepts": [
+    "discrete-time-fourier-transform-dtft",
+    "dft-and-fft-algorithm",
+    "fir-and-iir-filter-design",
+    "z-transform-analysis",
+    "windowing-techniques",
+    "quantization-and-finite-word-length-effects"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": "See Electrical Engineering: Digital Signal Processing (relevant modules only)"
+}

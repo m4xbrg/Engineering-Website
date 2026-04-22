@@ -1,0 +1,27 @@
+{
+  "id": "bme-elective-wearable",
+  "title": "[THEME: Wearable and Digital Health]",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Wearable sensors, mHealth, data analysis",
+  "whyItMatters": "Advanced theme area within Biomedical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "bioinstrumentation",
+    "embedded"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Wearable and Digital Health",
+  "electiveTag": "[THEME: Wearable and Digital Health]",
+  "status": "planned",
+  "referenceNote": null
+}

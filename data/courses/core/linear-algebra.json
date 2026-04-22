@@ -1,0 +1,43 @@
+{
+  "id": "linear-algebra",
+  "title": "Linear Algebra",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "core-sciences",
+  "stageLabel": "Year 1–2 — Core Sciences",
+  "year": "1-2",
+  "shortDesc": "Vectors, matrices, linear systems, eigenvalues",
+  "whyItMatters": "Core tool for FEA, control systems, data science, circuits",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "control-systems-ee"
+  ],
+  "externalLeadsInto": [
+    "Numerical Methods",
+    "Structural FEA",
+    "Signal Processing"
+  ],
+  "skills": [
+    "Matrix operations",
+    "eigenvector analysis",
+    "system solving"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "vector-spaces-and-subspaces",
+    "matrix-operations-and-inverses",
+    "determinants",
+    "eigenvalues-and-eigenvectors",
+    "linear-transformations",
+    "least-squares-approximation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

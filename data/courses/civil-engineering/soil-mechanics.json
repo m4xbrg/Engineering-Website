@@ -1,0 +1,46 @@
+{
+  "id": "soil-mechanics",
+  "title": "Soil Mechanics and Geotechnical Engineering",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Geotechnical, Transportation & Environment",
+  "year": "3",
+  "shortDesc": "Soil classification, shear strength, consolidation, lateral earth pressure",
+  "whyItMatters": "Every structure rests on soil; geotechnical failures cause catastrophic loss",
+  "prereqs": [
+    "mechanics-of-materials",
+    "fluid-mechanics-ce"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "foundation-engineering"
+  ],
+  "externalLeadsInto": [
+    "Slope Stability",
+    "Ground Improvement"
+  ],
+  "skills": [
+    "Soil testing",
+    "settlement prediction",
+    "bearing capacity analysis"
+  ],
+  "topicClusters": [
+    "geotechnics"
+  ],
+  "concepts": [
+    "soil-composition-and-classification-uscs-aashto",
+    "compaction-and-proctor-tests",
+    "permeability-and-seepage",
+    "effective-stress-and-pore-water-pressure",
+    "consolidation-theory-terzaghi",
+    "shear-strength-mohr-coulomb-direct-shear-triaxial",
+    "lateral-earth-pressure-rankine-coulomb"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

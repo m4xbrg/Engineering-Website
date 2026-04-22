@@ -1,0 +1,26 @@
+{
+  "id": "ae-elective-mission-design",
+  "title": "[THEME: Space Mission Design]",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Interplanetary trajectories, operations, STK",
+  "whyItMatters": "Advanced theme area within Aerospace Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "orbital-mechanics"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Space Mission Design",
+  "electiveTag": "[THEME: Space Mission Design]",
+  "status": "planned",
+  "referenceNote": null
+}

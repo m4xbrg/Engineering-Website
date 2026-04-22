@@ -1,0 +1,46 @@
+{
+  "id": "circuit-analysis-cpe-ii",
+  "title": "Circuit Analysis II",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — CE Core",
+  "year": "2",
+  "shortDesc": "AC circuits, frequency response, phasors, and power",
+  "whyItMatters": "Foundation for power systems, RF design, signal analysis",
+  "prereqs": [
+    "circuit-analysis-cpe-i",
+    "differential-equations"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "electronics-i",
+    "signals-and-systems"
+  ],
+  "externalLeadsInto": [
+    "Power Electronics"
+  ],
+  "skills": [
+    "Phasor analysis",
+    "impedance",
+    "frequency response",
+    "power factor"
+  ],
+  "topicClusters": [
+    "circuits"
+  ],
+  "concepts": [
+    "phasors-and-sinusoidal-steady-state",
+    "impedance-and-admittance",
+    "resonance-series-and-parallel",
+    "ac-power-real-reactive-apparent",
+    "transfer-functions-and-bode-plots-intro",
+    "two-port-networks"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

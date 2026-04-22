@@ -1,0 +1,27 @@
+{
+  "id": "che-elective-pharma",
+  "title": "[THEME: Pharmaceutical Engineering]",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Drug delivery, GMP, scale-up",
+  "whyItMatters": "Advanced theme area within Chemical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "reaction-engineering",
+    "safety"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Pharmaceutical Engineering",
+  "electiveTag": "[THEME: Pharmaceutical Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

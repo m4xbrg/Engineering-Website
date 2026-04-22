@@ -1,0 +1,46 @@
+{
+  "id": "aerostructures-ii",
+  "title": "Aerostructures II — FEM for Structures",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Flight Mechanics",
+  "year": "3",
+  "shortDesc": "FEM applied to aerospace structures, dynamic analysis, composite FEA",
+  "whyItMatters": "FEA is the industry standard for stress certification of aircraft",
+  "prereqs": [
+    "aerostructures-i",
+    "linear-algebra"
+  ],
+  "externalPrereqs": [
+    "Numerical Methods"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Multidisciplinary Design Optimization",
+    "Senior Design"
+  ],
+  "skills": [
+    "FEA model creation",
+    "modal analysis",
+    "composite laminate FEA"
+  ],
+  "topicClusters": [
+    "structures",
+    "computation"
+  ],
+  "concepts": [
+    "stiffness-matrix-assembly",
+    "2d-and-shell-elements",
+    "natural-frequency-and-mode-shapes",
+    "transient-dynamic-analysis",
+    "composite-plate-fea",
+    "nastran-abaqus-workflow"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

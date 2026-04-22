@@ -1,0 +1,26 @@
+{
+  "id": "ae-elective-advanced-prop",
+  "title": "[THEME: Advanced Propulsion]",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Electric aircraft, hybrid-electric, scramjets",
+  "whyItMatters": "Advanced theme area within Aerospace Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "propulsion"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Advanced Propulsion",
+  "electiveTag": "[THEME: Advanced Propulsion]",
+  "status": "planned",
+  "referenceNote": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "neural-engineering",
+  "title": "Neural Engineering",
+  "majorId": "biomedical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Advanced BME",
+  "year": "3",
+  "shortDesc": "Neural interfaces, brain-computer interfaces, neuromodulation, and computational neuroscience",
+  "whyItMatters": "Neural engineering bridges the nervous system and electronics for therapies and BCIs",
+  "prereqs": [
+    "bioinstrumentation",
+    "physiology-for-engineers"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "BCI Research",
+    "Deep Brain Stimulation Design",
+    "Cochlear Implants"
+  ],
+  "skills": [
+    "Neural signal recording analysis",
+    "electrode array design",
+    "stimulation protocol design"
+  ],
+  "topicClusters": [
+    "bioinstrumentation",
+    "physiology"
+  ],
+  "concepts": [
+    "electrophysiology-of-neurons-action-potential-hodgkin-huxley-model",
+    "extracellular-recording-and-spike-sorting",
+    "electrode-tissue-interface-electrochemistry",
+    "brain-computer-interfaces-eeg-and-implanted",
+    "functional-electrical-stimulation-fes",
+    "deep-brain-stimulation-dbs",
+    "cochlear-implants"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

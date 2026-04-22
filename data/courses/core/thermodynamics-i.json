@@ -1,0 +1,42 @@
+{
+  "id": "thermodynamics-i",
+  "title": "Thermodynamics I",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "engineering-core",
+  "stageLabel": "Year 2 — Engineering Core",
+  "year": "2",
+  "shortDesc": "Laws of thermodynamics, energy, entropy, thermodynamic systems",
+  "whyItMatters": "Foundation for heat transfer, energy systems, chemical processes",
+  "prereqs": [
+    "physics-i",
+    "calculus-ii"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "thermodynamics-ii"
+  ],
+  "externalLeadsInto": [
+    "Heat Transfer",
+    "Fluid Mechanics"
+  ],
+  "skills": [
+    "Energy balance",
+    "cycle analysis",
+    "entropy calculation"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "first-law-energy-conservation",
+    "second-law-entropy-and-irreversibility",
+    "properties-of-pure-substances-steam-tables-ideal-gas",
+    "thermodynamic-cycles-rankine-brayton-carnot",
+    "exergy-analysis"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

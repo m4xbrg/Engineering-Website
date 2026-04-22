@@ -1,0 +1,48 @@
+{
+  "id": "supply-chain-engineering",
+  "title": "Supply Chain Engineering",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced IE",
+  "year": "3-4",
+  "shortDesc": "Inventory control, supply chain network design, and logistics optimization",
+  "whyItMatters": "Global supply chains are one of the largest sources of engineering opportunity",
+  "prereqs": [
+    "engineering-statistics"
+  ],
+  "externalPrereqs": [
+    "OR I",
+    "Manufacturing Systems"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Supply Chain Analytics",
+    "Procurement",
+    "Logistics Engineering"
+  ],
+  "skills": [
+    "Inventory model calculations",
+    "network optimization",
+    "demand forecasting"
+  ],
+  "topicClusters": [
+    "supply-chain",
+    "operations-research"
+  ],
+  "concepts": [
+    "inventory-models-eoq-reorder-point-safety-stock",
+    "multi-echelon-inventory-systems",
+    "supply-chain-network-design-optimization",
+    "demand-forecasting-methods",
+    "transportation-mode-selection",
+    "bullwhip-effect",
+    "risk-and-resilience-in-supply-chains"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

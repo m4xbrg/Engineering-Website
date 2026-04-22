@@ -1,0 +1,45 @@
+{
+  "id": "quality-engineering",
+  "title": "Quality Engineering",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Manufacturing and Quality",
+  "year": "3",
+  "shortDesc": "Quality management systems, SPC, acceptance sampling, and Six Sigma",
+  "whyItMatters": "Quality is the intersection of engineering performance and customer satisfaction",
+  "prereqs": [
+    "stats-for-ie"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Advanced Quality",
+    "Reliability",
+    "Process Improvement"
+  ],
+  "skills": [
+    "Control chart construction",
+    "capability analysis",
+    "FMEA",
+    "Six Sigma project execution"
+  ],
+  "topicClusters": [
+    "statistics-quality"
+  ],
+  "concepts": [
+    "quality-philosophy-deming-juran-taguchi",
+    "statistical-process-control-x-bar-r-p-c-charts",
+    "process-capability-indices-cp-cpk",
+    "acceptance-sampling-oc-curves",
+    "fmea-and-control-plans",
+    "six-sigma-dmaic-methodology",
+    "measurement-system-analysis-gage-r-and-r"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "electronics-ii",
+  "title": "Electronics II — MOSFETs and Op-Amps",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "major-core",
+  "stageLabel": "Year 2–3 — Core EE",
+  "year": "2-3",
+  "shortDesc": "MOSFET operation, operational amplifiers, and feedback",
+  "whyItMatters": "MOSFETs dominate modern digital and analog ICs; op-amps are universal analog blocks",
+  "prereqs": [
+    "electronics-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "vlsi-cpe",
+    "control-systems-ee"
+  ],
+  "externalLeadsInto": [
+    "Analog IC Design"
+  ],
+  "skills": [
+    "MOSFET biasing",
+    "op-amp circuit design",
+    "feedback analysis"
+  ],
+  "topicClusters": [
+    "electronics"
+  ],
+  "concepts": [
+    "mosfet-structure-i-v-characteristics-biasing",
+    "cmos-inverter-basics",
+    "ideal-and-real-op-amp-models",
+    "inverting-non-inverting-amplifiers-integrators-differentiators",
+    "feedback-theory-negative-and-positive",
+    "comparators-and-oscillators"
+  ],
+  "relatedTools": [
+    "opamp-config"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

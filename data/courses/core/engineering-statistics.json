@@ -1,0 +1,43 @@
+{
+  "id": "engineering-statistics",
+  "title": "Engineering Statistics & Probability",
+  "majorId": "core",
+  "isCore": true,
+  "stageId": "core-sciences",
+  "stageLabel": "Year 1–2 — Core Sciences",
+  "year": "1-2",
+  "shortDesc": "Probability theory, statistical inference, reliability analysis",
+  "whyItMatters": "Required for quality control, reliability engineering, experimental design",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "quality-engineering"
+  ],
+  "externalLeadsInto": [
+    "Reliability",
+    "Machine Learning",
+    "Design of Experiments"
+  ],
+  "skills": [
+    "Hypothesis testing",
+    "regression",
+    "probability modeling"
+  ],
+  "topicClusters": [],
+  "concepts": [
+    "probability-axioms-and-distributions",
+    "random-variables-discrete-and-continuous",
+    "normal-exponential-poisson-distributions",
+    "confidence-intervals-hypothesis-testing",
+    "regression-analysis",
+    "reliability-and-failure-rate"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ae-capstone",
+  "title": "Aircraft / Spacecraft Design (Capstone)",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Complete conceptual design of an aerospace vehicle through all design phases",
+  "whyItMatters": "Integrates all AE disciplines in a realistic design exercise",
+  "prereqs": [],
+  "externalPrereqs": [
+    "All AE core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice"
+  ],
+  "skills": [
+    "Multidisciplinary design synthesis",
+    "design iteration",
+    "trade study",
+    "documentation"
+  ],
+  "topicClusters": [
+    "design",
+    "aerodynamics"
+  ],
+  "concepts": [
+    "mission-requirements-and-design-specifications",
+    "conceptual-sizing-rubber-engine-method-w0-estimation",
+    "aerodynamic-structural-propulsion-trade-studies",
+    "configuration-design-and-parametric-layout",
+    "weight-estimation-and-center-of-gravity-travel",
+    "v-n-diagram-and-load-cases",
+    "preliminary-performance-and-stability-verification"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

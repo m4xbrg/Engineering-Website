@@ -24,11 +24,13 @@ export const stageRegistrySchema = z.object({
   id: stageIdSchema,
   label: z.string(),
   typicalYear: z.string(),
+  description: z.string(),
 });
 
 export const stagePreviewSchema = z.object({
   id: stageIdSchema,
   label: z.string(),
+  description: z.string().optional().default(""),
   courseIds: z.array(z.string()),
 });
 
@@ -38,12 +40,17 @@ export const majorIndexItemSchema = z.object({
   shortName: z.string(),
   description: z.string(),
   depthV1: majorDepthSchema,
+  courseCount: z.number().int().nonnegative(),
 });
 
 export const topicClusterSchema = z.object({
   id: z.string(),
   name: z.string(),
   description: z.string(),
+  primaryMajors: z.array(majorSlugSchema),
+  courseIds: z.array(z.string()),
+  conceptIds: z.array(z.string()),
+  toolIds: z.array(toolSlugSchema),
 });
 
 export type MajorSlug = z.infer<typeof majorSlugSchema>;

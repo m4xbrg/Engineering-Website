@@ -1,0 +1,43 @@
+{
+  "id": "me-capstone",
+  "title": "Senior Capstone — ME Design Project",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Full design cycle from requirements through prototype fabrication and testing",
+  "whyItMatters": "Integrates all ME competencies in a real engineering project",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Completion of ME core"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Professional practice"
+  ],
+  "skills": [
+    "Design synthesis",
+    "manufacturing",
+    "testing",
+    "project management",
+    "teamwork"
+  ],
+  "topicClusters": [
+    "design"
+  ],
+  "concepts": [
+    "concurrent-engineering",
+    "design-for-manufacturing-and-assembly-dfma",
+    "prototype-fabrication",
+    "experimental-testing-and-data-analysis",
+    "engineering-documentation-drawings-bom-reports",
+    "oral-and-written-engineering-communication"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

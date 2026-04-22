@@ -1,0 +1,47 @@
+{
+  "id": "composite-materials",
+  "title": "Composite Materials",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Material Classes",
+  "year": "3",
+  "shortDesc": "Fiber-reinforced polymers, metal and ceramic matrix composites, design and analysis",
+  "whyItMatters": "Composites enable lightweight high-performance structures in aerospace, sports, and automotive",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Mechanical Behavior",
+    "Polymers",
+    "Metals"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Composite Manufacturing",
+    "Aerospace Structures",
+    "Advanced Design"
+  ],
+  "skills": [
+    "Rule of mixtures",
+    "laminate analysis",
+    "composite failure prediction"
+  ],
+  "topicClusters": [
+    "materials",
+    "solid-mechanics"
+  ],
+  "concepts": [
+    "fiber-types-carbon-glass-aramid-ceramic",
+    "matrix-types-thermoset-thermoplastic-metal-ceramic",
+    "micromechanics-rule-of-mixtures-longitudinal-and-transverse",
+    "classical-lamination-theory",
+    "failure-criteria-max-stress-tsai-wu",
+    "manufacturing-hand-layup-rtm-filament-winding-autoclave",
+    "metal-matrix-and-ceramic-matrix-composites"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

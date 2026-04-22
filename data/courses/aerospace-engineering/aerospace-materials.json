@@ -1,0 +1,44 @@
+{
+  "id": "aerospace-materials",
+  "title": "Aerospace Materials",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — AE Core Entry",
+  "year": "2",
+  "shortDesc": "Metallic and composite materials for aerospace applications; fatigue and fracture",
+  "whyItMatters": "Weight savings drive aerospace material selection (Al, Ti, CFRP)",
+  "prereqs": [
+    "mechanics-of-materials"
+  ],
+  "externalPrereqs": [
+    "Chemistry"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Aerostructures",
+    "Design Optimization"
+  ],
+  "skills": [
+    "Material selection",
+    "weight-strength tradeoffs",
+    "composite laminate analysis"
+  ],
+  "topicClusters": [
+    "materials"
+  ],
+  "concepts": [
+    "aluminum-alloys-2xxx-7xxx-series",
+    "titanium-alloys",
+    "nickel-superalloys-for-high-temperature",
+    "carbon-fiber-composites-layup-properties",
+    "fatigue-and-fracture-mechanics-w-hler-paris-law",
+    "environmental-degradation"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

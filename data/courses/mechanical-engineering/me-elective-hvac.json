@@ -1,0 +1,27 @@
+{
+  "id": "me-elective-hvac",
+  "title": "[THEME: HVAC & Building Systems]",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Psychrometrics, load calculations, duct design",
+  "whyItMatters": "Advanced theme area within Mechanical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "thermodynamics",
+    "fluids"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "HVAC & Building Systems",
+  "electiveTag": "[THEME: HVAC & Building Systems]",
+  "status": "planned",
+  "referenceNote": null
+}

@@ -1,0 +1,42 @@
+{
+  "id": "foundation-engineering",
+  "title": "Foundation Engineering",
+  "majorId": "civil-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Geotechnical, Transportation & Environment",
+  "year": "3",
+  "shortDesc": "Design of shallow and deep foundations, retaining walls, and slope stability",
+  "whyItMatters": "Foundation failure = structural failure; site conditions dictate system choice",
+  "prereqs": [],
+  "externalPrereqs": [
+    "Soil Mechanics"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Geotechnical Design",
+    "Infrastructure Projects"
+  ],
+  "skills": [
+    "Bearing capacity calculation",
+    "pile design",
+    "settlement analysis"
+  ],
+  "topicClusters": [
+    "geotechnics"
+  ],
+  "concepts": [
+    "bearing-capacity-theory-terzaghi-meyerhof",
+    "shallow-foundation-settlement",
+    "pile-foundations-driven-and-drilled",
+    "retaining-wall-design-gravity-cantilever",
+    "slope-stability-limit-equilibrium",
+    "ground-improvement-methods-intro"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

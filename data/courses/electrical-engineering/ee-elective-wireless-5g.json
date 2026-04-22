@@ -1,0 +1,26 @@
+{
+  "id": "ee-elective-wireless-5g",
+  "title": "[THEME: Wireless & 5G]",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "OFDM, MIMO, network protocols",
+  "whyItMatters": "Advanced theme area within Electrical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "communications"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Wireless & 5G",
+  "electiveTag": "[THEME: Wireless & 5G]",
+  "status": "planned",
+  "referenceNote": null
+}

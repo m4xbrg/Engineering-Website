@@ -1,14 +1,13 @@
 import { notFound } from "next/navigation";
 
-import { toolSchema } from "@/lib/schemas";
-import { toolsSource } from "@/lib/data/sources";
+import { getCatalog } from "@/lib/data/catalog";
 
 export function getAllToolDefs() {
-  return toolSchema.array().parse(toolsSource);
+  return getCatalog().tools;
 }
 
 export function getToolDef(toolSlug: string) {
-  const tool = getAllToolDefs().find((item) => item.id === toolSlug);
+  const tool = getCatalog().tools.find((item) => item.id === toolSlug);
 
   if (!tool) {
     notFound();

@@ -1,0 +1,48 @@
+{
+  "id": "polymers-soft-materials",
+  "title": "Polymers and Soft Materials",
+  "majorId": "materials-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Material Classes",
+  "year": "3",
+  "shortDesc": "Polymer synthesis, structure, viscoelasticity, and processing methods",
+  "whyItMatters": "Polymers are the fastest-growing materials class and the basis of soft robotics, packaging, and biomedical devices",
+  "prereqs": [
+    "intro-materials-science"
+  ],
+  "externalPrereqs": [
+    "Organic Chemistry (survey)"
+  ],
+  "leadsInto": [
+    "biomaterials"
+  ],
+  "externalLeadsInto": [
+    "Polymer Processing",
+    "Composite Design"
+  ],
+  "skills": [
+    "Polymer selection",
+    "viscoelastic analysis",
+    "processing method comparison"
+  ],
+  "topicClusters": [
+    "materials",
+    "chemistry"
+  ],
+  "concepts": [
+    "chain-architecture-linear-branched-crosslinked-network",
+    "polymerization-mechanisms-addition-condensation",
+    "molecular-weight-distribution-and-characterization-gpc",
+    "glass-transition-temperature-and-crystallinity",
+    "viscoelasticity-maxwell-and-kelvin-voigt-models-time-temperature-superposition",
+    "processing-methods-extrusion-injection-molding-blow-molding",
+    "elastomers-and-thermosets"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

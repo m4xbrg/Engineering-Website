@@ -1,5 +1,6 @@
 export * from "@/lib/data/getAllCourses";
 export * from "@/lib/data/getAllMajors";
+export * from "@/lib/data/getTopicCluster";
 export * from "@/lib/data/getConcept";
 export * from "@/lib/data/getCourse";
 export * from "@/lib/data/getGlossaryTerm";

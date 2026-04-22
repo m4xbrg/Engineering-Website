@@ -1,18 +1,21 @@
 import { notFound } from "next/navigation";
 
-import { conceptSchema } from "@/lib/schemas";
-import { conceptSource } from "@/lib/data/sources";
+import { getCatalog } from "@/lib/data/catalog";
 
 export function getAllConcepts() {
-  return conceptSchema.array().parse(conceptSource);
+  return getCatalog().concepts;
 }
 
 export function getConcept(conceptSlug: string) {
-  const concept = getAllConcepts().find((item) => item.id === conceptSlug);
+  const concept = getCatalog().concepts.find((item) => item.id === conceptSlug);
 
   if (!concept) {
     notFound();
   }
 
   return concept;
+}
+
+export function getConceptsForCourse(courseId: string) {
+  return getCatalog().concepts.filter((concept) => concept.taughtIn.includes(courseId));
 }

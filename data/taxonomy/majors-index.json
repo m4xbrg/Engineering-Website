@@ -3,70 +3,80 @@
     "id": "core",
     "name": "Core Engineering",
     "shortName": "CORE",
-    "description": "Shared foundations in math, physics, mechanics, thermodynamics, and design.",
-    "depthV1": "full"
+    "description": "Foundational engineering principles shared across all disciplines. Serves as the common base layer for all specialized majors.",
+    "depthV1": "full",
+    "courseCount": 16
   },
   {
     "id": "electrical-engineering",
     "name": "Electrical Engineering",
     "shortName": "EE",
-    "description": "Circuits, electronics, signals, electromagnetics, and control.",
-    "depthV1": "full"
+    "description": "Study of electricity, electronics, electromagnetism, and signal systems. Spans from quantum-scale devices to grid-scale power systems.",
+    "depthV1": "full",
+    "courseCount": 24
   },
   {
     "id": "mechanical-engineering",
     "name": "Mechanical Engineering",
     "shortName": "ME",
-    "description": "Mechanics, thermal systems, manufacturing, and mechatronics.",
-    "depthV1": "map"
+    "description": "Design, analysis, and manufacture of mechanical systems. Spans from microscale MEMS to large turbomachinery and aerospace structures.",
+    "depthV1": "map",
+    "courseCount": 20
   },
   {
     "id": "civil-engineering",
     "name": "Civil Engineering",
     "shortName": "CE",
-    "description": "Structures, geotechnics, transportation, water, and infrastructure.",
-    "depthV1": "map"
+    "description": "Design, construction, and maintenance of the built environment — infrastructure, structures, water systems, transportation, and geotechnics.",
+    "depthV1": "map",
+    "courseCount": 20
   },
   {
     "id": "chemical-engineering",
     "name": "Chemical Engineering",
     "shortName": "ChE",
-    "description": "Transport, thermodynamics, reaction engineering, and process systems.",
-    "depthV1": "map"
+    "description": "Application of chemistry, physics, and biology to convert raw materials into useful products at industrial scale. Spans pharmaceuticals, energy, food, materials, and environmental applications.",
+    "depthV1": "map",
+    "courseCount": 21
   },
   {
     "id": "computer-engineering",
     "name": "Computer Engineering",
     "shortName": "CpE",
-    "description": "Digital systems, embedded hardware, architecture, and software systems.",
-    "depthV1": "map"
+    "description": "Bridges electrical engineering and computer science. Designs computing hardware, embedded systems, computer architecture, and hardware-software interfaces.",
+    "depthV1": "map",
+    "courseCount": 25
   },
   {
     "id": "aerospace-engineering",
     "name": "Aerospace Engineering",
     "shortName": "AE",
-    "description": "Aerodynamics, structures, propulsion, and flight systems.",
-    "depthV1": "map"
+    "description": "Design and analysis of aircraft, spacecraft, propulsion systems, and related technologies. Integrates aerodynamics, structures, propulsion, and flight mechanics.",
+    "depthV1": "map",
+    "courseCount": 20
   },
   {
     "id": "biomedical-engineering",
     "name": "Biomedical Engineering",
     "shortName": "BME",
-    "description": "Biological systems, instrumentation, imaging, and medical devices.",
-    "depthV1": "map"
+    "description": "Application of engineering principles to medicine and biology. Bridges life sciences with engineering to develop diagnostics, therapeutics, medical devices, and biomaterials.",
+    "depthV1": "map",
+    "courseCount": 21
   },
   {
     "id": "industrial-engineering",
     "name": "Industrial Engineering",
     "shortName": "IE",
-    "description": "Optimization, operations research, systems design, and quality.",
-    "depthV1": "map"
+    "description": "Design, optimization, and management of integrated systems of people, information, equipment, energy, and materials. Focused on efficiency, quality, and human factors.",
+    "depthV1": "map",
+    "courseCount": 20
   },
   {
     "id": "materials-engineering",
     "name": "Materials Engineering",
     "shortName": "MatE",
-    "description": "Structure-property relationships, characterization, and materials design.",
-    "depthV1": "map"
+    "description": "Study, design, and application of the structure-property-processing-performance relationships of materials including metals, ceramics, polymers, composites, and biomaterials.",
+    "depthV1": "map",
+    "courseCount": 23
   }
 ]

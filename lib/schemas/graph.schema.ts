@@ -1,11 +1,12 @@
 import { z } from "zod";
 
 export const prereqEdgeSchema = z.object({
+  id: z.string(),
   from: z.string(),
   to: z.string(),
   type: z.enum(["prerequisite", "corequisite", "recommended"]),
   crossMajor: z.boolean(),
-  note: z.string().optional(),
+  note: z.string().nullable().optional(),
 });
 
 export const clusterRelationshipSchema = z.object({

@@ -1,0 +1,27 @@
+{
+  "id": "che-elective-electrochemical",
+  "title": "[THEME: Electrochemical Engineering]",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Batteries, fuel cells, electrolyzers",
+  "whyItMatters": "Advanced theme area within Chemical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "chemistry",
+    "power"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Electrochemical Engineering",
+  "electiveTag": "[THEME: Electrochemical Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

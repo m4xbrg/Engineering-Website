@@ -1,0 +1,27 @@
+{
+  "id": "ae-elective-spacecraft",
+  "title": "[THEME: Spacecraft Systems]",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Attitude control, power, thermal, communications",
+  "whyItMatters": "Advanced theme area within Aerospace Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "orbital-mechanics",
+    "control"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Spacecraft Systems",
+  "electiveTag": "[THEME: Spacecraft Systems]",
+  "status": "planned",
+  "referenceNote": null
+}

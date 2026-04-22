@@ -1,0 +1,48 @@
+{
+  "id": "flight-mechanics-i",
+  "title": "Flight Mechanics I — Performance and Stability",
+  "majorId": "aerospace-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Flight Mechanics",
+  "year": "3",
+  "shortDesc": "Aircraft performance, static stability, and control surface sizing",
+  "whyItMatters": "Ensures aircraft meet performance requirements and are flyable",
+  "prereqs": [
+    "incompressible-aero",
+    "dynamics"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "flight-mechanics-ii"
+  ],
+  "externalLeadsInto": [
+    "Aircraft Design"
+  ],
+  "skills": [
+    "Drag polar construction",
+    "climb/range/endurance analysis",
+    "stability derivatives"
+  ],
+  "topicClusters": [
+    "flight-mechanics",
+    "aerodynamics"
+  ],
+  "concepts": [
+    "aerodynamic-forces-on-complete-aircraft",
+    "drag-polar-and-l-d-ratio",
+    "level-flight-climb-range-endurance",
+    "takeoff-and-landing-performance",
+    "static-longitudinal-stability-neutral-point-cm",
+    "lateral-directional-stability",
+    "control-surface-sizing"
+  ],
+  "relatedTools": [
+    "fbd-builder"
+  ],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

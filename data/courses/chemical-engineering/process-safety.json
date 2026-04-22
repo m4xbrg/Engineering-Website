@@ -1,0 +1,43 @@
+{
+  "id": "process-safety",
+  "title": "Process Safety",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced ChE",
+  "year": "3-4",
+  "shortDesc": "Hazard identification, risk analysis, and safety system design",
+  "whyItMatters": "Chemical processes handle hazardous materials at scale — safety is paramount",
+  "prereqs": [],
+  "externalPrereqs": [
+    "All core ChE courses"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Plant Design",
+    "Process Design II",
+    "Professional Practice"
+  ],
+  "skills": [
+    "HAZOP",
+    "fault tree analysis",
+    "relief system design"
+  ],
+  "topicClusters": [
+    "safety"
+  ],
+  "concepts": [
+    "flammability-and-explosion-limits",
+    "toxic-release-and-dispersion-models",
+    "layers-of-protection-analysis-lopa",
+    "hazop-study-methodology",
+    "relief-valve-and-rupture-disc-sizing",
+    "inherently-safer-design-principles"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

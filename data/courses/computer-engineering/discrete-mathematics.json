@@ -1,0 +1,45 @@
+{
+  "id": "discrete-mathematics",
+  "title": "Discrete Mathematics",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "foundation",
+  "stageLabel": "Year 1–2 — Foundation",
+  "year": "1-2",
+  "shortDesc": "Logic, sets, graph theory, combinatorics, and proof techniques",
+  "whyItMatters": "Formal basis for algorithm analysis, digital logic, and computer science theory",
+  "prereqs": [
+    "calculus-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Data Structures",
+    "Algorithms",
+    "Digital Logic",
+    "Theory of Computation"
+  ],
+  "skills": [
+    "Proof writing",
+    "graph analysis",
+    "combinatorial reasoning"
+  ],
+  "topicClusters": [
+    "mathematics",
+    "computing"
+  ],
+  "concepts": [
+    "propositional-and-predicate-logic",
+    "set-theory-and-relations",
+    "functions-and-bijections",
+    "graph-theory-trees-paths-connectivity",
+    "combinatorics-and-permutations",
+    "mathematical-induction-and-proof-methods"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

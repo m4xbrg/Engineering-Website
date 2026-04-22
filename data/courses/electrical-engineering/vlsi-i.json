@@ -1,0 +1,46 @@
+{
+  "id": "vlsi-i",
+  "title": "Microelectronics and VLSI I",
+  "majorId": "electrical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Intermediate EE",
+  "year": "3",
+  "shortDesc": "CMOS fabrication, layout, and digital IC design",
+  "whyItMatters": "Semiconductor industry foundation; chip design literacy",
+  "prereqs": [
+    "electronics-ii",
+    "digital-logic-design"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "embedded-systems"
+  ],
+  "externalLeadsInto": [
+    "VLSI II",
+    "IC Design"
+  ],
+  "skills": [
+    "CMOS layout",
+    "timing analysis",
+    "logic synthesis basics"
+  ],
+  "topicClusters": [
+    "vlsi",
+    "electronics"
+  ],
+  "concepts": [
+    "cmos-fabrication-process-overview",
+    "cmos-gate-design-nand-nor-complex-gates",
+    "static-and-dynamic-power-dissipation",
+    "propagation-delay-and-logical-effort",
+    "stick-diagrams-and-layout-design-rules",
+    "standard-cell-design"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "live",
+  "referenceNote": null
+}

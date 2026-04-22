@@ -1,0 +1,1450 @@
+[
+  {
+    "id": "calculus-i__calculus-ii",
+    "from": "calculus-i",
+    "to": "calculus-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-i__physics-i",
+    "from": "calculus-i",
+    "to": "physics-i",
+    "type": "corequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-ii__calculus-iii",
+    "from": "calculus-ii",
+    "to": "calculus-iii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-ii__differential-equations",
+    "from": "calculus-ii",
+    "to": "differential-equations",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-ii__physics-ii",
+    "from": "calculus-ii",
+    "to": "physics-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-i__physics-ii",
+    "from": "physics-i",
+    "to": "physics-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-i__linear-algebra",
+    "from": "calculus-i",
+    "to": "linear-algebra",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-i__engineering-statistics",
+    "from": "calculus-i",
+    "to": "engineering-statistics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-i__statics",
+    "from": "physics-i",
+    "to": "statics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-i__statics",
+    "from": "calculus-i",
+    "to": "statics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "statics__dynamics",
+    "from": "statics",
+    "to": "dynamics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-ii__dynamics",
+    "from": "calculus-ii",
+    "to": "dynamics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "statics__mechanics-of-materials",
+    "from": "statics",
+    "to": "mechanics-of-materials",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-i__thermodynamics-i",
+    "from": "physics-i",
+    "to": "thermodynamics-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-ii__thermodynamics-i",
+    "from": "calculus-ii",
+    "to": "thermodynamics-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "intro-engineering__engineering-design-i",
+    "from": "intro-engineering",
+    "to": "engineering-design-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__numerical-methods",
+    "from": "differential-equations",
+    "to": "numerical-methods",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__numerical-methods",
+    "from": "linear-algebra",
+    "to": "numerical-methods",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "intro-engineering__engineering-ethics",
+    "from": "intro-engineering",
+    "to": "engineering-ethics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-ii__circuit-analysis-i",
+    "from": "physics-ii",
+    "to": "circuit-analysis-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "circuit-analysis-i__circuit-analysis-ii",
+    "from": "circuit-analysis-i",
+    "to": "circuit-analysis-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__circuit-analysis-ii",
+    "from": "differential-equations",
+    "to": "circuit-analysis-ii",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "circuit-analysis-i__electronics-i",
+    "from": "circuit-analysis-i",
+    "to": "electronics-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-ii__electronics-i",
+    "from": "physics-ii",
+    "to": "electronics-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "electronics-i__electronics-ii",
+    "from": "electronics-i",
+    "to": "electronics-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "circuit-analysis-i__digital-logic-design",
+    "from": "circuit-analysis-i",
+    "to": "digital-logic-design",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__signals-and-systems",
+    "from": "differential-equations",
+    "to": "signals-and-systems",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "circuit-analysis-ii__signals-and-systems",
+    "from": "circuit-analysis-ii",
+    "to": "signals-and-systems",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__signals-and-systems",
+    "from": "linear-algebra",
+    "to": "signals-and-systems",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-iii__electromagnetics",
+    "from": "calculus-iii",
+    "to": "electromagnetics",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "physics-ii__electromagnetics",
+    "from": "physics-ii",
+    "to": "electromagnetics",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "differential-equations__control-systems-ee",
+    "from": "differential-equations",
+    "to": "control-systems-ee",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "signals-and-systems__control-systems-ee",
+    "from": "signals-and-systems",
+    "to": "control-systems-ee",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "signals-and-systems__digital-signal-processing",
+    "from": "signals-and-systems",
+    "to": "digital-signal-processing",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__digital-signal-processing",
+    "from": "linear-algebra",
+    "to": "digital-signal-processing",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "electronics-ii__vlsi-i",
+    "from": "electronics-ii",
+    "to": "vlsi-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "digital-logic-design__vlsi-i",
+    "from": "digital-logic-design",
+    "to": "vlsi-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__probability-random-processes",
+    "from": "engineering-statistics",
+    "to": "probability-random-processes",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "signals-and-systems__probability-random-processes",
+    "from": "signals-and-systems",
+    "to": "probability-random-processes",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "circuit-analysis-ii__power-systems-i",
+    "from": "circuit-analysis-ii",
+    "to": "power-systems-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "signals-and-systems__communications-systems",
+    "from": "signals-and-systems",
+    "to": "communications-systems",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "probability-random-processes__communications-systems",
+    "from": "probability-random-processes",
+    "to": "communications-systems",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "digital-logic-design__embedded-systems",
+    "from": "digital-logic-design",
+    "to": "embedded-systems",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "thermodynamics-i__fluid-mechanics-me",
+    "from": "thermodynamics-i",
+    "to": "fluid-mechanics-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-iii__fluid-mechanics-me",
+    "from": "calculus-iii",
+    "to": "fluid-mechanics-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "differential-equations__fluid-mechanics-me",
+    "from": "differential-equations",
+    "to": "fluid-mechanics-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "thermodynamics-i__heat-transfer-me",
+    "from": "thermodynamics-i",
+    "to": "heat-transfer-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "fluid-mechanics-me__heat-transfer-me",
+    "from": "fluid-mechanics-me",
+    "to": "heat-transfer-me",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__heat-transfer-me",
+    "from": "differential-equations",
+    "to": "heat-transfer-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "thermodynamics-i__thermodynamics-ii",
+    "from": "thermodynamics-i",
+    "to": "thermodynamics-ii",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "physics-i__materials-science-me",
+    "from": "physics-i",
+    "to": "materials-science-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__manufacturing-processes",
+    "from": "mechanics-of-materials",
+    "to": "manufacturing-processes",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__machine-design",
+    "from": "mechanics-of-materials",
+    "to": "machine-design",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "dynamics__machine-design",
+    "from": "dynamics",
+    "to": "machine-design",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__machine-design",
+    "from": "engineering-statistics",
+    "to": "machine-design",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "dynamics__mechanical-vibrations",
+    "from": "dynamics",
+    "to": "mechanical-vibrations",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "differential-equations__mechanical-vibrations",
+    "from": "differential-equations",
+    "to": "mechanical-vibrations",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "differential-equations__control-systems-me",
+    "from": "differential-equations",
+    "to": "control-systems-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "dynamics__control-systems-me",
+    "from": "dynamics",
+    "to": "control-systems-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "signals-and-systems__control-systems-me",
+    "from": "signals-and-systems",
+    "to": "control-systems-me",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__fea-i",
+    "from": "mechanics-of-materials",
+    "to": "fea-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__fea-i",
+    "from": "linear-algebra",
+    "to": "fea-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "machine-design__mechatronics",
+    "from": "machine-design",
+    "to": "mechatronics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "control-systems-ee__mechatronics",
+    "from": "control-systems-ee",
+    "to": "mechatronics",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "fluid-mechanics-me__cfd-intro",
+    "from": "fluid-mechanics-me",
+    "to": "cfd-intro",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__civil-materials",
+    "from": "mechanics-of-materials",
+    "to": "civil-materials",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-i__surveying",
+    "from": "calculus-i",
+    "to": "surveying",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-iii__fluid-mechanics-ce",
+    "from": "calculus-iii",
+    "to": "fluid-mechanics-ce",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "physics-i__fluid-mechanics-ce",
+    "from": "physics-i",
+    "to": "fluid-mechanics-ce",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "differential-equations__fluid-mechanics-ce",
+    "from": "differential-equations",
+    "to": "fluid-mechanics-ce",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "statics__structural-analysis-i",
+    "from": "statics",
+    "to": "structural-analysis-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__structural-analysis-i",
+    "from": "mechanics-of-materials",
+    "to": "structural-analysis-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "structural-analysis-i__structural-analysis-ii",
+    "from": "structural-analysis-i",
+    "to": "structural-analysis-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "structural-analysis-i__reinforced-concrete-design",
+    "from": "structural-analysis-i",
+    "to": "reinforced-concrete-design",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "civil-materials__reinforced-concrete-design",
+    "from": "civil-materials",
+    "to": "reinforced-concrete-design",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "structural-analysis-i__steel-structure-design",
+    "from": "structural-analysis-i",
+    "to": "steel-structure-design",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "civil-materials__steel-structure-design",
+    "from": "civil-materials",
+    "to": "steel-structure-design",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__soil-mechanics",
+    "from": "mechanics-of-materials",
+    "to": "soil-mechanics",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "fluid-mechanics-ce__soil-mechanics",
+    "from": "fluid-mechanics-ce",
+    "to": "soil-mechanics",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__transportation-engineering",
+    "from": "engineering-statistics",
+    "to": "transportation-engineering",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-i__transportation-engineering",
+    "from": "calculus-i",
+    "to": "transportation-engineering",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "fluid-mechanics-ce__hydrology",
+    "from": "fluid-mechanics-ce",
+    "to": "hydrology",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__hydrology",
+    "from": "engineering-statistics",
+    "to": "hydrology",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "fluid-mechanics-ce__environmental-engineering-i",
+    "from": "fluid-mechanics-ce",
+    "to": "environmental-engineering-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__environmental-engineering-i",
+    "from": "engineering-statistics",
+    "to": "environmental-engineering-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-i__material-energy-balances",
+    "from": "calculus-i",
+    "to": "material-energy-balances",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "material-energy-balances__che-thermodynamics-i",
+    "from": "material-energy-balances",
+    "to": "che-thermodynamics-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-iii__che-thermodynamics-i",
+    "from": "calculus-iii",
+    "to": "che-thermodynamics-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "material-energy-balances__fluid-mechanics-che",
+    "from": "material-energy-balances",
+    "to": "fluid-mechanics-che",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-iii__fluid-mechanics-che",
+    "from": "calculus-iii",
+    "to": "fluid-mechanics-che",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "fluid-mechanics-che__heat-transfer-che",
+    "from": "fluid-mechanics-che",
+    "to": "heat-transfer-che",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__heat-transfer-che",
+    "from": "differential-equations",
+    "to": "heat-transfer-che",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "heat-transfer-che__mass-transfer-i",
+    "from": "heat-transfer-che",
+    "to": "mass-transfer-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__mass-transfer-i",
+    "from": "differential-equations",
+    "to": "mass-transfer-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "material-energy-balances__chemical-reaction-engineering",
+    "from": "material-energy-balances",
+    "to": "chemical-reaction-engineering",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__chemical-reaction-engineering",
+    "from": "differential-equations",
+    "to": "chemical-reaction-engineering",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mass-transfer-i__separation-processes",
+    "from": "mass-transfer-i",
+    "to": "separation-processes",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__process-control",
+    "from": "differential-equations",
+    "to": "process-control",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__process-control",
+    "from": "linear-algebra",
+    "to": "process-control",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "material-energy-balances__process-control",
+    "from": "material-energy-balances",
+    "to": "process-control",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-i__discrete-mathematics",
+    "from": "calculus-i",
+    "to": "discrete-mathematics",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "circuit-analysis-cpe-i__digital-logic-cpe",
+    "from": "circuit-analysis-cpe-i",
+    "to": "digital-logic-cpe",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-ii__circuit-analysis-cpe-i",
+    "from": "physics-ii",
+    "to": "circuit-analysis-cpe-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "circuit-analysis-cpe-i__circuit-analysis-cpe-ii",
+    "from": "circuit-analysis-cpe-i",
+    "to": "circuit-analysis-cpe-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "differential-equations__circuit-analysis-cpe-ii",
+    "from": "differential-equations",
+    "to": "circuit-analysis-cpe-ii",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "programming-i__data-structures-algorithms",
+    "from": "programming-i",
+    "to": "data-structures-algorithms",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "discrete-mathematics__data-structures-algorithms",
+    "from": "discrete-mathematics",
+    "to": "data-structures-algorithms",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "digital-logic-design__computer-org-arch-i",
+    "from": "digital-logic-design",
+    "to": "computer-org-arch-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "programming-i__computer-org-arch-i",
+    "from": "programming-i",
+    "to": "computer-org-arch-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "computer-org-arch-i__computer-arch-ii",
+    "from": "computer-org-arch-i",
+    "to": "computer-arch-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "digital-logic-design__embedded-systems-cpe",
+    "from": "digital-logic-design",
+    "to": "embedded-systems-cpe",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "programming-i__operating-systems",
+    "from": "programming-i",
+    "to": "operating-systems",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "digital-logic-design__hdl-fpga",
+    "from": "digital-logic-design",
+    "to": "hdl-fpga",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "electronics-ii__vlsi-cpe",
+    "from": "electronics-ii",
+    "to": "vlsi-cpe",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "digital-logic-design__vlsi-cpe",
+    "from": "digital-logic-design",
+    "to": "vlsi-cpe",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "operating-systems__computer-networks",
+    "from": "operating-systems",
+    "to": "computer-networks",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "signals-and-systems__digital-signal-processing-cpe",
+    "from": "signals-and-systems",
+    "to": "digital-signal-processing-cpe",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__digital-signal-processing-cpe",
+    "from": "linear-algebra",
+    "to": "digital-signal-processing-cpe",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "physics-i__intro-aerospace",
+    "from": "physics-i",
+    "to": "intro-aerospace",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-i__intro-aerospace",
+    "from": "calculus-i",
+    "to": "intro-aerospace",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__aerospace-materials",
+    "from": "mechanics-of-materials",
+    "to": "aerospace-materials",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-iii__incompressible-aero",
+    "from": "calculus-iii",
+    "to": "incompressible-aero",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "incompressible-aero__compressible-aero",
+    "from": "incompressible-aero",
+    "to": "compressible-aero",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "thermodynamics-i__compressible-aero",
+    "from": "thermodynamics-i",
+    "to": "compressible-aero",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__aerostructures-i",
+    "from": "mechanics-of-materials",
+    "to": "aerostructures-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "aerospace-materials__aerostructures-i",
+    "from": "aerospace-materials",
+    "to": "aerostructures-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "aerostructures-i__aerostructures-ii",
+    "from": "aerostructures-i",
+    "to": "aerostructures-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__aerostructures-ii",
+    "from": "linear-algebra",
+    "to": "aerostructures-ii",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "compressible-aero__propulsion-i",
+    "from": "compressible-aero",
+    "to": "propulsion-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "thermodynamics-i__propulsion-i",
+    "from": "thermodynamics-i",
+    "to": "propulsion-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "propulsion-i__propulsion-ii",
+    "from": "propulsion-i",
+    "to": "propulsion-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "compressible-aero__propulsion-ii",
+    "from": "compressible-aero",
+    "to": "propulsion-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "incompressible-aero__flight-mechanics-i",
+    "from": "incompressible-aero",
+    "to": "flight-mechanics-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "dynamics__flight-mechanics-i",
+    "from": "dynamics",
+    "to": "flight-mechanics-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "flight-mechanics-i__flight-mechanics-ii",
+    "from": "flight-mechanics-i",
+    "to": "flight-mechanics-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "control-systems-ee__flight-mechanics-ii",
+    "from": "control-systems-ee",
+    "to": "flight-mechanics-ii",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "differential-equations__flight-mechanics-ii",
+    "from": "differential-equations",
+    "to": "flight-mechanics-ii",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "dynamics__orbital-mechanics",
+    "from": "dynamics",
+    "to": "orbital-mechanics",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-iii__orbital-mechanics",
+    "from": "calculus-iii",
+    "to": "orbital-mechanics",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-i__intro-bme",
+    "from": "calculus-i",
+    "to": "intro-bme",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "physics-i__physiology-for-engineers",
+    "from": "physics-i",
+    "to": "physiology-for-engineers",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__biomechanics-i",
+    "from": "mechanics-of-materials",
+    "to": "biomechanics-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "statics__biomechanics-i",
+    "from": "statics",
+    "to": "biomechanics-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "physiology-for-engineers__bioinstrumentation",
+    "from": "physiology-for-engineers",
+    "to": "bioinstrumentation",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "signals-and-systems__biosignals-imaging",
+    "from": "signals-and-systems",
+    "to": "biosignals-imaging",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "bioinstrumentation__biosignals-imaging",
+    "from": "bioinstrumentation",
+    "to": "biosignals-imaging",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "biomechanics-i__biomechanics-ii",
+    "from": "biomechanics-i",
+    "to": "biomechanics-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "dynamics__biomechanics-ii",
+    "from": "dynamics",
+    "to": "biomechanics-ii",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "biomaterials__tissue-engineering",
+    "from": "biomaterials",
+    "to": "tissue-engineering",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "bioinstrumentation__neural-engineering",
+    "from": "bioinstrumentation",
+    "to": "neural-engineering",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physiology-for-engineers__neural-engineering",
+    "from": "physiology-for-engineers",
+    "to": "neural-engineering",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "bme-design-regulatory__bme-capstone",
+    "from": "bme-design-regulatory",
+    "to": "bme-capstone",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "calculus-i__engineering-economy",
+    "from": "calculus-i",
+    "to": "engineering-economy",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__stats-for-ie",
+    "from": "engineering-statistics",
+    "to": "stats-for-ie",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "linear-algebra__operations-research-i",
+    "from": "linear-algebra",
+    "to": "operations-research-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-i__operations-research-i",
+    "from": "calculus-i",
+    "to": "operations-research-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "operations-research-i__operations-research-ii",
+    "from": "operations-research-i",
+    "to": "operations-research-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "stats-for-ie__stochastic-processes",
+    "from": "stats-for-ie",
+    "to": "stochastic-processes",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "engineering-economy__manufacturing-systems",
+    "from": "engineering-economy",
+    "to": "manufacturing-systems",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__manufacturing-systems",
+    "from": "engineering-statistics",
+    "to": "manufacturing-systems",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "stats-for-ie__quality-engineering",
+    "from": "stats-for-ie",
+    "to": "quality-engineering",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__ergonomics-human-factors",
+    "from": "engineering-statistics",
+    "to": "ergonomics-human-factors",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__systems-simulation",
+    "from": "engineering-statistics",
+    "to": "systems-simulation",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "engineering-statistics__supply-chain-engineering",
+    "from": "engineering-statistics",
+    "to": "supply-chain-engineering",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "physics-i__intro-materials-science",
+    "from": "physics-i",
+    "to": "intro-materials-science",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "calculus-ii__physical-chemistry-mate",
+    "from": "calculus-ii",
+    "to": "physical-chemistry-mate",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "intro-materials-science__thermo-phase-diagrams",
+    "from": "intro-materials-science",
+    "to": "thermo-phase-diagrams",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "mechanics-of-materials__mechanical-behavior-materials",
+    "from": "mechanics-of-materials",
+    "to": "mechanical-behavior-materials",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "intro-materials-science__mechanical-behavior-materials",
+    "from": "intro-materials-science",
+    "to": "mechanical-behavior-materials",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "intro-materials-science__characterization-i",
+    "from": "intro-materials-science",
+    "to": "characterization-i",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-ii__characterization-i",
+    "from": "physics-ii",
+    "to": "characterization-i",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "thermo-phase-diagrams__metals-and-alloys",
+    "from": "thermo-phase-diagrams",
+    "to": "metals-and-alloys",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "kinetics-phase-transform__metals-and-alloys",
+    "from": "kinetics-phase-transform",
+    "to": "metals-and-alloys",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "thermo-phase-diagrams__ceramics-glasses",
+    "from": "thermo-phase-diagrams",
+    "to": "ceramics-glasses",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "intro-materials-science__ceramics-glasses",
+    "from": "intro-materials-science",
+    "to": "ceramics-glasses",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "intro-materials-science__polymers-soft-materials",
+    "from": "intro-materials-science",
+    "to": "polymers-soft-materials",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "characterization-i__characterization-ii",
+    "from": "characterization-i",
+    "to": "characterization-ii",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "physics-ii__electronic-materials",
+    "from": "physics-ii",
+    "to": "electronic-materials",
+    "type": "prerequisite",
+    "crossMajor": true,
+    "note": null
+  },
+  {
+    "id": "intro-materials-science__electronic-materials",
+    "from": "intro-materials-science",
+    "to": "electronic-materials",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "metals-and-alloys__corrosion-engineering",
+    "from": "metals-and-alloys",
+    "to": "corrosion-engineering",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  },
+  {
+    "id": "characterization-i__failure-analysis",
+    "from": "characterization-i",
+    "to": "failure-analysis",
+    "type": "prerequisite",
+    "crossMajor": false,
+    "note": null
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "id": "ie-elective-healthcare-ie",
+  "title": "[THEME: Healthcare Systems Engineering]",
+  "majorId": "industrial-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Patient flow, safety, hospital operations",
+  "whyItMatters": "Advanced theme area within Industrial Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "systems",
+    "simulation"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Healthcare Systems Engineering",
+  "electiveTag": "[THEME: Healthcare Systems Engineering]",
+  "status": "planned",
+  "referenceNote": null
+}

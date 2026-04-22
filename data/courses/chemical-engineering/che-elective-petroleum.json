@@ -1,0 +1,27 @@
+{
+  "id": "che-elective-petroleum",
+  "title": "[THEME: Petroleum & Gas Processing]",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "capstone",
+  "stageLabel": "Year 4 — Capstone + Electives",
+  "year": "4",
+  "shortDesc": "Refinery operations, gas treatment",
+  "whyItMatters": "Advanced theme area within Chemical Engineering.",
+  "prereqs": [],
+  "externalPrereqs": [],
+  "leadsInto": [],
+  "externalLeadsInto": [],
+  "skills": [],
+  "topicClusters": [
+    "thermodynamics",
+    "separations"
+  ],
+  "concepts": [],
+  "relatedTools": [],
+  "isElective": true,
+  "electiveTheme": "Petroleum & Gas Processing",
+  "electiveTag": "[THEME: Petroleum & Gas Processing]",
+  "status": "planned",
+  "referenceNote": null
+}

@@ -1,0 +1,48 @@
+{
+  "id": "chemical-reaction-engineering",
+  "title": "Chemical Reaction Engineering",
+  "majorId": "chemical-engineering",
+  "isCore": false,
+  "stageId": "intermediate",
+  "stageLabel": "Year 3 — Core ChE",
+  "year": "3",
+  "shortDesc": "Design of chemical reactors: batch, CSTR, PFR; complex reactions; non-ideal flow",
+  "whyItMatters": "Reactor design determines product yield, purity, and economic viability",
+  "prereqs": [
+    "material-energy-balances",
+    "differential-equations"
+  ],
+  "externalPrereqs": [
+    "ChE Thermodynamics I"
+  ],
+  "leadsInto": [
+    "biochemical-engineering"
+  ],
+  "externalLeadsInto": [
+    "Catalysis",
+    "Process Design"
+  ],
+  "skills": [
+    "Reactor sizing",
+    "conversion-selectivity optimization",
+    "temperature profile design"
+  ],
+  "topicClusters": [
+    "reaction-engineering"
+  ],
+  "concepts": [
+    "rate-laws-and-stoichiometry",
+    "batch-cstr-and-pfr-design-equations",
+    "multiple-reactions-selectivity-and-yield",
+    "non-isothermal-reactors-energy-balance",
+    "reactor-stability-and-multiplicity",
+    "non-ideal-flow-dispersion-model-rtd",
+    "heterogeneous-catalysis-langmuir-hinshelwood"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

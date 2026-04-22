@@ -1,0 +1,48 @@
+{
+  "id": "cfd-intro",
+  "title": "Computational Fluid Dynamics — Intro",
+  "majorId": "mechanical-engineering",
+  "isCore": false,
+  "stageId": "advanced",
+  "stageLabel": "Year 3–4 — Advanced ME",
+  "year": "3-4",
+  "shortDesc": "Numerical solution of Navier-Stokes equations; CFD workflow",
+  "whyItMatters": "CFD replaces costly physical testing in aerodynamics, HVAC, and combustion",
+  "prereqs": [
+    "fluid-mechanics-me"
+  ],
+  "externalPrereqs": [
+    "Numerical Methods",
+    "some programming"
+  ],
+  "leadsInto": [],
+  "externalLeadsInto": [
+    "Aerodynamics",
+    "Turbomachinery",
+    "Advanced CFD"
+  ],
+  "skills": [
+    "CFD mesh generation",
+    "solver setup",
+    "post-processing",
+    "validation"
+  ],
+  "topicClusters": [
+    "fluids",
+    "computation"
+  ],
+  "concepts": [
+    "navier-stokes-equations-overview",
+    "finite-difference-and-finite-volume-methods",
+    "boundary-conditions-in-cfd",
+    "turbulence-models-k-k-intro",
+    "grid-independence-studies",
+    "simulation-validation-and-uncertainty"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}

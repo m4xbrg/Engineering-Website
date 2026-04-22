@@ -1,0 +1,46 @@
+{
+  "id": "computer-org-arch-i",
+  "title": "Computer Organization and Architecture I",
+  "majorId": "computer-engineering",
+  "isCore": false,
+  "stageId": "major-entry",
+  "stageLabel": "Year 2 — CE Core",
+  "year": "2",
+  "shortDesc": "Instruction set architecture, datapath, control unit, and memory hierarchy",
+  "whyItMatters": "Understanding what hardware executes makes better software and hardware engineers",
+  "prereqs": [
+    "digital-logic-design",
+    "programming-i"
+  ],
+  "externalPrereqs": [],
+  "leadsInto": [
+    "computer-arch-ii",
+    "embedded-systems",
+    "compilers"
+  ],
+  "externalLeadsInto": [
+    "OS"
+  ],
+  "skills": [
+    "Assembly programming",
+    "datapath design",
+    "cache analysis"
+  ],
+  "topicClusters": [
+    "computing"
+  ],
+  "concepts": [
+    "number-systems-and-data-representation",
+    "instruction-set-architectures-mips-risc-v",
+    "datapath-and-control-single-cycle-and-pipelined",
+    "hazards-and-forwarding-in-pipelines",
+    "memory-hierarchy-cache-virtual-memory-intro",
+    "i-o-interfaces"
+  ],
+  "relatedTools": [],
+  "isElective": false,
+  "electiveTheme": null,
+  "electiveTag": null,
+  "status": "stub",
+  "referenceNote": null
+}
