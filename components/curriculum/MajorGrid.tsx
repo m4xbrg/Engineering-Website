@@ -1,8 +1,11 @@
 import { MajorCard } from "@/components/curriculum/MajorCard";
-import type { MajorIndexItem } from "@/types";
+import type { Major, MajorIndexItem } from "@/types";
 
 type MajorGridProps = {
-  majors: MajorIndexItem[];
+  majors: Array<
+    MajorIndexItem &
+      Partial<Pick<Major, "mainSubfields" | "recommendedTools" | "coreFoundationIds">>
+  >;
 };
 
 export function MajorGrid({ majors }: MajorGridProps) {

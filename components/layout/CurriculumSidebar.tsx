@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { Badge } from "@/components/ui/Badge";
 import { getMajorIndexItems } from "@/lib/data";
+import { readableDepth } from "@/lib/utils/format";
 import { getMajorRoute } from "@/lib/utils/routes";
 
 export function CurriculumSidebar() {
@@ -22,6 +23,26 @@ export function CurriculumSidebar() {
         Curriculum overview
       </Link>
       <div className="grid gap-2">
+        <Link
+          href="/curriculum/core"
+          className="rounded-2xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+        >
+          Core Engineering
+        </Link>
+        <Link
+          href="/labs"
+          className="rounded-2xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+        >
+          Labs hub
+        </Link>
+        <Link
+          href="/concepts"
+          className="rounded-2xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+        >
+          Concepts index
+        </Link>
+      </div>
+      <div className="grid gap-2">
         {majors.map((major) => (
           <Link
             key={major.id}
@@ -30,7 +51,7 @@ export function CurriculumSidebar() {
           >
             <span>{major.name}</span>
             <Badge tone={major.depthV1 === "full" ? "accent" : "muted"}>
-              {major.depthV1}
+              {readableDepth(major.depthV1)}
             </Badge>
           </Link>
         ))}

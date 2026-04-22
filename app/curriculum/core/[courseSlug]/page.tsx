@@ -1,10 +1,14 @@
+import Link from "next/link";
+
 import { ConceptChip } from "@/components/concepts/ConceptChip";
+import { CourseLinkList } from "@/components/curriculum/CourseLinkList";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   getAllMajors,
+  getAllToolDefs,
   getConceptsForCourse,
   getCoursesForMajor,
   getCourse,
@@ -12,6 +16,8 @@ import {
   getResolvedPrereqsForCourse,
   getRelatedTools,
 } from "@/lib/data";
+import { cleanText } from "@/lib/utils/format";
+import { getMajorRoute } from "@/lib/utils/routes";
 
 type CoreCoursePageProps = {
   params: Promise<{
@@ -28,13 +34,18 @@ export async function generateStaticParams() {
 export default async function CoreCoursePage({ params }: CoreCoursePageProps) {
   const { courseSlug } = await params;
   const course = getCourse("core", courseSlug);
-  const conceptMap = getConceptsForCourse(course.id);
-  const relatedTools = getRelatedTools({ courseId: course.id });
+  const concepts = getConceptsForCourse(course.id);
   const prereqs = getResolvedPrereqsForCourse(course.id);
   const leadsInto = getResolvedLeadsIntoForCourse(course.id);
   const usedByMajors = getAllMajors().filter((major) =>
     major.coreFoundationIds.includes(course.id),
   );
+  const directTools = getRelatedTools({ courseId: course.id });
+  const relatedTools = directTools.length
+    ? directTools
+    : getAllToolDefs().filter((tool) =>
+        tool.clusterIds.some((cluster) => course.topicClusters.includes(cluster)),
+      );
 
   return (
     <>
@@ -49,115 +60,130 @@ export default async function CoreCoursePage({ params }: CoreCoursePageProps) {
       <PageHeader
         eyebrow="Core course"
         title={course.title}
-        description={course.whyItMatters}
+        description={cleanText(course.whyItMatters)}
         meta={
           <>
-            <Badge tone="accent">{course.stageId}</Badge>
+            <Badge tone="accent">{cleanText(course.stageLabel)}</Badge>
             <Badge>{course.status}</Badge>
+            <Badge>{course.topicClusters.length} topic clusters</Badge>
           </>
         }
       />
-      <section className="grid gap-6 xl:grid-cols-[1.1fr,0.9fr]">
+
+      <section className="grid gap-6 xl:grid-cols-[1.05fr,0.95fr]">
         <div className="surface-panel space-y-5 p-6">
-          <h2 className="text-2xl font-semibold">Course overview</h2>
-          <p className="text-sm leading-7 text-muted-foreground">
-            {course.shortDesc}
-          </p>
-          <div className="grid gap-3">
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Skills
-              </h3>
-              <ul className="mt-3 space-y-2 text-sm leading-7 text-muted-foreground">
-                {course.skills.map((skill) => (
-                  <li key={skill}>{skill}</li>
-                ))}
-              </ul>
-            </div>
-            {course.referenceNote ? (
-              <div>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                  Shared note
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                  {course.referenceNote}
-                </p>
-              </div>
-            ) : null}
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Concepts
-              </h3>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {conceptMap.length ? (
-                  conceptMap.map((concept) => (
-                    <ConceptChip
-                      key={concept.id}
-                      slug={concept.id}
-                      name={concept.name}
-                    />
-                  ))
-                ) : (
-                  <span className="text-sm text-muted-foreground">
-                    No concepts authored yet.
-                  </span>
-                )}
-              </div>
+          <div className="space-y-2">
+            <h2 className="text-2xl font-semibold">Course overview</h2>
+            <p className="text-sm leading-7 text-muted-foreground">
+              {cleanText(course.shortDesc)}
+            </p>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+              Skills
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {course.skills.map((skill) => (
+                <Badge key={skill} tone="muted">
+                  {cleanText(skill)}
+                </Badge>
+              ))}
             </div>
           </div>
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+              Concepts
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {concepts.length ? (
+                concepts.map((concept) => (
+                  <ConceptChip key={concept.id} slug={concept.id} name={concept.name} />
+                ))
+              ) : (
+                <span className="text-sm text-muted-foreground">
+                  No concepts have been authored for this course yet.
+                </span>
+              )}
+            </div>
+          </div>
+          {course.referenceNote ? (
+            <div className="rounded-2xl border border-border bg-white/70 p-4">
+              <p className="text-sm leading-7 text-muted-foreground">
+                {cleanText(course.referenceNote)}
+              </p>
+            </div>
+          ) : null}
         </div>
+
         <div className="space-y-6">
-          <section className="surface-panel p-6">
-            <h2 className="text-xl font-semibold">Prerequisite chain</h2>
+          <section className="surface-panel space-y-4 p-6">
+            <h2 className="text-xl font-semibold">Prerequisites</h2>
             {prereqs.length ? (
-              <ul className="mt-4 space-y-2 text-sm leading-7 text-muted-foreground">
-                {prereqs.map((prereq) => (
-                  <li key={prereq.id}>{prereq.title}</li>
-                ))}
-              </ul>
+              <CourseLinkList courses={prereqs} />
             ) : (
-              <p className="mt-4 text-sm text-muted-foreground">
-                No internal prerequisite courses are modeled for this course.
+              <p className="text-sm text-muted-foreground">
+                This course starts a visible branch of the shared core.
               </p>
             )}
             {course.externalPrereqs.length ? (
-              <p className="mt-4 text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 External prerequisites: {course.externalPrereqs.join(", ")}
               </p>
             ) : null}
           </section>
-          <section className="surface-panel p-6">
+          <section className="surface-panel space-y-4 p-6">
             <h2 className="text-xl font-semibold">Leads into</h2>
             {leadsInto.length ? (
-              <ul className="mt-4 space-y-2 text-sm leading-7 text-muted-foreground">
-                {leadsInto.map((nextCourse) => (
-                  <li key={nextCourse.id}>{nextCourse.title}</li>
-                ))}
-              </ul>
+              <CourseLinkList courses={leadsInto} />
             ) : (
-              <p className="mt-4 text-sm text-muted-foreground">
-                No internal downstream courses are currently linked.
+              <p className="text-sm text-muted-foreground">
+                No direct downstream core course is currently linked.
               </p>
             )}
             {course.externalLeadsInto.length ? (
-              <p className="mt-4 text-sm text-muted-foreground">
-                Additional paths: {course.externalLeadsInto.join(", ")}
+              <p className="text-sm text-muted-foreground">
+                Additional pathways: {course.externalLeadsInto.join(", ")}
               </p>
             ) : null}
           </section>
           {usedByMajors.length ? (
-            <section className="surface-panel p-6">
-              <h2 className="text-xl font-semibold">Used by majors</h2>
-              <div className="mt-4 flex flex-wrap gap-2">
+            <section className="surface-panel space-y-4 p-6">
+              <h2 className="text-xl font-semibold">Used across majors</h2>
+              <div className="flex flex-wrap gap-2">
                 {usedByMajors.map((major) => (
-                  <Badge key={major.id}>{major.shortName}</Badge>
+                  <Link
+                    key={major.id}
+                    href={getMajorRoute(major.id)}
+                    className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  >
+                    {major.name}
+                  </Link>
                 ))}
               </div>
             </section>
           ) : null}
         </div>
       </section>
-      {relatedTools.length ? <ToolGrid tools={relatedTools} /> : null}
+
+      <section className="surface-panel space-y-4 p-6">
+        <h2 className="text-xl font-semibold">Topic clusters</h2>
+        <div className="flex flex-wrap gap-2">
+          {course.topicClusters.map((cluster) => (
+            <Badge key={cluster}>{cluster}</Badge>
+          ))}
+        </div>
+      </section>
+
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold">Related labs</h2>
+        {relatedTools.length ? (
+          <ToolGrid tools={relatedTools.slice(0, 4)} />
+        ) : (
+          <div className="surface-panel p-6 text-sm leading-7 text-muted-foreground">
+            Tool coverage for this core course has not been linked yet.
+          </div>
+        )}
+      </section>
     </>
   );
 }

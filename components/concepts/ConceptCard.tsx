@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/Badge";
+import { cleanText } from "@/lib/utils/format";
 import type { Concept } from "@/types";
 
 type ConceptCardProps = {
@@ -16,12 +17,20 @@ export function ConceptCard({ concept }: ConceptCardProps) {
       <div className="space-y-2">
         <h3 className="text-xl font-semibold">{concept.name}</h3>
         <p className="text-sm leading-7 text-muted-foreground">
-          {concept.shortDef}
+          {cleanText(concept.shortDef)}
         </p>
       </div>
       <div className="flex flex-wrap gap-2">
         {concept.topicClusters.map((cluster) => (
           <Badge key={cluster}>{cluster}</Badge>
+        ))}
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {concept.isFoundational ? <Badge tone="accent">Foundation concept</Badge> : null}
+        {concept.majorTags.slice(0, 3).map((majorId) => (
+          <Badge key={majorId} tone="muted">
+            {majorId}
+          </Badge>
         ))}
       </div>
     </Link>

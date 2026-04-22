@@ -1,5 +1,6 @@
-import { ConceptCard } from "@/components/concepts/ConceptCard";
+import { ConceptExplorer } from "@/components/concepts/ConceptExplorer";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
+import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { getAllConcepts } from "@/lib/data";
 
@@ -13,14 +14,16 @@ export default function ConceptsPage() {
       />
       <PageHeader
         eyebrow="Concept index"
-        title="An engineering concept layer connecting courses, majors, and tools."
-        description="Concept records are generated from the curriculum blueprint and linked back to their teaching courses, glossary terms, and planned labs."
+        title="Browse the concept layer that ties the atlas together."
+        description="The concepts index now works as a clean discovery surface for the reusable ideas behind courses, majors, and future labs. Search by name or filter by cluster and major to move across the atlas quickly."
+        meta={
+          <>
+            <Badge tone="accent">{concepts.length} concepts</Badge>
+            <Badge>Cross-linked to majors and courses</Badge>
+          </>
+        }
       />
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {concepts.map((concept) => (
-          <ConceptCard key={concept.id} concept={concept} />
-        ))}
-      </div>
+      <ConceptExplorer concepts={concepts} />
     </div>
   );
 }

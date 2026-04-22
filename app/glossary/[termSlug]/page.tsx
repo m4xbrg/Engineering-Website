@@ -1,14 +1,21 @@
 import Link from "next/link";
 
 import { ConceptChip } from "@/components/concepts/ConceptChip";
+import { CourseLinkList } from "@/components/curriculum/CourseLinkList";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
+import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   getAllConcepts,
+  getAllCourses,
   getAllGlossaryTerms,
+  getConcept,
   getGlossaryTerm,
+  getRelatedTools,
 } from "@/lib/data";
+import { cleanText } from "@/lib/utils/format";
+import { getMajorRoute } from "@/lib/utils/routes";
 
 type GlossaryTermPageProps = {
   params: Promise<{
@@ -30,6 +37,12 @@ export default async function GlossaryTermPage({
   const conceptMap = new Map(
     getAllConcepts().map((concept) => [concept.id, concept.name]),
   );
+  const relatedTerms = term.relatedTerms.map((relatedId) => getGlossaryTerm(relatedId));
+  const concept = term.conceptId ? getConcept(term.conceptId) : null;
+  const relatedCourses = concept
+    ? getAllCourses().filter((course) => concept.taughtIn.includes(course.id))
+    : [];
+  const relatedTools = concept ? getRelatedTools({ conceptId: concept.id }) : [];
 
   return (
     <div className="container space-y-8 py-10 md:py-14">
@@ -43,7 +56,7 @@ export default async function GlossaryTermPage({
       <PageHeader
         eyebrow="Glossary term"
         title={term.term}
-        description={term.extendedDef}
+        description={cleanText(term.shortDef)}
         meta={
           <>
             {term.domain.map((domain) => (
@@ -52,30 +65,101 @@ export default async function GlossaryTermPage({
           </>
         }
       />
-      <section className="surface-panel space-y-5 p-6">
-        <h2 className="text-2xl font-semibold">Related concepts</h2>
-        <div className="flex flex-wrap gap-2">
-          {term.relatedConcepts.map((conceptId) => (
-            <ConceptChip
-              key={conceptId}
-              slug={conceptId}
-              name={conceptMap.get(conceptId) ?? conceptId}
-            />
-          ))}
+
+      <section className="grid gap-6 xl:grid-cols-[1.05fr,0.95fr]">
+        <div className="surface-panel space-y-4 p-6">
+          <h2 className="text-2xl font-semibold">Definition</h2>
+          <p className="text-sm leading-7 text-muted-foreground">
+            {cleanText(term.extendedDef)}
+          </p>
         </div>
-        {term.relatedTerms.length ? (
-          <>
-            <h2 className="text-2xl font-semibold">Related terms</h2>
-            <div className="flex flex-wrap gap-2">
-              {term.relatedTerms.map((relatedTermId) => (
-                <Link key={relatedTermId} href={`/glossary/${relatedTermId}`}>
-                  <Badge>{relatedTermId}</Badge>
-                </Link>
-              ))}
-            </div>
-          </>
-        ) : null}
+        <div className="surface-panel space-y-4 p-6">
+          <h2 className="text-2xl font-semibold">Concept bridge</h2>
+          {concept ? (
+            <>
+              <p className="text-sm leading-7 text-muted-foreground">
+                This glossary entry routes directly into the concept graph.
+              </p>
+              <ConceptChip slug={concept.id} name={concept.name} />
+              <div className="flex flex-wrap gap-2">
+                {concept.majorTags.map((majorId) => (
+                  <Link
+                    key={majorId}
+                    href={getMajorRoute(majorId)}
+                    className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  >
+                    {majorId}
+                  </Link>
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="text-sm leading-7 text-muted-foreground">
+              No direct concept record is attached to this glossary term yet.
+            </p>
+          )}
+        </div>
       </section>
+
+      <section className="grid gap-6 xl:grid-cols-[1.05fr,0.95fr]">
+        <div className="surface-panel space-y-4 p-6">
+          <h2 className="text-xl font-semibold">Related concepts</h2>
+          <div className="flex flex-wrap gap-2">
+            {term.relatedConcepts.map((conceptId) => (
+              <ConceptChip
+                key={conceptId}
+                slug={conceptId}
+                name={conceptMap.get(conceptId) ?? conceptId}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="surface-panel space-y-4 p-6">
+          <h2 className="text-xl font-semibold">Related terms</h2>
+          <div className="flex flex-wrap gap-2">
+            {relatedTerms.length ? (
+              relatedTerms.map((relatedTerm) => (
+                <Link
+                  key={relatedTerm.id}
+                  href={`/glossary/${relatedTerm.id}`}
+                  className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  {relatedTerm.term}
+                </Link>
+              ))
+            ) : (
+              <p className="text-sm text-muted-foreground">
+                No related glossary terms are linked yet.
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {concept ? (
+        <>
+          <section className="surface-panel space-y-4 p-6">
+            <h2 className="text-xl font-semibold">Related courses</h2>
+            {relatedCourses.length ? (
+              <CourseLinkList courses={relatedCourses} />
+            ) : (
+              <p className="text-sm text-muted-foreground">
+                No atlas courses are linked to this term concept yet.
+              </p>
+            )}
+          </section>
+          <section className="space-y-6">
+            <h2 className="text-2xl font-semibold">Related labs</h2>
+            {relatedTools.length ? (
+              <ToolGrid tools={relatedTools.slice(0, 4)} />
+            ) : (
+              <div className="surface-panel p-6 text-sm leading-7 text-muted-foreground">
+                No tool metadata is linked to this glossary term yet.
+              </div>
+            )}
+          </section>
+        </>
+      ) : null}
     </div>
   );
 }

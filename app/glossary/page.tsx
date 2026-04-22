@@ -1,6 +1,6 @@
-import Link from "next/link";
-
+import { GlossaryExplorer } from "@/components/concepts/GlossaryExplorer";
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
+import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { getAllGlossaryTerms } from "@/lib/data";
 
@@ -16,23 +16,16 @@ export default function GlossaryPage() {
       />
       <PageHeader
         eyebrow="Glossary"
-        title="A reusable terminology layer for Engineering Atlas."
-        description="Glossary entries are generated from the same concept graph as the curriculum pages, so terms can route into concept detail and related topics."
+        title="A searchable terminology layer for the atlas."
+        description="The glossary is now usable as a real reference surface: search terms, filter by major domain, jump by letter, and route into related concepts where they exist."
+        meta={
+          <>
+            <Badge tone="accent">{terms.length} glossary terms</Badge>
+            <Badge>Linked back into concept pages</Badge>
+          </>
+        }
       />
-      <div className="grid gap-4 md:grid-cols-2">
-        {terms.map((term) => (
-          <Link
-            key={term.id}
-            href={`/glossary/${term.id}`}
-            className="surface-panel p-5"
-          >
-            <h2 className="text-xl font-semibold">{term.term}</h2>
-            <p className="mt-2 text-sm leading-7 text-muted-foreground">
-              {term.shortDef}
-            </p>
-          </Link>
-        ))}
-      </div>
+      <GlossaryExplorer terms={terms} />
     </div>
   );
 }
