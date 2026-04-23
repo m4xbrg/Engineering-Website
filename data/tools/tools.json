@@ -274,9 +274,9 @@
     "id": "opamp-config",
     "name": "Op-Amp Circuit Configurator",
     "category": "calculator",
-    "description": "Compare common op-amp circuit topologies and inspect their gain relationships.",
+    "description": "Compare common op-amp circuit topologies and inspect gain, bandwidth, and output relationships.",
     "whyMvp": "It gives Electronics II an obvious practical bridge into circuit configuration thinking.",
-    "purpose": "A schematic-plus-results shell for electronics tool patterns.",
+    "purpose": "A schematic-plus-results tool for analog electronics configurations.",
     "majorIds": [
       "electrical-engineering",
       "biomedical-engineering"
@@ -290,16 +290,15 @@
       "bioinstrumentation"
     ],
     "complexityEstimate": "medium",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/opamp-config",
     "thumbnailDescription": "A configurable op-amp schematic with gain and behavior readouts.",
     "conceptIds": [
-      "mosfet-structure-i-v-characteristics-biasing",
-      "cmos-inverter-basics",
       "ideal-and-real-op-amp-models",
       "inverting-non-inverting-amplifiers-integrators-differentiators",
       "feedback-theory-negative-and-positive",
-      "comparators-and-oscillators"
+      "comparators-and-oscillators",
+      "instrumentation-amplifiers"
     ]
   },
   {
@@ -307,8 +306,8 @@
     "name": "Free Body Diagram Builder",
     "category": "simulator",
     "description": "Place forces and moments on a 2D body and inspect equilibrium conditions.",
-    "whyMvp": "It serves the mechanics-heavy majors while validating the future canvas interaction pattern.",
-    "purpose": "A canvas-first shell for future physics and mechanics simulators.",
+    "whyMvp": "It serves the mechanics-heavy majors while validating the future physics interaction pattern.",
+    "purpose": "A mechanics workspace for force resolution, moments, and equilibrium.",
     "majorIds": [
       "core",
       "mechanical-engineering",
@@ -318,24 +317,89 @@
     "courseIds": [
       "physics-i",
       "statics",
-      "structural-analysis-i",
-      "flight-mechanics-i"
+      "dynamics",
+      "structural-analysis-i"
     ],
     "clusterIds": [
       "mechanics",
       "structures"
     ],
     "complexityEstimate": "medium",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/fbd-builder",
-    "thumbnailDescription": "A force-diagram canvas for loads, vectors, and equilibrium results.",
+    "thumbnailDescription": "A force-diagram workspace for loads, vectors, and equilibrium results.",
     "conceptIds": [
-      "kinematics-in-1d-and-2d",
+      "force-vectors-and-resultants",
+      "equilibrium-conditions-2d-and-3d",
       "newton-s-laws",
-      "work-energy-power",
-      "linear-and-angular-momentum",
-      "rotational-dynamics",
-      "force-vectors-and-resultants"
+      "distributed-loads",
+      "work-energy-power"
+    ]
+  },
+  {
+    "id": "diode-bjt-curves",
+    "name": "Diode / BJT Characteristic Curve Plotter",
+    "category": "visualizer",
+    "description": "Plot diode I-V behavior and common-emitter BJT output curves with load-line overlays.",
+    "whyMvp": "Electronics I depends on curve intuition for biasing, load lines, and operating regions, and this adds that missing device-level lab surface.",
+    "purpose": "A semiconductor-device plotting tool for Electronics I and early analog design work.",
+    "majorIds": [
+      "electrical-engineering"
+    ],
+    "courseIds": [
+      "electronics-i"
+    ],
+    "clusterIds": [
+      "electronics"
+    ],
+    "complexityEstimate": "medium",
+    "status": "live",
+    "routePath": "/labs/diode-bjt-curves",
+    "thumbnailDescription": "Device characteristic curves with a highlighted Q-point and load line.",
+    "conceptIds": [
+      "pn-junction-diode-i-v-models",
+      "diode-circuits-rectifiers-clippers-voltage-regulators",
+      "bjt-operation-active-saturation-cutoff",
+      "bjt-biasing-q-point",
+      "small-signal-model-and-amplifier-analysis",
+      "common-emitter-common-base-common-collector-configs"
+    ]
+  },
+  {
+    "id": "beam-stress-deflection",
+    "name": "Beam Stress and Deflection Calculator",
+    "category": "calculator",
+    "description": "Compute reactions, shear, moment, deflection, and bending stress for common beam cases.",
+    "whyMvp": "Mechanics of Materials and Structural Analysis both revolve around beam behavior, so this creates a natural shared lab for multiple majors.",
+    "purpose": "A mechanics calculator for beam response, serviceability, and bending stress checks.",
+    "majorIds": [
+      "core",
+      "mechanical-engineering",
+      "civil-engineering",
+      "aerospace-engineering",
+      "materials-engineering"
+    ],
+    "courseIds": [
+      "mechanics-of-materials",
+      "structural-analysis-i",
+      "aerostructures-i",
+      "mechanical-behavior-materials"
+    ],
+    "clusterIds": [
+      "solid-mechanics",
+      "structures"
+    ],
+    "complexityEstimate": "high",
+    "status": "live",
+    "routePath": "/labs/beam-stress-deflection",
+    "thumbnailDescription": "Beam diagrams paired with shear, moment, deflection, and stress plots.",
+    "conceptIds": [
+      "normal-and-shear-stress-strain",
+      "axial-torsion-bending-and-transverse-shear",
+      "beam-deflection-integration-moment-area",
+      "shear-and-moment-diagrams",
+      "deflections-conjugate-beam-moment-area",
+      "stress-transformations-mohr-s-circle"
     ]
   }
 ]

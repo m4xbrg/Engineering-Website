@@ -52,7 +52,8 @@
     "fourier-series",
     "bode-plot",
     "phasor-calc",
-    "opamp-config"
+    "opamp-config",
+    "diode-bjt-curves"
   ],
   "depthV1": "full",
   "colorToken": "--color-ee",

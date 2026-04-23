@@ -38,7 +38,8 @@
   "summaryChain": "Calculus → Physics I → Statics → Mechanics of Materials → Structural Analysis I → Structural Analysis II → RC Design / Steel Design → Capstone; Fluid Mechanics → Hydrology / Environmental Engineering; Soil Mechanics → Foundation Engineering",
   "recommendedTools": [
     "unit-converter",
-    "fbd-builder"
+    "fbd-builder",
+    "beam-stress-deflection"
   ],
   "depthV1": "map",
   "colorToken": "--color-ce",

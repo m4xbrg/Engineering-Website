@@ -5,6 +5,7 @@ import {
   Legend,
   Line,
   LineChart as RechartsLineChart,
+  ReferenceDot,
   ReferenceLine,
   ResponsiveContainer,
   Tooltip,
@@ -25,6 +26,13 @@ type LineAnnotation = {
   color?: string;
 };
 
+type ReferencePoint = {
+  x: number;
+  y: number;
+  label?: string;
+  color?: string;
+};
+
 type LineChartProps = {
   data: Record<string, number>[];
   series: LineSeries[];
@@ -34,6 +42,8 @@ type LineChartProps = {
   xScale?: "linear" | "log";
   height?: number;
   annotations?: LineAnnotation[];
+  referencePoints?: ReferencePoint[];
+  yDomain?: [number | "auto" | "dataMin", number | "auto" | "dataMax"];
 };
 
 export function LineChart({
@@ -45,6 +55,8 @@ export function LineChart({
   xScale = "linear",
   height = 320,
   annotations = [],
+  referencePoints = [],
+  yDomain = ["auto", "auto"],
 }: LineChartProps) {
   return (
     <div className="rounded-[1.5rem] border border-border bg-white/80 p-4">
@@ -61,6 +73,7 @@ export function LineChart({
               label={{ value: xLabel, position: "insideBottom", offset: -8 }}
             />
             <YAxis
+              domain={yDomain}
               tick={{ fontSize: 12 }}
               label={{
                 value: yLabel,
@@ -85,6 +98,18 @@ export function LineChart({
                 strokeDasharray="4 4"
               />
             ))}
+            {referencePoints.map((point) => (
+              <ReferenceDot
+                key={`${point.label ?? "point"}-${point.x}-${point.y}`}
+                x={point.x}
+                y={point.y}
+                r={5}
+                fill={point.color ?? "#c46c1e"}
+                stroke="white"
+                strokeWidth={2}
+                label={point.label}
+              />
+            ))}
             {series.map((entry) => (
               <Line
                 key={entry.key}
@@ -103,4 +128,3 @@ export function LineChart({
     </div>
   );
 }
-

@@ -16,7 +16,8 @@
   "summaryChain": "Calculus I → Calculus II → Calc III / Diff Eq → Physics I → Physics II → Statics → Dynamics / Mechanics of Materials → Thermodynamics → Numerical Methods → Specialized Courses",
   "recommendedTools": [
     "unit-converter",
-    "fbd-builder"
+    "fbd-builder",
+    "beam-stress-deflection"
   ],
   "depthV1": "full",
   "colorToken": "--color-core",

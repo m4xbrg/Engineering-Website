@@ -49,6 +49,18 @@ const toolComponents = {
   "fbd-builder": dynamic(() => import("@/tools/fbd-builder/FBDTool"), {
     ssr: false,
   }),
+  "diode-bjt-curves": dynamic(
+    () => import("@/tools/diode-bjt-curves/DiodeBjtCurvesTool"),
+    {
+      ssr: false,
+    },
+  ),
+  "beam-stress-deflection": dynamic(
+    () => import("@/tools/beam-stress-deflection/BeamStressDeflectionTool"),
+    {
+      ssr: false,
+    },
+  ),
 } satisfies Record<ToolSlug, ComponentType>;
 
 type ToolRuntimeProps = {

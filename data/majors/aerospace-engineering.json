@@ -47,7 +47,8 @@
     "unit-converter",
     "fourier-series",
     "bode-plot",
-    "fbd-builder"
+    "fbd-builder",
+    "beam-stress-deflection"
   ],
   "depthV1": "map",
   "colorToken": "--color-ae",

@@ -39,7 +39,8 @@
   ],
   "summaryChain": "Chemistry + Physics → Introduction to Materials Science → Physical Chemistry / Thermodynamics & Phase Diagrams → Kinetics of Phase Transformations / Mechanical Behavior → Metals / Ceramics / Polymers / Composites / Electronic Materials / Corrosion → Failure Analysis → Capstone",
   "recommendedTools": [
-    "unit-converter"
+    "unit-converter",
+    "beam-stress-deflection"
   ],
   "depthV1": "map",
   "colorToken": "--color-mate",

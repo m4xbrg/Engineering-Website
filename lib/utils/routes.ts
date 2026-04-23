@@ -34,6 +34,8 @@ export const CANONICAL_TOOL_SLUGS = [
   "phasor-calc",
   "opamp-config",
   "fbd-builder",
+  "diode-bjt-curves",
+  "beam-stress-deflection",
 ] as const;
 
 export const MAJOR_LABELS: Record<

@@ -3,7 +3,7 @@ import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { getAllConcepts, getAllCourses, getAllMajors, getAllToolDefs, getAllTopicClusters } from "@/lib/data";
+import { getAllCourses, getAllMajors, getAllToolDefs, getAllTopicClusters } from "@/lib/data";
 
 export default function LabsPage() {
   const tools = getAllToolDefs();
@@ -23,7 +23,7 @@ export default function LabsPage() {
       .map((clusterId) => clusters.find((cluster) => cluster.id === clusterId)?.name)
       .filter((value): value is string => Boolean(value)),
   }));
-  const conceptCount = getAllConcepts().filter((concept) => concept.toolLinks.length > 0).length;
+  const conceptCount = new Set(tools.flatMap((tool) => tool.conceptIds)).size;
 
   return (
     <>
