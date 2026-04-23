@@ -3,10 +3,27 @@ import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { getAllToolDefs } from "@/lib/data";
+import { getAllConcepts, getAllCourses, getAllMajors, getAllToolDefs, getAllTopicClusters } from "@/lib/data";
 
 export default function LabsPage() {
   const tools = getAllToolDefs();
+  const courses = getAllCourses();
+  const majors = getAllMajors();
+  const clusters = getAllTopicClusters();
+  const liveTools = tools.filter((tool) => tool.status === "live").length;
+  const toolDirectory = tools.map((tool) => ({
+    ...tool,
+    majorLabels: tool.majorIds
+      .map((majorId) => majors.find((major) => major.id === majorId)?.name)
+      .filter((value): value is string => Boolean(value)),
+    courseLabels: tool.courseIds
+      .map((courseId) => courses.find((course) => course.id === courseId)?.title)
+      .filter((value): value is string => Boolean(value)),
+    clusterLabels: tool.clusterIds
+      .map((clusterId) => clusters.find((cluster) => cluster.id === clusterId)?.name)
+      .filter((value): value is string => Boolean(value)),
+  }));
+  const conceptCount = getAllConcepts().filter((concept) => concept.toolLinks.length > 0).length;
 
   return (
     <>
@@ -15,47 +32,24 @@ export default function LabsPage() {
       />
       <PageHeader
         eyebrow="Labs hub"
-        title="Metadata-driven labs discovery for the Engineering Atlas MVP."
-        description="The tool interfaces are still intentionally deferred, but the hub now works as a real product surface for browsing what tools are planned, which majors they support, and which courses and concepts they connect back into."
+        title="Tool discovery for the first serious Engineering Atlas MVP layer."
+        description="Browse the current Labs system by category, major, and topic cluster. Each tool page now shares a common learning layout and ties its controls back into the curriculum, concepts, and neighboring lab surfaces."
         meta={
           <>
-            <Badge tone="accent">{tools.length} planned tools</Badge>
-            <Badge>Calculator, visualizer, simulator, and reference categories</Badge>
+            <Badge tone="accent">{liveTools} live tools</Badge>
+            <Badge tone="warning">{tools.length - liveTools} planned later</Badge>
+            <Badge>{conceptCount} concept links already connected into labs</Badge>
           </>
         }
       />
 
-      <section className="grid gap-4 md:grid-cols-3">
-        <div className="surface-panel p-5">
-          <p className="text-sm text-muted-foreground">Tool status</p>
-          <p className="mt-2 text-2xl font-semibold">Metadata live</p>
-          <p className="mt-2 text-sm leading-7 text-muted-foreground">
-            Routes, descriptions, cross-links, and placement in the atlas are already defined.
-          </p>
-        </div>
-        <div className="surface-panel p-5">
-          <p className="text-sm text-muted-foreground">What is not built yet</p>
-          <p className="mt-2 text-2xl font-semibold">Interactive UIs</p>
-          <p className="mt-2 text-sm leading-7 text-muted-foreground">
-            Simulations and calculators will come in the next tool-focused implementation pass.
-          </p>
-        </div>
-        <div className="surface-panel p-5">
-          <p className="text-sm text-muted-foreground">Why this still matters</p>
-          <p className="mt-2 text-2xl font-semibold">Curriculum bridge</p>
-          <p className="mt-2 text-sm leading-7 text-muted-foreground">
-            Courses and concepts can already point to the right future labs, keeping the product coherent now.
-          </p>
-        </div>
-      </section>
-
       <section className="space-y-6">
         <SectionHeader
           eyebrow="Tool catalog"
-          title="Filter by category, major, or topic"
-          description="Use the hub as the labs-side index for the current MVP."
+          title="Filter by category, major, or topic cluster"
+          description="Use the hub as the applied-tools index for the current MVP, with each card pointing back to the courses and majors it serves."
         />
-        <ToolExplorer tools={tools} />
+        <ToolExplorer tools={toolDirectory} />
       </section>
     </>
   );

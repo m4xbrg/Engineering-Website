@@ -27,7 +27,7 @@
       "mathematics"
     ],
     "complexityEstimate": "low",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/unit-converter",
     "thumbnailDescription": "A compact engineering calculator layout with quantity and unit selectors.",
     "conceptIds": [
@@ -60,7 +60,7 @@
       "circuits"
     ],
     "complexityEstimate": "low",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/ohms-law",
     "thumbnailDescription": "A four-field electrical calculator with formula callouts.",
     "conceptIds": [
@@ -92,7 +92,7 @@
       "circuits"
     ],
     "complexityEstimate": "low",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/resistor-color-code",
     "thumbnailDescription": "A resistor diagram with interactive color bands and decoded values.",
     "conceptIds": [
@@ -122,7 +122,7 @@
       "digital-logic"
     ],
     "complexityEstimate": "medium",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/logic-gate-sim",
     "thumbnailDescription": "A gate-canvas interface with toggled inputs and a truth table.",
     "conceptIds": [
@@ -154,7 +154,7 @@
       "signals"
     ],
     "complexityEstimate": "medium",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/rlc-response",
     "thumbnailDescription": "Dual charts showing step response and Bode behavior for simple circuits.",
     "conceptIds": [
@@ -190,7 +190,7 @@
       "dsp"
     ],
     "complexityEstimate": "medium",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/fourier-series",
     "thumbnailDescription": "A harmonic stacking visualization with waveform and spectrum views.",
     "conceptIds": [
@@ -227,7 +227,7 @@
       "control"
     ],
     "complexityEstimate": "medium",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/bode-plot",
     "thumbnailDescription": "Two stacked logarithmic plots for system magnitude and phase.",
     "conceptIds": [
@@ -258,7 +258,7 @@
       "power"
     ],
     "complexityEstimate": "medium",
-    "status": "planned",
+    "status": "live",
     "routePath": "/labs/phasor-calc",
     "thumbnailDescription": "An AC calculator with impedance results and a phasor diagram.",
     "conceptIds": [

@@ -1,16 +1,15 @@
 import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
-import { RelatedContent } from "@/components/tools/RelatedContent";
-import { ToolHeader } from "@/components/tools/ToolHeader";
-import { ToolRecommendations } from "@/components/tools/ToolRecommendations";
+import { ToolPageLayout } from "@/components/tools/ToolPageLayout";
 import { ToolRuntime } from "@/components/tools/ToolRuntime";
 import { EmptyState } from "@/components/ui/EmptyState";
 import {
   getAllConcepts,
   getAllCourses,
+  getAllMajors,
   getAllToolDefs,
   getToolDef,
 } from "@/lib/data";
-import { getCourseRoute } from "@/lib/utils/routes";
+import { getCourseRoute, getMajorRoute } from "@/lib/utils/routes";
 import type { ToolSlug } from "@/types";
 
 type ToolPageProps = {
@@ -26,20 +25,35 @@ export async function generateStaticParams() {
 export default async function ToolPage({ params }: ToolPageProps) {
   const { toolSlug } = await params;
   const tool = getToolDef(toolSlug);
+  const majors = getAllMajors();
   const courses = getAllCourses()
     .filter((course) => tool.courseIds.includes(course.id))
     .map((course) => ({
       href: getCourseRoute(course.majorId, course.id),
       label: course.title,
+      description: course.whyItMatters,
+    }));
+  const majorLinks = majors
+    .filter((major) => tool.majorIds.includes(major.id))
+    .map((major) => ({
+      href: getMajorRoute(major.id),
+      label: major.name,
+      description: major.description,
     }));
   const concepts = getAllConcepts()
     .filter((concept) => tool.conceptIds.includes(concept.id))
     .map((concept) => ({
       href: `/concepts/${concept.id}`,
       label: concept.name,
+      description: concept.shortDef,
     }));
   const recommendedTools = getAllToolDefs()
-    .filter((candidate) => candidate.id !== tool.id)
+    .filter(
+      (candidate) =>
+        candidate.id !== tool.id &&
+        (candidate.clusterIds.some((clusterId) => tool.clusterIds.includes(clusterId)) ||
+          candidate.majorIds.some((majorId) => tool.majorIds.includes(majorId))),
+    )
     .slice(0, 3);
 
   return (
@@ -51,17 +65,25 @@ export default async function ToolPage({ params }: ToolPageProps) {
           { label: tool.name },
         ]}
       />
-      <ToolHeader tool={tool} />
-      <EmptyState
-        title="Tool implementation intentionally deferred"
-        description="This route, metadata model, and client-side mounting pattern are live. The actual engineering logic and visualizations will be added in the next tool-focused pass."
-      />
-      <ToolRuntime toolSlug={tool.id} />
-      <section className="grid gap-6 xl:grid-cols-2">
-        <RelatedContent title="Related courses" items={courses} />
-        <RelatedContent title="Related concepts" items={concepts} />
-      </section>
-      <ToolRecommendations tools={recommendedTools} />
+      <ToolPageLayout
+        tool={tool}
+        majorLinks={majorLinks}
+        courseLinks={courses}
+        conceptLinks={concepts}
+        recommendations={recommendedTools}
+      >
+        {tool.status === "live" ? (
+          <ToolRuntime toolSlug={tool.id} />
+        ) : (
+          <>
+            <EmptyState
+              title="Planned for a later Labs pass"
+              description="This tool remains intentionally deferred so the first MVP layer can stay focused on the live calculators, visualizers, and simulators already tied into the curriculum."
+            />
+            <ToolRuntime toolSlug={tool.id} />
+          </>
+        )}
+      </ToolPageLayout>
     </>
   );
 }

@@ -17,6 +17,32 @@ export function sentenceCase(value: string) {
   return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
+export function humanizeToken(value: string) {
+  return sentenceCase(value.replaceAll("-", " "));
+}
+
+export function formatEngineeringNumber(
+  value: number,
+  digits = 4,
+  fallback = "—",
+) {
+  if (!Number.isFinite(value)) {
+    return fallback;
+  }
+
+  const absolute = Math.abs(value);
+
+  if (absolute === 0) {
+    return "0";
+  }
+
+  if (absolute >= 1e6 || absolute < 1e-3) {
+    return value.toExponential(3);
+  }
+
+  return value.toPrecision(digits).replace(/\.?0+$/, "").replace(/(\.\d*?)0+$/, "$1");
+}
+
 export function cleanText(value: string | null | undefined) {
   if (!value) {
     return "";

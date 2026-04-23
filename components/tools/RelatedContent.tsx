@@ -3,6 +3,7 @@ import Link from "next/link";
 type RelatedLink = {
   href: string;
   label: string;
+  description?: string;
 };
 
 type RelatedContentProps = {
@@ -17,11 +18,16 @@ export function RelatedContent({ title, items }: RelatedContentProps) {
       <div className="mt-4 grid gap-3">
         {items.map((item) => (
           <Link
-            key={item.href}
+            key={`${item.href}-${item.label}`}
             href={item.href}
             className="rounded-2xl border border-border px-4 py-3 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
           >
-            {item.label}
+            <p className="font-medium text-foreground">{item.label}</p>
+            {item.description ? (
+              <p className="mt-1 leading-6 text-muted-foreground">
+                {item.description}
+              </p>
+            ) : null}
           </Link>
         ))}
       </div>
