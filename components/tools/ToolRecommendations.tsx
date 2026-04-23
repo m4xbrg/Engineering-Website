@@ -12,7 +12,10 @@ export function ToolRecommendations({ tools }: ToolRecommendationsProps) {
 
   return (
     <section className="space-y-4">
-      <h2 className="text-2xl font-semibold">Related tools</h2>
+      <div className="space-y-2">
+        <p className="atlas-kicker">Keep exploring</p>
+        <h2 className="text-2xl font-semibold">Related tools</h2>
+      </div>
       <ToolGrid tools={tools} />
     </section>
   );

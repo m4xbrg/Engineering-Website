@@ -111,7 +111,7 @@ export default async function MajorOverviewPage({
           </p>
           <Link
             href="/curriculum/core"
-            className="inline-flex rounded-full border border-border bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
+            className="atlas-button-secondary"
           >
             Review the shared core foundation
           </Link>
@@ -198,7 +198,7 @@ export default async function MajorOverviewPage({
                 ? "Tool metadata already linked into this specialization"
                 : "Future tools already mapped to this specialization"
             }
-            description="The tool UIs are still pending, but these cards already act as forward links from the curriculum into the labs layer."
+            description="These cards act as the bridge from the curriculum map into the applied lab layer, even when the specialization is still map-level elsewhere."
           />
           <ToolGrid
             tools={major.depthV1 === "full" ? relatedTools : relatedTools.slice(0, 4)}

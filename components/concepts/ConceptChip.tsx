@@ -13,7 +13,7 @@ export function ConceptChip({ slug, name, className }: ConceptChipProps) {
     <Link
       href={`/concepts/${slug}`}
       className={cn(
-        "inline-flex items-center rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground",
+        "atlas-chip-link",
         className,
       )}
     >

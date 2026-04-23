@@ -6,6 +6,7 @@ import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   getAllConcepts,
   getAllCourses,
@@ -88,7 +89,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
               <Link
                 key={major.id}
                 href={getMajorRoute(major.id)}
-                className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                className="atlas-chip-link"
               >
                 {major.name}
               </Link>
@@ -143,7 +144,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
                 <Link
                   key={term.id}
                   href={`/glossary/${term.id}`}
-                  className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  className="atlas-chip-link"
                 >
                   {term.term}
                 </Link>
@@ -158,7 +159,11 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-semibold">Explore with labs</h2>
+        <SectionHeader
+          eyebrow="Lab integration"
+          title="Explore with labs"
+          description="These tools give this concept an applied foothold inside the current atlas."
+        />
         {relatedTools.length ? (
           <ToolGrid tools={relatedTools.slice(0, 4)} />
         ) : (

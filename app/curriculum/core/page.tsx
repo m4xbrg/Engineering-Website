@@ -75,7 +75,7 @@ export default function CoreEngineeringPage() {
               <Link
                 key={candidate.id}
                 href={getMajorRoute(candidate.id)}
-                className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                className="atlas-chip-link"
               >
                 {candidate.name}
               </Link>
@@ -137,7 +137,7 @@ export default function CoreEngineeringPage() {
                     <Link
                       key={candidate.id}
                       href={getMajorRoute(candidate.id)}
-                      className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                      className="atlas-chip-link"
                     >
                       {candidate.shortName}
                     </Link>

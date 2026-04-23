@@ -17,11 +17,11 @@ export function MajorCard({ major }: MajorCardProps) {
       className="surface-panel flex h-full flex-col gap-5 p-6 transition-transform hover:-translate-y-1"
     >
       <div className="flex items-start justify-between gap-3">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+        <div className="space-y-2">
+          <p className="atlas-kicker">
             {major.shortName}
           </p>
-          <h3 className="mt-2 text-xl font-semibold">{major.name}</h3>
+          <h3 className="text-xl font-semibold">{major.name}</h3>
         </div>
         <Badge tone={major.depthV1 === "full" ? "accent" : "muted"}>
           {readableDepth(major.depthV1)}
@@ -31,7 +31,7 @@ export function MajorCard({ major }: MajorCardProps) {
         {cleanText(major.description)}
       </p>
       {"courseCount" in major ? (
-        <div className="grid gap-2 text-sm text-muted-foreground sm:grid-cols-3">
+        <div className="grid gap-2 rounded-[1.4rem] border border-border bg-white/70 p-4 text-sm text-muted-foreground sm:grid-cols-3">
           <p>{major.courseCount} courses</p>
           <p>{major.coreFoundationIds?.length ?? 0} core links</p>
           <p>{major.recommendedTools?.length ?? 0} lab links</p>

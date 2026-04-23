@@ -41,8 +41,8 @@ export default function CurriculumPage() {
       />
       <PageHeader
         eyebrow="Curriculum overview"
-        title="Use Engineering Atlas as the gateway into every major."
-        description="The curriculum section now works as a real all-majors entry point: start from the shared core, compare specializations, and move into year-by-year course maps with concept and labs links carried along."
+        title="Use the atlas as the gateway into the shared core, every major, and the concepts and labs tied to them."
+        description="The curriculum section is the map layer of Engineering Atlas: start from the shared core, compare specializations, and move into year-by-year course pages with concept and lab links carried along."
         meta={
           <>
             <Badge tone="accent">Shared core + 9 specializations</Badge>
@@ -61,7 +61,7 @@ export default function CurriculumPage() {
             aside={
               <Link
                 href="/curriculum/core"
-                className="rounded-full border border-border bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
+                className="atlas-button-secondary"
               >
                 Open Core Engineering
               </Link>
@@ -96,7 +96,7 @@ export default function CurriculumPage() {
         <SectionHeader
           eyebrow="All majors"
           title="Compare majors by scope, depth, and fit"
-          description="Search by name or subfield, then use the V1 depth filter to separate the first fully built tracks from the map-level branches."
+          description="Search by name or subfield, then use the V1 depth filter to separate the deepest tracks from the intentional map-level branches."
         />
         <CurriculumMajorExplorer majors={majors} />
       </section>

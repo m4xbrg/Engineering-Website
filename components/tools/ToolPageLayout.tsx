@@ -32,6 +32,24 @@ export function ToolPageLayout({
   return (
     <>
       <ToolHeader tool={tool} majorLabels={majorLinks.map((item) => item.label)} />
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="atlas-stat-card">
+          <p className="text-sm text-muted-foreground">Majors linked</p>
+          <p className="mt-2 text-3xl font-semibold">{majorLinks.length}</p>
+        </div>
+        <div className="atlas-stat-card">
+          <p className="text-sm text-muted-foreground">Courses linked</p>
+          <p className="mt-2 text-3xl font-semibold">{courseLinks.length}</p>
+        </div>
+        <div className="atlas-stat-card">
+          <p className="text-sm text-muted-foreground">Concepts linked</p>
+          <p className="mt-2 text-3xl font-semibold">{conceptLinks.length}</p>
+        </div>
+        <div className="atlas-stat-card">
+          <p className="text-sm text-muted-foreground">Related tools</p>
+          <p className="mt-2 text-3xl font-semibold">{recommendations.length}</p>
+        </div>
+      </section>
       <section className="grid gap-6 xl:grid-cols-3">
         <ToolRelationshipPanel title="Related majors" items={majorLinks} />
         <ToolRelationshipPanel title="Related courses" items={courseLinks} />
@@ -39,11 +57,13 @@ export function ToolPageLayout({
       </section>
       {children}
       <section className="grid gap-6 xl:grid-cols-2">
-        <RelatedContent title="Related courses" items={courseLinks} />
-        <RelatedContent title="Related concepts" items={conceptLinks} />
+        <RelatedContent title="Use this lab with these courses" items={courseLinks} />
+        <RelatedContent
+          title="Study these concepts alongside the lab"
+          items={conceptLinks}
+        />
       </section>
       <ToolRecommendations tools={recommendations} />
     </>
   );
 }
-

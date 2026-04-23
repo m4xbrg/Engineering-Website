@@ -78,7 +78,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
           <>
             <EmptyState
               title="Planned for a later Labs pass"
-              description="This tool remains intentionally deferred so the first MVP layer can stay focused on the live calculators, visualizers, and simulators already tied into the curriculum."
+              description={`${tool.whyMvp} This page is intentionally present now so the atlas can still show where the tool belongs in the curriculum and concept system.`}
             />
             <ToolRuntime toolSlug={tool.id} />
           </>

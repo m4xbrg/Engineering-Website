@@ -13,13 +13,13 @@ export default function NotFound() {
           <>
             <Link
               href="/curriculum"
-              className="rounded-full bg-foreground px-5 py-3 text-sm font-medium text-white"
+              className="atlas-button"
             >
               Go to curriculum
             </Link>
             <Link
               href="/labs"
-              className="rounded-full border border-border px-5 py-3 text-sm font-medium"
+              className="atlas-button-secondary"
             >
               Browse labs
             </Link>

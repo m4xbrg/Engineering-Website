@@ -20,15 +20,15 @@ export function PageHeader({
   className,
 }: PageHeaderProps) {
   return (
-    <header className={cn("surface-panel p-8 md:p-10", className)}>
-      <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-        <div className="space-y-3">
+    <header className={cn("surface-panel-strong overflow-hidden p-7 md:p-9", className)}>
+      <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
+        <div className="space-y-4">
           {eyebrow ? (
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+            <p className="atlas-kicker">
               {eyebrow}
             </p>
           ) : null}
-          <h1 className="max-w-4xl text-4xl font-semibold leading-tight md:text-5xl">
+          <h1 className="max-w-4xl text-balance text-3xl font-semibold leading-tight md:text-5xl">
             {title}
           </h1>
           {description ? (
@@ -37,9 +37,17 @@ export function PageHeader({
             </p>
           ) : null}
         </div>
-        {actions ? <div className="flex flex-wrap gap-3">{actions}</div> : null}
+        {actions ? (
+          <div className="flex flex-wrap items-center gap-3 xl:justify-end">
+            {actions}
+          </div>
+        ) : null}
       </div>
-      {meta ? <div className="mt-6 flex flex-wrap gap-2">{meta}</div> : null}
+      {meta ? (
+        <div className="mt-7 flex flex-wrap items-center gap-2 border-t border-border/70 pt-5">
+          {meta}
+        </div>
+      ) : null}
     </header>
   );
 }

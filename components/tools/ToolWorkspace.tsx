@@ -15,7 +15,7 @@ export function ToolWorkspace({
 }: ToolWorkspaceProps) {
   return (
     <div className="space-y-6">
-      <div className="grid gap-6 xl:grid-cols-[22rem,minmax(0,1fr)]">
+      <div className="grid gap-6 xl:grid-cols-[minmax(18rem,22rem),minmax(0,1fr)]">
         <div className="space-y-6">{controls}</div>
         <div className="space-y-6">
           {results}
@@ -26,4 +26,3 @@ export function ToolWorkspace({
     </div>
   );
 }
-

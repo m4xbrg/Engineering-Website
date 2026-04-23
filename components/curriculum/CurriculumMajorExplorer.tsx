@@ -39,9 +39,9 @@ export function CurriculumMajorExplorer({
 
   return (
     <div className="space-y-6">
-      <div className="surface-panel grid gap-4 p-5 lg:grid-cols-[minmax(0,1fr),auto] lg:items-end">
+      <div className="atlas-filter-panel grid gap-4 lg:grid-cols-[minmax(0,1fr),auto] lg:items-end">
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Search majors
           </span>
           <input

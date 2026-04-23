@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { Badge } from "@/components/ui/Badge";
 import { cleanText } from "@/lib/utils/format";
+import { MAJOR_LABELS } from "@/lib/utils/routes";
 import type { Concept } from "@/types";
 
 type ConceptCardProps = {
@@ -25,11 +26,11 @@ export function ConceptCard({ concept }: ConceptCardProps) {
           <Badge key={cluster}>{cluster}</Badge>
         ))}
       </div>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 rounded-[1.4rem] border border-border bg-white/70 p-4">
         {concept.isFoundational ? <Badge tone="accent">Foundation concept</Badge> : null}
         {concept.majorTags.slice(0, 3).map((majorId) => (
           <Badge key={majorId} tone="muted">
-            {majorId}
+            {MAJOR_LABELS[majorId as keyof typeof MAJOR_LABELS] ?? majorId}
           </Badge>
         ))}
       </div>

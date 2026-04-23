@@ -42,9 +42,9 @@ export function ConceptExplorer({ concepts }: ConceptExplorerProps) {
 
   return (
     <div className="space-y-6">
-      <div className="surface-panel grid gap-4 p-5 xl:grid-cols-[minmax(0,1.2fr),repeat(2,minmax(0,0.4fr))]">
+      <div className="atlas-filter-panel grid gap-4 xl:grid-cols-[minmax(0,1.2fr),repeat(2,minmax(0,0.4fr))]">
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Search concepts
           </span>
           <input
@@ -55,7 +55,7 @@ export function ConceptExplorer({ concepts }: ConceptExplorerProps) {
           />
         </label>
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Topic cluster
           </span>
           <select
@@ -72,7 +72,7 @@ export function ConceptExplorer({ concepts }: ConceptExplorerProps) {
           </select>
         </label>
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Major
           </span>
           <select

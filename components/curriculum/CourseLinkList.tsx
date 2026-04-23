@@ -15,7 +15,7 @@ export function CourseLinkList({ courses }: CourseLinkListProps) {
         <Link
           key={`${course.majorId}-${course.id}`}
           href={getCourseRoute(course.majorId, course.id)}
-          className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+          className="atlas-chip-link"
         >
           {cleanText(course.title)}
         </Link>

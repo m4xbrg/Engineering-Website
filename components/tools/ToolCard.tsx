@@ -19,8 +19,11 @@ export function ToolCard({ tool }: ToolCardProps) {
   const majorLabels =
     tool.majorLabels ??
     tool.majorIds.map((majorId) => MAJOR_LABELS[majorId as MajorSlug]);
-  const courseLabels = tool.courseLabels ?? tool.courseIds.map((courseId) => humanizeToken(courseId));
-  const clusterLabels = tool.clusterLabels ?? tool.clusterIds.map((clusterId) => humanizeToken(clusterId));
+  const courseLabels =
+    tool.courseLabels ?? tool.courseIds.map((courseId) => humanizeToken(courseId));
+  const clusterLabels =
+    tool.clusterLabels ??
+    tool.clusterIds.map((clusterId) => humanizeToken(clusterId));
 
   return (
     <Link
@@ -39,13 +42,22 @@ export function ToolCard({ tool }: ToolCardProps) {
           {cleanText(tool.description)}
         </p>
       </div>
-      <div className="space-y-2 rounded-2xl border border-border bg-white/80 p-4 text-sm">
-        <p className="font-medium">Related majors</p>
-        <p className="text-muted-foreground">{majorLabels.slice(0, 3).join(" · ")}</p>
-        <p className="font-medium">Related courses</p>
-        <p className="text-muted-foreground">
-          {courseLabels.slice(0, 2).join(" · ") || "Curriculum links coming next"}
-        </p>
+      <div className="space-y-3 rounded-[1.5rem] border border-border bg-white/80 p-4 text-sm">
+        <div>
+          <p className="font-medium">Related majors</p>
+          <p className="text-muted-foreground">{majorLabels.slice(0, 3).join(" / ")}</p>
+        </div>
+        <div>
+          <p className="font-medium">Related courses</p>
+          <p className="text-muted-foreground">
+            {courseLabels.slice(0, 2).join(" / ") || "Curriculum links coming next"}
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
+          <span>{tool.majorIds.length} majors</span>
+          <span>{tool.courseIds.length} courses</span>
+          <span>{tool.conceptIds.length} concepts</span>
+        </div>
       </div>
       <div className="flex flex-wrap gap-2">
         {clusterLabels.slice(0, 3).map((clusterLabel) => (

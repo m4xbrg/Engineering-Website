@@ -7,6 +7,7 @@ import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   getAllCourses,
   getAllMajors,
@@ -187,7 +188,7 @@ export default async function MajorCoursePage({
                   <Link
                     key={candidate.id}
                     href={getMajorRoute(candidate.id)}
-                    className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                    className="atlas-chip-link"
                   >
                     {candidate.name}
                   </Link>
@@ -221,7 +222,7 @@ export default async function MajorCoursePage({
           </p>
           <Link
             href="/curriculum/core"
-            className="inline-flex rounded-full border border-border bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
+            className="atlas-button-secondary"
           >
             Revisit Core Engineering
           </Link>
@@ -229,7 +230,11 @@ export default async function MajorCoursePage({
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-semibold">Related labs</h2>
+        <SectionHeader
+          eyebrow="Lab integration"
+          title="Related labs"
+          description="These tools are the applied surfaces most closely aligned with this course's concepts, clusters, and downstream skills."
+        />
         {relatedTools.length ? (
           <ToolGrid tools={relatedTools.slice(0, major.depthV1 === "full" ? 4 : 2)} />
         ) : (

@@ -6,6 +6,7 @@ import { BreadcrumbBar } from "@/components/layout/BreadcrumbBar";
 import { ToolGrid } from "@/components/tools/ToolGrid";
 import { Badge } from "@/components/ui/Badge";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   getAllConcepts,
   getAllCourses,
@@ -15,7 +16,7 @@ import {
   getRelatedTools,
 } from "@/lib/data";
 import { cleanText } from "@/lib/utils/format";
-import { getMajorRoute } from "@/lib/utils/routes";
+import { getMajorRoute, MAJOR_LABELS } from "@/lib/utils/routes";
 
 type GlossaryTermPageProps = {
   params: Promise<{
@@ -60,7 +61,9 @@ export default async function GlossaryTermPage({
         meta={
           <>
             {term.domain.map((domain) => (
-              <Badge key={domain}>{domain}</Badge>
+              <Badge key={domain}>
+                {MAJOR_LABELS[domain as keyof typeof MAJOR_LABELS] ?? domain}
+              </Badge>
             ))}
           </>
         }
@@ -86,9 +89,9 @@ export default async function GlossaryTermPage({
                   <Link
                     key={majorId}
                     href={getMajorRoute(majorId)}
-                    className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                    className="atlas-chip-link"
                   >
-                    {majorId}
+                    {MAJOR_LABELS[majorId as keyof typeof MAJOR_LABELS] ?? majorId}
                   </Link>
                 ))}
               </div>
@@ -122,7 +125,7 @@ export default async function GlossaryTermPage({
                 <Link
                   key={relatedTerm.id}
                   href={`/glossary/${relatedTerm.id}`}
-                  className="inline-flex rounded-full border border-border bg-white/80 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  className="atlas-chip-link"
                 >
                   {relatedTerm.term}
                 </Link>
@@ -149,7 +152,11 @@ export default async function GlossaryTermPage({
             )}
           </section>
           <section className="space-y-6">
-            <h2 className="text-2xl font-semibold">Related labs</h2>
+            <SectionHeader
+              eyebrow="Lab integration"
+              title="Related labs"
+              description="When a glossary term resolves into a concept, its tool links follow with it."
+            />
             {relatedTools.length ? (
               <ToolGrid tools={relatedTools.slice(0, 4)} />
             ) : (

@@ -49,19 +49,19 @@ export default function HomePage() {
     <div className="container space-y-12 py-10 md:py-14">
       <PageHeader
         eyebrow="Engineering Atlas"
-        title="Curriculum maps, concept links, and future labs in one engineering learning surface."
-        description="Engineering Atlas is an engineering-first platform that connects shared foundation courses, specialization pathways, concept relationships, and interactive lab metadata. Electrical Engineering is the first deeply built track, while the other majors already work as navigable curriculum maps."
+        title="A curriculum atlas, concept explorer, and interactive engineering lab in one coherent product."
+        description="Engineering Atlas is a curriculum-first learning surface for engineering. It connects the shared foundation, specialization pathways, concept relationships, and interactive lab tools so students can move from map to idea to applied exploration without leaving the atlas."
         actions={
           <>
             <Link
               href="/curriculum"
-              className="rounded-full bg-foreground px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-foreground/90"
+              className="atlas-button"
             >
               Explore curriculum
             </Link>
             <Link
               href="/labs"
-              className="rounded-full border border-border bg-white px-5 py-3 text-sm font-medium transition-colors hover:bg-muted"
+              className="atlas-button-secondary"
             >
               Browse labs
             </Link>
@@ -95,14 +95,14 @@ export default function HomePage() {
           {
             id: "labs",
             href: "/labs",
-            title: "Labs Hub",
-            body: "See the first calculator, simulator, and visualizer definitions connected to courses and concepts, without the interactive UIs yet.",
+            title: "Interactive Labs",
+            body: "Open the MVP calculators, simulators, and visualizers already tied back to majors, courses, and concepts.",
           },
           {
             id: "concepts",
             href: "/concepts",
-            title: "Concept Graph",
-            body: "Jump from concepts to courses, majors, glossary terms, and future lab experiences from one place.",
+            title: "Concept Explorer",
+            body: "Jump from concepts to courses, majors, glossary terms, and the labs layer from one place.",
           },
         ].map((entry) => {
           const Icon = entryIcons[entry.id as keyof typeof entryIcons];
@@ -133,18 +133,18 @@ export default function HomePage() {
       <section className="grid gap-4 lg:grid-cols-3">
         {[
           {
-            title: "Curriculum-first usability",
-            body: "Every major now has a usable overview page, every course route resolves, and the core foundation is visible as a shared dependency layer instead of background knowledge.",
+            title: "Curriculum atlas",
+            body: "Every major now sits in a navigable curriculum system with a visible shared core, comparable stage structure, and course routes that resolve cleanly.",
             icon: GraduationCap,
           },
           {
-            title: "Cross-linked learning model",
-            body: "Course pages point into concepts, concepts point back into courses and majors, and tool metadata now acts like the bridge into the upcoming lab layer.",
+            title: "Concept explorer",
+            body: "Course pages point into concepts, concepts point back into courses and majors, and glossary terms give the whole atlas a reusable technical vocabulary layer.",
             icon: CircuitBoard,
           },
           {
-            title: "Built to grow beyond MVP",
-            body: "Electrical Engineering already feels deeper, while the remaining majors stay structurally useful as curriculum maps that can be enriched later without changing the navigation model.",
+            title: "Interactive lab layer",
+            body: "Tool metadata and live MVP tools already act as the applied bridge back into coursework, while the rest of the labs catalog is intentionally staged for later passes.",
             icon: FlaskConical,
           },
         ].map((item) => (
@@ -171,7 +171,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="/majors/electrical-engineering"
-                className="rounded-full border border-border bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
+                className="atlas-button-secondary"
               >
                 Open Electrical Engineering
               </Link>
@@ -211,8 +211,8 @@ export default function HomePage() {
       <section className="space-y-6">
         <SectionHeader
           eyebrow="Platform overview"
-          title="The atlas already connects the key learning flows"
-          description="Students can move from shared foundation to major, from major to course, from course to concepts, and from concepts to the future labs layer without leaving the main route system."
+          title="The MVP already connects the core learning flows"
+          description="Students can move from shared foundation to major, from major to course, from course to concepts, and from concepts into the labs layer without leaving the main route system."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {[
@@ -250,7 +250,7 @@ export default function HomePage() {
         <SectionHeader
           eyebrow="Featured majors"
           title="Core plus specialization entry points"
-          description="The homepage now points straight into the shared foundation, the flagship EE track, and adjacent majors that already have usable map-level curriculum structure."
+          description="The homepage points straight into the shared foundation, the flagship EE track, and adjacent majors that already work as polished map-level curriculum views."
         />
         <MajorGrid majors={featuredMajors} />
       </section>
@@ -258,12 +258,12 @@ export default function HomePage() {
       <section className="space-y-6">
         <SectionHeader
           eyebrow="Featured labs"
-          title="Tool cards are live as metadata-driven placeholders"
-          description="The lab UIs are still deferred, but the platform already knows which majors, courses, and concepts each tool belongs to. That gives the curriculum pages a real bridge into the future interactive layer."
+          title="The labs layer already anchors the atlas in application"
+          description="The platform already knows which majors, courses, and concepts each tool belongs to. That gives the curriculum and concept pages a real bridge into hands-on engineering exploration."
           aside={
             <Link
               href="/labs"
-              className="rounded-full border border-border bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
+              className="atlas-button-secondary"
             >
               Open labs hub
             </Link>
@@ -276,7 +276,7 @@ export default function HomePage() {
         <div className="surface-panel space-y-4 p-6">
           <h2 className="text-2xl font-semibold">What the MVP already covers</h2>
           <p className="text-sm leading-7 text-muted-foreground">
-            The MVP now behaves like a real curriculum product: majors are comparable, courses are cross-linked, concepts and glossary terms are discoverable, and the labs layer has enough metadata to guide future expansion.
+            The MVP now behaves like a real engineering product: majors are comparable, courses are cross-linked, concepts and glossary terms are discoverable, and the labs layer is present as both a live tool surface and a future build path.
           </p>
           <div className="grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-border bg-white/70 p-4">
@@ -292,7 +292,7 @@ export default function HomePage() {
         <div className="surface-panel space-y-4 p-6">
           <h2 className="text-2xl font-semibold">What comes next</h2>
           <p className="text-sm leading-7 text-muted-foreground">
-            The next major step is turning the labs metadata into real interactive engineering tools, starting with the highest-value EE and shared-core experiences that already have course and concept hooks in place.
+            The next major step is expanding the interactive lab surface while continuing to deepen non-EE majors from strong curriculum maps into fuller editorial pathways.
           </p>
           <Link
             href="/curriculum"

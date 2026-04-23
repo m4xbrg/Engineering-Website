@@ -10,7 +10,7 @@ export function SiteNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-wrap items-center gap-2">
+    <nav className="-mx-1 flex items-center gap-2 overflow-x-auto px-1 pb-1">
       {MAIN_NAV_ITEMS.map((item) => {
         const isActive =
           item.href === "/"
@@ -22,10 +22,10 @@ export function SiteNav() {
             key={item.href}
             href={item.href}
             className={cn(
-              "rounded-full px-4 py-2 text-sm font-medium transition-colors",
+              "shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors",
               isActive
-                ? "bg-foreground text-white"
-                : "text-muted-foreground hover:bg-muted hover:text-foreground",
+                ? "bg-foreground text-white shadow-sm"
+                : "border border-transparent text-muted-foreground hover:border-border hover:bg-white hover:text-foreground",
             )}
           >
             {item.label}

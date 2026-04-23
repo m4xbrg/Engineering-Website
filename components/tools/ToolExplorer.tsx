@@ -79,9 +79,9 @@ export function ToolExplorer({ tools }: ToolExplorerProps) {
         </div>
       </div>
 
-      <div className="surface-panel grid gap-4 p-5 xl:grid-cols-[minmax(0,1fr),repeat(3,minmax(0,0.35fr))]">
+      <div className="atlas-filter-panel grid gap-4 xl:grid-cols-[minmax(0,1fr),repeat(3,minmax(0,0.35fr))]">
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Search labs
           </span>
           <input
@@ -92,7 +92,7 @@ export function ToolExplorer({ tools }: ToolExplorerProps) {
           />
         </label>
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Category
           </span>
           <select
@@ -109,7 +109,7 @@ export function ToolExplorer({ tools }: ToolExplorerProps) {
           </select>
         </label>
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Major
           </span>
           <select
@@ -126,7 +126,7 @@ export function ToolExplorer({ tools }: ToolExplorerProps) {
           </select>
         </label>
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Topic
           </span>
           <select

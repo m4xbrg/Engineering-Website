@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: 44 42% 98%;
-  --foreground: 211 48% 12%;
+  --background: 40 30% 97%;
+  --foreground: 210 44% 12%;
   --surface: 0 0% 100%;
-  --border: 208 31% 86%;
-  --muted: 204 33% 95%;
-  --muted-foreground: 210 19% 37%;
-  --accent: 195 78% 41%;
+  --surface-muted: 204 29% 96%;
+  --surface-strong: 210 35% 98%;
+  --border: 208 28% 84%;
+  --muted: 205 30% 94%;
+  --muted-foreground: 211 17% 37%;
+  --accent: 198 77% 36%;
   --accent-foreground: 0 0% 100%;
   --major-core: 215 30% 30%;
   --major-electrical: 18 86% 45%;
@@ -35,15 +37,21 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0)),
     radial-gradient(
       circle at top left,
-      rgba(72, 163, 191, 0.12),
-      transparent 36%
+      rgba(51, 128, 160, 0.12),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(194, 108, 30, 0.08),
+      transparent 28%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(211, 111, 32, 0.12),
-      transparent 34%
+      rgba(211, 111, 32, 0.08),
+      transparent 32%
     ),
     hsl(var(--background));
   color: hsl(var(--foreground));
@@ -77,7 +85,43 @@ main {
 
 @layer utilities {
   .surface-panel {
-    @apply rounded-2xl border border-border bg-surface shadow-panel;
+    @apply rounded-[1.75rem] border border-border/90 bg-surface shadow-panel;
+  }
+
+  .surface-panel-muted {
+    @apply rounded-[1.75rem] border border-border/70 bg-[hsl(var(--surface-muted))] shadow-panel;
+  }
+
+  .surface-panel-strong {
+    @apply rounded-[2rem] border border-border/90 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(244,247,249,0.96))] shadow-panel;
+  }
+
+  .atlas-kicker {
+    @apply text-[0.68rem] font-semibold uppercase tracking-[0.26em] text-muted-foreground;
+  }
+
+  .atlas-button {
+    @apply inline-flex items-center justify-center rounded-full bg-foreground px-5 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90;
+  }
+
+  .atlas-button-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-border bg-white px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted;
+  }
+
+  .atlas-button-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-border/70 bg-transparent px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground;
+  }
+
+  .atlas-chip-link {
+    @apply inline-flex items-center rounded-full border border-border bg-white px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground;
+  }
+
+  .atlas-stat-card {
+    @apply rounded-[1.5rem] border border-border bg-white p-5;
+  }
+
+  .atlas-filter-panel {
+    @apply surface-panel-muted p-5;
   }
 
   .text-balance {

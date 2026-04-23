@@ -32,8 +32,8 @@ export default function LabsPage() {
       />
       <PageHeader
         eyebrow="Labs hub"
-        title="Tool discovery for the first serious Engineering Atlas MVP layer."
-        description="Browse the current Labs system by category, major, and topic cluster. Each tool page now shares a common learning layout and ties its controls back into the curriculum, concepts, and neighboring lab surfaces."
+        title="Use the applied lab layer as the bridge between curriculum and engineering practice."
+        description="Browse the current labs system by category, major, and topic cluster. Each tool page now ties its controls and outputs back into the curriculum, concepts, and neighboring lab surfaces."
         meta={
           <>
             <Badge tone="accent">{liveTools} live tools</Badge>
@@ -42,6 +42,30 @@ export default function LabsPage() {
           </>
         }
       />
+
+      <section className="grid gap-4 lg:grid-cols-3">
+        {[
+          {
+            title: "Curriculum-linked",
+            body: "Tool pages point back to the majors and courses where they matter, so labs feel embedded in the atlas instead of detached utilities.",
+          },
+          {
+            title: "Concept-aware",
+            body: "Each tool also sits in the concept layer, making it easier to move from terminology and theory into a concrete engineering surface.",
+          },
+          {
+            title: "Gracefully staged",
+            body: "Live tools are usable now, while planned tools remain intentional placeholders that still explain their curricular role.",
+          },
+        ].map((item) => (
+          <div key={item.title} className="surface-panel p-6">
+            <h2 className="text-2xl font-semibold">{item.title}</h2>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground">
+              {item.body}
+            </p>
+          </div>
+        ))}
+      </section>
 
       <section className="space-y-6">
         <SectionHeader

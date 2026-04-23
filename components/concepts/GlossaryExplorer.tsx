@@ -49,9 +49,9 @@ export function GlossaryExplorer({ terms }: GlossaryExplorerProps) {
 
   return (
     <div className="space-y-6">
-      <div className="surface-panel grid gap-4 p-5 xl:grid-cols-[minmax(0,1fr),minmax(16rem,0.35fr)]">
+      <div className="atlas-filter-panel grid gap-4 xl:grid-cols-[minmax(0,1fr),minmax(16rem,0.35fr)]">
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Search glossary
           </span>
           <input
@@ -62,7 +62,7 @@ export function GlossaryExplorer({ terms }: GlossaryExplorerProps) {
           />
         </label>
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="atlas-kicker">
             Domain
           </span>
           <select
